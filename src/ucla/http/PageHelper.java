@@ -22,11 +22,15 @@ public class PageHelper {
 		return makePage("Default Page", content);
 	}
 	
-	public static String getOutlinePage(String outline, String content) {
+	public static String getOutlinePart(String outline, String content) {
 		StringBuilder res = new StringBuilder();
 		res.append("<h2>" + outline + "</h2>");
 		res.append(content);
 		
+		return res.toString();
+	}
+	
+	public static String makeOutlinePage(StringBuilder res) {
 		return makePage("Outline", res.toString());
 	}
 }
