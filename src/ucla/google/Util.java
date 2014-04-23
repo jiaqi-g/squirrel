@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import ucla.engine.*;
 
 public class Util {
-
-	public static final String ASKUBUNTU = "askubuntu";
-	public static final String YELP = "yelp";
-	public static final String STACKOVERFLOW = "stackoverflow";
 	
 	static Map<String, EngineInfo> engineMap = new HashMap<String, EngineInfo>();
 	static Map<EngineInfo, List<String>> res = new HashMap<EngineInfo, List<String>>();
+	
+	public static final String ASKUBUNTU = "askubuntu";
+	public static final String YELP = "yelp";
+	public static final String STACKOVERFLOW = "stackoverflow";
 	
 	static {
 		register(ASKUBUNTU, AskUbuntuEngine.class);
@@ -30,38 +31,38 @@ public class Util {
 		res = new HashMap<EngineInfo, List<String>>();
 		
 		for (String url: urls) {
-			if (contains(url, ASKUBUNTU)) {
-				process(engineMap.get(ASKUBUNTU), url);
+			Set<String> websiteNameSet = engineMap.keySet();
+			
+			for (String websiteName: websiteNameSet) {
+				if (isRelevant(url, websiteName)) {
+					process(engineMap.get(websiteName), url);
+				}
 			}
-			/*
-			else if (contains(url, YELP)) {
-				process(engineMap.get(YELP), url);
-			} else if (contains(url, STACKOVERFLOW)) {
-				process(engineMap.get(STACKOVERFLOW), url);
-			}*/
 		}
 		
 		return res;
 	}
-	
-	private static void process(EngineInfo engineName, String url) {
-		//System.out.println("!!!" + engineName);
-		
-		List<String> lst = res.get(engineName);
+
+	private static void process(EngineInfo engineInfo, String url) {
+		List<String> lst = res.get(engineInfo);
 		
 		if (lst == null) {
 			lst = new ArrayList<String>();
-			res.put(engineName, lst);
-			
+			res.put(engineInfo, lst);
 		}
 		
 		lst.add(url);
 	}
 	
-	private static boolean contains(String url, String label) {
-		return url.contains(label);
+	/**
+	 * currently if the url contains websiteName, then decide it's a relevant url
+	 * 
+	 * @param url
+	 * @param websiteName
+	 * @return
+	 */
+	private static boolean isRelevant(String url, String websiteName) {
+		return url.contains(websiteName);
 	}
 
-	
-	
 }
