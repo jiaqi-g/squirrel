@@ -1,5 +1,7 @@
 package ucla.http;
 
+import org.htmlcleaner.HtmlCleaner;
+
 public class PageHelper {
 	private static String makePage(String title, String body) {
 		StringBuilder res = new StringBuilder();
@@ -31,6 +33,10 @@ public class PageHelper {
 	}
 	
 	public static String makeOutlinePage(StringBuilder res) {
+		//HtmlCleaner cleaner = new HtmlCleaner();
+		//String s = cleaner.getInnerHtml(cleaner.clean(res.toString()));
+		//System.out.println(s);
+		//return s;
 		return makePage("Outline", res.toString());
 	}
 }

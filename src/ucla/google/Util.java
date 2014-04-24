@@ -16,11 +16,15 @@ public class Util {
 	public static final String ASKUBUNTU = "askubuntu";
 	public static final String YELP = "yelp";
 	public static final String STACKOVERFLOW = "stackoverflow";
+	public static final String CNN = "cnn";
+	public static final String DEFAULT = "default";
 	
 	static {
-		register(ASKUBUNTU, AskUbuntuEngine.class);
-		//register(STACKOVERFLOW, );
-		//register(YELP, );
+		register(DEFAULT, DefaultEngine.class);
+		//register(ASKUBUNTU, AskUbuntuEngine.class);
+		//register(STACKOVERFLOW, DefaultEngine.class);
+		//register(YELP, DefaultEngine.class);
+		//register(CNN, DefaultEngine.class);
 	}
 	
 	static void register(String websiteName, Class<? extends AbstractEngine> engineClass) {
@@ -33,11 +37,14 @@ public class Util {
 		for (String url: urls) {
 			Set<String> websiteNameSet = engineMap.keySet();
 			
+			process(engineMap.get(DEFAULT), url);
+			break;
+			/*
 			for (String websiteName: websiteNameSet) {
 				if (isRelevant(url, websiteName)) {
 					process(engineMap.get(websiteName), url);
 				}
-			}
+			}*/
 		}
 		
 		return res;

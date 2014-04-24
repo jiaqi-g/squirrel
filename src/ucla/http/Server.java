@@ -3,10 +3,13 @@ package ucla.http;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import sun.misc.IOUtils;
 import ucla.engine.AbstractEngine;
 import ucla.engine.EngineInfo;
 
@@ -57,9 +60,9 @@ public class Server {
 						index += 1;
 					} else {
 						break;
-					}            		
-				}	            	
-
+					}
+				}
+				
 				if (content.length() < 1) {
 					url = "No URL";
 					content = "No matched content";
@@ -68,12 +71,14 @@ public class Server {
 				res.append(PageHelper.getOutlinePart(url, content));
 			}
 			
-			String response = PageHelper.makeOutlinePage(res);
+			//encode to utf-8 to avoid errors
+			ByteBuffer rs = Charset.forName("UTF-8").encode(PageHelper.makeOutlinePage(res));
+			//String response = rs.toString();
 			//System.out.println(response);
-
-			t.sendResponseHeaders(200, response.length());
+			
+			t.sendResponseHeaders(200, rs.capacity());
 			OutputStream os = t.getResponseBody();
-			os.write(response.getBytes());
+			os.write(rs.array());
 			os.close();
 		}
 	}
