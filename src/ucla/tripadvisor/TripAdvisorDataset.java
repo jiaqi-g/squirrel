@@ -6,13 +6,23 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class ReviewUtil {
+import ucla.util.FileUtil;
+import ucla.util.JsonToJavaUtil;
+
+public class TripAdvisorDataset {
 
 	public static final String reviewRoot = "reviews";
 	public static final String hotelPrefix = "hotel";
 	public static final String reviewPrefix = "review";
 	
-	public static final String datasetPath = "docs/hotel_93396_review.txt";
+	public String datasetPath = "docs/hotel_93396_review.txt";
+	
+	public TripAdvisorDataset() {
+	}
+	
+	public TripAdvisorDataset(String datasetPath) {
+		this.datasetPath = datasetPath;
+	}
 	
 	/**
 	 * Split the raw data set into folders and files hierachy. Currently supports content of reviews and UTF-8 encoding
@@ -26,7 +36,7 @@ public class ReviewUtil {
 	 * 
 	 * Warning: This method may take quite a long time to execute and overwrite any existing files!
 	 */
-	public static void splitDataset() throws Exception {
+	public void split() throws Exception {
 		File theDir = new File(reviewRoot);
 		// if the directory does not exist, create it
 		if (!theDir.exists()) {
@@ -41,12 +51,12 @@ public class ReviewUtil {
 	    Path path = Paths.get(datasetPath);
 	    try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
 	      while (scanner.hasNextLine()){
-	    	  createReview(JsonToJava.test(scanner.nextLine()));
+	    	  createReview(JsonToJavaUtil.getTripAdvisorReviewBean(scanner.nextLine()));
 	      }
 	    }
 	}
 	
-	private static void createReview(TripAdvisorReviewBean review) throws Exception {
+	private void createReview(TripAdvisorReviewBean review) throws Exception {
 		Integer hotelId = review.getOfferingId();
 		Long reviewId = review.getId();
 		
@@ -71,7 +81,7 @@ public class ReviewUtil {
 
 	public static void main(String[] args) {
 		try {
-			splitDataset();
+			new TripAdvisorDataset().split();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

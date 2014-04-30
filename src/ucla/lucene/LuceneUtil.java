@@ -1,4 +1,4 @@
-package ucla.tripadvisor;
+package ucla.lucene;
 
 import java.io.BufferedReader;
 import java.io.File;

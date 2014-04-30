@@ -38,7 +38,7 @@ public class Server {
 			Map<String, Object> params = (Map<String, Object>) t.getAttribute("parameters");
 			String query = (String) params.get("content");
 			
-			Map<EngineInfo, List<String>> engineMap = ucla.google.Util.getEngineURLMap(new ucla.google.Search().getResultUrls(query));
+			Map<EngineInfo, List<String>> engineMap = ucla.engine.EngineUtil.getEngineURLMap(new ucla.google.Search().getResultUrls(query));
 			Set<EngineInfo> engines = engineMap.keySet();
 			
 			StringBuilder res = new StringBuilder();

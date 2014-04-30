@@ -1,4 +1,4 @@
-package ucla.tripadvisor;
+package ucla.lucene;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,6 +20,7 @@ import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
+
 
 /** Simple command-line based search demo. */
 public class SearchFiles {

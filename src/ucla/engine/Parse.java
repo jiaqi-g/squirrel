@@ -12,6 +12,8 @@ import java.util.List;
 
 import org.xml.sax.InputSource;
 
+import ucla.util.JsonToJavaUtil;
+
 import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.extractors.ArticleExtractor;
@@ -87,7 +89,7 @@ public class Parse {
 		
 		//long millis = System.currentTimeMillis() % 1000;
 		//System.out.println(getJSONContent(con));
-		return JsonToJava.test(getJSONContent(con));
+		return JsonToJavaUtil.getDiffBotBean(getJSONContent(con)).toString();
 	}
 	
 	public static void main(String[] args) throws Exception {

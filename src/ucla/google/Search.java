@@ -12,9 +12,7 @@ import org.jsoup.select.Elements;
 
 public class Search {
 	
-	public Search() {
-		
-	}
+	public Search() {}
 	
 	public List<String> getResultUrls(String query) throws IOException {
 		String code = URLEncoder.encode(query, "UTF-8");
@@ -38,8 +36,9 @@ public class Search {
 			res.add(e.child(0).select("a[href]").attr("href").trim());
 		}
 		
-		//String text = Jsoup.parse(elem.text().replaceAll("(?i)<br[^>]*>", "br2n")).text();
 		return res;
+		
+		//String text = Jsoup.parse(elem.text().replaceAll("(?i)<br[^>]*>", "br2n")).text();
 		//return elems.toString();
 		
 		//Element elemAns = elem.children().get(3);
@@ -61,5 +60,4 @@ public class Search {
 			e.printStackTrace();
 		}
 	}
-	
 }

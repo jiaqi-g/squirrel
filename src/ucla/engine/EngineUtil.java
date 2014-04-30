@@ -1,4 +1,4 @@
-package ucla.google;
+package ucla.engine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,9 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import ucla.engine.*;
-
-public class Util {
+public class EngineUtil {
 	
 	static Map<String, EngineInfo> engineMap = new HashMap<String, EngineInfo>();
 	static Map<EngineInfo, List<String>> res = new HashMap<EngineInfo, List<String>>();

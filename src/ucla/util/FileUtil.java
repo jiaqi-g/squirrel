@@ -1,4 +1,4 @@
-package ucla.tripadvisor;
+package ucla.util;
 
 import java.io.*;
 import java.util.Scanner;
