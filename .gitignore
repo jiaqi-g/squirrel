@@ -1,2 +1,4 @@
 bin/*
 *~
+lucene_index/*
+reviews/*
