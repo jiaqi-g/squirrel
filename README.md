@@ -1,1 +1,1 @@
-A simple web crawler.
+A simple web crawler and some NLP utilities.
