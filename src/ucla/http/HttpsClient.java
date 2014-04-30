@@ -10,43 +10,30 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLPeerUnverifiedException;
 
 public class HttpsClient{
-	public static void main(String[] args)
-	{
-		new HttpsClient().testIt();
-	}
 
-	private void testIt(){
+	private void testIt() {
 		String http_url = "http://api.diffbot.com/v2/article?token=74d98b7aeb7c985a157449137b1068c2&url=http%3A%2F%2Fblog.diffbot.com%2Fusing-customize-and-correct-to-make-instant-api-fixes%2F";
-
 		//String https_url = "https://baidu.com";
 		URL url;
 		try {
-
 			//url = new URL(https_url);
 			url = new URL(http_url);
 			//HttpsURLConnection con = (HttpsURLConnection)url.openConnection();
 			HttpURLConnection con = (HttpURLConnection)url.openConnection();
-
 			//dumpl all cert info
 			//print_https_cert(con);
-
 			//dump all the content
 			print_content(con);
-
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
-	private void print_https_cert(HttpsURLConnection con){
-
+	private void print_https_cert(HttpsURLConnection con) {
 		if(con!=null){
-
 			try {
-
 				System.out.println("Response Code : " + con.getResponseCode());
 				System.out.println("Cipher Suite : " + con.getCipherSuite());
 				System.out.println("\n");
@@ -61,22 +48,17 @@ public class HttpsClient{
 							+ cert.getPublicKey().getFormat());
 					System.out.println("\n");
 				}
-
 			} catch (SSLPeerUnverifiedException e) {
 				e.printStackTrace();
 			} catch (IOException e){
 				e.printStackTrace();
 			}
-
 		}
-
 	}
 
-	private void print_content(HttpURLConnection con){
+	private void print_content(HttpURLConnection con) {
 		if(con!=null){
-
 			try {
-
 				System.out.println("****** Content of the URL ********");			
 				BufferedReader br = 
 						new BufferedReader(
@@ -92,9 +74,11 @@ public class HttpsClient{
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
 		}
-
+	}
+	
+	public static void main(String[] args) {
+		new HttpsClient().testIt();
 	}
 
 }

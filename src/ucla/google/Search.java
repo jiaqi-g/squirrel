@@ -15,10 +15,10 @@ public class Search {
 	public Search() {}
 	
 	public List<String> getResultUrls(String query) throws IOException {
-		String code = URLEncoder.encode(query, "UTF-8");
-		System.out.println("[INFO] encoded query: " + code);
+		String encodedQuery = URLEncoder.encode(query, "UTF-8");
+		System.out.println("[INFO] encoded query: " + encodedQuery);
 		
-		String url = "https://www.google.com/search?q=" + code;
+		String url = "https://www.google.com/search?q=" + encodedQuery;
 		/**
 		 * add userAgent header to deceive google search engine
 		 */
