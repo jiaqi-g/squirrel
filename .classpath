@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="lib/lucene-core-4.8.0.jar" sourcepath="/home/victor/Downloads/lucene-4.8.0/core/src/java"/>
 	<classpathentry kind="lib" path="lib/lucene-analyzers-common-4.8.0.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-queryparser-4.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/sml-toolkit-0.7.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

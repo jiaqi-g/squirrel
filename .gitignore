@@ -2,3 +2,4 @@ bin/*
 *~
 lucene_index/*
 reviews/*
+words/*

@@ -1,6 +1,12 @@
 package ucla.util;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 /** 
@@ -9,19 +15,61 @@ import java.util.Scanner;
  * system's default encoding to be used instead.  
  */
 public class FileUtil {
-
-	// PRIVATE 
+ 
 	private final String fFileName;
 	private final String fEncoding;
-	private final String FIXED_TEXT = "But soft! what code in yonder program breaks?";
+	//private final String FIXED_TEXT = "But soft! what code in yonder program breaks?";
 
-	/** Constructor. */
-	public FileUtil(String aFileName, String aEncoding){
-		fEncoding = aEncoding;
-		fFileName = aFileName;
+	/**
+	 * a simple wrapping method for scanner
+	 * we have trimmed every line
+	 * 
+	 * @param filename
+	 * @throws IOException 
+	 */
+	public static List<String> readByLines(String filename) throws IOException {
+		List<String> lst = new ArrayList<String>();
+		Path path = Paths.get(filename);
+		
+	    try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
+	      while (scanner.hasNextLine()){
+	    	  lst.add(scanner.nextLine().trim());
+	      }
+	    }
+
+	    return lst;
 	}
+	
+	public static void createFolder(String folderName) {
+		File theDir = new File(folderName);
+		// if the directory does not exist, create it
+		if (!theDir.exists()) {
+			System.out.println("creating directory: " + folderName);
+			boolean result = theDir.mkdir();  
 
-	public static void write(File aFile, String content) throws IOException  {
+			if(result) {    
+				System.out.println("DIR " + folderName + " created");  
+			}
+		}
+	}
+	
+	public static File deleteAndCreateNewFile(String fileName) throws IOException {
+		File reviewFile = new File(fileName);
+		if (reviewFile.exists()) {
+			reviewFile.delete();
+		}
+		reviewFile.createNewFile();
+		return reviewFile;
+	}
+	
+	/**
+	 * a simple wrapping method for write to file and close it
+	 * 
+	 * @param aFile
+	 * @param content
+	 * @throws IOException
+	 */
+	public static void writeFile(File aFile, String content) throws IOException  {
 		String fEncoding = "UTF-8";
 		log("Writing to file named " + aFile.getPath() + ". Encoding: " + fEncoding);
 		
@@ -33,19 +81,39 @@ public class FileUtil {
 			out.close();
 		}
 	}
+	
+	
 
-	/** Write fixed content to the given file. */
-	void write() throws IOException  {
-		log("Writing to file named " + fFileName + ". Encoding: " + fEncoding);
-		Writer out = new OutputStreamWriter(new FileOutputStream(fFileName), fEncoding);
-		try {
-			out.write(FIXED_TEXT);
-		}
-		finally {
-			out.close();
-		}
+	Writer out;
+	
+	public FileUtil(String aFileName, String aEncoding){
+		fEncoding = aEncoding;
+		fFileName = aFileName;
 	}
 
+	public void create() throws IOException {
+		File file = new File(fFileName);
+		file.createNewFile();
+	}
+	
+	/**
+	 * Use buffered writer to write to file.
+	 * Warning: use close() to close the file.
+	 * 
+	 * @param content
+	 * @throws Exception
+	 */
+	public void write(String content) throws Exception {
+		if (out == null) {
+			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fFileName), fEncoding));
+		}
+		out.write(content);
+	}
+	
+	public void close() throws Exception {
+		out.close();
+	}
+	
 	/** Read the contents of the given file. */
 	void read() throws IOException {
 		log("Reading from file.");
@@ -72,7 +140,8 @@ public class FileUtil {
 		String fileName = aArgs[0];
 		String encoding = aArgs[1];
 		FileUtil test = new FileUtil(fileName, encoding);
-		test.write();
+		//test.write();
 		test.read();
 	}
+
 }
