@@ -13,19 +13,23 @@ import ucla.util.JsonToJavaUtil;
 
 public class TripAdvisorDataset {
 
-	public static final String reviewRoot = "reviews";
+
 	public static final String hotelPrefix = "hotel";
 	public static final String reviewPrefix = "review";
 
+	public String reviewRoot = "reviews";
 	public String datasetPath = "docs/review.txt";
+	public boolean splitBySentence = false;
 	//"docs/hotel_93396_review.txt";
 	public int cnt = 0;
 
 	public TripAdvisorDataset() {
 	}
 
-	public TripAdvisorDataset(String datasetPath) {
+	public TripAdvisorDataset(String datasetPath, String reviewRoot, boolean splitBySentence) {
 		this.datasetPath = datasetPath;
+		this.reviewRoot = reviewRoot;
+		this.splitBySentence = splitBySentence;
 	}
 
 	/**
@@ -66,13 +70,27 @@ public class TripAdvisorDataset {
 		FileUtil.createFolder(folderPath);
 
 		String filePath = folderPath + "/" + reviewPrefix + "_" + reviewId;
+		
+		String text = review.getText();
+		if (splitBySentence) {
+			String[] tokens = text.split("\\.|!|,|\\-");
+			StringBuilder builder = new StringBuilder();
+			for (String token: tokens) {
+				if (token.length() > 5) {
+					builder.append(token.trim() + "\n");
+				}
+			}
+			text = builder.toString();
+		}
+		
 		FileUtil.writeFile(
-				FileUtil.deleteAndCreateNewFile(filePath), review.getText());
+				FileUtil.deleteAndCreateNewFile(filePath), text);
 	}
 
 	public static void main(String[] args) {
 		try {
-			new TripAdvisorDataset().split();
+			//new TripAdvisorDataset().split();
+			new TripAdvisorDataset("docs/hotel_93396_review.txt", "sample", true).split();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
