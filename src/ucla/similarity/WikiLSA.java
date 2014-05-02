@@ -56,6 +56,11 @@ public class WikiLSA implements Runnable {
 		String[] word2 = new String[]{"house", "wolf", "cat", "the", "expensive", "cat", "bed", "cloth", "average", "who"};
 		int total = word1.length;
 		
+		
+		//String[] except1 = new String[]{"night", "hotel", "location", "clean", "room", "size", "bathroom", "towel"};
+		
+		
+		
 		Thread[] a = new Thread[total];
 		for (int i = 0; i < total; i++) {
 			a[i] = new Thread(new WikiLSA(word1[i], word2[i]));

@@ -1,6 +1,12 @@
 package ucla.tripadvisor;
 
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
 
 import ucla.util.FileUtil;
 import ucla.util.JsonToJavaUtil;
@@ -12,9 +18,9 @@ public class TripAdvisorDataset {
 	public static final String reviewPrefix = "review";
 
 	public String datasetPath = "docs/review.txt";
-			//"docs/hotel_93396_review.txt";
+	//"docs/hotel_93396_review.txt";
 	public int cnt = 0;
-	
+
 	public TripAdvisorDataset() {
 	}
 
@@ -37,15 +43,22 @@ public class TripAdvisorDataset {
 	public void split() throws Exception {
 		FileUtil.createFolder(reviewRoot);
 
-		Iterator<String> lines = FileUtil.readByLines(datasetPath).iterator();
-		while (lines.hasNext()){
-			createReview(JsonToJavaUtil.getTripAdvisorReviewBean(lines.next()));
+		/**
+		 * for memory issues, we process every time we read one line
+		 */
+		List<String> lst = new ArrayList<String>();
+		Path path = Paths.get(datasetPath);
+
+		try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
+			while (scanner.hasNextLine()){
+				createReview(JsonToJavaUtil.getTripAdvisorReviewBean(scanner.nextLine().trim()));
+			}
 		}
 	}
 
 	private void createReview(TripAdvisorReviewBean review) throws Exception {
 		System.out.println(cnt++);
-		
+
 		Integer hotelId = review.getOfferingId();
 		Long reviewId = review.getId();
 
