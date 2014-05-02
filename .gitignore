@@ -3,3 +3,4 @@ bin/*
 lucene_index/*
 reviews/*
 words/*
+docs/review.txt

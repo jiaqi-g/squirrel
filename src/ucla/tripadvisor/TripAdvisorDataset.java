@@ -11,8 +11,10 @@ public class TripAdvisorDataset {
 	public static final String hotelPrefix = "hotel";
 	public static final String reviewPrefix = "review";
 
-	public String datasetPath = "docs/hotel_93396_review.txt";
-
+	public String datasetPath = "docs/review.txt";
+			//"docs/hotel_93396_review.txt";
+	public int cnt = 0;
+	
 	public TripAdvisorDataset() {
 	}
 
@@ -42,6 +44,8 @@ public class TripAdvisorDataset {
 	}
 
 	private void createReview(TripAdvisorReviewBean review) throws Exception {
+		System.out.println(cnt++);
+		
 		Integer hotelId = review.getOfferingId();
 		Long reviewId = review.getId();
 

@@ -52,16 +52,23 @@ public class WikiLSA implements Runnable {
 	}
 
 	public static void main(String[] args) throws Exception {
-		int total = 10;
 		String[] word1 = new String[]{"room", "dog", "cat", "expensive", "price", "pig", "room", "guy", "mean", "where"};
 		String[] word2 = new String[]{"house", "wolf", "cat", "the", "expensive", "cat", "bed", "cloth", "average", "who"};
-
+		int total = word1.length;
+		
 		Thread[] a = new Thread[total];
 		for (int i = 0; i < total; i++) {
 			a[i] = new Thread(new WikiLSA(word1[i], word2[i]));
 			a[i].start();
 		}
-
+		
+		//Thread.sleep(500);
+		Thread.yield();
+		
+		for (int i = 0; i < total; i++) {
+			a[i].join();
+		}
+		
 		/*
 		Long t1 = System.nanoTime();
 		System.out.println(post.test("room", "house"));
