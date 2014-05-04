@@ -12,17 +12,17 @@ import ucla.util.FileUtil;
 import ucla.util.JsonToJavaUtil;
 
 public class TripAdvisorDataset {
-
-
 	public static final String hotelPrefix = "hotel";
 	public static final String reviewPrefix = "review";
-
+	//public static final String regex = "\\.|!|,|\\-";
+	public static final String regex = "\\.";
+	
 	public String reviewRoot = "reviews";
 	public String datasetPath = "docs/review.txt";
 	public boolean splitBySentence = false;
 	//"docs/hotel_93396_review.txt";
 	public int cnt = 0;
-
+	
 	public TripAdvisorDataset() {
 	}
 
@@ -55,7 +55,7 @@ public class TripAdvisorDataset {
 
 		try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
 			while (scanner.hasNextLine()){
-				createReview(JsonToJavaUtil.getTripAdvisorReviewBean(scanner.nextLine().trim()));
+				createReview(JsonToJavaUtil.getTripAdvisorReviewBean(scanner.nextLine().trim().toLowerCase()));
 			}
 		}
 	}
@@ -73,7 +73,7 @@ public class TripAdvisorDataset {
 		
 		String text = review.getText();
 		if (splitBySentence) {
-			String[] tokens = text.split("\\.|!|,|\\-");
+			String[] tokens = text.split(regex);
 			StringBuilder builder = new StringBuilder();
 			for (String token: tokens) {
 				if (token.length() > 5) {
@@ -90,7 +90,7 @@ public class TripAdvisorDataset {
 	public static void main(String[] args) {
 		try {
 			//new TripAdvisorDataset().split();
-			new TripAdvisorDataset("docs/hotel_93396_review.txt", "sample", true).split();
+			new TripAdvisorDataset("docs/hotel_93396_review.txt", "sample", false).split();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

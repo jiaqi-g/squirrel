@@ -1,0 +1,2 @@
+food: nice, good, pretty; game; lobby; thing | right, fine, well | 100 | 1
+rice: nice, delicious; noodles; dumplings | fine, good | 102 | 3

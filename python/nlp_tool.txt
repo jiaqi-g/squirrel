@@ -1,0 +1,86 @@
+nlp tool
+
+API
+
+--plot first 50 frequent words
+fd.plot(50, cumulative=True)
+
+--find context with word
+text.concordance('gene')
+
+--bigrams
+text4.collocations()
+
+--functional programming
+[len(w) for w in text1]
+[w.upper() for w in text1]
+
+len(text)
+FreqDist(text)
+sorted(tokens)
+
+--load your own corpus P51
+from nltk.corpus import PlaintextCorpusReader
+corpus_root = '/usr/share/dict'
+wordlists = PlaintextCorpusReader(corpus_root, '.*')
+wordlists.fileids()
+
+--stop words
+def content_fraction(text):
+	stopwords = nltk.corpus.stopwords.words('english')
+	content = [w for w in text if w.lower() not in stopwords]
+	return len(content) / len(text)
+
+==wordnet
+--synonyms of nouns
+from nltk.corpus import wordnet as wn
+wn.synsets('motorcar')
+wn.synset('car.n.01').lemma_names
+
+--category path
+motorcar = wn.synset('car.n.01')
+paths = motorcar.hypernym_paths()
+[synset.name for synset in paths[0]]
+
+for synset in wn.synsets('mint', wn.NOUN):
+	print synset.name + ':', synset.definition
+
+--give out every noun
+from nltk.corpora import wordnet as wn
+    for synset in list(wn.all_synsets('n'))
+        print synset
+
+--semantic similarity (based on path) P72
+
+--deal with html
+raw = nltk.clean_html(html)
+tokens = nltk.word_tokenize(raw)
+
+--stemmer
+tokens = nltk.word_tokenize(raw)
+porter = nltk.PorterStemmer()
+lancaster = nltk.LancasterStemmer()
+[porter.stem(t) for t in tokens]
+
+--lemmatization
+wnl = nltk.WordNetLemmatizer()
+
+##python libs
+--Matplotlib
+--NetworkX
+--csv
+--NumPy
+
+--Tagging P179
+The process of classifying words into their parts-of-speech and labeling them accordingly
+is known as part-of-speech tagging, POS tagging, or simply tagging.
+
+CC: coordinating conjunction
+RB: adverbs
+IN: preposition
+NN: noun
+JJ: adjective
+
+--Chunking P265 (IR)
+
+
