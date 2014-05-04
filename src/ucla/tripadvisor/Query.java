@@ -18,7 +18,7 @@ public class Query {
 	List<String> traitSynonyms = new ArrayList<String>();
 
 	/**
-	 * We want to present to user, a list of performing Query1, Query2, ...
+	 * We want to present to user, a list of results by performing Query1, Query2, ...
 	 * which is the expansion of the original query.
 	 * 
 	 * Query1: matched_review:sent, matched_review:sent
@@ -29,16 +29,16 @@ public class Query {
 	class Record {
 		String aspect;
 		String trait;
-		List<Sentence> sentences;
+		Map<Sentence, Double> rankedSentences;
 
-		public Record(String aspect, String trait, List<Sentence> sentences) {
+		public Record(String aspect, String trait, Map<Sentence, Double> rankedSentences) {
 			this.aspect = aspect;
 			this.trait = trait;
-			this.sentences = sentences;
+			this.rankedSentences = rankedSentences;
 		}
 
 		public String toString() {
-			return aspect + "/" + trait + " " + sentences.toString();
+			return aspect + "/" + trait + " " + rankedSentences.toString();
 		}
 	}
 
@@ -53,11 +53,13 @@ public class Query {
 		List<Record> res = new ArrayList<Record>();
 		//first we search the trait itself
 		res.add(new Record(aspect, trait, QueryUtil.getRankedResults(aspect, trait)));
+		
 		for (String synonym: traitSynonyms) {
 			if (!synonym.equals(trait)) {
 				res.add(new Record(aspect, synonym, QueryUtil.getRankedResults(aspect, synonym)));
 			}
 		}
+		
 		return res;
 	}
 

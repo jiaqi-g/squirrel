@@ -1,8 +1,13 @@
 package ucla.nlp;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map.Entry;
 import java.util.Set;
 
+import ucla.similarity.ResultSet;
+import ucla.similarity.WikiLSA;
 import ucla.tripadvisor.QueryUtil;
 
 public class Sentence {
@@ -28,19 +33,50 @@ public class Sentence {
 	}
 	
 	/**
-	 * Core function: we return boolean value for simplicity currently.
+	 * Core function:
+	 * For sentence, we return the similarity of its highest similarity NP.
+	 * Return null if no noun satisfies the adj
+	 * 
+	 * TODO: use thread pool to save memory
+	 * 
 	 * @param noun
 	 * @param adj
 	 * @return
 	 */
-	public boolean calculateScore(String noun, String adj) {
+	public Entry<String, Double> getTopScoreEntry(String noun, String adj) {
+		//select out related nouns
+		List<String> relatedWords = new ArrayList<String>();
 		for (NP np: nps) {
-			if (np.contains(noun, adj)) {
-				return true;
+			if (np.containsAdj(adj)) {
+				relatedWords.add(np.noun);
+				//new Thread(new WikiLSA(noun, np.noun));
+			}
+		}
+		if (relatedWords.size() == 0) {
+			return null;
+		}
+		
+		
+		//use multi-threading to calculate the similarity score from WikiLSA
+		ResultSet resultSet = new ResultSet(noun);
+		Thread[] threads = new Thread[relatedWords.size()];
+		
+		for (int i = 0; i < threads.length; i++) {
+			threads[i] = new Thread(new WikiLSA(noun, relatedWords.get(i), resultSet));
+			threads[i].start();
+		}
+		
+		Thread.yield();
+		
+		for (int i = 0; i < threads.length; i++) {
+			try {
+				threads[i].join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
 		}
 		
-		return false;
+		return resultSet.getTopScoreEntry();
 	}
 	
 	public String getSentenceText() {
@@ -53,6 +89,7 @@ public class Sentence {
 	
 	public String toString() {
 		return reviewId + ": " + sentenceId;
+		//return "ReviewId: " + reviewId + " SentenceId: " + sentenceId;
 		//return nps + " | " + adjs + " | " + reviewId + " | " + sentenceId;
 	}
 

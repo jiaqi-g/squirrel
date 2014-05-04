@@ -3,9 +3,6 @@ package ucla.tripadvisor;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Scanner;
 
 import ucla.util.FileUtil;
@@ -50,7 +47,7 @@ public class TripAdvisorDataset {
 		/**
 		 * for memory issues, we process every time we read one line
 		 */
-		List<String> lst = new ArrayList<String>();
+		//List<String> lst = new ArrayList<String>();
 		Path path = Paths.get(datasetPath);
 
 		try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){

@@ -23,9 +23,10 @@ public class NP {
 		this.indirectAdjs = indirectAdjs;
 	}
 
+	/*
 	public boolean contains(String noun, String adj) {
 		return containsNoun(noun) && containsAdj(adj);
-	}
+	}*/
 
 	public boolean containsAdj(String e) {
 		return directAdjs.contains(e) || indirectAdjs.contains(e);

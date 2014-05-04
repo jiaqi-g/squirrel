@@ -11,12 +11,14 @@ public class WikiLSA implements Runnable {
 
 	static String url = "http://deeptutor2.memphis.edu/WikiLSA/getSimilarity";
 	Map<String, String> data = new HashMap<String, String>();
-
+	ResultSet scoreMap;
+	
 	public WikiLSA() {
 	}
 	
-	public WikiLSA(String w1, String w2) {
+	public WikiLSA(String w1, String w2, ResultSet scoreMap) {
 		setWords(w1, w2);
+		this.scoreMap = scoreMap;
 	}
 	
 	public void setWords(String w1, String w2) {
@@ -27,7 +29,7 @@ public class WikiLSA implements Runnable {
 	/**
 	 * You can directly call this utility function in a single thread.
 	 */
-	public Double retrieve() {
+	public void retrieve() {
 		try {
 			Document document = Jsoup.connect(url)
 					.data(data)
@@ -37,12 +39,16 @@ public class WikiLSA implements Runnable {
 			String cssQuery = "p";
 			Element elem = document.select(cssQuery).get(3);
 			Double score = Double.parseDouble(elem.html().split(":")[1].trim());
-			System.out.println(data.get("word1") + " " + data.get("word2") + " " + score);
-			return score;
+			scoreMap.add(data.get("word2"), score);
+			//System.out.println(data.get("word1") + " " + data.get("word2") + " " + score);
+			//return score;
+		}
+		catch (NumberFormatException e) {
+			//do nothing
 		}
 		catch (Exception e) {
-			//e.printStackTrace();
-			return new Double(0);
+			e.printStackTrace();
+			//return new Double(0);
 		}
 	}
 
@@ -57,10 +63,12 @@ public class WikiLSA implements Runnable {
 		int total = word1.length;
 		//String[] except1 = new String[]{"night", "hotel", "location", "clean", "room", "size", "bathroom", "towel"};
 		
+		String word = "room";
+		ResultSet p = new ResultSet(word);
 		
 		Thread[] a = new Thread[total];
 		for (int i = 0; i < total; i++) {
-			a[i] = new Thread(new WikiLSA(word1[i], word2[i]));
+			a[i] = new Thread(new WikiLSA(word, word2[i], p));
 			a[i].start();
 		}
 		
@@ -70,6 +78,8 @@ public class WikiLSA implements Runnable {
 		for (int i = 0; i < total; i++) {
 			a[i].join();
 		}
+		
+		System.out.println(p);
 		
 		/*
 		Long t1 = System.nanoTime();

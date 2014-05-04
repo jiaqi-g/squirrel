@@ -2,13 +2,17 @@ package ucla.tripadvisor;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 
 import ucla.nlp.ADJSet;
 import ucla.nlp.NP;
 import ucla.nlp.Sentence;
 import ucla.util.FileUtil;
+import ucla.util.MapValueComparator;
 
 /**
  * If you use json, you can parse using the google json lib
@@ -37,7 +41,7 @@ public class QueryUtil {
 			e.printStackTrace();
 		}
 	}
-
+	
 	/**
 	 * Synonyms File: manually built file with adjective synonyms.
 	 * @throws IOException 
@@ -89,20 +93,36 @@ public class QueryUtil {
 	}
 
 	/**
-	 * currently no ranking
+	 * currently return similarity > 0.50 by wikiLSA model, sorted results
+	 * TODO
 	 * 
 	 * @param aspect
 	 * @param trait
 	 * @return
 	 */
-	public static List<Sentence> getRankedResults(String aspect, String trait) {
-		// TODO
-		List<Sentence> res = new ArrayList<Sentence>();
+	public static Map<Sentence, Double> getRankedResults(String aspect, String trait) {
+		Map<Sentence, Double> tmp = new HashMap<Sentence, Double>();
+		/**
+		 * For every sentence, we select out the top score matched entry to represent this sentence's score.
+		 */
 		for (Sentence sent: sents) {
-			if (sent.calculateScore(aspect, trait)) {
-				res.add(sent);
+			Entry<String, Double> topScoreEntry = sent.getTopScoreEntry(aspect, trait);
+			if (topScoreEntry != null && topScoreEntry.getValue() < 0.5) {
+				topScoreEntry = null;
+			}
+			
+			if (topScoreEntry != null) {
+				//System.out.println("$$$$" + sent);
+				//System.out.println("$$$$" + topScoreEntry.getValue());
+				tmp.put(sent, topScoreEntry.getValue());
 			}
 		}
+		
+		//sort map
+		MapValueComparator<Sentence> comp = new MapValueComparator<Sentence>(tmp);
+		Map<Sentence, Double> res = new TreeMap<Sentence, Double>(comp);
+		res.putAll(tmp);
+		
 		return res;
 	}
 	

@@ -30,8 +30,8 @@ class Match implements Runnable {
 				WikiLSA lsa = new WikiLSA();
 				for (String word2: frequentWords) {
 					lsa.setWords(word, word2);
-					Double score = lsa.retrieve();
-					f.write(word2 + "," + score + "\n");
+					//Double score = lsa.retrieve();
+					//f.write(word2 + "," + score + "\n");
 				}
 				f.close();
 			}
