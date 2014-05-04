@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import ucla.nlp.Sentence;
+
 public class Query {
 	String aspect;
 	String trait;
@@ -59,7 +61,9 @@ public class Query {
 		return res;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		Class.forName(QueryUtil.class.getCanonicalName());
+		
 		while (true) {
 			System.out.print("Enter Query as \"Aspect/Trait\" : ");
 			try {

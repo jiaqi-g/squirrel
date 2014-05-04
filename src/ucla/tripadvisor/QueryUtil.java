@@ -5,10 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import ucla.nlp.ADJSet;
+import ucla.nlp.NP;
+import ucla.nlp.Sentence;
 import ucla.util.FileUtil;
 
 /**
- * If you use json, you can parse by using the google lib
+ * If you use json, you can parse using the google json lib
  * 
  * @author victor
  */
@@ -67,17 +70,17 @@ public class QueryUtil {
 			
 			//build sentence
 			Sentence sent = new Sentence(reviewId, sentenceId);
-			sent.addAdjs(adjPart);
+			ADJSet indirectAdjs = new ADJSet(adjPart);
 			
 			for (String np: npPart) {
 				String[] temp = np.split(":");
 				
 				String noun = temp[0].trim();
-				ADJSet adjs = new ADJSet();
+				ADJSet directAdjs = new ADJSet();
 				if (temp.length > 1) {
-					adjs.addAll(temp[1].split(","));
+					directAdjs.addAll(temp[1].split(","));
 				}
-				sent.addNP(new NP(noun, adjs));
+				sent.addNP(new NP(noun, directAdjs, indirectAdjs));
 			}
 			
 			//add to list
