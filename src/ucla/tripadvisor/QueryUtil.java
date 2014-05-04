@@ -1,11 +1,9 @@
 package ucla.tripadvisor;
 
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import ucla.util.FileUtil;
 
@@ -15,148 +13,20 @@ import ucla.util.FileUtil;
  * @author victor
  */
 public class QueryUtil {
-
-	/**
-	 * a NP, noun phrase, is a noun and set of adjs associated with this noun
-	 * 
-	 * @author victor
-	 */
-	static class NP {
-		ADJSet adjs;
-		String noun;
-
-		public NP(String noun) {
-			this(noun, new ADJSet());
-		}
-
-		public NP(String noun, ADJSet adjs) {
-			this.noun = noun;
-			this.adjs = adjs;
-		}
-
-		public boolean contains(String noun, String adj) {
-			return containsAdj(adj) && containsNoun(noun);
-		}
-
-		public boolean containsAdj(String e) {
-			return adjs.contains(e);
-		}
-
-		public boolean containsNoun(String e) {
-			return noun.startsWith(e);
-		}
-		
-		public String toString() {
-			return noun + " : " + adjs.toString(); 
-		}
-	}
-
-	static class ADJSet {
-		Set<String> adjs = new HashSet<String>();
-
-		public ADJSet() {
-		}
-
-		public ADJSet(String[] adjs) {
-			addAll(adjs);
-		}
-		
-		public void addAll(String[] adjs) {
-			for (String adj: adjs) {
-				this.adjs.add(adj.trim());
-			}
-		}
-
-		public void add(String e) {
-			adjs.add(e);
-		}
-
-		public boolean contains(String e) {
-			return adjs.contains(e);
-		}
-		
-		public String toString() {
-			return adjs.toString();
-		}
-	}
-
-	static class Sentence {
-		Integer reviewId;
-		Integer sentenceId;
-		ADJSet adjs = new ADJSet();
-		Set<NP>	nps = new HashSet<NP>();
-
-		public Sentence(int reviewId, int sentenceId) {
-			this.reviewId = reviewId;
-			this.sentenceId = sentenceId;
-		}
-		
-		public void addAdjs(String[] adjs) {
-			this.adjs.addAll(adjs);
-		}
-
-		public void addNP(NP np) {
-			nps.add(np);
-		}
-
-		public Integer getReviewId() {
-			return reviewId;
-		}
-		
-		public Integer getSentenceId() {
-			return sentenceId;
-		}
-		
-		/**
-		 * We return boolean value for simplicity currently.
-		 * @param noun
-		 * @param adj
-		 * @return
-		 */
-		public boolean calculateScore(String noun, String adj) {
-			boolean adjContain = false;
-			boolean nounContain = false;
-
-			for (NP np: nps) {
-				if (np.containsNoun(noun)) {
-					nounContain = true;
-					if (np.containsAdj(adj)) {
-						adjContain = true;
-					}
-				}
-			}
-
-			if (nounContain) {
-				if (adjs.contains(adj)) {
-					adjContain = true;
-				}
-			}
-
-			return adjContain && nounContain;
-		}
-		
-		public String getSentenceText() {
-			return QueryUtil.lookupReview(reviewId);
-		}
-
-		public String getReviewText() {
-			return QueryUtil.lookupSentence(reviewId, sentenceId);
-		}
-		
-		public String toString() {
-			return nps + " | " + adjs + " | " + reviewId + " | " + sentenceId;
-		}
-	}
-
+	
 	static List<List<String>> groups = new ArrayList<List<String>>();
+	
 	static List<String> nouns = new ArrayList<String>();
 	static List<Sentence> sents = new ArrayList<Sentence>();
 	
 	static String mapFileName = "map.txt";
-	static String synonymsFileName = "synonyms.txt";
+	static String synonymsFileName = "python/synnoms.txt";
+	static String reviewFolderPath = "sample/hotel_93396";
+	static Map<String, List<String>> reviews;
 	
 	static {
 		try {
+			reviews = FileUtil.readFolder(reviewFolderPath);
 			readSynonymsFromFile();
 			readMapFromFile();
 		}
@@ -167,9 +37,18 @@ public class QueryUtil {
 
 	/**
 	 * Synonyms File: manually built file with adjective synonyms.
+	 * @throws IOException 
 	 */
-	private static void readSynonymsFromFile() {
-
+	private static void readSynonymsFromFile() throws IOException {
+		List<String> lines = FileUtil.readByLines(synonymsFileName);
+		for (String line: lines) {
+			List<String> lst = new ArrayList<String>();
+			String[] tmp = line.split(",");
+			for (String adj: tmp) {
+				lst.add(adj.trim());
+			}
+			groups.add(lst);
+		}
 	}
 
 	/**
@@ -208,6 +87,7 @@ public class QueryUtil {
 
 	/**
 	 * currently no ranking
+	 * 
 	 * @param aspect
 	 * @param trait
 	 * @return
@@ -224,13 +104,19 @@ public class QueryUtil {
 	}
 	
 	public static String lookupReview(Integer reviewId) {
-		// TODO
-		return null;
+		String key = "review_" + reviewId;
+		List<String> lines = reviews.get(key);
+		
+		StringBuilder builder = new StringBuilder();
+		for (String line: lines) {
+			builder.append(line + ". ");
+		}
+		return builder.toString();
 	}
 	
 	public static String lookupSentence(Integer reviewId, Integer sentenceId) {
-		// TODO
-		return null;
+		String key = "review_" + reviewId;
+		return reviews.get(key).get(sentenceId - 1);
 	}
 	
 	/**
@@ -250,6 +136,8 @@ public class QueryUtil {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(QueryUtil.sents);
+		//System.out.println(QueryUtil.groups);
+		System.out.println(QueryUtil.lookupReview(10082389));
+		System.out.println(QueryUtil.lookupSentence(10082389, 3));
 	}
 }

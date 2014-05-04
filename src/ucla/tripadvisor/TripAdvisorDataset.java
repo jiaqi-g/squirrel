@@ -15,7 +15,7 @@ public class TripAdvisorDataset {
 	public static final String hotelPrefix = "hotel";
 	public static final String reviewPrefix = "review";
 	//public static final String regex = "\\.|!|,|\\-";
-	public static final String regex = "\\.";
+	public static final String regex = "\\.|!";
 	
 	public String reviewRoot = "reviews";
 	public String datasetPath = "docs/review.txt";
@@ -90,7 +90,7 @@ public class TripAdvisorDataset {
 	public static void main(String[] args) {
 		try {
 			//new TripAdvisorDataset().split();
-			new TripAdvisorDataset("docs/hotel_93396_review.txt", "sample", false).split();
+			new TripAdvisorDataset("docs/hotel_93396_review.txt", "sample", true).split();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -8,38 +8,55 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import ucla.tripadvisor.QueryUtil.Sentence;
-
 public class Query {
-
 	String aspect;
-	//String trait;
-	
+	String trait;
+
 	Map<String, Double> aspectRankings = new HashMap<String, Double>();
 	List<String> traitSynonyms = new ArrayList<String>();
-	
+
+	/**
+	 * We want to present to user, a list of performing Query1, Query2, ...
+	 * which is the expansion of the original query.
+	 * 
+	 * Query1: matched_review:sent, matched_review:sent
+	 * Query2: matched_review:sent
+	 * 
+	 * @author Victor
+	 */
 	class Record {
 		String aspect;
 		String trait;
-		
+		List<Sentence> sentences;
+
+		public Record(String aspect, String trait, List<Sentence> sentences) {
+			this.aspect = aspect;
+			this.trait = trait;
+			this.sentences = sentences;
+		}
+
+		public String toString() {
+			return aspect + "/" + trait + " " + sentences.toString();
+		}
 	}
-	
+
 	public Query(String aspect, String trait) {
 		this.aspect = aspect;
-		//this.trait = trait;
+		this.trait = trait;
+
 		traitSynonyms = QueryUtil.getSynonyms(trait);
 	}
-	
-	private List search() {
+
+	private List<Record> search() {
+		List<Record> res = new ArrayList<Record>();
+		//first we search the trait itself
+		res.add(new Record(aspect, trait, QueryUtil.getRankedResults(aspect, trait)));
 		for (String synonym: traitSynonyms) {
-			List<Sentence> lst = QueryUtil.getRankedResults(aspect, synonym);
-			for (Sentence sent: lst) {
-				sent.getReviewId();
-				sent.getSentenceId();
+			if (!synonym.equals(trait)) {
+				res.add(new Record(aspect, synonym, QueryUtil.getRankedResults(aspect, synonym)));
 			}
 		}
-		
-		return null;
+		return res;
 	}
 
 	public static void main(String[] args) {
@@ -54,8 +71,11 @@ public class Query {
 					continue;
 				} else {
 					Query query = new Query(tmp[0].trim(), tmp[1].trim());
-					System.out.println("Results: ");
-					System.out.println(query.search());
+					//System.out.println("Results: ");
+					List<Record> res = query.search();
+					for (int i=0; i<res.size(); i++) {
+						System.out.println("Query" + (i+1) + ": " + res.get(i));
+					}
 				}
 			}
 			catch(IOException e) {
