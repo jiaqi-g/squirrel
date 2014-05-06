@@ -25,11 +25,36 @@ public class WikiLSA implements Runnable {
 		data.put("word1", w1);
 		data.put("word2", w2);
 	}
+	
+	public void multiThreads() {
+		/*
+		//use multi-threading to calculate the similarity score from WikiLSA
+		Thread[] threads = new Thread[relatedWords.size()];
+		
+		for (int i = 0; i < threads.length; i++) {
+			threads[i] = new Thread(new WikiLSA(noun, relatedWords.get(i), resultSet));
+			threads[i].start();
+		}
+		
+		Thread.yield();
+		
+		for (int i = 0; i < threads.length; i++) {
+			try {
+				threads[i].join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}*/
+	}
 
 	/**
 	 * You can directly call this utility function in a single thread.
 	 */
 	public void retrieve() {
+		scoreMap.add("rice", 0.8);
+		scoreMap.add("food", 0.77);
+		
+		/*
 		try {
 			Document document = Jsoup.connect(url)
 					.data(data)
@@ -49,7 +74,7 @@ public class WikiLSA implements Runnable {
 		catch (Exception e) {
 			e.printStackTrace();
 			//return new Double(0);
-		}
+		}*/
 	}
 
 	@Override

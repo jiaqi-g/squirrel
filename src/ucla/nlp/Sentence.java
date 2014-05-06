@@ -7,8 +7,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import ucla.similarity.ResultSet;
-import ucla.similarity.WikiLSA;
 import ucla.tripadvisor.QueryUtil;
+import ucla.util.DbUtil;
 
 public class Sentence {
 	Integer reviewId;
@@ -37,8 +37,6 @@ public class Sentence {
 	 * For sentence, we return the similarity of its highest similarity NP.
 	 * Return null if no noun satisfies the adj
 	 * 
-	 * TODO: use thread pool to save memory
-	 * 
 	 * @param noun
 	 * @param adj
 	 * @return
@@ -56,25 +54,7 @@ public class Sentence {
 			return null;
 		}
 		
-		
-		//use multi-threading to calculate the similarity score from WikiLSA
-		ResultSet resultSet = new ResultSet(noun);
-		Thread[] threads = new Thread[relatedWords.size()];
-		
-		for (int i = 0; i < threads.length; i++) {
-			threads[i] = new Thread(new WikiLSA(noun, relatedWords.get(i), resultSet));
-			threads[i].start();
-		}
-		
-		Thread.yield();
-		
-		for (int i = 0; i < threads.length; i++) {
-			try {
-				threads[i].join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+		ResultSet resultSet = DbUtil.getSimilarityScoreFromDb(noun, relatedWords);
 		
 		return resultSet.getTopScoreEntry();
 	}

@@ -62,7 +62,7 @@ ids = [100062233, 100163950, 10023367, 100325560, 10071332,
 
 cnt = 0
 for filename in os.listdir(data_dir):
-	if (filename == 'review_%d' % ids[5]):
+	if (filename == 'review_%d' % ids[3]):
 		f = open('%s/%s' % (data_dir, filename))
 		raw = f.read()
 		print filename, ":", raw
