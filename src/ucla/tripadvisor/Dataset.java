@@ -48,12 +48,9 @@ public class Dataset {
 		try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
 			int cnt = 1;
 			while (scanner.hasNextLine()){
-				TripAdvisorReview review = JsonToJavaUtil.getTripAdvisorReviewBean(scanner.nextLine().trim().toLowerCase());
+				TripAdvisorReview review = JsonToJavaUtil.getTripAdvisorReviewBean(scanner.nextLine().trim());
 				review.replaceNonEnglishWords();
-				// TODO: can be made to speed up without testing
-				if (review.isNonEnglish) {
-					data.add(review);
-				}
+				data.add(review);
 				log("" + cnt++ + " " + (review.isNonEnglish? "true" : ""));
 			}
 		} catch (Exception e) {

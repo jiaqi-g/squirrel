@@ -82,14 +82,14 @@ public class FileUtil {
 	}
 
 	public static File deleteAndCreateNewFile(String fileName) throws IOException {
-		File reviewFile = new File(fileName);
-		if (reviewFile.exists()) {
-			reviewFile.delete();
+		File f = new File(fileName);
+		if (f.exists()) {
+			f.delete();
 			log(fileName + " deleted");  
 		}
-		reviewFile.createNewFile();
-		log(fileName + " deleted");  
-		return reviewFile;
+		f.createNewFile();
+		log(fileName + " created");
+		return f;
 	}
 
 	/**
@@ -100,8 +100,11 @@ public class FileUtil {
 	 */
 	public static File createFile(String filename) throws IOException  {
 		String[] prefixs = filename.split("/");
+		String s = "";
 		for (int i=0; i<prefixs.length-1; i++) {
-			createFolder(prefixs[i]);
+			s += prefixs[i];
+			createFolder(s);
+			s += "/";
 		}
 		return deleteAndCreateNewFile(filename);
 	}
