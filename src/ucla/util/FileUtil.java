@@ -21,6 +21,10 @@ public class FileUtil {
 	private final String fEncoding;
 	//private final String FIXED_TEXT = "But soft! what code in yonder program breaks?";
 
+	public static void log(String s) {
+		System.out.println("[FILE] " + s);
+	}
+	
 	/**
 	 * a simple wrapping method for scanner
 	 * we have trimmed every line
@@ -29,7 +33,7 @@ public class FileUtil {
 	 * @throws IOException 
 	 */
 	public static List<String> readByLines(String filename) throws IOException {
-		System.out.println("Read: " + filename);
+		log("read: " + filename);
 		List<String> lst = new ArrayList<String>();
 		Path path = Paths.get(filename);
 
@@ -68,11 +72,11 @@ public class FileUtil {
 		File theDir = new File(folderName);
 		// if the directory does not exist, create it
 		if (!theDir.exists()) {
-			System.out.println("creating directory: " + folderName);
+			log("creating directory: " + folderName);
 			boolean result = theDir.mkdir();  
 
 			if(result) {    
-				System.out.println("DIR " + folderName + " created");  
+				log("DIR " + folderName + " created");  
 			}
 		}
 	}
@@ -81,11 +85,27 @@ public class FileUtil {
 		File reviewFile = new File(fileName);
 		if (reviewFile.exists()) {
 			reviewFile.delete();
+			log(fileName + " deleted");  
 		}
 		reviewFile.createNewFile();
+		log(fileName + " deleted");  
 		return reviewFile;
 	}
 
+	/**
+	 * Warning: it will create all folders along the filename path, and delete the original file
+	 * 
+	 * @param filename
+	 * @return
+	 */
+	public static File createFile(String filename) throws IOException  {
+		String[] prefixs = filename.split("/");
+		for (int i=0; i<prefixs.length-1; i++) {
+			createFolder(prefixs[i]);
+		}
+		return deleteAndCreateNewFile(filename);
+	}
+	
 	/**
 	 * a simple wrapping method for write to file and close it
 	 * 
@@ -153,10 +173,6 @@ public class FileUtil {
 			scanner.close();
 		}
 		log("Text read in: " + text);
-	}
-
-	private static void log(String aMessage){
-		System.out.println(aMessage);
 	}
 
 	/** Requires two arguments - the file name, and the encoding to use.  */

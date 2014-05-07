@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 import ucla.engine.DiffBotBean;
-import ucla.tripadvisor.TripAdvisorReviewBean;
+import ucla.tripadvisor.TripAdvisorReview;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -16,8 +16,8 @@ public class JsonToJavaUtil {
 
 	static Gson gson = new GsonBuilder().create();
 	
-	public static TripAdvisorReviewBean getTripAdvisorReviewBean(String jsonObj) {
-		TripAdvisorReviewBean p = gson.fromJson(jsonObj, TripAdvisorReviewBean.class);
+	public static TripAdvisorReview getTripAdvisorReviewBean(String jsonObj) {
+		TripAdvisorReview p = gson.fromJson(jsonObj, TripAdvisorReview.class);
 		return p;
 	}
 	

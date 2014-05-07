@@ -1,6 +1,6 @@
 package ucla.tripadvisor;
 
-public class TripAdvisorReviewBean {
+public class TripAdvisorReview {
 	private String title;
 	private String text;
 	//private String author;
@@ -8,8 +8,28 @@ public class TripAdvisorReviewBean {
 	private Integer offering_id;
 	private Long id;
 	
+	public boolean isNonEnglish = false;
+	
 	public String getText() {
 		return text;
+	}
+	
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	public void replaceNonEnglishWords() {
+		String old = text;
+		text = text.replaceAll("[^\\x00-\\x7F]", "");
+		if (old.length() != text.length()) {
+			isNonEnglish = true;
+		}
+	}
+	
+	
+	public void replaceSpecialChars() {
+		// TODO: replace 0-9, -, $, #, 1.2.3.
+		
 	}
 	
 	public Long getId() {
