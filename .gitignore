@@ -3,5 +3,6 @@ bin/*
 lucene_index/*
 reviews/*
 words/*
-sample/*
+sample/hotel_93396_all/*
+sample/hotel_93396_keywords/*
 docs/review.txt

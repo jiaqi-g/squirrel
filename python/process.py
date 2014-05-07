@@ -21,6 +21,9 @@ def extract(sents):
 	cp = nltk.RegexpParser(grammar)
 	for sent in sents:
 		tree = cp.parse(sent)
+		print "Tree: "
+		print tree
+		print "---"
 		for subtree in tree.subtrees():
 			if subtree.node == 'NP':
 				#print subtree
@@ -44,11 +47,12 @@ def extract(sents):
 #sometimes you have to find adjs in nouns, since adjs will be classified into nouns sometimes
 
 grammar = r"""
-	NP: {<JJ.*>*<NN.*>+<VBG>?}
+	NP: {<JJ.*>*<NN.*>+<VBG>?} #  all nouns and adjectives in NP are related
 	AD: {<RB.*>*}
 	AD: {<RB.*>?<JJ.*>*}
 	DOT: {<,>}
 """
+
 
 #path_prefix = '/home/victor/workspace_2/crawler/sample'
 data_dir = '../sample/hotel_93396'
