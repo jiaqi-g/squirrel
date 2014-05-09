@@ -1,7 +1,5 @@
 package ucla.http;
 
-import org.htmlcleaner.HtmlCleaner;
-
 public class PageHelper {
 	private static String makePage(String title, String body) {
 		StringBuilder res = new StringBuilder();

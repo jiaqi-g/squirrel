@@ -10,8 +10,8 @@ import java.util.Map;
 import java.util.Set;
 
 import sun.misc.IOUtils;
-import ucla.engine.AbstractEngine;
-import ucla.engine.EngineInfo;
+import ucla.crawlerEngine.AbstractEngine;
+import ucla.crawlerEngine.EngineInfo;
 
 import com.sun.corba.se.impl.javax.rmi.CORBA.Util;
 import com.sun.net.httpserver.*;
@@ -38,7 +38,7 @@ public class Server {
 			Map<String, Object> params = (Map<String, Object>) t.getAttribute("parameters");
 			String query = (String) params.get("content");
 			
-			Map<EngineInfo, List<String>> engineMap = ucla.engine.EngineUtil.getEngineURLMap(new ucla.google.Search().getResultUrls(query));
+			Map<EngineInfo, List<String>> engineMap = ucla.crawlerEngine.EngineUtil.getEngineURLMap(new ucla.crawlerEngine.GoogleCrawler().getResultUrls(query));
 			Set<EngineInfo> engines = engineMap.keySet();
 			
 			StringBuilder res = new StringBuilder();
