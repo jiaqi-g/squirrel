@@ -51,10 +51,6 @@ public class WikiLSA implements Runnable {
 	 * You can directly call this utility function in a single thread.
 	 */
 	public void retrieve() {
-		scoreMap.add("rice", 0.8);
-		scoreMap.add("food", 0.77);
-		
-		/*
 		try {
 			Document document = Jsoup.connect(url)
 					.data(data)
@@ -65,7 +61,7 @@ public class WikiLSA implements Runnable {
 			Element elem = document.select(cssQuery).get(3);
 			Double score = Double.parseDouble(elem.html().split(":")[1].trim());
 			scoreMap.add(data.get("word2"), score);
-			//System.out.println(data.get("word1") + " " + data.get("word2") + " " + score);
+			System.out.println(data.get("word1") + " " + data.get("word2") + " " + score);
 			//return score;
 		}
 		catch (NumberFormatException e) {
@@ -74,7 +70,7 @@ public class WikiLSA implements Runnable {
 		catch (Exception e) {
 			e.printStackTrace();
 			//return new Double(0);
-		}*/
+		}
 	}
 
 	@Override

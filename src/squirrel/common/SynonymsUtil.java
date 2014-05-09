@@ -6,6 +6,11 @@ import java.util.List;
 
 import common.FileSystem;
 
+/**
+ * Utility class for predefined adjectives synonyms
+ * @author victor
+ *
+ */
 public class SynonymsUtil {
 	
 	static String synonymsFileName = "python/synnoms.txt";

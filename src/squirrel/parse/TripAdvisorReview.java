@@ -1,11 +1,12 @@
 package squirrel.parse;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import squirrel.nlp.Sentence;
 
 /**
- * TripAdvisor Review Data Structure, this structure is used 
+ * TripAdvisor Review Data Structure, this structure is used for Gson access.
  * 
  * @author victor
  *
@@ -18,16 +19,11 @@ public class TripAdvisorReview {
 	private Integer offering_id;
 	private Long id;
 	
-	private List<Sentence> sentences;
+	private List<Sentence> sentences = new ArrayList<Sentence>();
 	public boolean isNonEnglish = false;
 	
-	public String getText() {
-		return text;
-	}
-	
-	public void setText(String text) {
-		this.text = text;
-	}
+	//public static final String regex = "\\.|!|,|\\-";
+	public static final String sentenceSpliters = "\\.|!";
 	
 	public void replaceNonEnglishWords() {
 		String old = text;
@@ -40,7 +36,13 @@ public class TripAdvisorReview {
 	}
 	
 	public void transformTextToSentences() {
-		// TODO
+		String[] tokens = text.split(sentenceSpliters);
+		int sentenceId = 1;
+		for (String token: tokens) {
+			if (token.length() > 5) {
+				sentences.add(new Sentence(this, sentenceId++, token));
+			}
+		}
 	}
 	
 	public Sentence getSentence(Integer sentenceId) {
@@ -51,6 +53,15 @@ public class TripAdvisorReview {
 		return sentences;
 	}
 	
+	public String getFormattedSentences() {
+		StringBuilder sb = new StringBuilder();
+		for (Sentence sentence: sentences) {
+			sb.append(sentence);
+			sb.append("\n");
+		}
+		return sb.toString();
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -59,6 +70,10 @@ public class TripAdvisorReview {
 		return offering_id;
 	}
 	
+	public String getText() {
+		return text;
+	}
+
 	// Getters and setters are not required for this example.
 	// GSON sets the fields directly using reflection.
 	@Override

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import squirrel.common.DumpTextUtil;
 import squirrel.common.ReviewUtil;
 import squirrel.common.SynonymsUtil;
 import squirrel.parse.Query;
@@ -55,6 +56,9 @@ public class Driver {
 	}
 	
 	public static void main(String[] args) {
-		new Driver().start();
+		//Driver driver = new Driver();
+		//driver.start();
+		//DumpTextUtil.dumpReviewsToFile("reviews/first_1000_text.txt");
+		DumpTextUtil.dumpReviewsToFolder("reviews");
 	}
 }

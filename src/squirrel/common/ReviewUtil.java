@@ -14,29 +14,25 @@ import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
 
 /**
- * This utility helps load reviews into memory for later manipulation.
+ * Utility class for loading reviews into memory for later manipulation.
  * 
  * @author victor
  *
  */
 public class ReviewUtil {
 	
-	private static String reviewFolderPath = "sample/hotel_93396";
+	//private static String reviewFolderPath = "sample/hotel_93396";
 	private static String reviewFilePath = "docs/review_first_1000.txt";
 	private static String nounAdjsFilePath = "map.txt";
 	private static ReviewList reviews;
 	
 	static {
 		try {
-			load();
+			loadReviewFiles();
+			loadNounAdjsPairs();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	private static void load() throws Exception {
-		loadReviewFiles();
-		loadNounAdjsPairs();
 	}
 	
 	private static void loadReviewFiles() throws Exception {
@@ -57,8 +53,6 @@ public class ReviewUtil {
 	}
 	
 	/**
-	 * read noun to adjs map file
-	 * 
 	 * Format: reviewId; sentenceId; noun|adj1,adj2,adj3; noun|adj1,adj2,adj3; noun|adj1,adj2,adj3; ...
 	 * 
 	 * TODO: for more complex text inputs, using JSON instead
@@ -85,13 +79,6 @@ public class ReviewUtil {
 		}
 	}
 	
-	public static TripAdvisorReview getReviewFromDb(Long reviewId) {
-		// TODO
-		TripAdvisorReview review = null;
-		return review;
-	}
-	
-	
 	/**
 	 * This method will refer to the  similarity map in DB or on Disk Files
 	 * 
@@ -114,6 +101,6 @@ public class ReviewUtil {
 	}
 	
 	private static void log(String string) {
-		System.out.println("[File Review] " + string);
+		System.out.println("[Review] " + string);
 	}
 }

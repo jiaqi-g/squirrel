@@ -3,7 +3,6 @@ package squirrel.nlp;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map.Entry;
 import java.util.Set;
 
 import squirrel.common.ReviewUtil;
@@ -57,7 +56,8 @@ public class Sentence {
 	}
 	
 	public String toString() {
-		return review.getId() + ": " + sentenceId;
+		//return review.getId() + ":" + sentenceId;
+		return sentenceId + ": " + sentenceText;
 	}
 
 }

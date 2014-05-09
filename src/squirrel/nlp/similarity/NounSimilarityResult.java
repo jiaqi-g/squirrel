@@ -7,9 +7,8 @@ import java.util.TreeMap;
 
 import common.MapValueComparator;
 
-
 /**
- * This result set provides thread-safe access of a noun and a list of its similar nouns.
+ * This class provides thread-safe access of a noun and a list of its similar nouns.
  * 
  * @author victor
  *

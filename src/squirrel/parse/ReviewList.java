@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-
-
 /**
  * Use Hashmap for default implementation, could be modified to list + binary search, since append only
  * 

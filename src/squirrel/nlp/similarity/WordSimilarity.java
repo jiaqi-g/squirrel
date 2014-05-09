@@ -1,12 +1,10 @@
 package squirrel.nlp.similarity;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
 import common.FileSystem;
-
 
 class Match implements Runnable {
 	Integer partId;
