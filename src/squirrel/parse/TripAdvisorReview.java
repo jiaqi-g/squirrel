@@ -74,6 +74,10 @@ public class TripAdvisorReview {
 		return text;
 	}
 
+	public String getTitle() {
+		return title;
+	}
+	
 	// Getters and setters are not required for this example.
 	// GSON sets the fields directly using reflection.
 	@Override

@@ -15,5 +15,7 @@
 	<classpathentry kind="lib" path="lib/lucene-analyzers-common-4.8.0.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-queryparser-4.8.0.jar"/>
 	<classpathentry kind="lib" path="lib/sml-toolkit-0.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="lib/sqljdbc4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
