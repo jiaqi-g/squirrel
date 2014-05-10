@@ -1,13 +1,13 @@
 package squirrel.parse;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.Map.Entry;
 
-import common.MapValueComparator;
+import common.Database;
 
 import squirrel.common.ReviewUtil;
 import squirrel.common.SynonymsUtil;
@@ -20,7 +20,8 @@ public class Query {
 
 	Map<String, Double> aspectRankings = new HashMap<String, Double>();
 	List<String> traitSynonyms = new ArrayList<String>();
-	
+	boolean isDbAvailable = false;
+
 	public Query(String aspect, String trait) {
 		this.aspect = aspect;
 		this.trait = trait;
@@ -32,48 +33,48 @@ public class Query {
 		List<Record> res = new ArrayList<Record>();
 		//first we search the trait itself
 		res.add(new Record(aspect, trait, getRankedResults(aspect, trait)));
-		
+
 		for (String synonym: traitSynonyms) {
 			if (!synonym.equals(trait)) {
 				res.add(new Record(aspect, synonym, getRankedResults(aspect, synonym)));
 			}
 		}
-		
+
 		return res;
 	}
-	
+
 	/**
-	 * currently return similarity > 0.50 by wikiLSA model, sorted results
+	 * currently return similarity > 0.50 by wikiLSA model, ranked results
 	 * TODO
 	 * 
 	 * @param aspect
 	 * @param traitSynonym
 	 * @return
 	 */
-	private Map<Sentence, Double> getRankedResults(String aspect, String traitSynonym) {
-		Map<Sentence, Double> tmp = new HashMap<Sentence, Double>();
-		
-		// For every sentence, we select out the top score matched entry to represent this sentence's score.
-		for (TripAdvisorReview review: ReviewUtil.getReviews()) {
-			for (Sentence sent: review.getSentences()) {
-				NounSimilarityResult similarityResult = sent.getNounSimilarityResult(aspect, traitSynonym);
-				Entry<String, Double> topScoreEntry = similarityResult.getTopScoreEntry();
-				
-				if (topScoreEntry != null && topScoreEntry.getValue() < 0.5) {
-					topScoreEntry = null;
-				}
-				
-				if (topScoreEntry != null) {
-					tmp.put(sent, topScoreEntry.getValue());
+	private List<SentenceScore> getRankedResults(String aspect, String traitSynonym) {
+		if (isDbAvailable) {
+			return Database.getRankedSentenceScores(aspect, traitSynonym);
+		}
+		else {
+			List<SentenceScore> res = new ArrayList<SentenceScore>();
+			// For every sentence, we select out the top score matched entry to represent this sentence's score.
+			for (TripAdvisorReview review: ReviewUtil.getReviews()) {
+				for (Sentence sent: review.getSentences()) {
+					NounSimilarityResult similarityResult = sent.getNounSimilarityResult(aspect, traitSynonym);
+					Entry<String, Double> topScoreEntry = similarityResult.getTopScoreEntry();
+
+					if (topScoreEntry != null && topScoreEntry.getValue() < 0.5) {
+						topScoreEntry = null;
+					}
+
+					if (topScoreEntry != null) {
+						res.add(new SentenceScore(new BasicSentence(sent.getReviewId(), sent.getSentenceId(), sent.getSentenceText()),
+								topScoreEntry.getValue()));
+					}
 				}
 			}
+			Collections.sort(res);
+			return res;
 		}
-		
-		//sort map
-		MapValueComparator<Sentence> comp = new MapValueComparator<Sentence>(tmp);
-		Map<Sentence, Double> res = new TreeMap<Sentence, Double>(comp);
-		res.putAll(tmp);
-		
-		return res;
 	}
 }

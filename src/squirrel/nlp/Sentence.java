@@ -5,37 +5,50 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import common.Database;
+
 import squirrel.common.ReviewUtil;
 import squirrel.nlp.similarity.NounSimilarityResult;
+import squirrel.parse.BasicSentence;
 import squirrel.parse.TripAdvisorReview;
 
-public class Sentence {
+/**
+ * Extends Basic Sentence to support NLP features
+ * @author victor
+ *
+ */
+public class Sentence extends BasicSentence {
 	TripAdvisorReview review;
-	Integer sentenceId; /* sentenceId starts from 0 in every review */
-	String sentenceText;
-
 	Set<NP>	nps = new HashSet<NP>();
 	
+	/**
+	 * construct from memory
+	 * @param reviewId
+	 * @param sentenceId
+	 * @param sentenceText
+	 */
 	public Sentence(TripAdvisorReview review, int sentenceId, String sentenceText) {
+		super(review.getId(), sentenceId, sentenceText);
 		this.review = review;
-		this.sentenceId = sentenceId;
-		this.sentenceText = sentenceText;
 	}
-
+	
+	/**
+	 * construct from db
+	 * @param reviewId
+	 * @param sentenceId
+	 * @param sentenceText
+	 */
+	public Sentence(Long reviewId, int sentenceId, String sentenceText) {
+		super(reviewId, sentenceId, sentenceText);
+		this.review = Database.getReview(reviewId);
+	}
+	
 	public void addNP(NP np) {
 		nps.add(np);
 	}
 
 	public TripAdvisorReview getReview() {
 		return review;
-	}
-	
-	public Integer getSentenceId() {
-		return sentenceId;
-	}
-	
-	public String getSentenceText() {
-		return sentenceText;
 	}
 	
 	public String getNPSetString() {
@@ -56,9 +69,20 @@ public class Sentence {
 		return ReviewUtil.getSimilarityBetweenNouns(noun, relatedWords);
 	}
 	
-	public String toString() {
-		//return review.getId() + ":" + sentenceId;
-		return sentenceId + ": " + sentenceText;
+	/*
+	@Override
+	public int hashCode() {
+		return (review.getId() + ":" + sentenceId).hashCode();
+	}*/
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Sentence)) {
+			return false;
+		}
+		
+		Sentence sent = (Sentence) obj;
+		return sent.getReview().getId().equals(reviewId) && sent.getSentenceId().equals(sentenceId);
 	}
 
 }

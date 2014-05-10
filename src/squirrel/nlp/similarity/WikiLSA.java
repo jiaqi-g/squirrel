@@ -7,6 +7,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
+import common.Log;
+
 public class WikiLSA implements Runnable {
 
 	static String url = "http://deeptutor2.memphis.edu/WikiLSA/getSimilarity";
@@ -21,6 +23,10 @@ public class WikiLSA implements Runnable {
 	public WikiLSA(String w1, String w2, NounSimilarityResult scoreMap) {
 		setWords(w1, w2);
 		this.scoreMap = scoreMap;
+	}
+	
+	private static void log(String string) {
+		Log.log("[WIKILSA]", string);
 	}
 	
 	public void setWords(String w1, String w2) {
@@ -63,7 +69,7 @@ public class WikiLSA implements Runnable {
 			Element elem = document.select(cssQuery).get(3);
 			Double score = Double.parseDouble(elem.html().split(":")[1].trim());
 			scoreMap.add(data.get("word2"), score);
-			System.out.println(data.get("word1") + " " + data.get("word2") + " " + score);
+			log(data.get("word1") + " " + data.get("word2") + " " + score);
 			//return score;
 		}
 		catch (NumberFormatException e) {

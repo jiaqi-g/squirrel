@@ -1,11 +1,7 @@
 package squirrel.nlp.similarity;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Map.Entry;
-import java.util.TreeMap;
-
-import common.MapValueComparator;
 
 /**
  * This class provides thread-safe access of a noun and a list of its similar nouns.
@@ -23,17 +19,6 @@ public class NounSimilarityResult {
 	
 	public synchronized void add(String word, Double score) {
 		map.put(word, score);
-	}
-	
-	/**
-	 * Use red-black tree to sort map
-	 * @return
-	 */
-	public synchronized Map<String, Double> sort() {
-		MapValueComparator<String> comp = new MapValueComparator<String>(map);
-		TreeMap<String, Double> treeMap = new TreeMap<String, Double>(comp);
-		treeMap.putAll(map);
-		return treeMap;
 	}
 	
 	public Entry<String, Double> getTopScoreEntry() {
@@ -60,4 +45,14 @@ public class NounSimilarityResult {
 		rs.add("bad", 0.2);
 		System.out.println(rs.getTopScoreEntry());
 	}
+	
+	/*
+	 * Use red-black tree to sort map
+	 *
+	public synchronized Map<String, Double> sort() {
+		MapValueComparator<String> comp = new MapValueComparator<String>(map);
+		TreeMap<String, Double> treeMap = new TreeMap<String, Double>(comp);
+		treeMap.putAll(map);
+		return treeMap;
+	}*/
 }

@@ -1,7 +1,6 @@
 package squirrel.parse;
 
-import java.util.Map;
-import squirrel.nlp.Sentence;
+import java.util.List;
 
 /**
  * We want to present to user, a list of Records by performing Query1, Query2, ...
@@ -15,22 +14,35 @@ import squirrel.nlp.Sentence;
 public class Record {
 	String aspect;
 	String trait;
-	Map<Sentence, Double> rankedSentences;
+	List<SentenceScore> rankedSentences;
 
-	public Record(String aspect, String trait, Map<Sentence, Double> rankedSentences) {
+	public Record(String aspect, String trait, List<SentenceScore> rankedSentences) {
 		this.aspect = aspect;
 		this.trait = trait;
 		this.rankedSentences = rankedSentences;
 	}
 	
+	/**
+	 * Record's output
+	 * @return
+	 */
 	public String getPrettyText() {
 		StringBuilder sb = new StringBuilder();
 		int rank = 1;
-		for (Sentence sentence: rankedSentences.keySet()) {
-			sb.append("Rank " + rank++ + ":\n");
-			sb.append("Matched: ");
-			sb.append(sentence.getSentenceText());
-			sb.append("Review: " + sentence.getReview().getId());
+		//System.out.println("@@@" + rankedSentences);
+		//System.out.println("@@@" + rankedSentences.values());
+		//for (Sentence sentence: rankedSentences.keySet()) {
+			//System.out.println("@@@" + rankedSentences.keySet().contains(sentence));
+		//}
+		
+		for (SentenceScore sentenceScore: rankedSentences) {
+			sb.append("Rank " + rank++);
+			sb.append(" (" + sentenceScore.getSentenceFullId() + ") ");
+			sb.append(sentenceScore.getScore() + "");
+			sb.append("\n");
+			//sb.append("Matched: ");
+			sb.append(sentenceScore.getBasicSentence().getSentenceText());
+			sb.append("\n");
 		}
 		if (rank == 1) {
 			sb.append("No results!");

@@ -14,8 +14,8 @@ import java.util.Scanner;
  */
 public class FileSystem {
 	
-	public static void log(String s) {
-		System.out.println("[FILE] " + s);
+	private static void log(String string) {
+		Log.log("[FILE]", string);
 	}
 	
 	public static File getFile(String filename) {

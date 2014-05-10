@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import common.FileSystem;
 import common.JsonToJavaUtil;
+import common.Log;
 
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
@@ -33,6 +34,10 @@ public class ReviewUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	private static void log(String string) {
+		Log.log("[REVIEW]", string);
 	}
 	
 	private static void loadReviewFiles() throws Exception {
@@ -101,7 +106,4 @@ public class ReviewUtil {
 		return reviews;
 	}
 	
-	private static void log(String string) {
-		System.out.println("[Review] " + string);
-	}
 }
