@@ -6,5 +6,8 @@ package common;
  *
  */
 public class Database {
-
+	public Integer getHotelId(String hotelName) {
+		//TODO
+		return 0;
+	}
 }

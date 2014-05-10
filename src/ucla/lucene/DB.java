@@ -19,7 +19,7 @@ public class DB {
 			String url = "jdbc:mysql://127.0.0.1:3306/test";
 			
 			String user = "root";         
-			String password = "1234";     
+			String password = "1234"; 
 			try {             
 				Class.forName(driver);
 				conn = DriverManager.getConnection(url,user, password);           
@@ -79,7 +79,7 @@ public class DB {
 		StringBuffer buf = new StringBuffer();        
         ResultSet rs;     
         String VarValue;
-    	buf.append(" select count(*) as cnt from systemvariables ");
+      	buf.append(" select count(*) as cnt from systemvariables ");
        
         try {
             synchronized (DB.class) {
