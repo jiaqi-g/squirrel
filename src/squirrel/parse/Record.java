@@ -45,7 +45,7 @@ public class Record {
 			sb.append("\n");
 		}
 		if (rank == 1) {
-			sb.append("No results!");
+			sb.append("No results!\n");
 		}
 		return sb.toString();
 	}

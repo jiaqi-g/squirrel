@@ -1,7 +1,7 @@
 147643103; 0; food|good,delicious,best,ok; chicken|bad,ugly,tedious
 147643103; 1; noodles|good,delicious,best,ok; cake|bad,ugly,tedious
 147643103; 2; room|good,nice,excellent; river|tedious,smelly
-147643103; 3; bedroom|good,nice,excellent; house|tedious,smelly
+147643103; 3; bedroom|good,nice; house|tedious,smelly
 147643103; 4; kitchen|good,nice,excellent; smell|tedious,bad
 147643103; 5; sheep|delicious
 147643103; 6; rubbish|wasteful,unhealthy
