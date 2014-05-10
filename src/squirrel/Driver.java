@@ -56,9 +56,9 @@ public class Driver {
 	}
 	
 	public static void main(String[] args) {
-		//Driver driver = new Driver();
-		//driver.start();
+		Driver driver = new Driver();
+		driver.start();
 		//DumpTextUtil.dumpReviewsToFile("reviews/first_1000_text.txt");
-		DumpTextUtil.dumpReviewsToFolder("reviews");
+		//DumpTextUtil.dumpReviewsToFolder("reviews");
 	}
 }

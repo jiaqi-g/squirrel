@@ -11,7 +11,7 @@ import squirrel.parse.TripAdvisorReview;
 
 public class Sentence {
 	TripAdvisorReview review;
-	Integer sentenceId;
+	Integer sentenceId; /* sentenceId starts from 0 in every review */
 	String sentenceText;
 
 	Set<NP>	nps = new HashSet<NP>();

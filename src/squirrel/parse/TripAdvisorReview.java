@@ -35,12 +35,15 @@ public class TripAdvisorReview {
 		}
 	}
 	
+	/**
+	 * sentenceId starts from 0
+	 */
 	public void transformTextToSentences() {
 		String[] tokens = text.split(sentenceSpliters);
-		int sentenceId = 1;
+		int sentenceId = 0;
 		for (String token: tokens) {
 			if (token.length() > 5) {
-				sentences.add(new Sentence(this, sentenceId++, token));
+				sentences.add(new Sentence(this, sentenceId++, token.trim() + "."));
 			}
 		}
 	}

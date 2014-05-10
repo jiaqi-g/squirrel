@@ -53,13 +53,10 @@ public class DumpTextUtil {
 			FileSystem.createFolder(rootPath);
 			
 			for (TripAdvisorReview review: ReviewUtil.getReviews()) {
-				Integer hotelId = review.getOfferingId();
-				Long reviewId = review.getId();
-
-				String hotelFolderPath = rootPath + "/hotel_" + hotelId;
+				String hotelFolderPath = rootPath + "/hotel_" + review.getOfferingId();
 				FileSystem.createFolder(hotelFolderPath);
 				
-				String filePath = hotelFolderPath + "/review_" + reviewId;
+				String filePath = hotelFolderPath + "/review_" + review.getId();
 				File reviewFile = FileSystem.createNewFile(filePath);
 				
 				FileSystem.writeFile(reviewFile, review.getFormattedSentences());

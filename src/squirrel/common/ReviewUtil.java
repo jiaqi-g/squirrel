@@ -22,9 +22,9 @@ import squirrel.parse.TripAdvisorReview;
 public class ReviewUtil {
 	
 	//private static String reviewFolderPath = "sample/hotel_93396";
-	private static String reviewFilePath = "docs/review_first_1000.txt";
-	private static String nounAdjsFilePath = "map.txt";
-	private static ReviewList reviews;
+	private static String reviewFilePath = "docs/review_sample";
+	private static String nounAdjsFilePath = "nounAdjs.txt";
+	private static ReviewList reviews = new ReviewList();
 	
 	static {
 		try {
