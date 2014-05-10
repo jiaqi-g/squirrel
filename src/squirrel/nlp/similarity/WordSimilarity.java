@@ -27,9 +27,11 @@ class Match implements Runnable {
 			for (String word: part) {
 				//File f = FileSystem.getFile(folderPath + "/" + word + ".txt");
 				//FileSystem.createNewFile(fileName);
-				WikiLSA lsa = new WikiLSA();
+				NounSimilarityResult similarityResult = new NounSimilarityResult(word);
+				WikiLSA lsa = new WikiLSA(similarityResult);
 				for (String word2: frequentWords) {
 					lsa.setWords(word, word2);
+					lsa.retrieveScoreFromWeb();
 					//Double score = lsa.retrieve();
 					//f.write(word2 + "," + score + "\n");
 				}

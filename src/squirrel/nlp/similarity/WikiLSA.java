@@ -13,7 +13,9 @@ public class WikiLSA implements Runnable {
 	Map<String, String> data = new HashMap<String, String>();
 	NounSimilarityResult scoreMap;
 	
-	public WikiLSA() {
+	public WikiLSA(NounSimilarityResult scoreMap) {
+		//set words late for object reuse
+		this.scoreMap = scoreMap;
 	}
 	
 	public WikiLSA(String w1, String w2, NounSimilarityResult scoreMap) {
@@ -50,7 +52,7 @@ public class WikiLSA implements Runnable {
 	/**
 	 * You can directly call this utility function in a single thread.
 	 */
-	public void retrieve() {
+	public void retrieveScoreFromWeb() {
 		try {
 			Document document = Jsoup.connect(url)
 					.data(data)
@@ -65,7 +67,7 @@ public class WikiLSA implements Runnable {
 			//return score;
 		}
 		catch (NumberFormatException e) {
-			//do nothing
+			//null result, do nothing
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -75,7 +77,7 @@ public class WikiLSA implements Runnable {
 
 	@Override
 	public void run() {
-		retrieve();
+		retrieveScoreFromWeb();
 	}
 
 	public static void main(String[] args) throws Exception {

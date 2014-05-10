@@ -8,8 +8,10 @@ import java.util.List;
 import squirrel.common.DumpTextUtil;
 import squirrel.common.ReviewUtil;
 import squirrel.common.SynonymsUtil;
+import squirrel.nlp.Sentence;
 import squirrel.parse.Query;
 import squirrel.parse.Record;
+import squirrel.parse.TripAdvisorReview;
 
 /**
  * The Driver of the system.
@@ -44,7 +46,7 @@ public class Driver {
 					List<Record> res = query.process();
 					for (int i = 0; i < res.size(); i++) {
 						Record record = res.get(i);
-						System.out.println("Query" + (i+1) + ": " + record.getAspect() + "/" + record.getTrait());
+						System.out.println("--- Query" + (i+1) + ": " + record.getAspect() + "/" + record.getTrait() + " --- ");
 						System.out.println(record.getPrettyText());
 					}
 				}
@@ -60,5 +62,11 @@ public class Driver {
 		driver.start();
 		//DumpTextUtil.dumpReviewsToFile("reviews/first_1000_text.txt");
 		//DumpTextUtil.dumpReviewsToFolder("reviews");
+		/*
+		for (TripAdvisorReview review: ReviewUtil.getReviews()) {
+			for (Sentence sentence: review.getSentences()) {
+				System.out.println(sentence.getNPSetString());
+			}
+		}*/
 	}
 }

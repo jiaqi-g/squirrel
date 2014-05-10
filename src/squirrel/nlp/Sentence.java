@@ -38,6 +38,10 @@ public class Sentence {
 		return sentenceText;
 	}
 	
+	public String getNPSetString() {
+		return nps.toString();
+	}
+	
 	public NounSimilarityResult getNounSimilarityResult(String noun, String adj) {
 		//select out related nouns
 		List<String> relatedWords = new ArrayList<String>();
@@ -47,9 +51,6 @@ public class Sentence {
 				relatedWords.add(np.noun);
 				//new Thread(new WikiLSA(noun, np.noun));
 			}
-		}
-		if (relatedWords.size() == 0) {
-			return null;
 		}
 		
 		return ReviewUtil.getSimilarityBetweenNouns(noun, relatedWords);

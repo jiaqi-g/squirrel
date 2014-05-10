@@ -34,6 +34,6 @@ public class NP {
 	}
 	
 	public String toString() {
-		return noun + " : " + adjSet.toString(); 
+		return noun + ": " + adjSet.toString(); 
 	}
 }

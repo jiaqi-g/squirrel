@@ -10,6 +10,7 @@ import common.JsonToJavaUtil;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
 import squirrel.nlp.similarity.NounSimilarityResult;
+import squirrel.nlp.similarity.WikiLSA;
 import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
 
@@ -20,7 +21,6 @@ import squirrel.parse.TripAdvisorReview;
  *
  */
 public class ReviewUtil {
-	
 	//private static String reviewFolderPath = "sample/hotel_93396";
 	private static String reviewFilePath = "docs/review_sample";
 	private static String nounAdjsFilePath = "nounAdjs.txt";
@@ -71,8 +71,8 @@ public class ReviewUtil {
 			Sentence sent = reviews.get(reviewId).getSentence(sentenceId);
 			for (int i = 2; i < elems.length; i++) {
 				String[] nounAdjs = elems[i].split("\\|");
-				String noun = nounAdjs[0];
-				String adjListString = nounAdjs[1];
+				String noun = nounAdjs[0].trim();
+				String adjListString = nounAdjs[1].trim();
 				sent.addNP(new NP(noun, adjListString));
 			}
 			
@@ -80,7 +80,7 @@ public class ReviewUtil {
 	}
 	
 	/**
-	 * This method will refer to the  similarity map in DB or on Disk Files
+	 * This method will refer to the  similarity map in DB, Disk or WikiLSA website
 	 * 
 	 * @param noun
 	 * @param relatedWords
@@ -90,8 +90,9 @@ public class ReviewUtil {
 		NounSimilarityResult rs = new NounSimilarityResult(noun);
 		for (String word: relatedWords) {
 			// TODO: modify this to reflect actual score read from db.
-			Double score = noun.equals(word)? 1.0 : 0.0;
-			rs.add(word, score);	
+			WikiLSA lsa = new WikiLSA(rs);
+			lsa.setWords(noun, word);
+			lsa.retrieveScoreFromWeb();	
 		}
 		return rs;
 	}

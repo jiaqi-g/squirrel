@@ -32,6 +32,9 @@ public class Record {
 			sb.append(sentence.getSentenceText());
 			sb.append("Review: " + sentence.getReview().getId());
 		}
+		if (rank == 1) {
+			sb.append("No results!");
+		}
 		return sb.toString();
 	}
 
