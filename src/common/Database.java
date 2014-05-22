@@ -56,6 +56,12 @@ public class Database {
 		return new TripAdvisorReview();
 	}
 	
+	/**
+	 * core function
+	 * @param noun
+	 * @param adj
+	 * @return
+	 */
 	public static List<SentenceScore> getRankedSentenceScores(String noun, String adj) {
 		//TODO
 		return new ArrayList<SentenceScore>();

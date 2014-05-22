@@ -27,7 +27,7 @@ public class TripAdvisorReview {
 	
 	public void replaceNonEnglishWords() {
 		String old = text;
-		text = text.replaceAll("[^\\x00-\\x7F]|[\\-\\*\\&\\$\\#\\~0-9]", "");
+		text = text.replaceAll("[^\\x00-\\x7F]|[\\-\\*\\%\\&\\$\\#\\~0-9]", "");
 		//text = text.replaceAll("[\\x00-\\x7F]", "");
 		
 		if (old.length() != text.length()) {

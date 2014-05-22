@@ -2,8 +2,6 @@ package common;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 import squirrel.parse.TripAdvisorReview;
@@ -29,11 +27,15 @@ public class JsonToJavaUtil {
 	
 	public static void main(String[] args) throws IOException {
 		String aFileName = "docs/hotel_93396_review.txt";
-	    Path path = Paths.get(aFileName);
-	    try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
+		
+	    try {
+			Scanner scanner =  new Scanner(FileSystem.getFile(aFileName), StandardCharsets.UTF_8.name());
 	      while (scanner.hasNextLine()){
 	    	  System.out.println(getTripAdvisorReviewBean(scanner.nextLine()));
 	      }
+	    }
+	    catch (Exception e) {
+	    	e.printStackTrace();
 	    }
 	}
 }

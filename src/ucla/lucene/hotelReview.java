@@ -20,6 +20,7 @@ public class hotelReview {
 		TripAdvisorReview p = gson.fromJson(jsonObj, TripAdvisorReview.class);
 		return p;
 	}
+	
 	public void insertHotelReview() throws Exception {
 		String aFileName = "docs/hotel_93396_review.txt";
 		ArrayList<TripAdvisorReview> reviewList = new ArrayList<TripAdvisorReview>();

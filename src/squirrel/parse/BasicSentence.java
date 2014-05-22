@@ -27,6 +27,7 @@ public class BasicSentence {
 	@Override
 	public String toString() {
 		//return review.getId() + ":" + sentenceId;
-		return sentenceId + "-" + sentenceText;
+		//return sentenceId + "-" + sentenceText;
+		return sentenceText;
 	}
 }

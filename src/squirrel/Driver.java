@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-import squirrel.common.DumpTextUtil;
 import squirrel.common.ReviewUtil;
 import squirrel.common.SynonymsUtil;
+import squirrel.dump.DumpTextUtil;
 import squirrel.nlp.Sentence;
 import squirrel.parse.Query;
 import squirrel.parse.Record;

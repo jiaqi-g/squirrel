@@ -53,10 +53,14 @@ public class FileSystem {
 		log("read: " + filename);
 		
 		List<String> lst = new ArrayList<String>();
-		try (Scanner scanner =  new Scanner(getFile(filename), StandardCharsets.UTF_8.name())){
+		try {
+			Scanner scanner =  new Scanner(getFile(filename), StandardCharsets.UTF_8.name());
 			while (scanner.hasNextLine()){
 				lst.add(scanner.nextLine().trim());
 			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
 		}
 		return lst;
 	}
