@@ -1,7 +1,9 @@
-package squirrel.common;
+package squirrel.dump;
 
 import java.io.File;
 import java.io.IOException;
+
+import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
 import common.FileSystem;
 
@@ -12,21 +14,13 @@ import common.FileSystem;
  */
 public class DumpTextUtil {
 	
-	static {
-		try {
-			Class.forName(ReviewUtil.class.getCanonicalName());
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
-	
 	/**
 	 * Dump all review text into a single file
 	 */
-	public static void dumpReviewsToFile(String outputFilename) {
+	public static void dumpReviewsToFile(String outputFilename, ReviewList reviews) {
 		try {
 			StringBuilder builder = new StringBuilder();
-			for (TripAdvisorReview review: ReviewUtil.getReviews()) {
+			for (TripAdvisorReview review: reviews) {
 				builder.append(review.getFormattedSentences());
 				builder.append("\n");
 			}
@@ -48,11 +42,11 @@ public class DumpTextUtil {
 	 * 
 	 * Warning: This method may overwrite any existing files!
 	 */
-	public static void dumpReviewsToFolder(String rootPath) {
+	public static void dumpReviewsToFolder(String rootPath, ReviewList reviews) {
 		try {
 			FileSystem.createFolder(rootPath);
 			
-			for (TripAdvisorReview review: ReviewUtil.getReviews()) {
+			for (TripAdvisorReview review: reviews) {
 				String hotelFolderPath = rootPath + "/hotel_" + review.getOfferingId();
 				FileSystem.createFolder(hotelFolderPath);
 				
