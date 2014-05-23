@@ -14,6 +14,8 @@ import squirrel.nlp.Sentence;
 public class TripAdvisorReview {
 	
 	private String title;
+
+
 	private String text;
 	private String date_stayed;
 	private Integer offering_id;
@@ -80,7 +82,33 @@ public class TripAdvisorReview {
 	public String getTitle() {
 		return title;
 	}
-	
+	public String getDate_stayed() {
+		return date_stayed;
+	}
+
+	public void setDate_stayed(String date_stayed) {
+		this.date_stayed = date_stayed;
+	}
+
+	public Integer getOffering_id() {
+		return offering_id;
+	}
+
+	public void setOffering_id(Integer offering_id) {
+		this.offering_id = offering_id;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 	// Getters and setters are not required for this example.
 	// GSON sets the fields directly using reflection.
 	@Override
