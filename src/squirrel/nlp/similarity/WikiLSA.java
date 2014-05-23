@@ -1,6 +1,9 @@
 package squirrel.nlp.similarity;
 
+import java.net.ConnectException;
+import java.net.SocketTimeoutException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.jsoup.Jsoup;
@@ -9,106 +12,147 @@ import org.jsoup.nodes.Element;
 
 import common.Log;
 
-public class WikiLSA implements Runnable {
+public class WikiLSA {
 
-	static String url = "http://deeptutor2.memphis.edu/WikiLSA/getSimilarity";
-	Map<String, String> data = new HashMap<String, String>();
-	NounSimilarityResult scoreMap;
+	public static String url = "http://deeptutor2.memphis.edu/WikiLSA/getSimilarity";
+	private NounSimilarityResult scoreMap;
+	private String noun;
 	
-	public WikiLSA(NounSimilarityResult scoreMap) {
-		//set words late for object reuse
-		this.scoreMap = scoreMap;
-	}
-	
-	public WikiLSA(String w1, String w2, NounSimilarityResult scoreMap) {
-		setWords(w1, w2);
-		this.scoreMap = scoreMap;
+	public WikiLSA(String noun) {
+		this.scoreMap = new NounSimilarityResult(noun);
+		this.noun = noun;
 	}
 	
 	private static void log(String string) {
 		Log.log("[WIKILSA]", string);
 	}
 	
-	public void setWords(String w1, String w2) {
-		data.put("word1", w1);
-		data.put("word2", w2);
+	/**
+	 * automatically ignore words that do not common to other words
+	 * @param allWords
+	 * @return
+	 */
+	public NounSimilarityResult getSimilarityResult(int id, List<String> allWords) {
+		//boolean ignore = false;
+		
+		int i = 0;
+		for (String compareNoun: allWords) {
+			Double score = 0.0;
+			score = retrieveScoreFromWeb(noun, compareNoun);
+			
+			scoreMap.add(compareNoun, score);
+			
+			report(id, i, allWords.size());
+			i++;
+			log(noun + " " + compareNoun + " " + score);
+		}
+		
+		return scoreMap;
 	}
 	
-	public void multiThreads() {
-		/*
-		//use multi-threading to calculate the similarity score from WikiLSA
-		Thread[] threads = new Thread[relatedWords.size()];
-		
-		for (int i = 0; i < threads.length; i++) {
-			threads[i] = new Thread(new WikiLSA(noun, relatedWords.get(i), resultSet));
-			threads[i].start();
+	private void report(int id, int processed, int cnt) {
+		String s = "word " + id + " ";
+		if (processed == cnt/10*1) {
+			s += "10% finished";
+			System.out.println(s);
 		}
-		
-		Thread.yield();
-		
-		for (int i = 0; i < threads.length; i++) {
-			try {
-				threads[i].join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}*/
+		else if (processed == cnt/10*2) {
+			s += "20% finished";
+			System.out.println(s);
+		}
+		else if (processed == cnt/10*3) {
+			s += "30% finished";
+			System.out.println(s);
+		}
+		else if (processed == cnt/10*4) {
+			s += "40% finished";
+			System.out.println(s);
+		}
+		else if (processed == cnt/10*5) {
+			s += "50% finished";
+			System.out.println(s);
+		}
+		else if (processed == cnt/10*6) {
+			s += "60% finished";
+			System.out.println(s);
+		}
+		else if (processed == cnt/10*7) {
+			s += "70% finished";
+			System.out.println(s);
+		}
+		else if (processed == cnt/10*8) {
+			s += "80% finished";
+			System.out.println(s);
+		}
+		else if (processed == cnt/10*9) {
+			s += "90% finished";
+			System.out.println(s);
+		}
 	}
-
+	
 	/**
-	 * You can directly call this utility function in a single thread.
+	 * return false if the compare result is null
+	 * @param noun
+	 * @param compareNoun
+	 * @return
 	 */
-	public void retrieveScoreFromWeb() {
-		try {
-			Document document = Jsoup.connect(url)
-					.data(data)
-					//.userAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36")
-					.post();
-
-			String cssQuery = "p";
-			Element elem = document.select(cssQuery).get(3);
-			Double score = Double.parseDouble(elem.html().split(":")[1].trim());
-			scoreMap.add(data.get("word2"), score);
-			log(data.get("word1") + " " + data.get("word2") + " " + score);
-			//return score;
-		}
-		catch (NumberFormatException e) {
-			//null result, do nothing
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-			//return new Double(0);
+	private Double retrieveScoreFromWeb(String noun, String compareNoun) {
+		Map<String, String> data = new HashMap<String, String>();
+		data.put("word1", noun);
+		data.put("word2", compareNoun);
+		
+		while (true) {
+			try {
+				Document document = Jsoup.connect(url)
+						.data(data)
+						//.userAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36")
+						.post();
+	
+				String cssQuery = "p";
+				Element elem = document.select(cssQuery).get(3);
+				Double score = Double.parseDouble(elem.html().split(":")[1].trim());
+				return score;
+			}
+			catch (NumberFormatException e) {
+				//null result
+				return 0.0;
+			}
+			catch (SocketTimeoutException e) {
+				System.out.println(noun + " " + compareNoun + " time out! Redo ...");
+			}
+			catch (ConnectException e) {
+				System.out.println(noun + " " + compareNoun + " refused! Redo ...");
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+				return 0.0;
+			}
 		}
 	}
-
-	@Override
-	public void run() {
-		retrieveScoreFromWeb();
-	}
-
+	
 	public static void main(String[] args) throws Exception {
-		String[] word1 = new String[]{"room", "dog", "cat", "expensive", "price", "pig", "room", "guy", "mean", "where"};
-		String[] word2 = new String[]{"house", "wolf", "cat", "the", "expensive", "cat", "bed", "cloth", "average", "who"};
-		int total = word1.length;
-		//String[] except1 = new String[]{"night", "hotel", "location", "clean", "room", "size", "bathroom", "towel"};
-		
-		String word = "room";
-		NounSimilarityResult p = new NounSimilarityResult(word);
-		
-		Thread[] a = new Thread[total];
-		for (int i = 0; i < total; i++) {
-			a[i] = new Thread(new WikiLSA(word, word2[i], p));
-			a[i].start();
-		}
-		
-		//Thread.sleep(500);
-		Thread.yield();
-		
-		for (int i = 0; i < total; i++) {
-			a[i].join();
-		}
-		
-		System.out.println(p);
+//		String[] word1 = new String[]{"room", "dog", "cat", "expensive", "price", "pig", "room", "guy", "mean", "where"};
+//		String[] word2 = new String[]{"house", "wolf", "cat", "the", "expensive", "cat", "bed", "cloth", "average", "who"};
+//		int total = word1.length;
+//		//String[] except1 = new String[]{"night", "hotel", "location", "clean", "room", "size", "bathroom", "towel"};
+//		
+//		String word = "room";
+//		NounSimilarityResult p = new NounSimilarityResult(word);
+//		
+//		Thread[] a = new Thread[total];
+//		for (int i = 0; i < total; i++) {
+//			a[i] = new Thread(new WikiLSA(word, word2[i], p));
+//			a[i].start();
+//		}
+//		
+//		//Thread.sleep(500);
+//		Thread.yield();
+//		
+//		for (int i = 0; i < total; i++) {
+//			a[i].join();
+//		}
+//		
+//		System.out.println(p);
 		
 		/*
 		Long t1 = System.nanoTime();
@@ -122,5 +166,4 @@ public class WikiLSA implements Runnable {
 		System.out.println((t2 - t1) / 1000000000.0);
 		 */
 	}
-
 }

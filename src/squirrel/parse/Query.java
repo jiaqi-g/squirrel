@@ -5,14 +5,13 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 
 import common.Database;
-
 import squirrel.common.ReviewUtil;
 import squirrel.common.SynonymsUtil;
 import squirrel.nlp.Sentence;
 import squirrel.nlp.similarity.NounSimilarityResult;
+import squirrel.nlp.similarity.Score;
 
 public class Query {
 	String aspect;
@@ -22,6 +21,8 @@ public class Query {
 	List<String> traitSynonyms = new ArrayList<String>();
 	boolean isDbAvailable = false;
 
+	public static final Double similarityThreshold = 0.5;
+	
 	public Query(String aspect, String trait) {
 		this.aspect = aspect;
 		this.trait = trait;
@@ -61,15 +62,15 @@ public class Query {
 			for (TripAdvisorReview review: ReviewUtil.getReviews()) {
 				for (Sentence sent: review.getSentences()) {
 					NounSimilarityResult similarityResult = sent.getNounSimilarityResult(aspect, traitSynonym);
-					Entry<String, Double> topScoreEntry = similarityResult.getTopScoreEntry();
+					Score topScore = similarityResult.getTopScore();
 
-					if (topScoreEntry != null && topScoreEntry.getValue() < 0.5) {
-						topScoreEntry = null;
+					if (topScore != null && topScore.getSimilarity() < similarityThreshold) {
+						topScore = null;
 					}
 
-					if (topScoreEntry != null) {
+					if (topScore != null) {
 						res.add(new SentenceScore(new BasicSentence(sent.getReviewId(), sent.getSentenceId(), sent.getSentenceText()),
-								topScoreEntry.getValue()));
+								topScore.getSimilarity()));
 					}
 				}
 			}

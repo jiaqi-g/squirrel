@@ -104,9 +104,9 @@ public class ReviewUtil {
 		NounSimilarityResult rs = new NounSimilarityResult(noun);
 		for (String word: relatedWords) {
 			// TODO: modify this to reflect actual score read from db.
-			WikiLSA lsa = new WikiLSA(rs);
+/*			WikiLSA lsa = new WikiLSA(rs);
 			lsa.setWords(noun, word);
-			lsa.retrieveScoreFromWeb();	
+			lsa.retrieveScoreFromWeb();	*/
 		}
 		return rs;
 	}

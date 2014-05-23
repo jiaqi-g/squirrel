@@ -7,7 +7,7 @@ package common;
  */
 public class Log {
 	
-	static boolean debug = true;
+	static boolean debug = false;
 	
 	public static void log(String moduleName, String s) {
 		if (debug) {
