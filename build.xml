@@ -3,7 +3,7 @@
 <project name="Crawler" basedir="." default="usage">	
 
 	<property name="project.name" value="Crawler"/>	
-	<property name="project.version" value="1-0-0-alpha"/>
+	<property name="project.version" value="1-0-1-alpha"/>
 	<property name="project.build" value="20130523"/>	
 	<property environment="env"/>
 	

@@ -8,3 +8,6 @@ sample/hotel_93396_keywords/*
 docs/review.txt
 content/*
 /bin
+${classes.dir}
+classes/*
+.classpath

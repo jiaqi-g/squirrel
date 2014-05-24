@@ -28,7 +28,7 @@ public class DB {
 			String password="";
 			String strarr[];
 			
-		    Path path = Paths.get("content/config");
+		    Path path = Paths.get("config");
 		    try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
 		      while (scanner.hasNextLine()){
 		    	    TripAdvisorReview review= new TripAdvisorReview();
