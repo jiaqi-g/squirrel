@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+import squirrel.common.Log;
+
 /**
  * Abstraction of Unix file System, common utils for file access.
  * @author victor

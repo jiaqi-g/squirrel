@@ -14,10 +14,10 @@ import squirrel.parse.TripAdvisorReview;
 public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	TripAdvisorReview review;
 	Set<NP>	nps = new HashSet<NP>();
-	
+
 	//score would change given different queries
 	Double score;
-	
+
 	/**
 	 * construct from memory
 	 */
@@ -25,7 +25,7 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 		super(review.getId(), sentenceId, sentenceText);
 		this.review = review;
 	}
-	
+
 	/**
 	 * construct from db
 	 */
@@ -33,7 +33,7 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 		super(reviewId, sentenceId);
 		//this.review = Database.getReview(reviewId);
 	}
-	
+
 	public void addNP(NP np) {
 		nps.add(np);
 	}
@@ -41,65 +41,55 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	public TripAdvisorReview getReview() {
 		return review;
 	}
-	
+
 	public String getNPSetString() {
 		return nps.toString();
 	}
-	
-	private boolean containsQueryAdjs(ADJSet queryAdjs) {
-		for (NP np: nps) {
-			if (np.containsAdjSet(queryAdjs)) {
-				return true;
-			}
-		}
-		return false;
-	}
-	
-	private Double getHighestNounScore(WordSimilarityResultSet aspectSimilarityDb) {
+
+	private Double getHighestNounScore(WordSimilarityResultSet nounSynonyms, ADJSet queryAdjs) {
 		Double res = 0.0;
 		for (NP np: nps) {
-			Double tmp = aspectSimilarityDb.getScore(np.noun);
-			if (tmp > res) {
-				res = tmp;
+			if (np.belongToAdjSet(queryAdjs)) {
+				Double tmp = nounSynonyms.getScore(np.noun);
+				if (tmp > res) {
+					res = tmp;
+				}
 			}
 		}
 		return res;
 	}
-	
+
 	/**
 	 * we treat sentence score as highest score of its noun
 	 */
-	public Double computeScore(ADJSet queryAdjs, WordSimilarityResultSet aspectSimilarityDb) {
-		if (containsQueryAdjs(queryAdjs)) {
-			return getHighestNounScore(aspectSimilarityDb);
-		}
-		return 0.0;
+	public Double computeScore(WordSimilarityResultSet nounSynonyms, WordSimilarityResultSet adjSynonyms) {
+		return getHighestNounScore(nounSynonyms, new ADJSet(adjSynonyms));
 	}
-	
+
 	public Double getScore() {
 		return score;
 	}
-	
+
 	public String getSentenceFullId() {
 		return getReviewId() + ":" + getSentenceId();
 	}
-	
+
 	/*
 	@Override
 	public int hashCode() {
 		return (review.getId() + ":" + sentenceId).hashCode();
 	}*/
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Sentence)) {
 			return false;
 		}
-		
+
 		Sentence sent = (Sentence) obj;
 		return sent.getReview().getId().equals(reviewId) && sent.getSentenceId().equals(sentenceId);
 	}
-	
+
 	@Override
 	public int compareTo(Sentence o) {
 		if (o.score > score) {

@@ -29,7 +29,7 @@ public class NP {
 		return adjSet.contains(e);
 	}
 	
-	public boolean containsAdjSet(ADJSet queryAdjs) {
+	public boolean belongToAdjSet(ADJSet queryAdjs) {
 		for (String adj: adjSet) {
 			if (queryAdjs.subContains(adj)) {
 				return true;

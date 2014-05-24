@@ -2,15 +2,10 @@ package squirrel.nlp.similarity;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
-/**
- * This class provides thread-safe access of a noun and a list of its similar nouns.
- * 
- * @author victor
- *
- */
-public class WordSimilarityResultSet {
+public class WordSimilarityResultSet implements Iterable<WordSimilarityScore> {
 	String word;
 	List<WordSimilarityScore> scoreList = new ArrayList<WordSimilarityScore>();
 	
@@ -22,7 +17,7 @@ public class WordSimilarityResultSet {
 		scoreList.add(new WordSimilarityScore(word, score));
 	}
 	
-	public void sort() {
+	private void sort() {
 		Collections.sort(scoreList);
 	}
 	
@@ -36,16 +31,16 @@ public class WordSimilarityResultSet {
 		return 0.0;
 	}
 	
-	public List<String> getWordsAboveScore(Double threshold) {
-		List<String> res = new ArrayList<String>();
-		
-		for (WordSimilarityScore score: scoreList) {
-			if (score.getSimilarity() > threshold) {
-				res.add(score.getWord());
+	public void filterWordsBelowScore(Double threshold) {
+		//TODO: needs to be tested
+		sort();
+		int index;
+		for (index=0; index<scoreList.size(); index++) {
+			if (scoreList.get(index).getSimilarity() < threshold) {
+				break;
 			}
 		}
-		
-		return res;
+		scoreList = scoreList.subList(0, index);
 	}
 	
 	public WordSimilarityScore getTopScore() {
@@ -80,6 +75,11 @@ public class WordSimilarityResultSet {
 		rs.add("excellent", 0.8);
 		rs.add("bad", 0.2);
 		System.out.println(rs.getTopScore());
+	}
+
+	@Override
+	public Iterator<WordSimilarityScore> iterator() {
+		return scoreList.iterator();
 	}
 	
 	/*
