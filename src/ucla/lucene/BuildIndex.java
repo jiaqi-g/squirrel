@@ -42,8 +42,8 @@ public class BuildIndex {
 		return p;
 	}
 
-	private static void indexDocs(IndexWriter writer) throws Exception {
-		String aFileName = "docs/hotel_93396_review.txt";
+	private static void indexDocs(IndexWriter writer, String aFileName) throws Exception {
+		
 		
 	    Path path = Paths.get(aFileName);
 	    try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
@@ -53,8 +53,8 @@ public class BuildIndex {
 	    	  	review = getTripAdvisorReview(scanner.nextLine());
 	    	  	
 				Document doc = new Document();
-
-				doc.add(new LongField("ID",review.getId(),Field.Store.NO));
+				doc.add(new LongField("HotelID", review.getOfferingId(), Field.Store.YES));
+				doc.add(new LongField("ReviewID",review.getId(),Field.Store.YES));
 				doc.add(new StringField("Title", review.getTitle(), Field.Store.YES));
 				doc.add(new TextField("Review",review.getText(),Field.Store.YES));
 				System.out.println("add doc: "+doc.getField("Review"));
@@ -73,10 +73,10 @@ public class BuildIndex {
 		}
 	   
 	}
-	private static void buildIndex() throws Exception {
+	private static void buildIndex(String aFileName, String destDir) throws Exception {
 
-		Directory dir = FSDirectory.open(new File(indexPath));
-		
+		//Directory dir = FSDirectory.open(new File(indexPath));
+		Directory dir = FSDirectory.open(new File(destDir));
 
 		Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_48);
 		IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_48, analyzer);
@@ -90,14 +90,35 @@ public class BuildIndex {
 		}
 
 		IndexWriter writer = new IndexWriter(dir, iwc);
-		indexDocs(writer);
+		
+		indexDocs(writer, aFileName);
 	
 		writer.close();
 	}
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		buildIndex();
+		
+		String srcFolder = "content/hotelReview";
+		String destDir = "content/lucene_index";
+		File fd = new File(srcFolder);
+		String resourcefile[]=fd.list();   
+		String[] fileName;
+		
+		  
+        System.out.println(resourcefile.length+" files.");
+       
+         for(int i=0;i<resourcefile.length;i++)
+         {                   	 	 
+        	 	System.out.println(srcFolder+"/"+resourcefile[i]);
+        	 	if(resourcefile[i].contains("json")){   
+        	 		fileName = resourcefile[i].split("\\.");
+        	 	//	System.out.println("!"+srcFolder+"/"+resourcefile[i]);
+        	 	//	System.out.println(destDir+"/"+fileName[0]+"/");
+        	 		buildIndex(srcFolder+"/"+resourcefile[i], destDir+"/"+fileName[0]+"/");
+        	 		
+        	 	}
+         }
 
 	}
 

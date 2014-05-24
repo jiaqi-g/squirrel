@@ -1,0 +1,4811 @@
+10004670; 0
+10004670; 1; arrival|taken; our|taken; bags|taken; minutes|few
+10004670; 2; bell|informative; boy|informative; pointers|few
+10004670; 3; room|great; size|great; having|great; rooms|smaller; noise|traffic
+10004670; 4; air|good; con|good
+10004670; 5; internet|free; gym|free
+10004670; 6
+10004670; 7; people|most
+10004670; 8; coffee|hot; etc|hot; way|good
+10004670; 9; hotel|best
+10010884; 0; week|first
+10010884; 1
+10010884; 2
+10010884; 3; room|different; side|other
+10010884; 4; york|new; hotel|new; rooms|new
+10010884; 5
+10010884; 6
+10010884; 7; bathroom|also large and much; better|also large and much
+10010884; 8; hotel|great
+10010884; 9; park|central
+10010884; 10; access|easy; york|new
+10010884; 11; hotel|safe; walking|quite happy
+10010884; 12; hotel|fantastic
+10010884; 13; way|best
+10010884; 14; york|new
+10010884; 15
+10010884; 16; pastries|danish
+10010884; 17
+10010884; 18
+10010884; 19; challenge|greater
+10010884; 20; ny|authentic; bagel|authentic
+10010884; 21; time|fantastic; visit|next; york|new
+10011258; 0; visits|numerous; hotels|many different
+10011258; 1; touch|personal; amenities|wonderful; rooms|very clean
+10011258; 2; our|n't come; roomwe|n't come
+10011258; 3; hotel|outstanding; staff|outstanding
+10011258; 4; chain|most other; hotels|most other
+10011258; 5; bathroom|very nice; rooms|so clean; size|surprisingly big; beds|double
+10011258; 6; breakfast|more; cereal|dry; oatmeal|instant
+10011258; 7; breakfast|complimentary; plus|wonderful
+10011258; 8
+10011258; 9; service|personal
+10011258; 10; comments|mostly true and accurate
+10011258; 11
+10062378; 0; hotel|located; neighbourhood|quite classy
+10062378; 1; buildings|many many other; york|hidden
+10062378; 2; lobby|nice
+10062378; 3; jokes|small
+10062378; 4
+10062378; 5
+10062378; 6
+10062378; 7
+10062378; 8
+10062378; 9
+10062378; 10; size|nice; york|new
+10062378; 11
+10062378; 12
+10062378; 13
+10062378; 14; microwave|small
+10062378; 15; closet|small
+10062378; 16; bathroom|sufficient and most
+10062378; 17; hotel|exceptionally clean
+10062378; 18
+10062378; 19
+10062378; 20
+10062378; 21; ofcourse|free
+10062378; 22
+10062378; 23; hotel|hispanic; south|hispanic; american|hispanic
+10062378; 24
+10062378; 25; choice|good
+10062378; 26; line|green
+10062378; 27; place|most fantastic
+10168389; 0; hotel|great; location|great; york|new; trip|first; apple|big
+10168389; 1
+10168389; 2; san|ticked
+10168389; 3
+10168389; 4; park|central
+10168389; 5; area|good; walking|quite safe
+10168389; 6; buffet|delicious; style|delicious; continental|delicious; breakfast|delicious
+10168389; 7; staff|extremely polite and helpful; booking|extremely polite and helpful; taxis|extremely polite and helpful; brollies|even provided; downpour|sudden
+10168389; 8
+10168389; 9
+10168389; 10; sofa|double
+10168389; 11; kitchen|small; area|small
+10168389; 12; drinks|own; snacks|own
+10168389; 13; towels|extra; toiletries|extra
+10168389; 14
+10168389; 15; york|new
+10168389; 16
+10168389; 17; buses|blue
+10168389; 18; street|most; corners|most; jackets|bright yellow
+10168389; 19
+10168389; 20; cruise|free
+10168389; 21; leave|great and informative
+10168389; 22
+10168389; 23
+10168389; 24; buildings|other
+10168389; 25
+10168389; 26; experience|marvellous; york|new
+101797607; 0; ibamos|en; una|en; habitacin|en
+101797607; 1
+101797607; 2; microondas|un
+101797607; 3
+101797607; 4
+101797607; 5
+101797607; 6
+101797607; 7; en|imagino que; temporada|imagino que; alta|imagino que; puede|imagino que; quedar|imagino que; pequea|imagino que; si|imagino que; hay|imagino que; muchos|imagino que; los|llevan; hoteles|llevan
+101797607; 8; quedaba|square; un|square; poco|square; ms|square
+101797607; 9
+101797607; 10
+101797607; 11
+101950409; 0; hotel|very much; luxury|small; hotel|european
+101950409; 1; lobby|nice; effort|real
+101950409; 2; rooms|standard; mini|large; fridge|large; freezer|real; service|table
+101950409; 3; meals|easy; snacks|easy
+101950409; 4; feature|good
+101950409; 5; location|central
+101950409; 6; beds|most comfortable; slept|old
+101950409; 7
+10213429; 0
+10213429; 1
+10213429; 2; room|great
+10213429; 3; york|new; standards|new
+10213429; 4; beds|separate
+10213429; 5; surprise|pleasant
+10213429; 6
+10213429; 7; kitchen|small; bathroom|nice
+10213429; 8; sitting|very pleasant; area|very pleasant
+10213429; 9
+10213429; 10; breakfast|complimentary
+10213429; 11
+10213429; 12
+10213429; 13
+10213429; 14; location|great; style|luxurious; room|fantastic
+10213429; 15; time|next
+102190649; 0; de|personal; la|personal; entrada|personal; muy|personal; simpatico|personal; y|personal
+102190649; 1
+102190649; 2
+102190649; 3
+102190649; 4
+102190649; 5
+102190649; 6; park|central
+102190649; 7
+10415445; 0
+10415445; 1
+10415445; 2; hotel|larger; york|new
+10415445; 3; bathrooms|broken; tiles|broken; occupant|previous
+10415445; 4
+10415445; 5; offers|special
+105204098; 0
+105204098; 1; room|clean
+105204098; 2
+105204098; 3
+105204098; 4; umbrellas|early,given; weather|not very good
+105204098; 5
+105204098; 6; location|great
+105204098; 7; park|central
+105204098; 8; breakfast|very basic continental
+105204098; 9; restaurants|good
+105204098; 10; stay|great
+105330577; 0; midtown|very clean; gem|very clean
+105330577; 1; suite|'queen
+105330577; 2
+105330577; 3; size|queen; pull|queen; room|next; screen|big; tv|big
+105330577; 4
+105330577; 5; hotel|so quiet
+105330577; 6
+105330577; 7; side|east
+105330577; 8
+105330577; 9
+105330577; 10
+105647459; 0
+105647459; 1
+105647459; 2
+105647459; 3
+105647459; 4
+10637473; 0
+10637473; 1
+10637473; 2
+10637473; 3
+10637473; 4
+10637473; 5
+10637473; 6; breakfast|complimentary
+10637473; 7; staff|extremely polite and friendly
+10637473; 8
+10637473; 9
+10724353; 0
+10724353; 1; excellent|given; service|given; stay|entire
+10724353; 2
+10724353; 3
+10724353; 4; our|been; stay|been
+10724353; 5
+10724353; 6
+10724353; 7; class|high; travellers|high
+10724353; 8; names|famous
+10724353; 9; others|many
+10724353; 10; ave.|fifth; class|fifth; th|east
+10724353; 11
+10724353; 12; a+++++|definite
+107756792; 0
+107756792; 1
+107756792; 2
+107756792; 3; rooms|fabulous
+107756792; 4; room|spic
+107756792; 5; hotels|other
+107756792; 6; steps|few
+107756792; 7; rooms|very big; bathrooms|great; bathtubs|great
+107756792; 8; housekeeping|courteous and available; maintenance|courteous and available; staff|courteous and available
+107756792; 9; start|delicious and convenient
+107756792; 10; rolls|fresh and delicious; coffee|delicious; chocolate|hot
+107756792; 11
+107756792; 12; doorman|great
+107756792; 13; location|fabulous
+107756792; 14
+107756792; 15
+107756792; 16; park|central; avenue|fifth
+107756792; 17; nightlife|also great
+107756792; 18; attractions|so many
+107756792; 19; york|new
+10794073; 0
+10794073; 1
+10794073; 2; giornale|le; gratis|le; mattine|le
+10794073; 3
+10794073; 4
+10794073; 5
+10794073; 6; personale|ed; educato|ed
+10794073; 7
+108449461; 0; york|new; period|festive; year|last; hotel|faced; situation|difficult; rooms|very little; san|wonderful; carlos|wonderful; hotel|wonderful; guy|pleasent and friendly; source|good; our|just gorgeous; room|just gorgeous; area|great; inch|huge; plasma|huge; breakfast|contiental; food|great
+108449461; 1
+108449461; 2; time|extra; relaxing|extra; flight|long
+108449461; 3; hidden|beautiful; gem|beautiful
+10877624; 0
+10877624; 1; hotel|convenient; sites|many; room|spacious; beds|comfortable
+10877624; 2
+10877624; 3
+10877624; 4; room|very quiet
+10877624; 5
+10877624; 6; front|very helpful; desk|very helpful
+10877624; 7; our|fabulous; dinners|fabulous
+10877624; 8; oscartheir|veal; signature|veal; dish|veal; my|veal; husband|veal; steak|natural
+10877624; 9; atmosphere|quiet; hotel|smaller
+10986903; 0
+10986903; 1; booking|taken
+10986903; 2; room|huge
+10986903; 3
+10986903; 4; indian|sylish and untypical; restaurant|sylish and untypical; mint|called; erica|beautiful; nature|helpful; help|great
+10986903; 5; hour|wonderful; deli|wonderful; two|wonderful; minutes|wonderful
+10986903; 6; hotel|brilliantly located
+10986903; 7; york|new
+10986903; 8; hotel|great; staff|fantastic; superb|fantastic; location|fantastic
+109940710; 0; review|previous; people|too many
+109940710; 1
+109940710; 2; gabriel|wonderful
+109940710; 3; gabriel|attentive
+109940710; 4; my|met; preferences|met
+109940710; 5
+109940710; 6
+109940710; 7; days|least; yearsi|several
+109940710; 8; stay|good
+109940710; 9; upgrade|beautiful
+109940710; 10; apartment|beautiful
+109940710; 11; everything|clean and fresh
+109940710; 12; quality|good
+109940710; 13
+109940710; 14; location|really perfect
+109940710; 15; people|too many; time|next
+110381887; 0; hotel|great; location|fabulous
+110381887; 1; service|excellent; breakfast|continental; choice|large
+110381887; 2; staff|courteous and polite; nothing|too much trouble
+110381887; 3; hotel|ideally located; blocks|few; park|central; subway|very convenient
+110381887; 4; ride|single; whatever|single
+110381887; 5
+110585166; 0
+110585166; 1
+110585166; 2; el|continental; es|continental
+110585166; 3
+110585166; 4; siempre|al; san|al; carlos|al
+11072965; 0
+11072965; 1
+11072965; 2; location|great short; walk|great short; attractions|many; shopping|great; nearby|great
+11072965; 3; room|plenty large; kitchen|nice; area|nice; two|nice; bathrooms|nice
+11072965; 4; staff|excellent
+11072965; 5; day|first; cleaning|not very efficient; staff|not very efficient; days|following
+11072965; 6
+11072965; 7; ambassador|great
+11123341; 0; york|new; city|new
+11123341; 1; hotel|comfortable
+11123341; 2; continental|free; breakfast|free; orange|fresh; juice|fresh
+11123341; 3
+11123341; 4
+11123341; 5
+11123341; 6; hello|big; member|voluntary; apple|big; greeters|big
+11123341; 7; yorkers|new; hours|few; york|new
+11123341; 8; buses|good; hour|good; hour|good
+11123341; 9; park|central
+11123341; 10; shoppaholics|common; jersey|new
+11123341; 11
+11129890; 0
+11129890; 1; things|enough good
+11129890; 2; travelers|avid; hotels|many
+11129890; 3
+11129890; 4
+11129890; 5; my|hesitant; husband|hesitant
+11129890; 6
+11129890; 7; room|very spacious; beds|double; windows|nice; roman|controllable; sitting|comfortable; chair|comfortable; ottoman|comfortable; tv|flat; plants|real
+11129890; 8; furniture|not jammed; either|other
+11129890; 9; reasons|main
+11129890; 10; rooms|decorated; homey|clean
+11129890; 11; area|quiet
+11129890; 12
+11129890; 13
+11129890; 14; location|perfect; ave|fifth
+11129890; 15; rooms|small,not worth
+11129890; 16
+11129890; 17; service|wonderful
+11129890; 18; times|breakfast; coupons|given
+11129890; 19; staff|answered
+11129890; 20
+11129890; 21
+11129890; 22
+11129890; 23; my|most,impressed; daughter|most,impressed; employee|male
+11129890; 24
+11129890; 25; umbrellas|lined
+11129890; 26
+11129890; 27; my|happy; teenagers|happy
+11129890; 28; pastries|very diverse
+11129890; 29; thing|only negative; my|rather tall; husband|rather tall
+11129890; 30
+11129890; 31; trip|next
+11129890; 32
+11129890; 33; advice|honest
+111355636; 0; queen|double; room|double
+111355636; 1; york|new; hotel|new
+111355636; 2; plus|biggest; fridge|barsized
+111355636; 3; drinks|separate
+111355636; 4; kids|young; plus|big
+111355636; 5; continental|good; breakfast|good; spread|good; pastries|fresh
+111355636; 6
+111355636; 7; business|free; center|free; internet|free; access|free
+111355636; 8; printer|even provided,free
+111355636; 9; wifi|free
+111355636; 10
+111355636; 11; location|good; midtown|good
+111355636; 12
+111355636; 13
+111355636; 14; mins|fairly quick
+111355636; 15; night|late; cafes|late
+111355636; 16; laundry|also available; service|also available
+111924227; 0; et|confortable; bien|confortable; situ|confortable; park|central
+111924227; 1
+111924227; 2; propre|bien; entretenu|bien
+111924227; 3
+111924227; 4; york|new; en|new
+111924227; 5
+112567358; 0; eateries|other great; businesses|other great; hotel|small; meet|small; our|small; expectations|small
+112567358; 1
+112567358; 2
+112568590; 0
+112568590; 1; floor|high; room|quiet
+112568590; 2
+112568590; 3
+112568590; 4
+112568590; 5
+112568590; 6; nyc|other; hotel|other; bathrooms|other
+112568590; 7; job|great
+112568590; 8
+112568590; 9; street|only; noise|only
+112568590; 10; guests|other; rooms|other
+112568590; 11
+112568590; 12; choices|healthy; fruit|healthy; cereal|healthy
+112568590; 13
+112568590; 14; location|great
+112568590; 15
+112568590; 16; our|really enjoyed; visit|really enjoyed; hope|really enjoyed
+112824415; 0
+112824415; 1; dos|y; nios|y; aos|y
+112824415; 2; las|bien; habitaciones|bien; conservadas|bien
+112824415; 3
+112824415; 4
+11305147; 0
+11305147; 1
+11305147; 2
+11305147; 3
+11305147; 4; york|new; non|new; potr|new; non|new; tornare|new; al|new; confortevole|new; san|new; carlos|new
+11305147; 5; dai|direttamente; suoi|direttamente; clienti|direttamente
+11305147; 6
+113640401; 0; week|first
+113640401; 1; king|true; size|true
+113640401; 2; room|very clean and large,enough too accomadate; bags|extra
+113640401; 3; ac|too loud; sleeper|light
+113640401; 4; breakfast|continental
+113640401; 5; walk|easy; park|central
+113640401; 6; e|very close; subway|very close; lines|very close
+113640401; 7; access|ave give great; restaurants|local
+113640401; 8; year|other
+11376394; 0; sommes|nous; avons|un; sjour|un; trs|un; un|est; peu|est; excentr|est; station|central; les|tous
+11376394; 1; aider|vous; visites|vous; petit|le; trs|le; four|le; micro|le; ondes|le; refrigrateur|le; dans|le
+11376394; 2
+11376394; 3; est|l'htel; neuf|l'htel; et|l'htel; dispose|l'htel; d'une|l'htel; petite|l'htel; salle|l'htel
+11376394; 4; puissiez|vous; reposez|vous; avec|vous; un|vous; bon|vous; livre|vous; ou|vous; le|vous; journal|vous; du|vous; jour|vous
+11401492; 0
+11401492; 1; occupions|nous; etait|nous; suffisamment|nous; grande|nous; pour|nous; personnes|nous
+11401492; 2
+11401492; 3; sommes|quartier; dans|quartier; bien|quartier; restaurants|en
+11401492; 4
+114678953; 0
+114678953; 1; hotel|ideally located; distance|similar; park|central
+114678953; 2; york|new; standard|new; york|new; standards|new
+114678953; 3
+114678953; 4; beds|as comfortable
+114678953; 5; bonus|definite; breakfast|'continental
+114678953; 6
+114678953; 7
+115001827; 0; time|first; staying|first
+115001827; 1; reviews|positive
+115001827; 2; hotel|better
+115001827; 3; staff|excellent; nice|overthetop
+115001827; 4
+115001827; 5; suite|queen
+115001827; 6; room|big
+115001827; 7; kitchenette|very helpful
+115001827; 8; pluses|free; breakfast|free
+115001827; 9; level|lower; street|lower; side|lower
+115001827; 10; trip|next
+115028807; 0; alojado|este; dias|este; hotel|este; y|este; ha|este; sido|este; la|este; mejor|este; eleccin|este
+115028807; 1
+115028807; 2; los|midtown; principales|midtown; lugares|midtown; y|midtown
+115028807; 3; muy|personal; y|amable
+115028807; 4
+115066512; 0
+115066512; 1; trip|first
+115066512; 2; suite|executive; king|executive
+115066512; 3
+115066512; 4; nights|great
+115066512; 5; hotel|very quiet; aside|very quiet
+115066512; 6; walk|short; sights|great
+115066512; 7; stay|wonderful
+115066512; 8; chinese|delicious; food|delicious
+115066512; 9
+115066512; 10; food|fantastic
+115138825; 0; nights|great; san|new; york|new
+115138825; 1
+115138825; 2; york|new
+115138825; 3; rooms|large; york|new; size|queen; beds|queen
+115138825; 4; lounge|great; area|great; kitchenette|small
+115138825; 5; day|long hard; pounding|long hard
+115138825; 6; buffet|huge; everyday|huge; choice|great; breakfast|continental
+115138825; 7; restaurants|fantastic local; area|really local
+115138825; 8
+115138825; 9; stay|great
+115138825; 10
+115553605; 0
+115553605; 1
+115553605; 2; attractions|major; park|central; side|relatively quiet; street|relatively quiet
+115553605; 3; staff|very pleasant; gentleman|nice; tricks|magic
+115553605; 4
+115662372; 0; atento|personal; y|personal; se|personal; molestan|personal; en|personal; atenderte|personal
+115662372; 1; te|en; internet|en; y|en; lo|en; que|en; ves|en; es|en; hay|que
+115669450; 0; time|second; months|past; york|new
+115669450; 1; rooms|very spacious; style|modern; furniture|modern
+115669450; 2; beds|perfect; night|good
+115669450; 3; hotel|extremely gracious; staff|extremely gracious
+115669450; 4; location|central; room|very attractive; rate|very attractive; cities|most expensive
+115754716; 0
+115754716; 1; york|new; standards|new; finishes|upgraded
+115754716; 2
+115754716; 3; closets|large; bathroom|nice
+115754716; 4
+115754716; 5; areas|smallish common; computer|nice; lodge|nice; lobby|smallish; breakfast|served
+115754716; 6
+115754716; 7; midtown|great; location|great; walk|short
+115754716; 8
+115754716; 9
+115754716; 10; base|great; value|good; nyc|other; hotels|other
+115758246; 0; stay|great
+115758246; 1; breakfast|small but nice free
+115758246; 2
+115758246; 3
+115927718; 0
+115927718; 1; duty|exceptional; matt|exceptional
+115927718; 2; our|set; thermostat|set; rundown|brief; suite|entire
+115927718; 3; recommendations|restaurant
+115927718; 4; face|friendly
+115927718; 5; apartment|small
+115927718; 6; beds|comfortable
+115927718; 7
+115927718; 8; breakfast|continental; left|continental
+115960584; 0; thing|bad
+116008707; 0
+116008707; 1
+116119469; 0; nueva|en; york|en; y|un; al|un; contrario|un; que|un; la|un; otra|un; vez|un; nos|un; alejamos|un; hotel|un; muy|un; acogedor|un; y|un; familiar|un
+116119469; 1; lo|que; hace|que; muy|que; acogedor|que
+116119469; 2; la|en; calle|en
+116119469; 3
+116119469; 4
+116135248; 0; nyc|mejor; y|mejor; por|mejor; lejos|mejor; es|mejor; hotel|mejor
+116135248; 1
+116135248; 2
+116135248; 3
+116184409; 0
+116184409; 1; friends|old
+116184409; 2; front|helpful; desk|helpful; evelyn|helpful; gabriel|helpful; check|early; beacuse|suite; nothing|availble
+116184409; 3; tricks|magic
+116184409; 4; hours|few; suite|beautiful; air|good; conditionerwe|good
+116184409; 5; suggestions|good
+116184409; 6
+116184409; 7; complaints|read; breakfast|conteniental
+116184409; 8; value|terrific
+116184409; 9; chocolate|especially yummy; croissants|especially yummy; chocolate|hot; apples|whole
+116184409; 10; lady|nice; working|nice
+116184409; 11; housekeeping|wonderful; staff|wonderful
+116184409; 12
+116184409; 13; adventures|daily; place|always spotless
+116184409; 14
+116184409; 15
+116184409; 16; hotel|also wonderful; location|also wonderful
+116184409; 17; attractions|many
+116184409; 18; italian|great; food|great
+116184409; 19
+116184409; 20
+116184409; 21
+116184409; 22
+116384918; 0
+116384918; 1; corto|un; paseo|un; ests|un
+116384918; 2
+116384918; 3; atento|silencioso y personal
+116384918; 4
+116384918; 5; puede|bien; desayunar|bien; en|bien; muchos|bien; sitios|bien
+116441981; 0; time|second; staying|second
+116441981; 1; hotel|ideal; point|central; activities|different
+116441981; 2; rooms|good sized
+116441981; 3; times|several
+116441981; 4
+116441981; 5
+116441981; 6; things|little
+116441981; 7; night|very rainy; quantity|large; umbrellas|good portable
+116564513; 0; teenage|just returned; son|just returned; home|just returned
+116564513; 1; queens|bedroomed,suite
+116564513; 2
+116564513; 3; suite|clean and spacious
+116564513; 4; wifi|free; pc|adequate
+116564513; 5; floor|second
+116564513; 6
+116564513; 7
+116564513; 8
+116564513; 9; hotel|really handy; streets|main
+116564513; 10; trip|next; york|new
+116577519; 0; touches|really nice
+116577519; 1; floor|top; suite|top; terrace|rooftop
+116577519; 2; rooms|really nice flat; screen|really nice flat; tv|really nice flat; beds|great; brand|very spiffy; telephones|new
+116577519; 3; desk|delightful personal; service|delightful personal; friend|old
+116577519; 4; location|midtown; walk|easy; blocks|few; avenue|fifth
+116577519; 5
+116577519; 6; breakfast|free continental; benefit|real,added
+116590527; 0; pictures|great
+116590527; 1; room|huge
+116590527; 2
+116590527; 3; buffet|very basic,limited; breakfast|very basic,limited; pastry|very basic,limited; selection|very basic,limited
+116590527; 4
+116590527; 5
+116764091; 0; avons|nous; nuits|san; carlos|san; york|new; avec|new; nos|new; enfants|new
+116764091; 1; avions|nous; sommes|que; cette|que; chambre|que; tait|que; bien|que; trop|que; petite|que; pour|que; abriter|que; toute|que; notre|que; famille|que
+116764091; 2; avons|nous; donc|nous; d|nous; ajouter|nous; une|nous; seconde|nous; chambre|nous
+116764091; 3
+116764091; 4; qui|permettant; ne|permettant; bnficiait|permettant; que|permettant; d'une|permettant; petite|permettant; table|permettant; carre|permettant; avec|permettant; chaises|permettant; mme|permettant; pas|permettant
+116764091; 5; de|possible; dployer|possible; le|possible; canaplit|possible
+116764091; 6; taient|suite; obstrues|suite; ne|voir l'extrieur; pouvions|voir l'extrieur
+116764091; 7; tait|qu'il nous; de|impossible; dormir|impossible; avec|impossible; y|impossible
+116764091; 8
+116764091; 9; retourner|d'y
+116764091; 10
+116814137; 0; hotel|great
+116814137; 1
+116814137; 2; location|great; staff|always helpful
+116814137; 3
+11709610; 0; nice|enough; things|enough
+11709610; 1
+11709610; 2; gym|great; internet|free
+11709610; 3; bedrooms|spacious
+11709610; 4; kinds|different; way|great
+11709610; 5; nothing|too much trouble
+11709610; 6; york|new; couple|next
+11709610; 7; christmas|very merry; year|great new
+11709610; 8
+117190306; 0
+117190306; 1
+117396499; 0
+117396499; 1
+117396499; 2
+117396499; 3; wifi|free; cleanliness|free
+117396499; 4
+117548768; 0; experience|great; check|late; bonus|good
+117752199; 0; children|younger
+117752199; 1; room|spacious; i|ever been
+117752199; 2
+117752199; 3
+117752199; 4; pullout|comfortable; sleep|comfortable; sofa|comfortable; mattress|comfortable; service|outstanding
+117752199; 5; wireless|free
+117752199; 6
+117991133; 0; star|same; rating|same; cost|same
+117991133; 1
+117991133; 2; places|many; st.|second; subway|nearby; station|nearby
+117991133; 3; restuarants|really great; lexington|second third
+117991133; 4; food|better; prices|better
+117991133; 5; time|first
+117991133; 6; rate|special; room|regular; places|other
+117991133; 7
+117991133; 8; rate|good
+118001238; 0; couple|first; space|own
+118001238; 1
+118001238; 2; position|better
+118001238; 3
+118288246; 0
+118288246; 1; floor|high; room|high
+118288246; 2; wifi|free
+118288246; 3; mistakes|few
+118288246; 4; location|perfect
+118288246; 5
+118374123; 0; yorker|new; verhltnisse|new; groen|new; und|new; sehr|new; sauberen|new; zimmer|new
+118374123; 1
+118374123; 2; jedes|wird; zgig|wird; und|wird; kompetent|wird; bearbeitet|wird
+118374123; 3; internet|kostenfreien; zugangs|kostenfreien; kontinentalen|enthaltenen; frhstcks|enthaltenen; york|new; besucher|new
+118424283; 0
+118424283; 1
+118424283; 2; room|beautiful; gift|fabulous; box|fabulous; birthday|happy; note|happy
+118424283; 3
+118424283; 4; staff|exceptionally helpful and polite
+118424283; 5; hotel|situated; part|very nice
+118424283; 6; freezer|small
+118424283; 7
+118723045; 0; en|bien; terminos|bien; generales|bien; muy|personal
+118821330; 0; los|ny; pocos|ny; que|ny; tenan|ny; el|ny; desayuno|ny; incluido|ny
+118821330; 1
+118821330; 2
+118821330; 3
+118821330; 4
+118821330; 5
+118938951; 0
+118938951; 1; la|daban; habitacion|daban; era|daban; correcta|daban; aunque|daban; las|daban
+118938951; 2
+118938951; 3
+118938951; 4
+119237235; 0
+119237235; 1; hotels|best
+119237235; 2
+119237235; 3; fortune|great good
+119237235; 4; breakfast|generous; rolls|sweet; fruit|fresh
+119237235; 5; internet|convenient; availability|convenient
+119237235; 6; room|tastefully decorated; linens|lovely
+119237235; 7
+119237235; 8
+119237235; 9; hospitality|impeccable
+119265062; 0
+119265062; 1; room|interior
+119265062; 2
+119265062; 3; business|wonderful; center|wonderful; computers|several; access|internet
+119265062; 4; workout|perfect; room|perfect; exercise|necessary; equipment|necessary
+119265062; 5; hotel|spectacular; staff|spectacular
+119265062; 6
+119265062; 7
+119265062; 8; lotions|wonderful; hotel|best
+119265062; 9
+119265062; 10; park|central; subway|square and easy; access|square and easy
+119265062; 11; time|next
+119277729; 0
+119277729; 1; children|young; including|young; floor|young; space|young
+119277729; 2; breakfast|continental; selection|good
+119277729; 3
+119277729; 4
+119277729; 5
+119293206; 0; hotel|superior
+119293206; 1; boys|teenage
+119293206; 2
+119293206; 3; breakfast|ample free; food|ample free; staff|friendly helpful; wall|tasteful; hangings|tasteful; fitness|average; room|average; location|great
+119293206; 4; thing|final; boy|younger
+119293206; 5; place|really special
+119293206; 6
+119295755; 0; york|new; zu|new; finden|new; ist|new; gar|new; nicht|new
+119295755; 1
+119295755; 2; haben|unseren,new; wir|unseren,new; uns|unseren,new; york|unseren,new; aufenthalt|unseren,new; dann|unseren,new; fr|unseren,new; das|unseren,new
+119295755; 3
+119295755; 4
+119295755; 5
+119295755; 6
+119295755; 7; informationen|zustzlichen
+119295755; 8; es|auch; keine|auch; broschren|auch
+119295755; 9; dies|new; york|new; erwartet|new; htte|new
+119295755; 10; renovierung|letzte; liegt|letzte; schon|letzte; ein|letzte; paar|letzte; jahre|letzte; zurck|letzte
+119295755; 11; hingegen|ausstattung; ist|ausstattung; o.|ausstattung; mit|ausstattung; kaffeemaschine|ausstattung; und|bgeleisen; einem|bgeleisen; schreibtisch|bgeleisen
+119295755; 12
+119295755; 13; wir|haben; ein|haben; zimmer|haben; ohne|haben
+119295755; 14
+119295755; 15
+119295755; 16; sich|lassen; ffnen|lassen
+119295755; 17; hotel|ganzen; kostenfrei|ganzen; vorhanden|ganzen
+119295755; 18; das|hingegen; ist|hingegen; ein|hingegen; schlechter|hingegen; witz|hingegen; und|hingegen; dem|hingegen; hotelstatus|hingegen; eindeutig|hingegen; nicht|hingegen; angemessen|hingegen
+119295755; 19; der|vielen; frhstcksraum|vielen; ist|vielen; eng|vielen; und|vielen; ungemtlich|vielen; und|vielen; bietet|vielen; zu|vielen; wenig|vielen; pltze|vielen; fr|vielen; zimmer|vielen
+119295755; 20
+119295755; 21
+119295755; 22; nachmittagskaffee|auch; oder|auch; cookies|auch; nicht|hier
+119295755; 23; ausreichend|zimmerreinigung; habe|zimmerreinigung; ich|zimmerreinigung; auch|zimmerreinigung; empfunden|zimmerreinigung
+119295755; 24
+119295755; 25
+119295755; 26; dann|haben; erlaubt|haben
+119295755; 27
+119295755; 28; staubgesaugt|mal
+119295755; 29; ich|zumal; es|zumal; als|zumal
+119295755; 30; york|new; dennoch|new; sterne|new; und|new; wrde|new; hier|new; auch|new; wieder|new; wohnen|new; auf|hier; tripadvisor|hier; nur|hier; wundern|hier
+119295755; 31
+119295755; 32
+119295755; 33
+119295755; 34; und|fhlten
+119295755; 35
+119295755; 36; york|new; ein|new; ganz|new
+119295755; 37
+119295755; 38; der|new; ostkste|new; abseits|new; york|new; oder|new; boston|new; htte|new; ich|new; maximal|new; zimmerpreises|diesen,standard; bezahlt|diesen,standard
+119367071; 0
+119367071; 1
+119367071; 2
+119367071; 3; deal|great
+119367071; 4
+119367071; 5
+119367071; 6; location|great; shopping|great
+119367071; 7; staff|always helpful and friendly
+119367071; 8; rooms|huge and most,importantly quiet
+119367071; 9; noise|siren
+119367071; 10; beds|comfortable
+119367071; 11; breakfast|typical
+119367071; 12
+119367071; 13
+119367071; 14; screen|flat; tvs|flat
+119367071; 15; visit|third
+119419608; 0; nights|few
+119419608; 1; location|good
+119419608; 2; disappointment|huge
+119419608; 3; sheets|stained
+119419608; 4; hotel|small
+119419608; 5; day|next
+119419608; 6
+119419608; 7; urine|left
+119419608; 8; sheets|stained
+119419608; 9
+119419608; 10
+119419608; 11
+119419608; 12; concierge|real
+119419608; 13; doorman|great
+119470724; 0
+119470724; 1; location|great; albeit|breakfast; wifi|free
+119470724; 2; kitchen|well stocked; area|well stocked; dining|small
+119470724; 3
+119470724; 4; one|only; thing|only; hoover|better
+119470724; 5; point|small; cleanliness|other
+119498105; 0
+119498105; 1; hotel|very centrally located; restaurants|many great; sights|many great
+119498105; 2; room|very clean and comfortable
+119498105; 3
+119498105; 4
+119498105; 5; price|reasonable
+119498105; 6
+119582136; 0; york|new; notice|late; hotel|favorite; york|new; palace|new
+119582136; 1; suite|small; price|same
+119582136; 2; stay|very nice
+119582136; 3; kitchen|small; counter|small; sink|small
+119582136; 4; setup|good
+119582136; 5; sleeps|other
+119582136; 6; continental|free; breakfast|free; guests|greeted
+119582136; 7; restaurants|great
+119582136; 8; furniture|most luxurious
+119582136; 9; complaints|minor; stay|very nice
+119582136; 10
+119724921; 0; hotel|very nice; rooms|updated; price|good
+119724921; 1
+119724921; 2; breakfast|free; choices|too many other
+119775205; 0; york|new
+119775205; 1; location|centrally located; sites|several
+119775205; 2
+119775205; 3; street|very little; noise|very little
+119775205; 4
+119775205; 5; breakfast|included
+119775205; 6; assortment|typical; afternoon|late
+119775205; 7; hotel|helpful; staff|helpful; spots|several nearby; dining|casual
+119775205; 8
+119775205; 9
+120090341; 0; attractions|many; nations|united
+120090341; 1
+120090341; 2; york|new; city|expensive; hotels|more famous; thing|same
+120090341; 3; deli|good; restaurants|many
+120090341; 4; find|good
+120428960; 0; stay|great
+120428960; 1; suite|queen
+120428960; 2; beds|queen
+120428960; 3; size|nice; storage|ample; space|ample
+120428960; 4; room|clean and comfortable
+120428960; 5; bathroom|nice
+120428960; 6
+120428960; 7; rooms|other
+120428960; 8; front|very nice and helpful; desk|very nice and helpful; staff|very nice and helpful
+120428960; 9
+120428960; 10
+120428960; 11; stop|quick
+120428960; 12; front|particularly helpful; desk|particularly helpful
+120428960; 13
+120428960; 14; hotel|very convenient; block|very convenient
+120428960; 15; bagel|great; place|great
+120428960; 16; york|new
+120559599; 0; minute|last; days|last; company|been
+120559599; 1; price|extremely reasonable; airbnb|unreliable; service|unreliable
+120559599; 2
+120559599; 3; suite|spacious
+120559599; 4
+120559599; 5; sofa|double; mattress|very thick and comfortable
+120559599; 6
+120559599; 7; dining|small; area|small; kitchenette|real; refrigerator|small but real; plenty|small but real
+120559599; 8
+120559599; 9; food|cooked
+120559599; 10; reservation|only; air|fresh; nd|fresh; floor|fresh
+120559599; 11; ventilation|rather efficient; system|rather efficient
+120559599; 12; staff|very helpful
+120559599; 13
+120559599; 14
+120559599; 15; access|easy; destinations|important; park|central
+120559599; 16; th|really close; avenue|really close; shopping|really close; area|really close
+120559599; 17
+120787646; 0; este|en; hotel|en; en|en; dos|en; ocasiones|en
+120787646; 1
+120787646; 2
+120787646; 3
+120787646; 4; los|ofrecen; poqusimos|ofrecen; hoteles|ofrecen; desayuno|ofrecen; en|ofrecen; n.|ofrecen; salir|agradable
+120787646; 5; eficiente|personal; y|personal; con|personal; dominio|personal; del|personal; espaol|personal
+120787646; 6
+121439188; 0; trip|first
+121439188; 1; bathroom|immaculately clean; w|immaculately clean; sitting|separate; room|separate; w|separate; fridge|small; child|small
+121439188; 2
+121439188; 3
+121439188; 4; center|rockefeller
+121439188; 5
+121439188; 6; place|convenient
+121439188; 7
+121562303; 0; hotels|many; lighting|poor; bathroom|small
+121562303; 1; side|other
+121562303; 2
+121591585; 0
+121591585; 1; park|central
+121591585; 2
+121591585; 3
+121591585; 4
+121591585; 5
+121591585; 6
+121591585; 7; de|personal; recepcin|personal; muy|personal
+121591585; 8; ademas|daban; desayuno|daban; continental|daban; incluido|daban; para|daban; empezar|daban; bien|daban; el|daban; dia|daban
+121591585; 9; la|en; verdad|en; es|en; este|en; todo|en; esta|en; perfecto|en; la|en; habitacin|en
+121591585; 10
+121639897; 0; hotel|new favorite; york|new
+121639897; 1
+121639897; 2; york|outrageously priced
+121639897; 3
+121639897; 4
+121639897; 5
+121639897; 6; breakfast|free; wifi|free
+121639897; 7; beds|nice and comfortable; room|much larger
+121639897; 8; meals|quick
+121639897; 9; subway|easy; access|easy
+121639897; 10; otherwise|needed; cabs|needed
+121639897; 11
+121639897; 12; living|full; room|full; kitchenette|full
+121639897; 13
+121639897; 14
+121639897; 15; ambience|more
+121639897; 16
+121639897; 17; lighting|poor; breakfast|inadequate
+121639897; 18
+121639897; 19
+121639897; 20; bathroom|small but adequate
+121639897; 21
+121639897; 22
+121639897; 23; york|new; palace|new
+121639897; 24; hotel|nice; hotel|fabulous
+121933595; 0; our|absolutely enjoyed; stay|absolutely enjoyed
+121933595; 1; one|spacious; bedroom|spacious; suite|spacious
+121933595; 2; mini|fabulous; kitchenette|fabulous; allergies|food
+121933595; 3; year|there again next
+122113032; 0; rooms|suite; beds|queen; room|separate; people|separate; adults|separate; teens|separate
+122113032; 1; room|additional
+122113032; 2; everything|really nice
+122113032; 3; size|good; countertop|good; space|good
+122113032; 4; room|quiet; york|new; street|completely quiet; sounds|completely quiet; our|completely quiet; room|completely quiet
+122113032; 5; blankets|extra; towels|extra
+122113032; 6; staff|also helpful; suggestions|restaurant
+122113032; 7
+122113032; 8; hotel|great; spot|great; attractions|many other; activities|many other
+122113032; 9
+122132994; 0
+122132994; 1; neighborhood|quiet; convenient|quiet
+122132994; 2; diner|wonderful
+122132994; 3; staff|well trained
+122132994; 4
+122132994; 5; breakfast|free; pastry|free; dry|free; fruit|fresh
+1221829; 0
+1221829; 1; place|beautiful
+1221829; 2; nyc|not terribly expensive,given
+1221829; 3; parking|discounted
+1221829; 4; place|just renovated
+1221829; 5; rooms|beautiful
+1221829; 6
+1221829; 7
+1221829; 8
+122286731; 0
+122286731; 1; my|ranged; stays|ranged; nights|few
+122286731; 2; business|several; associates|several
+122286731; 3; place|first; class|first
+122286731; 4; rooms|spacious
+122286731; 5
+122286731; 6; time|very hectic; prices|entirely reasonable
+122286731; 7; midtown|ideal; east|ideal; walking|easy; distance|easy
+122286731; 8; job|great; decorations|tasteful,clearly upscale
+122286731; 9; whoever|responsible; deserves|responsible; kudos|special
+122286731; 10; place|hospitable; city|sometimes cold
+122474640; 0; comments|positive
+122474640; 1
+122474640; 2; others|said
+122474640; 3
+122474640; 4; budget|extremely tight
+122474640; 5
+122595117; 0; time|last; my|last; family|last
+122595117; 1
+122595117; 2; san|changed; his|changed; mind|changed
+122595117; 3; hotel|suitable; location|suitable
+122595117; 4
+122595117; 5; door|so convenient,reasonably priced; hotel|wonderful; staff|wonderful; room|spacious; beds|so incredibly comfortable
+122595117; 6
+122595117; 7; perk|added
+122595117; 8; days|most; english|fluent; understanding|trouble
+122595117; 9; items|several
+122595117; 10; items|packaged; time|first
+122595117; 11
+122616116; 0; year|new; season|new
+122616116; 1; had|suite; beds|queen; sofa|comfortable
+122616116; 2; beds|comfortable; size|big; breakfast|simple but adequate; facilities|simple but adequate; bathroom|good; size|good; shower|fantastic
+122616116; 3; room|quiet
+122616116; 4; checkout|late
+122616116; 5
+122649539; 0; rooms|good,sized; location|great; staff|helpful
+122649539; 1; little|good; breakfast|good; eateries|other
+122649539; 2
+122649539; 3
+122649539; 4; thanks|special
+122677997; 0
+122677997; 1
+122677997; 2; kitchenette|small
+122677997; 3
+122677997; 4; hotel|clean
+122677997; 5; wheelchair|large; room|not gigantic but large; items|other
+122677997; 6; son|other
+122677997; 7; screen|big flat; tv|big flat
+122677997; 8
+122677997; 9; wifi|free
+122677997; 10
+122677997; 11; staff|wonderful; hotel|best
+122677997; 12; breakfast|perfect; breakfast|not big; eaters|not big
+122677997; 13
+122677997; 14; nothing|other
+122677997; 15; gym|small
+122677997; 16; machine|elliptical; bike|stationary; weights|free
+122677997; 17
+122677997; 18; park|central
+122677997; 19
+122677997; 20
+122677997; 21; center|rockerfeller
+122677997; 22; nyc|short,so most; things|short,so most
+122677997; 23; night|wonderful; staff|wonderful
+122677997; 24; suggestions|made
+122677997; 25; chinese|best; restaurants|best
+122677997; 26
+122677997; 27; evelyn|great new; years|great new; recommendations|eve
+122677997; 28; couple|young; looking|young
+122677997; 29
+122696961; 0
+122696961; 1
+122696961; 2
+122696961; 3; deal|good
+122696961; 4; rooms|regular
+122696961; 5
+122696961; 6; breakfast|very small; room|very small
+12275487; 0; couple|irish; year|new; staff|extremely helpfull
+12275487; 1; location|great; midtown|great; manhattan|great
+12275487; 2; size|good; maid|daily; service|daily
+12275487; 3; room|very noisey; breakfast|too small; room|too small
+12275487; 4
+122898837; 0
+122898837; 1
+122898837; 2; line|green
+122898837; 3
+122898837; 4; people|extremely helpful and friendly
+122898837; 5
+122898837; 6
+122898837; 7
+122898837; 8
+122898837; 9
+122898837; 10; living|huge; room|huge
+122898837; 11
+122898837; 12
+122898837; 13
+122898837; 14
+122898837; 15
+122898837; 16
+122898837; 17
+122898837; 18
+122898837; 19; sleep|late
+122898837; 20; selection|good; avenue|second
+122898837; 21; room|spacious
+122898837; 22
+122924284; 0; es|amable; siempre|amable; tratando|amable; d.|agradable; arcangel|agradable
+123032117; 0
+123032117; 1; hotel|kimberly
+123032117; 2
+123032117; 3; everything|excellent
+123032117; 4; minutes|few; getting|late
+123032117; 5
+123032117; 6; rooms|very clean and spacious
+123032117; 7
+123032117; 8; beds|queen
+123032117; 9; breakfast|excellent and much,appreciated
+123032117; 10
+123032117; 11; women|many
+123032117; 12; mirror|large
+123032117; 13
+123032117; 14
+123032117; 15; job|great; including|great; i|ny; bear|ny
+123032117; 16; snacks|very tasty
+123032117; 17; better|larger; hotel|larger; room|larger
+123032117; 18
+123032117; 19
+123032117; 20
+12304246; 0; time|fantastic
+12304246; 1
+12304246; 2; one|spacious,very comfortable; bedroom|spacious,very comfortable; suite|spacious,very comfortable; beds|double; living|separate; area|separate
+12304246; 3; york|new
+12304246; 4
+12304246; 5
+12304246; 6; out|pull; sofa|pull
+12304246; 7; floor|second
+12304246; 8; breakfast|great free continental
+12304246; 9; breakfast|hot; hrs|open
+12304246; 10
+12304246; 11
+12304246; 12; restaurant|own
+12304246; 13; class|top; indian|top; restaurant|top; atmosphere|fantastic
+12304246; 14; hotel|delivered
+12304246; 15
+12304246; 16; location|great
+12304246; 17; days|few
+12304246; 18; walking|comfortable; distance|comfortable; sights|most; park|central
+12304246; 19; city|many
+12304246; 20; year|second
+12304246; 21; deal|great
+12304246; 22
+12304246; 23; attractions|other
+12304246; 24
+12304246; 25; buses|regular
+12304246; 26; goods|most
+12304246; 27
+12304246; 28; people|many; visit|first
+12304246; 29
+12304246; 30; york|new; experience|new
+123312517; 0; carlos|lovely san; hotel|lovely san; th|east; street|east
+123312517; 1; room|luxurious and quiet; staff|great
+123312517; 2; feeling|very gracious; ny|other; hotels|other; atmosphere|commercial
+123312517; 3; room|inexpensive; rate|inexpensive; york|new; week|first
+123312517; 4; room|breakfast; breakfast|complimentary; yogurt|available
+123312517; 5
+12375109; 0
+12375109; 1
+12375109; 2
+12375109; 3
+12375109; 4
+12375109; 5
+12375109; 6
+12375109; 7
+12375109; 8; dia|scorgere chiunque
+12375109; 9
+12375109; 10; e|preso latte; cereali|preso latte; e|preso latte; la|preso latte; colazione|preso latte; la|preso latte; facevamo|preso latte
+12375109; 11
+12375109; 12; passi|due; usciti|due; dall'hotel|due; andate|due
+12375109; 13
+12375109; 14; york|new; allogger|new
+124220391; 0; spring|last
+124220391; 1
+124220391; 2; value|great
+124220391; 3
+124220391; 4; cab|short; subway|short; ride|short
+124220391; 5
+124245780; 0; que|personal; habla|personal; castellano|personal
+124245780; 1; las|buen; habitaciones|buen; tamao|buen
+124245780; 2
+124245780; 3
+124317967; 0; situado|bien; y|bien; el|bien; de|personal; recepcin|personal; muy|personal
+124317967; 1
+124317967; 2
+124317967; 3
+125441510; 0; location|great
+125441510; 1; york|new; hotels|new
+125441510; 2; breakfast|continental; time|great; saver|great; value|tremendous
+125441510; 3; staff|entire
+125441510; 4
+125441510; 5; kept|best; secret|best
+125441510; 6
+125464048; 0
+125464048; 1; rooms|comparatively tiny; rate|corporate; feb|late
+125464048; 2; hubby|able; room|other; watch|other; tv|other; recline|other
+125464048; 3
+125464048; 4; wine|real; glasses|real
+125464048; 5
+125464048; 6; dining|small
+125464048; 7; bathroom|well appointed; aveda|well appointed; products|well appointed
+125464048; 8
+125464048; 9; breakfast|free
+125464048; 10
+125464048; 11; breakfast|real; lex|national; th|national; ny|real; bagels|real; betw|third
+125464048; 12
+125464048; 13; owner|actual
+125464048; 14
+125504288; 0; times|stayed,here several
+125504288; 1; staff|equally comfortable; speakers|english and nonenglish; guests|nonamerican; attests|nonamerican
+125504288; 2; rooms|good; size|good
+125504288; 3
+125504288; 4; decor|subdued,nice; calm|subdued,nice
+125504288; 5; breakfast|continental; pastries|good
+125504288; 6
+125504288; 7; subways|several
+125504288; 8
+12556519; 0; year|new
+12556519; 1; time|second; rooms|booked; time|first
+12556519; 2; boutique|quiet; hotel|quiet; rooms|spacious; staff|outstanding
+12556519; 3
+12556519; 4; breakfast|simple; buffet|simple
+12556519; 5; rooms|clean
+12556519; 6
+12586128; 0; home|only just returned
+12586128; 1
+12586128; 2; location|great; blocks|few; things|many; subway|handy
+12586128; 3; doormen|fabulous; my|able; husband|able
+12586128; 4; desk|so efficent
+12586128; 5; daughers|entertained
+12586128; 6; place|only; thing|good
+12597225; 0
+12597225; 1; porter|very nice
+12597225; 2
+12597225; 3
+12597225; 4; hotel|smallest; room|smallest
+12597225; 5; reviews|other
+12597225; 6; rooms|spacious and comfortable; our|tiny; room|tiny
+12597225; 7; nicer|been
+12597225; 8; three|least; times|least; room|original; i|ever slept
+12597225; 9
+12597225; 10; day|hard; shopping|hard; shower|great; bathroom|great
+12597225; 11; hotel|perfect
+12597225; 12; places|most; shopping|main; areas|main
+12597225; 13; time|second
+12597225; 14; breakfast|quite good
+12597225; 15
+12597225; 16; food|very tasty
+12597225; 17
+12597225; 18
+12597225; 19; steaks|wollensky best
+12597225; 20
+12597225; 21; hotel|exceptional
+12597225; 22
+12597225; 23; guy|really nice
+12597225; 24
+12597225; 25
+12597225; 26; staff|excellent
+12597225; 27; thank|special
+12597225; 28
+12597419; 0; fuimos|san; carlos|san
+12597419; 1
+12597419; 2
+12597419; 3
+12597419; 4; ya|que; es|que; en|que; ny|que; se|que; incluya|que; el|que; desayuno|que; en|que; el|que; precio|que
+12597419; 5
+12597419; 6; muerte|bien; pero|bien; est|bien; ms|bien
+12597419; 7; las|bien; instalaciones|bien; perfectamente|limpsimo y; cuidado|limpsimo y
+12597419; 8; realmente|algo que; nos|algo que
+12597419; 9
+12597419; 10
+12597419; 11
+12597419; 12
+12597419; 13
+12597419; 14; nosotros|encant
+12597419; 15; san|volver al; carlo|volver al; hotel|volver al
+126013573; 0; hotel|big
+126013573; 1; staff|wonderful and most
+126013573; 2
+126013573; 3; front|phenominal; desk|phenominal; staff|phenominal; hotel|great
+126013573; 4
+127321699; 0; york|new
+127321699; 1; st.|catedral; patrick|catedral
+127321699; 2
+127552737; 0; days|few; york|new; staying|new
+127552737; 1
+127552737; 2
+127552737; 3; day|good
+127552737; 4
+127552737; 5
+127552737; 6; safe|good; wifi|free; tv|large
+127552737; 7; suite|'computer; floor|second
+127552737; 8; restaurants|good; parks|central
+127552737; 9; visit|next; york|new
+127893368; 0; time|first
+127893368; 1; times|many
+127893368; 2; renovation|complete; rooms|nice and confortable
+127902568; 0; sommes|nous; avec|suite; salon|suite; et|suite; une|suite; chambre|suite; spar|suite
+127902568; 1
+127902568; 2; que|bien; pas|n'tant
+127902568; 3; chaud|chocolat
+127902568; 4; tait|l'appartement; spacieux|l'appartement; et|l'appartement; en|l'appartement; bon|l'appartement; tat|l'appartement
+127902568; 5
+127902568; 6; grands|ranger; placards|ranger; les|ranger; affaires|ranger
+127902568; 7; de|plaque; cuisson|plaque; donc|plaque; de|impossible; faire|impossible; manger|impossible; sur|impossible; place|impossible
+127902568; 8; de|impossible; dormir|impossible; avec|impossible; le|impossible; chauffage|impossible; ou|impossible; la|impossible; clim|impossible; alum|impossible; car|impossible; fait|impossible; vraiment|impossible; trop|impossible; tions|nous; en|l'htel; priode|l'htel; estivale|l'htel; intermdiaire|l'htel; donc|l'htel; la|qu'en; nuit|qu'en; est|qu'en; il|qu'en; en|qu'en; hiver|qu'en; ou|qu'en; en|qu'en; t|qu'en
+127902568; 9; assez|est; sommaire|est
+127902568; 10; petit|le; dj|le; et|le; assez|le; bien|le; plac|le
+127982210; 0; place|great
+127982210; 1
+127982210; 2; thing|only; lacking|only
+128050092; 0
+128050092; 1
+128050092; 2
+128050092; 3; recepcion|un; son|un; muy|un; amables|un; capitulo|un; aparte|un; es|un; para|disponible; solucionarte|disponible; cualquier|disponible; duda|disponible; muy|bueno como veran; contenta|bueno como veran; yo|bueno como veran; y|bueno como veran; mi|bueno como veran; familia|bueno como veran
+128395276; 0; et|confortable; trs|confortable
+128395276; 1
+128395276; 2
+128395276; 3; notre|est; disposition|est
+128395276; 4
+128395276; 5
+128395276; 6
+128395276; 7; un|c'est; bonne|c'est; adresse|c'est; pour|c'est; les|c'est; familles|c'est; car|c'est; dans|c'est; les|c'est; chambres|c'est
+128395276; 8; et|portier; rception|portier; toujours|portier
+128616547; 0; kept|best; secret|best; thing|best
+128616547; 1
+128616547; 2; rooms|very spacious; furnishings|modern
+128616547; 3; beds|ver comfortable
+128616547; 4
+128616547; 5; factor|small; my|lower; rating|lower
+128616547; 6; way|possible; five|possible; star|possible
+128616547; 7; breakfast|continental
+128616547; 8
+128997903; 0; stay|adequate; price|reasonable
+128997903; 1; hotel|well situated
+128997903; 2
+128997903; 3; reception|relatively small,yet efficient; lounge|relatively small,yet efficient
+128997903; 4; sofa|comfortable; chairs|comfortable; kitchen|workable; facilities|workable
+128997903; 5; bathroom|small,yet functional; ok|small,yet functional; water|small,yet functional; pressure|small,yet functional; aveda|small,yet functional; giveaways|small,yet functional
+128997903; 6
+128997903; 7; breakfast|continental
+128997903; 8; towels|so worn,thin
+128997903; 9; summer|bad; camp|bad; experience|bad
+128997903; 10; breakfast|bland
+128997903; 11; quantities|huge
+128997903; 12; rate|discounted
+128997903; 13; breakfast|embedded,continental; cost|embedded,continental
+12952415; 0
+12952415; 1; reviews|mainly excellent
+12952415; 2; my|stayed; friend|stayed
+12952415; 3
+12952415; 4; york|very traditional new
+12952415; 5
+12952415; 6
+12952415; 7
+12952415; 8
+12952415; 9; hotel|more; hotel|orientated
+12952415; 10
+12952415; 11; guest|usually corporate; businessmen|usually corporate
+12952415; 12
+12952415; 13; suite|bed
+12952415; 14
+12952415; 15; rooms|standard
+12952415; 16
+12952415; 17; room|good
+12952415; 18
+12952415; 19; bathroom|very small
+12952415; 20; location|good
+12952415; 21; lobby|good and helpful; staff|good and helpful
+12952415; 22
+12952415; 23
+12952415; 24; price|top; range|top; something|expected
+12952415; 25
+12952415; 26; atmosphere|good
+12952415; 27; sanctuary|quiet; location|good
+129549972; 0
+129549972; 1; rooms|spacious and clean; location|great
+129549972; 2; staff|very attentive; smiling|same; faces|same; visit|last
+129549972; 3
+129549972; 4; trip|other; advisor|other; reviews|other; breakfast|complimentary; selection|vast
+129549972; 5; options|great
+129549972; 6
+129558843; 0; room|very spacious,well equipped; hotel|small
+129558843; 1
+129558843; 2; bathroom|small but functional
+129558843; 3; breakfast|included; continental|usual; buffet|usual
+129558843; 4; room|very limited; service|very limited; menu|very limited; restaurant|indian
+129558843; 5; food|pedestrian; exchange|rather odd
+129558843; 6; morning|next
+129558843; 7; my|good; stay|good
+129558843; 8
+129601670; 0; years|last; times|least
+129601670; 1; hotels|few different
+129601670; 2; i|clean; am|clean
+129601670; 3; breakfast|continental; suffices|continental; hot|big; breakfast|big; person|big; cereals|cold; drinks|hot
+129601670; 4; rooms|quite large; walk|easy; park|central
+129601670; 5; hotels|other; trip|yearly
+129601670; 6
+12967014; 0; location|best
+12967014; 1; shopping|great
+12967014; 2
+12967014; 3; blocks|few; dinners|great; restaurants|best
+12967014; 4; park|central; times|central
+12967014; 5
+12967014; 6
+12967014; 7
+12967014; 8; space|perfect
+12967014; 9
+12967014; 10
+12967014; 11; kitchenette|helpful; lag|jet; breakfast|perfect; downstairs|perfect; breakfast|light; eaters|light
+12967014; 12; downside|only; night|last
+12967014; 13; staff|very apologetic
+12967014; 14; room|new; ceiling|lower; room|previous
+12967014; 15; restaurant|attached,indian
+12967014; 16; family|whole
+12967014; 17; lighting|green; food|good
+12967014; 18; family|good; diner|good
+12967014; 19; hotel|very helpful and friendly; staff|very helpful and friendly
+12967014; 20; bellman|particularly wonderful; ways|numerous
+12967014; 21; hotel|impersonal; chain|impersonal
+12967014; 22
+129780090; 0; time|first
+129780090; 1; location|desired; trip|desired; advisor|desired; reviews|desired; nyc|already booked
+129780090; 2
+129780090; 3
+129780090; 4; beds|large
+129780090; 5; chair|available free; wifi|available free
+129780090; 6; chair|comfortable,upholstered
+129780090; 7; alcove|small
+129780090; 8; bathroom|roomy and modern
+129780090; 9; elevators|very efficient
+129780090; 10; breakfast|complimentary; lobby|main
+129780090; 11; rolls|sweet; tea|available; orange|available; juice|available
+129780090; 12; room|very reasonable; rates|very reasonable
+129780090; 13
+130159547; 0; la|que; criticas|que; tenia|que; en|que; tripavisor|que
+130159547; 1; lo|cual; esperado|cual; para|cual; este|cual; tipo|cual; y|que; comodas|que; fuimos|que; adultos|que
+130159547; 2; la|ideal; ubicacion|ideal; es|ideal
+130159547; 3; park|central
+130159547; 4; teniamos|resumen
+130159547; 5
+130159547; 6; york|new; volveria|new
+130159547; 7
+130550273; 0; trip|first; place|better
+130550273; 1; location|perfect
+130550273; 2; hotel|clean and quiet
+130550273; 3; days|busy
+130550273; 4; staff|great,especially steven
+130550273; 5; york|new
+130888587; 0
+130888587; 1
+130888587; 2
+130919115; 0; room|very nice and clean
+130919115; 1
+130919115; 2
+131004462; 0; choice|very good; york|new
+131004462; 1; staff|very nice and friendly; facilities|clean; size|nice
+131004462; 2; downside|only; breakfast|continental; dos|continental; variety|good
+131004462; 3; hotel|conveniently located; venues|most
+131099124; 0; segunda|en; vez|en; en|en; este|en; hotel|en; ya|en; habamos|en; l|en; en|en; julio|en
+131099124; 1
+131099124; 2; de|catedral; saint|catedral; patrick|catedral
+131099124; 3
+131099124; 4
+131099124; 5; es|cual; un|enviar; correo|enviar
+131099124; 6
+131099124; 7
+131099124; 8
+131099124; 9
+131099124; 10; comedor|un; y|un; una|un; zona|un; donde|un; estn|un; las|un; cafeteras|un; una|pan; zona|pan; con|pan; distintos|pan; tipos|pan
+131099124; 11; del|personal; hotel|personal; hemos|personal; de|personal; recepcin|personal; hasta|personal; el|personal; de|personal; limpieza|personal
+131099124; 12; nos|en; ambas|en; ocasiones|en; un|genial; hondureo|genial; muy|genial; simptico|genial; que|genial; nos|genial
+131099124; 13; l|en
+131163625; 0; hotel|buen; apart|buen
+131163625; 1
+131163625; 2
+131163625; 3
+131345808; 0
+131345808; 1
+131345808; 2
+131473387; 0
+131473387; 1
+131473387; 2; staff|courteous; hotel|clean
+131473387; 3
+132019705; 0
+132019705; 1
+132019705; 2
+132019705; 3; las|luxe; habitaciones|luxe; son|luxe; muy|luxe; lindas|luxe
+132019705; 4
+132019705; 5; volveramos|san; carlos|san
+132469139; 0; suite|roomed
+132469139; 1
+132469139; 2; kitchen|small
+132469139; 3; tv|big
+132469139; 4; wifi|free
+132469139; 5; room|high; noise|traffic
+132469139; 6; beds|extremely comfortable
+132469139; 7
+132469139; 8
+132469139; 9
+132469139; 10; breakfast|free
+132469139; 11
+132469139; 12; days|few
+132469139; 13; quality|very good
+132906866; 0; weekend|past
+132906866; 1; hotel|great
+132906866; 2; room|spacious
+132906866; 3; walk|short; connections|many
+132906866; 4; walk|short; pj|famous
+132906866; 5; staff|very attentive and friendly
+132906866; 6; doorman|exceptional; tips|great
+132906866; 7; days|very hot
+132906866; 8
+132920873; 0
+132920873; 1
+132920873; 2; time|first; york|new
+132920873; 3; location|perfect; park|central; time|central; square|central
+132920873; 4; blocks|few
+132920873; 5
+132920873; 6; going|comfortable
+132920873; 7; staff|wonderful
+132920873; 8
+132920873; 9; wifi|free
+132920873; 10; beds|queen; bedroom|very spacious
+132920873; 11; son|old
+132920873; 12
+132920873; 13
+132920873; 14; refrig|nice; size|nice
+132920873; 15
+132920873; 16; room|great; size|great; tv|huge
+132920873; 17; side|small; deal|big
+132920873; 18
+132920873; 19
+132920873; 20; door|right next; get|right next; ticket|right next; voucher|right next
+132920873; 21
+132920873; 22; night|first
+132920873; 23
+132920873; 24
+13294256; 0
+13294256; 1; plaza|old; location|great
+13294256; 2; deal|great; night|third
+13294256; 3
+13294256; 4; room|huge; place|great
+13294256; 5; kitchenette|nice; space|ample
+13294256; 6
+13294256; 7; comment|negative; breakfast|continental
+13294256; 8; selection|small
+13294256; 9; gripe|very trivial
+13294256; 10
+133208658; 0; week|last
+133208658; 1; hotel|perfectly situated; walk|short; park|central
+133208658; 2; beds|queen
+133208658; 3; space|perfect
+133208658; 4; continental|included; breakfast|included
+133208658; 5; chocolate|hot
+133208658; 6; lunch|early
+133208658; 7; drawback|only; windows|pretty thin; outside|traffic
+133208658; 8
+133208658; 9; visits|future; york|new; city|new
+133212295; 0; reasons|several
+133212295; 1; wifi|free; breakfast|free
+133212295; 2
+133212295; 3; family|tall
+133212295; 4; size|double full
+133212295; 5
+133212295; 6; san|had; price|most reasonable
+133212295; 7; everything|clean
+133212295; 8
+133212295; 9; our|delayed; plane|delayed
+133212295; 10; items|mostly bread
+133212295; 11
+133212295; 12
+133778187; 0
+133778187; 1; sixteen|sweet
+133778187; 2; suite|very large
+133778187; 3; rooms|well appointed; kitchen|basic; equipment|basic
+133778187; 4; hotel|very quiet unusual
+133778187; 5; walk|easy; oasis|quiet
+133778187; 6
+134238752; 0
+134238752; 1
+134238752; 2
+134238752; 3; rooms|large
+134238752; 4; area|kitchen
+134238752; 5; fare|usual
+134238752; 6; location|great; short|great; walk|great
+134238752; 7; fast|free; wifi|free
+134238752; 8
+134318764; 0; dos|san; patricks|san
+134318764; 1
+134318764; 2
+134318764; 3
+134318764; 4; desayuno|buen
+134318764; 5
+134318764; 6
+13459806; 0
+13459806; 1; room|very spacious
+13459806; 2; accommodations|clean
+13459806; 3; coffee|much appreciated; pot|much appreciated; refrigerator|much appreciated
+13459806; 4
+13459806; 5; ave|fifth; shopping|fifth; area|several; blocks|several
+13459806; 6
+13459806; 7; floor|second; overlooking|second
+13459806; 8
+13459806; 9; leave|simply cant
+13459806; 10
+13459806; 11; chocolate|particularly good; pastry|particularly good; roll|particularly good
+13459806; 12; suspects|usual
+13459806; 13
+13459806; 14; choice|good
+13459806; 15; places|more fashionable; price|fair
+13470634; 0; location|great; terminals|free
+13470634; 1
+13470634; 2
+135300639; 0
+135300639; 1; lobby|peaceful; too|little
+135300639; 2
+135300639; 3
+135300639; 4; stores|also conveniently close
+135300639; 5; front|friendly; desk|friendly; agent|friendly; decent|asian; doorman|attentive; steven|attentive
+135300639; 6; continental|complimentary; breakfast|complimentary
+135300639; 7
+135300639; 8; carlos|soon san
+135304348; 0
+135304348; 1; choices|so many
+135304348; 2; price|acceptable; point|acceptable; day|recent; trip|recent; w|recent; my|recent; hubby|recent
+135304348; 3; hipster|overpriced; boutiques|overpriced; parts|less desirable
+135304348; 4; options|many
+135304348; 5
+135304348; 6; hotels|very last,independently owned; clientele|european; rooms|nonfussy; spaces|immaculately clean; area|convenient
+135304348; 7; rooms|large; vs|large
+135304348; 8
+135304348; 9; room|certain; type|certain; lady|young
+135304348; 10
+135304348; 11; reservation|original
+135304348; 12; lady|young
+135304348; 13
+135304348; 14
+135304348; 15; school|old
+135304348; 16; cab|easy; ride|easy
+135304348; 17; place|fanciest; families|many; factor|huge
+135304348; 18
+135304348; 19
+135304348; 20; room|particular
+135304348; 21; linens|bed
+135304348; 22; room|modern
+135304348; 23
+135304348; 24
+135304348; 25; silverware|real; compliment|great
+135304348; 26
+135304348; 27; housecleaning|never seen,more competent
+135304348; 28; staff|easy; peasy|easy
+135304348; 29
+135304348; 30
+135304348; 31; restaurant|indian; breakfast|complimentary; serving|complimentary; area|complimentary; menu|own; room|limited; service|limited
+135304348; 32; cuisine|american; room|american; service|american; reason|only; hotel|different
+135304348; 33; has|manhattan
+135304348; 34; rooms|quiet; interiors|pleasant; halls|pleasant; business|great; center|great; overflow|great; lobby|great; check|constantly cleaned; my|valued; business|valued; i|next; 'm|next
+135304348; 35; gem|hidden; amongst|hidden; your|hidden; hundreds|hidden
+135304348; 36
+135313828; 0; suite|executive
+135313828; 1; location|very convenient; spots|most,well known
+135313828; 2; room|big
+135313828; 3; room|clean
+135313828; 4; breakfast|continental; room|included
+135313828; 5; reception|also very helpful; staff|also very helpful
+135313828; 6
+135313828; 7
+13554263; 0; daughter|old
+13554263; 1
+13554263; 2; sitting|very nice; room|very nice; area|very nice
+13554263; 3; kitchen|nice; area|nice
+13554263; 4; staff|very pleasant and helpful
+13554263; 5; breakfast|continental; choice|good
+13554263; 6; packets|small; yogurt|least
+13554263; 7; price|pretty good; york|new
+13554263; 8; hotel|great
+13554263; 9
+13554263; 10
+13554263; 11; mall|great; jersey|new; garden|called; state|called; plaza|called
+13554263; 12; port|terminal; authority|terminal
+13554263; 13
+13554263; 14; york|new; including|new; macys|new
+13554263; 15
+135552948; 0
+135552948; 1
+135552948; 2
+135552948; 3; suites|very spacious,very clean
+135552948; 4
+135785946; 0; estuvimos|en; noviembre|en
+135785946; 1; teniendo|aceptable; en|aceptable; cuenta|aceptable; que|aceptable; estamos|aceptable
+135785946; 2; en|algo poco habitual; esta|algo poco habitual; ciudad|algo poco habitual; pero|algo poco habitual; que|algo poco habitual; resultaba|algo poco habitual; un|algo poco habitual; valor|algo poco habitual; aadido|algo poco habitual
+135785946; 3
+135785946; 4
+135785946; 5; las|perfectamente; habitaciones|perfectamente; equipadas|perfectamente
+135785946; 6
+135821017; 0; websites|other; visit|recent
+135821017; 1; year|seventeen and nineteen; boys|old
+135821017; 2
+135821017; 3; two|spacious; room|spacious; suite|spacious; price|fabulous
+135821017; 4; park|central; subway|nearest; station|nearest
+135821017; 5
+135821017; 6; service|top; accommodations|top; notch|top
+135821017; 7
+135919568; 0; hotel|original
+135919568; 1
+135919568; 2; location|great; close|great; loud|busy
+135919568; 3; room|large and clean
+135919568; 4; staff|very helpful and courteous
+135919568; 5; breakfast|free; hotel|original; benefit|nice; money|nice
+135919568; 6
+135919568; 7
+135962412; 0
+135962412; 1
+135962412; 2; kitchenette|small; area|small
+135962412; 3; hotel|helpful and friendly; staff|helpful and friendly
+135962412; 4; location|great
+135962412; 5; park|central; radio|central; city|central
+135962412; 6
+135962412; 7
+13632473; 0
+13632473; 1; reviews|other
+13632473; 2; room|first; side|small
+13632473; 3; location|perfect
+13632473; 4; fridge|small
+13632473; 5
+13632473; 6; experience|great; price|reasonable
+136510661; 0
+136510661; 1
+136510661; 2
+136554999; 0; notch|top
+136554999; 1
+136554999; 2; rooms|spacious,very clean
+136554999; 3; kitchen|small; set|small
+136554999; 4
+136554999; 5; beds|extremely comfortable
+136554999; 6; screen|large; tv|large
+136554999; 7; location|fabulous
+136554999; 8; walking|very comfortable; day|very comfortable; night|very comfortable
+136554999; 9; store|next; irish|tall; man|tall
+136554999; 10; smile|big; asking|big
+136554999; 11
+136554999; 12
+136554999; 13
+136554999; 14; hotel|top; notch|top; rooms|great
+136554999; 15
+137412632; 0; average|nice; midtown|nice; hotel|nice
+137412632; 1; space|good; closet|nice,sized; groceries|own
+137412632; 2
+137412632; 3
+137412632; 4
+137412632; 5; front|kind,very helpful; desk|kind,very helpful; staff|kind,very helpful
+137412632; 6
+137412632; 7; job|wonderful; helping|wonderful
+137412632; 8
+137412632; 9; problems|significant
+137412632; 10
+137412632; 11; dining|civilized
+137412632; 12
+137412632; 13; pm|just not possible; am|just not possible
+137412632; 14; walls|thin
+137412632; 15
+137412632; 16
+137412632; 17
+137412632; 18
+137412632; 19; service|breakfast; dark|cramped; hot|cramped; room|cramped
+137412632; 20; bagels|bad; mess|chaotic
+137412632; 21; coffee|tiny; cups|tiny; way|horrible
+137412632; 22; everything|disposable and unpleasant
+137412632; 23
+137412632; 24
+137412632; 25
+137412632; 26
+137412632; 27; midtown|other; hotels|other
+137412632; 28; variety|good
+137412632; 29; glassware|actual
+137412632; 30
+137412632; 31; hotel|good
+137412632; 32
+137412632; 33
+137412632; 34
+137781228; 0; perlita|gran; en|gran; ciudad|gran
+137781228; 1; ubicado|bien; en|bien; midtown|bien; station|central; y|central
+137781228; 2; para|en; mi|en; lo|en; mas|en; un|en; hotel|en
+137781228; 3
+137781228; 4; sumamente|personal
+137781228; 5; mi|volvere en; prximo|volvere en; viaje|volvere en
+138010441; 0
+138010441; 1
+138010441; 2; wifi|free
+138010441; 3; san|delivered
+138010441; 4; location|central; park|central
+138010441; 5
+138010441; 6; room|huge
+138010441; 7
+138010441; 8; door|right next; rate|discounted
+138010441; 9; gym|small
+138010441; 10; continental|simple; breakfast|simple
+138010441; 11
+138010441; 12; diner|huge
+138010441; 13
+138010441; 14; du|cirque; soleil|cirque; night|first
+138010441; 15; night|last
+138010441; 16; experience|fabulous
+138010441; 17
+138010441; 18; prefer|much
+138010441; 19
+138010441; 20
+138010441; 21; hotel|nice; wifi|free; breakfast|free
+138290284; 0; york|new
+138290284; 1; peu|un; excentr|un
+138290284; 2
+138290284; 3
+138290284; 4; depuis|vue
+138290284; 5; wifi|serviable; gratuit|serviable; petit|serviable; djeuner|serviable; continental|serviable
+138290284; 6; bnficiez|vous; promis|internet; j|internet; avais|internet
+138416535; 0
+138416535; 1; siempre|personal; atentos|personal
+138416535; 2
+138596468; 0
+138596468; 1; rooms|tastefully appointed; staff|entire; my|entire; wife|entire
+138596468; 2
+138596468; 3
+138596468; 4; sleep|total; rest|wonderful; await|wonderful
+138596468; 5
+138596468; 6; breakfast|continental; york|new; luncheonette|new
+138596468; 7
+138596468; 8
+138596468; 9; time|maybe breakfast next
+138596468; 10
+138925489; 0
+138925489; 1; teenagers|older; space|important
+138925489; 2
+138925489; 3
+138925489; 4; things|enough great
+138925489; 5
+138925489; 6
+138925489; 7; quiet|wonderful; neighborhood|wonderful
+138925489; 8
+139319114; 0
+139319114; 1; years|few; stay|last; reviews|good
+139319114; 2; gem|hidden
+139319114; 3; daughters|grown; york|new; city|new
+139319114; 4
+139319114; 5
+139319114; 6; time|entire
+139319114; 7; two|standard; queen|standard; kitchen|small; rate|same
+139319114; 8; situation|bed; my|unhappy; daughters|unhappy
+139319114; 9; matresses|new and comfortable
+139319114; 10
+139319114; 11
+139319114; 12; cushy|comfortable; chairs|comfortable; screen|big; tv|big
+139319114; 13
+139319114; 14; complaint|single
+139319114; 15; plants|real
+139319114; 16
+139319114; 17; bathroom|also spacious
+139319114; 18
+139319114; 19
+139319114; 20; my|especially pleased; husband|especially pleased
+139319114; 21
+139319114; 22
+139319114; 23; help|always provided
+139319114; 24
+139319114; 25
+139319114; 26
+139319114; 27; touch|nice; weigh|mine
+139319114; 28; blocks|few
+139319114; 29; mexican|great; restaurant|great; block|next
+139319114; 30; breakfast|free
+139319114; 31; pens|free
+139319114; 32; boy|small; coming|small; trick|magic
+139319114; 33
+139319114; 34
+139319114; 35; time|next
+139598497; 0
+139598497; 1
+139598497; 2; ikke|ofte; var|ofte; bra|ofte; s|ofte; p|ofte; en|ofte; liten|ofte; frokost|ofte; restaurant|ofte
+13966094; 0
+13966094; 1; eramos|al; buscar|al; hotel|al; en|al; ny|al; casi|al; todos|al; los|al; hoteles|al; nos|al; resevar|este; dobles|este; menos|este; que|este; estuvimos|este; lo|amable personal; unico|amable personal; que|amable personal; podria|amable personal; mejor|amable personal; un|amable personal; pelin|amable personal; seria|amable personal; el|amable personal; desayuno|amable personal; que|amable personal; es|amable personal
+139745316; 0
+139745316; 1; el|enfrente; dos|enfrente; caminos|enfrente; se|enfrente; come|enfrente; genial|enfrente; y|enfrente
+139745316; 2
+139745316; 3; el|un; poco|un; pequeo|un
+139745316; 4; se|escaso tiempo que; pasa|escaso tiempo que; en|escaso tiempo que; ella|escaso tiempo que
+139745316; 5; es|que; tengan|que; una|que; neverita|que; vacia|que; para|que
+139745316; 6
+139745316; 7
+139745316; 8
+139745316; 9; habla|servicial; hispana|servicial; gabriel|servicial
+139745316; 10; las|limpian; sras|limpian; son|limpian; educados|limpian
+139745316; 11
+139745316; 12
+139762051; 0; location|fabulous; station|central
+139762051; 1; plus|big; york|new
+139762051; 2
+139762051; 3; comment|only negative
+139762051; 4; time|last
+139762051; 5; cutlery|plastic disposable; hotel|selfdescribed,'boutique
+139762051; 6; picnicware|plastic
+139762051; 7
+139762051; 8
+139762051; 9; plates|plastic
+139762051; 10
+139762051; 11; room|very comfortable
+139762051; 12
+139762051; 13; room|bright
+139762051; 14; facilities|better breakfast
+13976462; 0
+13976462; 1
+140028524; 0
+140028524; 1
+140028524; 2; se|un; nos|un; dia|un; un|en
+140028524; 3
+140028524; 4
+140028524; 5
+140028524; 6
+140028524; 7
+140033107; 0; hemos|en; septiembre|en
+140033107; 1
+140033107; 2; ante|inmejorable; posibilidad|inmejorable
+140251415; 0
+140251415; 1
+140251415; 2; hotel|full
+140251415; 3
+140251415; 4; location|great
+140251415; 5; i|suite; guess|suite
+140251415; 6
+140251415; 7; room|large; york|new; boutique|new; hotel|new
+140251415; 8
+140251415; 9; breakfast|complimentary; wifi|free
+140314875; 0
+140314875; 1; year|stayed,here last
+140314875; 2; location|relatively quiet,well placed; park|central
+140314875; 3
+140314875; 4; room|certainly big
+140314875; 5
+140314875; 6; chocolate|hot; machine|hot
+140314875; 7; hotel|excellent
+140314875; 8
+140799889; 0; way|best; employees|tentative
+140799889; 1; sweethearts|true; tips|good
+140799889; 2
+140799889; 3
+140799889; 4
+140799889; 5; others|several; juice|fresh; coffee|good
+140799889; 6; spreading|alternative
+140799889; 7
+140799889; 8; our|sure; stay|sure; somewhere|been,great
+140799889; 9; our|enjoyed; stay|enjoyed; sooo|enjoyed
+140799889; 10
+140920753; 0; reviews|mostly favorable
+140920753; 1
+140920753; 2; restaurants|many
+140920753; 3
+140920753; 4; internet|free; access|free; login|same
+140920753; 5
+140920753; 6; suite|large
+140920753; 7; dining|small
+140920753; 8; minibar|touchsensitive
+140920753; 9; screen|large flat; tv|large flat; channel|italian; flair|international
+140920753; 10
+140920753; 11; choice|good; quality|greatly disturbed; airborne|persistent; noise|persistent
+140920753; 12; call|site
+140920753; 13; reviews|previous
+140920753; 14; continental|usual; type|usual; hotel|parisian; fruit|fresh
+140920753; 15; breakfast|really cramped; room|really cramped
+140920753; 16; hotel|nice and affordable; stay|short
+14116035; 0
+14116035; 1; visit|first; york|new
+14116035; 2
+14116035; 3; bedrooms|luxe; arrival|upgraded
+14116035; 4; bathroom|large
+14116035; 5; noise|relatively little
+14116035; 6; brits|typical; breakfast|cooked; breakfast|continental
+14116035; 7
+14116035; 8; location|excellent; sights|many; walking|short; distance|short
+14116035; 9; staff|extermely courteous and helpful; nothing|extermely courteous and helpful
+14116035; 10; place|great
+141487069; 0; agosto|en; y|en; es|en; san|en; carlos|en
+141487069; 1; cerca|est; del|est; metro|est; y|est
+141487069; 2
+141487069; 3
+141487069; 4
+141487069; 5
+141488202; 0
+141488202; 1; la|en; avenida|en; con|en; la|en; street|en
+141488202; 2
+141488202; 3; las|un; habitaciones|un; pues|que; es|que; escasea|que; en|que; los|que; hoteles|que; para|mejor; descansar|mejor; como|mejor; un|mejor; maraj|mejor
+141488202; 4; favor|que; incluyen|que; desayuno|que; continental|que; en|habitual; la|habitual; gran|habitual; manzana|habitual
+141488202; 5; park|central; y|central
+142060175; 0; service|conscientious
+142060175; 1; beds|comfortable; room|large
+142060175; 2; price|wonderful; value|wonderful; ratio|wonderful
+142060175; 3
+142185105; 0
+142185105; 1; su|que; ubicacion|que; es|que; perfecta|que; todo|en; el|en; centro|en; para|fundamental; poder|fundamental; descansar|fundamental; despues|fundamental; la|patear; ciudad|patear
+142185105; 2
+142185105; 3; nosotros|en; una|en
+142185105; 4
+142185105; 5
+142185105; 6; magnifico|resumen
+142253553; 0
+142253553; 1
+142253553; 2
+142253553; 3; reason|main; part|most important
+142253553; 4; hotels|several other; york|new; hilton|new; time|new; square|new
+142253553; 5
+142253553; 6
+142253553; 7; onebedroom|true; suite|true
+142253553; 8; room|equipped; size|standard; desk|standard; screen|large flat; tv|large flat
+142253553; 9; beds|soft,yet supportive
+142253553; 10; tv|large
+142253553; 11
+142253553; 12
+142253553; 13
+142253553; 14
+142253553; 15; room|great
+142253553; 16; refrigerator|small; dinnerware|basic
+142253553; 17
+142253553; 18
+142253553; 19
+142253553; 20; item|delicious
+142253553; 21
+142253553; 22
+142253553; 23; front|very helpful; desk|very helpful; staff|very helpful; attention|special
+142253553; 24
+142253553; 25
+142253553; 26
+142253553; 27
+142253553; 28; family|whole
+142253553; 29
+142333047; 0; da|central; broadway|central; e|central; park|central
+142333047; 1
+142333047; 2
+142333047; 3
+142336812; 0
+142336812; 1; service|so rare; staff|attentive
+142336812; 2; beds|comfortable
+142336812; 3
+142336812; 4; location|ideal; access|easy
+142336812; 5
+142336812; 6
+142462010; 0
+142462010; 1; rate|great
+142462010; 2; park|central; transit|public
+142462010; 3; suite|large and clean; public|very nice; areas|very nice
+142462010; 4; dining|very busy; area|very busy
+142462010; 5; internet|free
+142462010; 6; service|very good
+142462010; 7
+142462010; 8
+142462010; 9
+142520155; 0; floor|sixth; facing|sixth; th|sixth
+142520155; 1; rooms|comfortable
+142520155; 2
+142520155; 3; location|convenient
+142520155; 4; visit|next
+142520155; 5
+142520155; 6; rooms|spacious
+142520155; 7; carbs|white; apples|soft
+142520155; 8
+142520155; 9; choices|available,so more healthy; cuts|cold
+142520155; 10; details|minor; stay|great; rooms|spacious; location|convenient; close|convenient; staff|helpful
+142678321; 0
+142678321; 1; line|long; anything|long
+142678321; 2; room|excellent; rooms|punysized; york|new
+142678321; 3; rooms|separate
+142678321; 4; rollin|extra
+142678321; 5; things|best
+142678321; 6; towels|more
+142678321; 7; breakfast|rather simple; quality|still good
+142678321; 8
+142678321; 9; breakwast|also light; breakfast|continental; variety|wide
+142678321; 10; location|very good; walk|short; avenue|fifth
+142678321; 11; food|only indian
+142678321; 12; staff|also extremely kind and welcoming
+142678321; 13; concierge|magic; tricks|magic; son|old
+142678321; 14; pick|successful
+142749847; 0; habitaciones|bien; para|especial; conocer|especial; ny|especial
+142749847; 1
+142749847; 2
+142792716; 0; gem|real
+142792716; 1; its|given; location|given
+142792716; 2; kitchenette|very convenient; service|outstanding; job|very good
+142792716; 3; recommendations|great
+142792716; 4
+142792716; 5; breakfast|free; room|very crowded
+142792716; 6
+142826410; 0; hotel|few; services|few
+142826410; 1; restaurant|indian
+142826410; 2; hotel|clean; rooms|huge
+142826410; 3; living|large; room|large; bedroom|large; screen|wide; tv|wide; chair|easy
+142826410; 4; breakfast|continental; pastries|included
+142826410; 5; bargin|great
+142880011; 0
+142880011; 1
+142880011; 2; marketing|good; tool|warned; buyer|warned
+142880011; 3
+142880011; 4; furnishings|standard; room|nice and large
+142880011; 5
+142880011; 6; business|good; hotel|good
+142880011; 7; lounge|uncomfortable; chair|uncomfortable; desk|good; bathroom|small unremarkable
+142880011; 8; towels|remarkable
+142880011; 9
+142880011; 10; windows|small; alley|darkened
+142880011; 11; staff|great
+142880011; 12
+142880011; 13
+142880011; 14; breakfast|not great
+142880011; 15; pastries|bland
+142880011; 16; bagels|also offered
+142880011; 17; rooms|large; location|good
+142880011; 18
+143295281; 0
+143295281; 1; room|very clean
+143295281; 2
+143295281; 3
+143295281; 4; location|very convenient
+143295281; 5
+143373942; 0; molto|bagno non; grande|bagno non; ma|bagno non; pulitissimo|bagno non
+143492187; 0; todo|cordial; el|cordial; el|suficiente; desayuno|suficiente; en|suficiente; la|suficiente; planta|suficiente; baja|suficiente; es|suficiente; ms|suficiente; para|suficiente; comenzar|suficiente; el|suficiente; da|suficiente; y|suficiente; muy|suficiente; cmodo|suficiente
+143492187; 1; el|tambien; peridico|tambien; todos|tambien; los|tambien
+143544091; 0
+143544091; 1; hotels|researched,numerous
+143544091; 2; room|nice large
+143544091; 3; transportation|public; box|favorite big; stores|favorite big
+143544091; 4; rooms|very clean; wifi|free
+143544091; 5; breakfast|convenient; bite|quick
+143544091; 6; building|next
+143544091; 7; stays|had,lovely quiet
+143544091; 8
+143544091; 9; stillness|dark; activity|bright
+143544091; 10; part|best
+143544091; 11; sings|armstrong; world|wonderful
+14363285; 0; estuvimos|en; nuestra|en; luna|en
+14363285; 1; este|en; hotel|en; fue|en; excelente|en
+14363285; 2
+14363285; 3
+14363285; 4; comunicada|buen
+14363285; 5; muy|personal
+14363285; 6
+143905228; 0
+143905228; 1; hotel|central
+143905228; 2; car|rental; door|right next
+143905228; 3; reception|very nice; breakfast|complementary
+143905228; 4
+143905228; 5; room|supposed
+143905228; 6; beds|queen
+143905228; 7
+143905228; 8; hotel|small; floors|small
+143905228; 9; family|nice and cosy; hotel|nice and cosy
+143905228; 10; our|nice and helpful; stay|nice and helpful
+143905228; 11
+143905228; 12; umbrellas|offered
+143905228; 13; area|nice; food|different; depending|different
+143905228; 14
+143905228; 15; place|very good
+143912789; 0; per|new; una|new; settimana|new; presso|new; l'hotel|new; san|new; carlos|new; york|new
+143912789; 1
+143912789; 2
+143912789; 3
+143912789; 4
+143912789; 5
+143912789; 6
+143912789; 7
+143912789; 8
+144019919; 0; weekend|long
+144019919; 1; two|included; rooms|included
+144019919; 2; places|other
+144019919; 3
+144019919; 4; breakfast|perfect; selection|nice
+144019919; 5
+144019919; 6; sch|written; asking|written; visit|first
+144019919; 7
+144019919; 8
+144019919; 9; something|done
+144227142; 0
+144227142; 1; rooms|top; level|highest
+144227142; 2; staff|nicest
+144227142; 3; things|small but important; anybody|better; internet|free
+144227142; 4; hotel|ran; way|most efficient
+144227142; 5
+144227142; 6
+144428794; 0; tickets|included
+144428794; 1
+144428794; 2; san|based
+144428794; 3; choice|great
+144428794; 4; room|spacious
+144428794; 5; kitchen|small
+144428794; 6
+144428794; 7
+144428794; 8; luxury|unexpected
+144428794; 9
+144428794; 10
+144428794; 11
+144428794; 12
+144680109; 0; month|last
+144680109; 1; location|great
+144680109; 2; room|great; size|great
+144680109; 3
+144680109; 4
+144680109; 5; ny|true; bagel|true
+144680109; 6
+144758890; 0
+144758890; 1; curb|greeted; side|greeted
+144758890; 2; front|terrific; desk|terrific; staff|terrific
+144758890; 3
+144758890; 4; room|really more
+144758890; 5; sitting|large; room|large
+144758890; 6; bedroom|comfortable; king|nice; size|nice; linens|comfortable
+144758890; 7; rooms|flat; screen|flat; tvs|flat; selection|wide
+144758890; 8; bathrooms|large
+144758890; 9
+144758890; 10; room|very quiet
+144758890; 11
+144839148; 0
+144839148; 1; our|somewhat curtailed; nyc|somewhat curtailed; adventure|somewhat curtailed
+144839148; 2
+144839148; 3; nights|extra; rate|standrad; travellers|other weary
+144839148; 4
+144839148; 5; rooms|very spacious
+144839148; 6; suite|great
+144839148; 7
+144856877; 0; power|electric; weekend|same
+144856877; 1
+144856877; 2
+144856877; 3; room|clean
+144856877; 4; buffet|nice; breakfast|nice
+144856877; 5; staff|great
+145044061; 0; y|confortable; elegante|confortable; hotel|confortable; carioso|personal; y|lobby elegante; y|confortable; climatizado|confortable; aunque|desayuno suficiente; la|desayuno suficiente; sala|desayuno suficiente; es|desayuno suficiente; el|subirte; desayuno|subirte; y|recomendable; feliz|recomendable; estancia|recomendable
+145410390; 0; january|last
+145410390; 1
+145410390; 2; hotel|good; rooms|clear and clean
+145410390; 3; avenues|big; york|new
+145545674; 0
+145545674; 1
+145545674; 2; nos|durante; una|durante; semana|durante
+145545674; 3
+145545674; 4
+145545674; 5
+145545674; 6; pequeo|un; pero|un
+145545674; 7
+145880513; 0; hola|san; amigos|san; carlos|san; hotel|san; con|estuve; vosotros|estuve
+145880513; 1
+145880513; 2
+145880513; 3
+145880513; 4
+145880513; 5
+145880513; 6
+145880513; 7
+145880513; 8; los|siguen; la|siguen; norma|siguen
+145880513; 9
+145880513; 10; anglosajon|personal; correcto|personal; pero|personal
+145880513; 11
+145880513; 12
+145880513; 13
+145880513; 14
+145880513; 15
+145880513; 16
+145880513; 17
+145880513; 18
+145880513; 19
+145880513; 20
+145880513; 21
+145880513; 22
+145880513; 23; lado|al; pero|al; en|al; nyc|al; el|al; precio|al; es|al
+145880513; 24
+145880513; 25
+146114243; 0; suite|executive; time|second
+146114243; 1
+146114243; 2; executive|perfectly designed; suite|perfectly designed
+146114243; 3; kitchen|small
+146114243; 4
+146114243; 5; linens|top; appointments|top; notch|top
+146114243; 6
+146114243; 7
+146114243; 8
+146232717; 0
+146232717; 1; rooms|large
+146232717; 2; access|very easy; location|convenient; rooms|clean and confortable
+146232717; 3
+146252582; 0
+146252582; 1; rooms|exceptionally clean; amenities|great
+146252582; 2; staff|wonderfully attentive
+146252582; 3; mile|extra
+146252582; 4; elegance|quiet
+146452172; 0
+146452172; 1
+146452172; 2
+146452172; 3
+146452172; 4; ubicado|bien; lugares|manhattan; conos|manhattan; y|manhattan
+146452172; 5; volver|en
+147119071; 0
+147119071; 1; stay|fourth
+147119071; 2; curb|greeted; side|greeted
+147119071; 3; front|polite and professional; desk|polite and professional; staff|polite and professional
+147119071; 4; room|again really nice; size|suite; times|experienced,last
+147119071; 5
+147119071; 6; breakfast|good
+147119071; 7
+147174392; 0
+147174392; 1
+147174392; 2; people|local; rooftop|funky; bar|funky
+147174392; 3; touch|nice
+147174392; 4
+147174392; 5; bathtub|small
+147174392; 6
+147174392; 7
+147174392; 8; restaurant|indian; door|also worth
+147344622; 0; hotel|different
+147344622; 1; rate|best; place|nice
+147344622; 2; impression|not positive
+147344622; 3
+147344622; 4
+147344622; 5
+147344622; 6
+147344622; 7
+147344622; 8; room|handicapped; things|interesting
+147344622; 9; refrigerator|small
+147344622; 10; touch|very nice
+147344622; 11
+147604505; 0; friend|good
+147604505; 1; hotel|conveniently located; tourist|common
+147604505; 2
+147604505; 3; hotel|so nice; staff|so nice
+147604505; 4
+147604505; 5; front|great; desk|great; advice|great
+147604505; 6; beds|queensized; nyc|many other; hotels|many other
+147604505; 7
+147604505; 8; beds|very comfortable
+147604505; 9; value|great; location|great; service|wonderful; rooms|very clean
+147640456; 0; san|based
+147640456; 1; location|great; condition|good
+147640456; 2; location|great
+147640456; 3; walk|easy
+147640456; 4; convenience|added
+147640456; 5; rooms|quite large; bath|smaller; nyc|next; visit|next
+147758332; 0; hotel|very very good
+147758332; 1; quality|high; finish|high
+147758332; 2; location|great
+147758332; 3; minutes|few; center|rockefeller; th|rockefeller; avenue|rockefeller
+147758332; 4
+147758332; 5; area|immediate
+147758332; 6; issue|very minor; york|new
+147758332; 7; breakfast|basic,perfectly acceptable; breakfast|lovely fresh continental
+147758332; 8; york|new
+147758332; 9; door|great; staff|great; thing|easiest
+147758332; 10; problem|only
+147758332; 11
+14823266; 0
+14823266; 1; sommes|nous; rests|nous; semaine|a+e; en|a+e
+14823266; 2; peu|un
+14823266; 3
+14823266; 4; isolation|n'offrent qu'une faible; phonique|n'offrent qu'une faible; mme|n'offrent qu'une faible; l'arrire|n'offrent qu'une faible
+14823266; 5
+14823266; 6
+14823266; 7; sa|midtown,est; situation|midtown,est; dans|midtown,est; trs|midtown,est; park|central
+14823266; 8; trs|avant; les|avant; longues|avant; visites|avant; temps|c'tait; economique|c'tait; au|c'tait
+14823266; 9; mes|tous
+14823266; 10; prcdents|m'ont; permis|m'ont
+14823266; 11; restaurant|le; indien|le; au|le
+14823266; 12
+14831941; 0; york|new; area|new
+14831941; 1; years|light
+14831941; 2; hotel|best; experiences|best; york|new
+14831941; 3
+14831941; 4; dining|separate; area|separate; kitchenette|separate
+14831941; 5; base|very comfortable
+14831941; 6; shops|major; avenue|fifth; subway|nearest; station|nearest
+14831941; 7; hotels|other
+14831941; 8; matthew|particular
+14831941; 9
+14831941; 10; food|good; service|quick
+14831941; 11; recommendation|wholehearted; york|new; visit|new
+1491052; 0; weekend|last
+1491052; 1; rating|high
+1491052; 2; beds|double
+1491052; 3; room|very nice
+1491052; 4; staff|very pleasant; towels|extra; ice|extra
+1491052; 5; prices|current; side|east; location|east
+1491052; 6; place|nice; price|reasonable
+14968534; 0; san|last; week|last
+14968534; 1; york|new; month|other
+14968534; 2; ny|many; attractions|many
+14968534; 3
+14968534; 4; lobby|small
+14968534; 5; room|bed
+14968534; 6
+14968534; 7
+14968534; 8
+14968534; 9; size|very generous; sitting|very generous; room|very generous; size|nice; bedroom|nice; queen|large; king|small; bath|full; large|full; closets|generous
+14968534; 10; screen|flat; tvs|flat; minibar|fully stocked; aveda|fully stocked; bath|fully stocked; products|fully stocked
+14968534; 11
+14968534; 12
+14968534; 13; sleeper|very light
+14968534; 14; bedding|very soft and comfortable
+14968534; 15; pillows|various
+14968534; 16
+14968534; 17; areas|common
+14968534; 18
+14968534; 19; breakfast|continental
+14968534; 20; breakfast|adequate
+14968534; 21; tables|taken
+14968534; 22
+14968534; 23; ourselves|called
+14968534; 24; staff|wonderful
+14968534; 25; restaurant|indian; onsite|indian; room|very limited; service|very limited; menu|very limited
+14968534; 26; room|very important; service|very important
+14968534; 27
+14979741; 0; place|great; york|new
+14979741; 1; city|surrounded; your|surrounded; building|surrounded; buildings|reasonable
+14979741; 2; things|best; continental|complimentary; buffet|complimentary; breakfast|complimentary
+14979741; 3; lunch|huge
+14979741; 4
+14979741; 5; desk|pleasant; staff|pleasant; nothing|too much trouble
+14979741; 6; our|really enjoyed; stay|really enjoyed
+1507257; 0; hotel|terrific
+1507257; 1; years|few
+1507257; 2; staff|wonderful; breakfast|continential; amenity|really nice
+1507257; 3; rooms|large; location|great
+1507257; 4; park|beautiful; avenue|beautiful
+1507257; 5; time|great
+1507257; 6
+1520198; 0; stay|great
+1520198; 1; hotel|located,several; blocks|located,several
+1520198; 2
+1520198; 3; park|central
+1520198; 4; hotel|wonderful; staff|wonderful
+1520198; 5; rooms|small but comfortable
+1520198; 6
+1520198; 7; continental|free; breakfast|free
+1520198; 8; night|first
+1520198; 9; night|second
+1520198; 10; car|ready
+1520198; 11; time|great
+1520198; 12
+15292185; 0
+15292185; 1
+15292185; 2; kitchenette|small
+15292185; 3; luxury|small; feel|small; york|new
+15292185; 4; per|average; day|average; place|nice
+15578603; 0
+15578603; 1
+15578603; 2
+15836883; 0; al|dal; aprile|dal; per|notte; un|notte; tour|notte; organizzato|notte
+15836883; 1; volte|due
+15836883; 2
+15836883; 3
+15836883; 4
+15836883; 5
+15836883; 6
+15836883; 7
+15836883; 8; park|dal central
+15836883; 9
+15836883; 10; york|new; il|new; cibo|new
+15836883; 11
+16180064; 0; times|many; reviews|many; san|many; carlos|many; hotel|many; reviews|great
+16180064; 1
+16180064; 2; room|clean; upgrade|free
+16180064; 3; staff|wonderful and humorous
+16180064; 4; suggestions|great
+16180064; 5; hotel|best; reviews|other
+16180064; 6; trip|wonderful; location|central; block|central
+1637096; 0
+1637096; 1
+1637096; 2; york|many; fine|many; hotels|many; location|unbeatable
+1637096; 3; york|n't such; spending|been,happy; our|been,happy; time|been,happy
+1637096; 4; one|true; bedroom|true; suite|true
+1637096; 5; kitchen|small; amenities|nice; trousers|ironed
+1637096; 6; th|east; st.|east; center|rockefeller; station|central; restaurants|great
+1637096; 7; japanese|classic; suhshi|classic; place|classic; cognoscenti|local
+1637096; 8; york|new; friends|new
+16422282; 0
+16422282; 1
+16422282; 2
+16422282; 3; hotel|attractive
+16422282; 4; noise|outside
+1648197; 0
+1648197; 1
+1648197; 2
+1648197; 3; parking|discounted
+1648197; 4
+1648197; 5; station|central; restuarants|really good
+1648197; 6
+16492562; 0
+16492562; 1; esas|que; torres|que; ms|que
+16492562; 2
+16492562; 3; negativo|desayuno que; es|desayuno que; incluyen|desayuno que; en|desayuno que; el|desayuno que; precio|desayuno que
+16492562; 4; tienes|final
+16492562; 5
+16492562; 6; que|igual; el|igual; hospedaje|igual; en|igual; nueva|igual; york|igual
+1658549; 0
+1658549; 1; downside|only; garage|full
+1658549; 2
+1658549; 3; room|large and clean
+1658549; 4; bathroom|nice
+1658549; 5
+1658549; 6; linens|nice; aveda|nice; products|nice
+1658549; 7; room|really good; rates|really good; better|really good; rate|really good
+1659264; 0; review|informative
+1659264; 1
+1659264; 2; room|beautifully appointed,newly renovated
+1659264; 3
+1659264; 4; length|full; mirror|full; couches|new
+1659264; 5; screen|flat; tv|flat; n|flat; control|flat; speed|complimentary high; internet|complimentary high; access|complimentary high; plusmy|huge; boyfriend|huge
+1659264; 6; bedroom|just past
+1659264; 7; size|queen; water|adequately stockedbest,bottled; liquor|great; beer|great; selection|great; screen|flat; tv|flat
+1659264; 8; bathtub|huge; par|sure
+1659264; 9; air|separate; heat|separate; controls|separate
+1659264; 10; suite|beautifully decorated; bedding|modern; furniture|modern
+1659264; 11
+1659264; 12
+1659264; 13; types|different
+1659264; 14; bill|added
+1659264; 15
+1659264; 16; ondemand|good; movies|good
+1659264; 17; breakfast|ordered; continental|comlimentary; breakfast|comlimentary
+1659264; 18; doorman|ready
+1659264; 19
+1659264; 20; care|taken
+1659264; 21; time|fantastic
+1659264; 22; hotels|many other; gem|newly renovated; side|ranked
+16725958; 0
+16725958; 1; es|baustellen
+16725958; 2
+16725958; 3; wir|ebenso hatten; nachbarn|ebenso hatten
+16725958; 4
+16725958; 5
+16725958; 6
+16958189; 0; manhatten|east; hotelzimmer|east; okay|auch; essen|auch; im|auch; hotel|auch
+17104942; 0
+17104942; 1; reviews|previous
+17104942; 2; ours|really nice
+17104942; 3
+17104942; 4
+17104942; 5; sofa|double; wardrobes|big
+17104942; 6; kitchen|small; area|small
+17104942; 7
+17104942; 8; staff|extremely polite and helpful
+17104942; 9; breakfast|complimentary
+17104942; 10; mornings|most; place|fantastic; value|good
+17104942; 11; york|new; passes|new
+17104942; 12
+17104942; 13; things|'the; beast|'the
+17104942; 14
+17104942; 15
+17104942; 16
+17322286; 0; location|great
+17322286; 1; superhot|shower; water|shower; shower|powerful; head|powerful
+17322286; 2; hotel|really pretty quiet
+17322286; 3; breakfast|continental
+17322286; 4; improvement|little
+1734936; 0
+1734936; 1; room|very clean
+1734936; 2; hotel|very large; service|appreciated
+1734936; 3; room|made
+1734936; 4; towels|extra
+1734936; 5
+1734936; 6; location|great; shopping|ave; park|central
+1734936; 7
+1734936; 8
+17368203; 0; ubicado|bien
+17368203; 1; park|central
+17368203; 2; station|central; y|central
+17368203; 3; puedes|que; visitar|que; mucho|que; sin|que; utilizar|que; el|que; transporte|que; pblico|que
+17368203; 4; una|en; hab|en
+17368203; 5; para|superior; fumadores|superior
+17368203; 6
+17368203; 7
+17368203; 8; es|calle; muy|calle; concurrida|calle
+17368203; 9; del|amable; hotel|amable; es|amable; y|amable; la|amable; mayora|amable; hablan|amable; espaol|amable
+17368203; 10; en|internet; la|internet; segunda|internet; planta|internet; tiene|internet; ordenadores|internet; gratis|internet
+17368203; 11
+1745631; 0; experience|good
+1745631; 1; remarks|own
+1745631; 2; room|spacious
+1745631; 3; staff|professional and courteous
+1745631; 4; kitchen|small; bonus|huge
+1745631; 5; crib|small portable
+1745631; 6; breakfast|free
+1745631; 7
+1745631; 8; street|quick
+1745631; 9; location|ideal
+1745631; 10
+1745631; 11
+1745631; 12; discussion|brief
+1745631; 13
+1745631; 14; hotels|much,more expensive
+1745631; 15
+1762348; 0
+1762348; 1; suite|very large; york|new; standardsa|new; living|new; room|new; sofa|fullsized; sleeper|fullsized
+1762348; 2; amenities|many small
+1762348; 3; work|nice; desk|nice; highspeed|free; internet|free; access|free; television|had; front|had; dvd|portable; player|portable
+1762348; 4
+1762348; 5; experience|extremely positive
+17818872; 0; time|sixth; time|first
+17818872; 1; night|third; offer|free; rooms|separate
+17818872; 2; sitting|very large; room|very large
+17818872; 3; breakfast|free
+17818872; 4; stay|great
+17818872; 5; location|very good; walking|easy; distance|easy; attractions|many
+17818872; 6; room|high
+17818872; 7; difference|much
+17818872; 8; climate|excellent; york|new
+17818872; 9
+1804102; 0
+1804102; 1; san|decided
+1804102; 2; experience|whole
+1804102; 3; maids|totally pleasant
+1804102; 4; everybody|incredibly nice
+1804102; 5; away|far; bloomingdales|far; park|central
+1804102; 6
+1804102; 7; towels|more
+1804102; 8; hotel|beautiful; location|great
+1804102; 9; park|central; zoo|central
+1804102; 10; hotel|very classy; rooms|very classy; rooms|immaculate
+1804102; 11; my|very impressed; family|very impressed
+1804102; 12
+1804102; 13; thing|only; breakfast|continental; breakfast|free
+1804102; 14; things|enough good
+18295836; 0; este|en; fantastico|en; hotel|en; espaol|sabian; jejeje|sabian; muy|sabian; importante|sabian; porque|sabian; mi|sabian; ingles|sabian; es|sabian
+18295836; 1; me|que; hagan|que; la|que; pelota|que; si|que; necesito|que; algo|que; que|que; la|que; gente|que; este|que; ahi|que; los|que; es|verdad; yo|un; les|un; diez|un; gente|un
+18295836; 2; york|new; tiene|new; su|new; lo|igual; grande|igual; que|igual; fuera|igual; la|igual; habitacion|igual
+18295836; 3; gente|importante; es|importante; aos|que; estabamos|que; caminamos|eso que; park|central; york|explico en,new; estas|explico en,new
+18295836; 4; todo|que; el|que; dia|que; y|que; encima|que; nos|que; como|que; habia|que; muxa|que; gente|que; siempre|que; es|que; york|new
+18295836; 5; era|que; buffet|que; y|que; podias|que; comer|que; todo|que; lo|que; que|que; quisieras|que; esos|que; que|dicen; tenian|dicen; que|dicen; desayunar|dicen; otra|dicen; vez|dicen; fuera|dicen; que|verdad; los|que; dias|que; si|que; querias|que; preparadito|bien; pa|bien; la|bien; caminata|bien; si|exigente; eres|exigente; si|exigente; se|exigente; te|exigente; puede|exigente; quedar|exigente; pequeo|exigente; el|exigente; buffet|exigente; pero|exigente; si|exigente; eres|exigente; vas|normal; estubiera|que; incluido|que; asi|que; la|que; verdad|que; comer|que; en|que; nueva|que; york|que
+18295836; 6; bueno|que; os|que; menuda|que; chapa|que; que|que; os|que; las|en; opiniones|en; satisfecho|muy; con|muy; el|muy; hotel|muy; en|muy; serio|muy; un|muy; saludo|muy
+18371214; 0; hotel|fantastic
+18371214; 1
+18371214; 2
+18371214; 3; floor|first
+18371214; 4; light|direct
+18371214; 5; room|big; york|new; standards|new
+18371214; 6; breakfast|not great
+18371214; 7; toast|few
+18371214; 8; point|good; wifi|free; access|free; computers|free; connections|internet
+18619671; 0; daughter|old
+18619671; 1; deal|special; views|positive
+18619671; 2; expectations|high; views|positive
+18619671; 3; boutique|very typical; hotel|very typical; carlos|opposite san; year|last
+18619671; 4; san|not bad; carlos|not bad
+18619671; 5; continental|complimentary; breakfast|complimentary; offering|very limited; star|basic; airport|basic; hotel|basic
+18619671; 6; disappointment|worst
+18619671; 7
+18619671; 8; day|first
+18619671; 9
+18619671; 10
+18619671; 11; taste|really bad; place|whole
+18619671; 12
+18634871; 0; time|great; york|new
+18634871; 1; place|great
+18634871; 2
+18634871; 3; surprise|pleasant; service|gracious
+18810922; 0; location|great; facilities|good
+18810922; 1; staff|helpful; breakfast|very basic continental
+18835449; 0; carlos|san
+18835449; 1; location|great; room|large; service|efficient
+18835449; 2; my|nice; room|nice
+18835449; 3
+18835449; 4
+18835449; 5; guests|cramped; pastries|most awful
+18835449; 6; plates|terrible plastic; cups|terrible plastic
+18835449; 7; hotels|other; street|same
+18835449; 8
+19190039; 0; una|durante; semana|durante
+19190039; 1; es|personal; encantador|personal
+19190039; 2
+19190039; 3
+19190039; 4; las|coinciden; con|coinciden; la|coinciden; realidad|coinciden
+19248078; 0
+19248078; 1; que|personal; habla|personal; espaol|personal; y|personal; con|personal; buena|personal; voluntad|personal; para|personal; colaborar|personal
+19248078; 2
+19248078; 3
+19248078; 4
+19782896; 0; ragazzi|due
+19782896; 1
+19782896; 2
+19782896; 3; pagato|due; notti|due; e|due; la|due; terza|due
+19782896; 4; spaziose|camere sono decisamente
+19782896; 5
+19782896; 6
+19782896; 7
+19906160; 0
+19906160; 1
+19906160; 2
+20079030; 0; finding|not easy; hotel|good; york|new; city|new; york|new
+20079030; 1
+20079030; 2; staff|helpful
+20079030; 3; hotel|located
+20079030; 4; floor|higher
+20079030; 5; night|second
+20079030; 6
+20079030; 7; service|great
+20079030; 8
+20079030; 9
+20079030; 10; thing|unusual; perk|nice
+20079030; 11; furnishings|modern and comfortable
+20079030; 12; place|nice
+20133076; 0
+20923243; 0; en|pueden; ny|pueden; los|pueden; hoteles|pueden; ser|pueden
+20923243; 1
+20923243; 2
+20923243; 3
+20923243; 4
+20923243; 5
+20923243; 6
+20923243; 7; euros|en; nos|en; habitacin|que; dia|que; en|que; ny|que; los|que; hoteles|que
+20969205; 0
+20969205; 1
+20969205; 2
+20969205; 3
+20969205; 4; time|only
+20969205; 5; times|other
+20969205; 6; day|bad
+20969205; 7; floor|fourth
+20969205; 8; room|decent; size|decent; hotel|really small; rooms|really small
+20969205; 9
+20969205; 10
+20969205; 11; stains|dark
+20969205; 12; sheet|bed
+20969205; 13; carlos|san; hotel|san; bathrobes|san; hanging|san
+20969205; 14
+20969205; 15; morning|next
+20969205; 16
+20969205; 17; bathrobes|new; guests|next; sheet|bed
+20969205; 18; aveda|given,extra; amenities|given,extra; mints|given,extra
+20969205; 19
+20969205; 20; shower|great
+20969205; 21; rock|pretty quiet; room|pretty quiet
+20969205; 22
+20969205; 23
+20969205; 24; breakfast|pretty good; ok|pretty good; breakfast|hot
+20969205; 25
+20969205; 26; meals|other
+20969205; 27; their|enormous; menu|enormous; prices|fairly reasonable
+20969205; 28; hotel|also conveniently located
+20969205; 29
+20969205; 30
+21011742; 0; york|wonderful new; city|wonderful new; experience|wonderful new
+21011742; 1
+21011742; 2
+21011742; 3; our|spacious; room|spacious; furnishings|new
+21011742; 4; room|very clean
+21011742; 5; breakfast|convenient
+21011742; 6; milk|even hot
+21011742; 7; our|cheerfully handled; requests|cheerfully handled
+21011742; 8
+21015594; 0
+21015594; 1
+21015594; 2; floor|second
+21015594; 3
+21015594; 4; york|new; hotel|new
+21015594; 5
+2112595; 0
+2112595; 1; hotel|very friendly; speed|free high; internet|free high; pcs|basic but free
+2112595; 2
+2112595; 3; well|light; york|new
+2112595; 4
+2112595; 5; breakfast|comprehensive; tho|continental; cereal|continental
+2112595; 6; size|good; rooms|good; staff|very friendly helpful
+2113534; 0; tripadvisor|used; hotels|other; reviews|good
+2113534; 1
+2113534; 2; experience|great
+2113534; 3
+2113534; 4; pullout|n't so comfortable; sofa|n't so comfortable
+2113534; 5; towels|extra
+2113534; 6
+2113534; 7; bathrooms|spacious and clean
+2113534; 8; suite|big
+2113534; 9; staff|pleasant
+2113534; 10
+2113534; 11; location|also great; door|next
+2113534; 12; place|great; price|good
+21161810; 0
+21161810; 1; seis|internet; ordenadores|internet; gratuito|internet; al|internet; servicio|internet
+21161810; 2; es|personal; en|aunque; ocasiones|aunque
+21161810; 3
+21161810; 4; ser|que; ms|que; un|que; taxi|que; mayor|fue; que|fue; el|fue; pactado|fue; en|fue; el|fue; hotel|fue
+21179693; 0; night|wed
+21179693; 1; room|better
+21179693; 2; smoke|stale
+21179693; 3
+21179693; 4; drawer|top
+21179693; 5; room|new
+21179693; 6
+21179693; 7; room|new
+21179693; 8; room|comparable
+21179693; 9; room|handicapped; dirt|visible
+21179693; 10
+21179693; 11
+21179693; 12
+21179693; 13; fecies|spilled
+21179693; 14; snacks|other
+21179693; 15; notes|other positive; wireless|free; floor|second; business|second; center|second; lounge|second; area|second
+21179693; 16
+21179693; 17
+21179693; 18; experience|bad
+21179693; 19; luck|just bad
+2151030; 0; family|great; hotel|great
+2151030; 1; two|happy; teenagers|happy; everyone|happy
+2151030; 2; kitchenette|great
+2151030; 3; service|also terrific
+2151030; 4; property|fresh and clean
+2153133; 0; guest|japanese
+2153133; 1; san|based; reviews|favorable
+2153133; 2; experience|wonderful
+2153133; 3; location|good
+2153133; 4; rooms|very nicely appointed
+2153133; 5
+2153133; 6; hotel|stayed; their|stayed; staff|stayed; members|stayed
+21812151; 0; y|tal; como|tal; habamos|tal
+21812151; 1; y|personal superamable; siempre|personal superamable; haba|personal superamable; alguien|personal superamable; que|personal superamable; hablara|personal superamable; espaol|personal superamable
+21812151; 2; ms|suficiente; para|suficiente; comenzar|suficiente; con|suficiente; la|suficiente; jornada|suficiente; maratoniana|suficiente
+21812151; 3; situado|bien; cerca|bien; del|bien; rockefeler|bien; center|bien; cinco|en; lexington|en; con|en; la|en; la|en; calle|en; lado|al; del|al; palace|al; y|al; del|al; waldorf|al; astoria|al
+21812151; 4; como|ny; todos|ny; los|ny; hoteles|ny
+21812151; 5
+21821901; 0
+21821901; 1; cerqusima|est; de|est; las|est; principales|est; pequeo|como un; menaje|como un
+21821901; 2
+21821901; 3
+22041611; 0; este|en; hotel|en; durante|en; nueva|en; york|en; que|decir; estuvo|decir; genial|decir
+22041611; 1
+22041611; 2; es|que; el|que; hotel|que; esta|que; completamente|que; reformado|que; amplias|un; y|un; comodas|un; detalle|un; la|un; nevera|un
+22041611; 3; referencia|hacian; al|hacian; ruido|hacian
+22041611; 4; para|posible; excursiones|posible
+22041611; 5
+22041611; 6; una|en; muy|en; buena|en; situacion|en; en|en; la|en; ciudad|en
+22041611; 7; para|que; mi|que; gusto|que; era|que; bastante|que; justo|que
+22041611; 8; dulces|chocolate; para|pan; hacer|pan; tostadas|pan; diversos|pan; tipos|pan
+22041611; 9
+22041611; 10
+22041611; 11
+2205980; 0
+2205980; 1
+2205980; 2; location|good
+2205980; 3; hotel|excellent
+2205980; 4; service|great
+2205980; 5
+2205980; 6
+2212793; 0
+2212793; 1; hotel|entire; taste|impeccable; quality|very high
+2212793; 2; hotel|moderatelysized; floors|moderatelysized; feel|pleasingly intimate
+2212793; 3; employees|very nice; lobby|extremely comfortable; rooms|extremely comfortable
+2212793; 4; location|perfect; drawback|only
+2212793; 5
+2212793; 6; breakfast|complimentary; floor|very basic and disappointing
+2212793; 7
+2212793; 8; restaurant|intended
+2212793; 9
+2215590; 0; time|wonderful
+2215590; 1; time|first; concierge|absolutly wonderful
+2215590; 2
+2215590; 3
+2215590; 4
+2215590; 5
+2215590; 6; reviewers|great; location|great
+2215590; 7
+2215590; 8; time|here next
+2221777; 0; searching|extensive; trip|first
+2221777; 1; hotel|located; location|great; park|central
+2221777; 2; rooms|nicely appointed
+2221777; 3; day|long
+2221777; 4; choices|so many great
+2221777; 5; things|only; breakfast|improved; variety|more
+2221777; 6; price|best; website|own
+2221777; 7
+22333716; 0; carlos|san
+22333716; 1
+22333716; 2; our|spacious; th|spacious; floor|spacious; suite|spacious
+22333716; 3
+22333716; 4
+22333716; 5; ldiners|nearby
+22333716; 6; time|great; week|entire
+22333716; 7
+22333716; 8
+22335899; 0; hotel|que; y|que; lo|que; abandonamos|que; volveramos|que
+22335899; 1; nuestra|aunque; habitacin|aunque; la|dormir; habitacin|dormir; es|dormir
+22335899; 2
+22335899; 3; un|presonal; poco|presonal; seco|presonal
+22335899; 4
+22335899; 5
+22335899; 6
+22335899; 7
+22385047; 0
+22385047; 1; staff|full
+22385047; 2; room|queen; beds|queen; bathroom|small
+22385047; 3
+22385047; 4
+22385047; 5; strange|never emptied; reason|never emptied; our|never emptied; bin|never emptied
+22385047; 6; breakfast|basic; pastries|various small danish
+22385047; 7; breakfast|not huge; area|not huge
+22385047; 8; nights|due; room|quiet
+22385047; 9
+22385047; 10
+22385047; 11; internet|also free; access|also free; floor|second
+22675492; 0
+22675492; 1; experience|excellent
+22675492; 2; feet|square
+22675492; 3; sleeping|separate but open; area|separate but open
+22675492; 4
+22675492; 5; breakfast|full; pastries|fresh; coffee|hot
+22675492; 6; feature|nice
+22675492; 7
+22675492; 8
+22675492; 9; visits|last few; choose|likely
+2284116; 0
+2284116; 1; areas|beautifully appointed
+2284116; 2; refridgerator|small; plus|real
+2284116; 3; staff|unfailingly polite
+2284116; 4
+2284116; 5; location|excellent
+2284116; 6
+2322095; 0
+2322095; 1
+2322095; 2; location|great; staff|great; rooms|great
+2322095; 3
+2322095; 4
+2322095; 5; visit|next
+2322095; 6; stay|wonderful
+2330546; 0
+2330546; 1; breakfast|simple continental
+2330546; 2; cups|plastic
+2330546; 3; food|fast; restaurant|fast; your|finished; breakfast|finished; yourself|table; place|rubish and plastic; settings|rubish and plastic; dustbins|big
+2330546; 4; day|next
+2330685; 0
+2330685; 1; price|so reasonable; room|gorgeous
+2330685; 2; care|really well taken
+2330685; 3; staff|very helpful
+2330685; 4
+23442173; 0; zealand|new
+23442173; 1; rooms|good sized; continental|complimentary; breakfast|complimentary
+23442173; 2; hotel|most expensive; nz|weak; dollar|weak; rate|same; suite|entire; buffet|full; breakfast|full
+23442173; 3
+23442173; 4
+23442173; 5; room|quite big
+23442173; 6
+23442173; 7; spot|great; handy|great
+23442173; 8; reviews|stated; breakfast|poor
+23442173; 9; plates|plastic; cutlery|plastic
+23442173; 10; breakfast|simple but nice
+23442173; 11; cutlery|disposable; etc|not really good
+23442173; 12
+23442173; 13; choice|fresh; fruit|stewed canned; selection|good; teas|marmite; coffee|marmite
+23442173; 14; morning|first
+23442173; 15; our|really enjoyed; stay|really enjoyed; use|complimentary; level|excellent
+23442173; 16
+23540988; 0; york|new; apple|big
+23540988; 1; location|great; york|new
+23540988; 2; room|great; beds|great; hotel|also top; notch|also top; york|new; attractions|main
+23540988; 3; san|well done; carlos|well done; yorkers|new
+23614388; 0
+23614388; 1
+23614388; 2; extraordinariamente|est; limpio|est; y|est; cuidado|est
+23614388; 3; desayuno|un; continental|un; incluido|un; en|un; el|un; precio|un; nueva|en; york|en; y|en; una|en; situacin|en; en|inmejorable; pleno|inmejorable; manhattan|inmejorable
+23614388; 4; fue|personal; muy|personal; y|en; nos|en; todo|en
+23614388; 5; quien|en; quiera|en; pasar|en; unos|en; esta|en; ciudad|en; por|en; turismo|en; o|en; trabajo|en
+23723501; 0; friends|already been
+23723501; 1; tehy|absolutely right
+23723501; 2; staff|really nice
+23723501; 3
+23723501; 4; room|really big and clean; view|not so nice
+23723501; 5; thing|good
+23723501; 6; access|free
+23723501; 7
+23723501; 8
+23723501; 9
+23974512; 0; este|en; hotel|en; un|en; total|en; de|en
+23974512; 1; miel|que; merece|que; la|que; pena|que; pagar|que; un|que; poquito|que; ms|que; la|que; estancia|que; te|que; deje|que; un|que; grato|que; recuerdo|que
+23974512; 2; tenemos|seguridad; de|seguridad; que|seguridad; acertamos|seguridad
+23974512; 3; incluir|suelen; en|suelen; los|suelen; catlogos|suelen; como|internet; categora|internet; lujo|internet; o|internet; semilujo|internet
+23974512; 4
+23974512; 5
+23974512; 6; es|habitual; en|habitual; ny|habitual; y|habitual; aunque|habitual
+23974512; 7
+23974512; 8; era|personal; muy|personal
+23974512; 9; chocolatinas|dejaban
+23974512; 10; ruido|al; el|que; ruido|que; exterior|que
+23974512; 11; si|que; queris|que; evitar|que; el|que; ruido|que
+23974512; 12; una|en; zona|en; con|en
+23974512; 13; situado|bien; park|central
+23974512; 14; precio|al; alto|manhattan; como|manhattan; todos|manhattan; los|manhattan; hoteles|manhattan
+24282036; 0
+24282036; 1
+24282036; 2
+24286513; 0; si|l'hotel; trova|l'hotel; passi|due; dalla|due; fifth|due; avenue|due
+24286513; 1
+24286513; 2
+24286513; 3
+24286513; 4
+24286513; 5
+2497232; 0; our|really enjoyed; stay|really enjoyed
+2497232; 1
+2497232; 2; breakfast|very basic
+2502554; 0
+2502554; 1; fridge|separate
+2502554; 2; nyt|complemantary; usa|complemantary; today|complemantary
+2502554; 3
+2502554; 4; room|small
+2502554; 5
+25530845; 0
+25530845; 1; way|other
+25530845; 2; staff|great; room|clean and pleasant; location|fabulous; stores|big
+25530845; 3; our|really enjoyed; stay|really enjoyed
+25530845; 4; find|great
+25771153; 0
+25771153; 1
+2604058; 0
+2604058; 1; hotel|well located
+2604058; 2; additions|appreciated
+2604058; 3
+2604058; 4
+2604058; 5; hotel|very tight
+2621060; 0
+2621060; 1
+2621060; 2
+2779684; 0; october|mid
+2779684; 1; front|lovely; desk|lovely; clerk|lovely; basket|complimentary
+2779684; 2
+2779684; 3; suite|beautifully furnished; pieces|modern; colors|neutral; artwork|displayed; amongst|displayed
+2779684; 4; renovation|well worth
+2779684; 5; tips|great
+2779684; 6; location|incredible
+2783027; 0; vacation|welldeserved; october|early
+2783027; 1
+2783027; 2; reception|absolutely wonderful; morning|hectic
+2783027; 3; taxi|sometimes dreadful; ride|sometimes dreadful
+2783027; 4; room|nicely decorated,quite spacious
+2783027; 5; everything|accessible; hours|accessible
+2783027; 6
+27962907; 0
+27962907; 1; time|last
+27962907; 2
+27962907; 3; san|spotlessly clean; carlos|spotlessly clean
+27962907; 4
+27962907; 5; beds|comfy
+27962907; 6; our|thoroughly enjoyed; visit|thoroughly enjoyed
+27962907; 7; maid|stellar; service|stellar
+27962907; 8
+27962907; 9
+27962907; 10; find|total
+2849809; 0; location|great
+2849809; 1; rooms|well appointed
+2849809; 2; ones|nice
+2849809; 3
+2849809; 4
+28879710; 0; san|really glad
+28879710; 1; room|quite large
+28879710; 2; issues|few; outlet|dead; set|first; keys|n't open
+28879710; 3; park|central
+28879710; 4
+29146155; 0
+29146155; 1
+29146155; 2; room|large; chairs|comfortable; kitchen|small; area|small
+29146155; 3; surprise|very nice
+29146155; 4
+29146155; 5; location|terrific; things|many
+29146155; 6; area|many; restaurants|many; serving|many
+29146155; 7; our|sipsak; favorites|sipsak; restaurant|turkish
+29146155; 8; complaints|only minor
+29146155; 9; trip|mentioned; advisor|mentioned; reviewers|mentioned; breakfast|not very good
+29146155; 10
+29146155; 11; power|enough
+29146155; 12; time|next; york|new; city|new
+2920015; 0; decent|nice
+2920015; 1; clerk|nice and friendly
+2920015; 2
+2920015; 3; year|last
+29968069; 0; york|new; standards|new
+29968069; 1
+29968069; 2; doors|mitigated
+3024701; 0; cutlery|ecounfriendly plastic; aside|ecounfriendly plastic
+3024701; 1; place|great
+3024701; 2; walk|short
+3024701; 3; station|central
+3024701; 4; rooms|great clean; fittings|nice
+3024701; 5; breakfast|good,enough not great
+3085332; 0
+3085332; 1; cooking|small; area|small
+3085332; 2
+3085332; 3; breakfast|included; food|same
+3085332; 4
+3085332; 5
+3085332; 6; hotel|good
+3100598; 0; hotel|beautiful
+3100598; 1
+3100598; 2; location|good
+3100598; 3
+3100598; 4; things|various
+3100598; 5; internet|great; lounge|great
+3100598; 6
+3100598; 7
+32257173; 0
+32257173; 1; our|thoroughly enjoyed; stay|thoroughly enjoyed
+32257173; 2; room|clean and big
+32257173; 3; staff|great
+32257173; 4
+32257173; 5; floors|lower; facing|lower; th|lower; noise|traffic; fire|traffic; engine|traffic; sirens|traffic
+32257173; 6
+3271097; 0
+3271097; 1
+3271097; 2; website|neat; desk|friendly; clerks|friendly
+3271097; 3; hotel|empty
+3271097; 4
+3271097; 5
+3271097; 6
+3284906; 0; stay|reasonable
+3284906; 1; walk|short
+3284906; 2; room|regular
+3284906; 3; suite|wellappointed
+3284906; 4; bedroom|ample
+3284906; 5
+3284906; 6
+3284906; 7; hotel|fully booked
+3284906; 8; quality|supposed; hotels|supposed
+3284906; 9; our|handled; check|handled; car|private; ride|private; doubt|cast
+3284906; 10; pall|negative; stay|reasonable
+3287831; 0; beds|double; size|full; pull|full; room|main
+3287831; 1; spreads|clean and new
+3287831; 2; fridge|small; freezer|little
+3287831; 3
+3287831; 4
+3287831; 5; cord|complimentary
+3287831; 6
+3287831; 7; continental|minimal; breakfast|minimal
+3287831; 8; breads|sugary white; wheat|whole; bread|whole
+3287831; 9; yogurts|assorted
+3287831; 10; places|great; breakfast|more ambitious
+3287831; 11; owner|very visible; patrons|breakfast
+3287831; 12; fitness|quite nice; room|quite nice; business|very convenient; center|very convenient
+3287831; 13
+3287831; 14
+3287831; 15; desk|front; bellmen|front
+3287831; 16; rooms|regular
+3287831; 17; staying|perfectly comfortable
+3298662; 0
+3298662; 1
+3298662; 2
+3298662; 3; noone|been; rooms|other
+3298662; 4
+3298662; 5
+3298662; 6; room|nice
+3298662; 7
+3298662; 8; rooms|full
+3298662; 9
+3298662; 10; delay|long
+3298662; 11
+3298662; 12; room|new; breakfast|very mediocre; facilities|very mediocre
+3298662; 13; taste|bitter
+3298662; 14
+3305707; 0; kept|best; secrets|best; york|new
+3305707; 1
+3305707; 2; boutique|small; robes|plush; quality|european; linens|european; furnishings|european; feet|square
+3305707; 3
+3305707; 4; continental|wonderful; breakfast|wonderful
+3305707; 5; fruit|fresh
+3305707; 6
+3305707; 7; location|great
+3305707; 8
+3311235; 0; friends|few
+3311235; 1
+3311235; 2
+3311235; 3
+3311235; 4
+3311235; 5; room|big
+3311235; 6; door|right next
+3311235; 7
+3311235; 8; price|much lower
+3324571; 0
+3324571; 1; less|good; hotels|other
+3324571; 2; room|double
+3324571; 3; bathroom|similarly large; reviews|earlier; piping|as much; hot|as much; water|as much
+3324571; 4; test|personal
+3324571; 5; night|last; refills|given
+3324571; 6; staff|friendly; rooms|comfortable
+3337235; 0
+3337235; 1
+3337235; 2
+3337235; 3; rooms|very clean
+3337235; 4
+3337235; 5; time|nice; saver|nice
+3337235; 6
+3337235; 7
+3337235; 8; dining|good; recommendations|good
+3337235; 9
+3337235; 10
+3337235; 11; reviews|numerous; san|based
+3337235; 12; note|final; water|hot
+3352189; 0
+3352189; 1; side|east
+3352189; 2; spring|gorgeous; weekend|gorgeous
+3352189; 3; room|large and clean
+3352189; 4
+3352189; 5
+3352189; 6; conceirge|n't helpful or knowledgeable
+3352189; 7; rainbow|closed; room|closed
+3352189; 8
+3352189; 9; price|good
+3352189; 10
+3352189; 11
+3353164; 0; staff|friendly and knowledgeable; suite|beautiful and quiet
+3353164; 1
+3353164; 2; beds|double; suite|more; floor|more; space|more; manhattan|many; apartments|many
+3353164; 3
+3353164; 4
+3353164; 5; trip|first; time|next
+3372865; 0; nights|few; stay|great
+3372865; 1; rooms|large and quiet
+3372865; 2; bellmen|very nice; front|not happy; desk|not happy
+3372865; 3; room|nice
+3372865; 4; breakfast|continental
+3372865; 5
+33967317; 0
+33967317; 1
+33967317; 2
+33967317; 3
+33967317; 4; standards|very high
+33967317; 5; things|good; hotel|fantastic
+33967317; 6
+33967317; 7
+3402824; 0; location|good
+3402824; 1
+3402824; 2; york|new
+3402824; 3; midtown|good; location|good
+3477333; 0
+3477333; 1
+3477333; 2; room|very nicely furnished,clean; side|small
+3477333; 3
+3477333; 4
+34938188; 0; nueva|en; york|en; y|en; nos|en; hemos|en; el|en; hotel|en; san|en; carlos|en
+34938188; 1
+34938188; 2
+34938188; 3; servicio|un
+34938188; 4; en|habitual; nueva|habitual; york|habitual
+34938188; 5; hay|necesiten; un|necesiten; restaurante|necesiten; econmico|necesiten; que|necesiten; sirve|necesiten; comidas|necesiten
+34938188; 6
+34938188; 7; una|en; y|suficiente; result|suficiente; ms|suficiente; para|suficiente; cuatro|suficiente; personas|suficiente
+34938188; 8
+34938188; 9
+35052929; 0
+35052929; 1; way|possible
+35052929; 2; room|large
+35052929; 3; continental|nice; breakfast|nice
+35052929; 4
+35052929; 5
+35052929; 6; stop|regular; york|new; city|new
+35052929; 7; website|own; specials|offered
+3509196; 0; san|conviently located; carlos|conviently located
+3509196; 1
+3509196; 2; room|spacious
+3509196; 3
+3509196; 4
+3509196; 5
+3509196; 6; bathroom|modern; floors|marble; counter|granite
+3509196; 7
+3509196; 8; movie|good; selections|rental
+3509196; 9; mile|extra
+3509196; 10
+3509196; 11; door|available next
+3509196; 12; room|continental b'fast; rate|continental b'fast; rolls|sweet
+3509196; 13
+3509196; 14
+3509196; 15; place|great
+3554705; 0; week|first
+3554705; 1
+3554705; 2; room|fabulous
+3554705; 3
+3554705; 4; sitting|separate; room|separate
+3554705; 5; complaint|only
+3554705; 6
+3554705; 7; staff|mostly friendly and attentive
+3554705; 8; location|great
+3554705; 9
+36287479; 0
+36287479; 1
+36287479; 2; por|eran; lo|eran; que|eran; las|eran; cutres|eran; usar|suele; por|suele; la|suele; noche|suele
+36287479; 3
+36287479; 4; aire|silencioso y; efectivo|silencioso y
+36287479; 5; incluida|seguridad; en|seguridad; el|seguridad; precio|seguridad; y|seguridad; fcil|seguridad
+36287479; 6
+36287479; 7
+36287479; 8; otros|que; ni|que; se|que; enteren|que
+36287479; 9
+36287479; 10
+36287479; 11
+36287479; 12
+36287479; 13; el|en; precio|en; cosa|en; rara|en; en|en; estados|en; unidos|en
+36287479; 14
+36287479; 15; del|personal; hotel|personal; y|amable; detectamos|aunque
+36287479; 16; para|especial; una|especial; excelente|especial; y|especial; desinteresada|especial; persona|especial; llamada|especial; gabriel|especial; que|en; nos|en; ms|en
+36743822; 0
+36743822; 1
+36743822; 2; room|buen; service|buen
+36743822; 3
+36743822; 4; y|espectacular; bastante|espectacular; barato|espectacular
+36743822; 5; del|agradable; hotel|agradable; es|agradable
+36743822; 6
+3706714; 0; time|big; feel|big; hotel|larger; hotel|comfortable
+3706714; 1
+3706714; 2
+3706714; 3
+3706714; 4; good|looked
+3728362; 0; hotel|wonderful; amenities|wonderful; location|great
+3728362; 1; base|terrific
+3728362; 2; hotels|similarly priced; neighborhood|same
+3731862; 0; time|second
+3731862; 1; rooms|beautiful and comfortable
+3731862; 2
+3731862; 3; staff|attentive
+3731862; 4
+3731862; 5
+3731862; 6
+3731862; 7; suite|perfect
+3738427; 0; expectations|great; hotel|cheaper
+3738427; 1; san|able; carlos|able; day|horrible; stay|wonderful
+3738427; 2; experience|positive; hotel|less expensive
+3738427; 3
+3738427; 4; paying|worth
+3738427; 5
+3738427; 6
+3738427; 7
+3749697; 0
+3749697; 1; feel|european
+3749697; 2
+3749697; 3
+3749697; 4; suite|spacious and quiet
+3749697; 5
+3749697; 6
+3749697; 7; breakfast|very nice; floor|second; opportunity|great
+3749697; 8; area|great
+3749697; 9
+3749697; 10; area|very safe
+3749697; 11
+3749697; 12; tourists|many european; staying|many european
+3749697; 13
+37685942; 0; weekend|long
+37685942; 1
+37685942; 2; beds|seperate
+37685942; 3; out|pull; sofa|pull
+37685942; 4; areas|very nice
+37685942; 5; property|smaller; service|large full; hotel|large full
+37685942; 6; service|very good
+37685942; 7
+37685942; 8
+37685942; 9; cardio|small; gym|small; inroom|usual; amens|usual
+37685942; 10; areas|common
+37685942; 11; our|reasonable; room|reasonable
+37685942; 12
+37685942; 13
+3778204; 0
+3778204; 1
+3778204; 2; hotel|extremely friendly very helpful; staff|extremely friendly very helpful
+3778204; 3; elegant|very clean
+3778204; 4
+3778204; 5; location|great
+3778204; 6; room|large
+37850375; 0; day|second; york|new; city|new
+37850375; 1
+37850375; 2
+37850375; 3
+37850375; 4
+37850375; 5; rooms|tastefully decorated
+37850375; 6; day|long
+37850375; 7; breakfast|continental
+37850375; 8
+37850375; 9; trip|next; apple|big
+3791931; 0
+3791931; 1
+3791931; 2; my|dusty; room|dusty; towels|n't white
+3791931; 3
+3791931; 4
+3791931; 5
+3791931; 6
+3791931; 7
+3791931; 8
+3791931; 9
+3791931; 10
+3791931; 11
+3791931; 12
+38586425; 0; trip|second
+38586425; 1
+38586425; 2; living|separate; room|separate; plus|real
+38586425; 3
+38586425; 4; rooms|spacious; ambience|quiet
+38586425; 5; hotel|firstrate
+38586425; 6; time|busy
+38586425; 7
+38586425; 8
+38586425; 9
+38586425; 10
+38586425; 11; t|beat
+38586425; 12
+38586425; 13; walk|easy; day|nice
+38586425; 14; legs|got
+38586425; 15
+38715442; 0
+3887095; 0; years|past; time|first; year|last; gentleman|older
+3887095; 1; talk|small
+3887095; 2; car|particular; service|particular
+3887095; 3
+3887095; 4; location|great; year|next
+3933192; 0; man|old
+3933192; 1; assistance|friendly; whatsoever|friendly
+3933192; 2
+3933192; 3; relatives|other; experience|wonderful
+3933192; 4; hotels|other
+3933192; 5; time|first; york|new; staff|really helpful; seeing|worth
+3933192; 6; trouble|much
+3933192; 7; firms|giant; york|new
+3933192; 8; gym|small; station|equipt
+3933192; 9; idea|brilliant
+3933192; 10; rooms|such comfortable; beds|such comfortable; everyday|kept,immaculately clean; housekeeping|wonderful; staff|wonderful; addition|great
+3933192; 11; flatscreen|pretty big; wonderful|pretty big
+3933192; 12; newspaper|complimentary; breakfast|complimentary
+3933192; 13; people|complained
+3933192; 14
+3933192; 15; staying|definitely worth
+3933192; 16
+40231384; 0; things|many
+40231384; 1
+40231384; 2; hotels|most; king|single; beds|doublesized
+40231384; 3; wifi|recently installed
+40231384; 4; connections|really fast
+40231384; 5; parking|discounted; perk|big
+40231384; 6; service|great
+40231384; 7; hotel|small; noise|very little; guests|other
+40231384; 8; life|past; results|mixed
+40231384; 9
+40231384; 10
+40231384; 11; beige|very blah
+40231384; 12; room|limited; service|limited; restaurant|indian
+40440697; 0; location|great; close|great
+40440697; 1; room|good; including|good; sitting|large separate; area|large separate
+40440697; 2; value|good
+40440697; 3
+40440697; 4; plates|plastic
+40440697; 5; value|generally good
+40457142; 0
+4081887; 0; man|very rude
+4081887; 1
+4081887; 2
+4081887; 3; hotel|clean and comfortable
+4081887; 4; rooms|spacious
+4081887; 5
+4081887; 6; zone|wonderful
+4081887; 7
+40984080; 0
+40984080; 1; rate|great
+40984080; 2
+40984080; 3; kingsize|comfortable
+40984080; 4; housekeeping|fantastic; service|fantastic
+40984080; 5; rooms|quiet
+40984080; 6
+40984080; 7; tv|cable; channels|few,more interesting
+40984080; 8
+40984080; 9
+40984080; 10; tea|real; cups|real
+40984080; 11; breakfasts|hot; york|new; lucheonette|new
+40984080; 12; rd|great; indian|fantastic
+40984080; 13
+40984080; 14; corner|next; way|fantastic
+40984080; 15
+40984080; 16; day|hard
+40984080; 17
+4107048; 0
+4107048; 1; rooms|small
+4107048; 2
+4107048; 3; computers|free
+4107048; 4; atmosphere|nice; hotel|very old
+4107048; 5; adventure|real; starting|very good; point|very good
+4107048; 6; hotel|much; chelsea|much; rougher|much
+4107048; 7
+429484; 0; location|good; side|east; apartment|former; offering|former; deal|great; continental|ample; breakfast|ample; dining|small; area|small; neighborhood|same
+429484; 1; service|dreadful
+429484; 2; nature|personal
+429484; 3; place|same
+429484; 4; bars|new; soap|not provided; ones|worn
+429484; 5; utensils|kitchen; bulbs|light; everything|covered; greasy|unidentified; substance|unidentified
+429484; 6; night|last
+429484; 7; guests|other
+429484; 8
+429484; 9
+4335235; 0; hotel|wonderful
+4335235; 1; hotel|small; rooms|great; beds|comfortable
+4335235; 2; location|great; street|quiet; york|new
+4335235; 3; bar|irish; night|late; drinks|late
+4335235; 4; rooms|spacious; screen|flat; tv|flat
+4335235; 5
+4335235; 6
+4335235; 7
+4335235; 8; san|well done; carlos|well done
+4352658; 0
+4352658; 1
+4352658; 2
+4352658; 3
+4352658; 4
+4352658; 5; beds|changed,daily; issues|enviromental
+4352658; 6
+4352658; 7; breakfast|continental
+4352658; 8; gym|small; condition|good
+4352658; 9; access|free
+4352658; 10; location|very good
+4352658; 11; park|central
+4352658; 12; meals|good; prices|reasonable
+4352658; 13
+4352658; 14
+4352658; 15
+4459328; 0
+4459328; 1; gem|well located; rates|slightly high but reasonable
+4459328; 2; rooms|larger; nyc|typical; reading|wonderful; chair|wonderful; ottoman|wonderful; beds|double
+4459328; 3
+4459328; 4; side|small; room|little
+4459328; 5
+4459328; 6
+4459328; 7; fitness|also very nicely done,small; room|also very nicely done,small
+4459328; 8; staff|very courteous and helpful
+4459328; 9; restaurant|attached
+4459328; 10
+4459328; 11; luncheonette|great little
+4459328; 12
+4459328; 13
+4459328; 14; hotel|adequate; coffee|adequate
+4459328; 15; touch|nice
+4459328; 16; refrigerator|small
+4459328; 17; charm|more; chain|typical large; hotels|typical large
+4459328; 18
+4459328; 19; location|great; broadway|most; plays|most; times|most
+4459328; 20
+4459328; 21
+46153498; 0; th|east; sent|booked; ownership|same
+46153498; 1
+46153498; 2; beds|great; pillows|soft
+46153498; 3; staff|pleasant; including|pleasant
+46153498; 4
+46153498; 5
+46153498; 6; australia|normanhurst
+47258559; 0; time|third; staying|third
+47258559; 1; beds|nice
+47258559; 2; room|clean and comfortable; staff|just great
+47258559; 3
+47258559; 4; breakfast|free; touch|nice; food|very mediocrevarious; breads|very mediocrevarious
+47258559; 5; morning|third
+47258559; 6; times|other; same|exact; thing|exact
+47258559; 7
+47258559; 8
+47258559; 9; freeuse|few; computers|few; couches|few
+47258559; 10; hours|several
+47258559; 11; thingwe|never supplied; conditioner|hair
+47258559; 12
+4740025; 0
+4740025; 1; part|better
+4740025; 2
+4740025; 3; process|average; attentions|provided; welcomes|provided
+4740025; 4
+4740025; 5
+4740025; 6; screen|flat; tv|flat; screen|flat; tv|flat
+4740025; 7
+4740025; 8; bath|very small; towels|very small
+4740025; 9
+4740025; 10; entry|independent
+4740025; 11
+4740025; 12; lady|young; restaurant|italian
+4740025; 13; maps|available
+4740025; 14; breakfast|somewhat simple; forks|plastic; spoons|plastic; knifes|plastic
+4740025; 15; block|same
+4740025; 16; opinion|humble; accomodation|more confortable and luxurious; hotels|suite
+4740025; 17; part|best
+4740025; 18; person|very attentive; susan|very attentive; manner|proffesional and amicable
+4740025; 19
+4740025; 20
+47478160; 0
+47478160; 1
+47478160; 2
+47478160; 3; rate|nonrefundable; suite|executive
+47478160; 4; neighborhood|great
+47478160; 5
+47478160; 6; our|very nice and large; room|very nice and large
+47478160; 7; kitchen|small
+47478160; 8; staff|great
+47478160; 9; breakfast|minimal
+47478160; 10
+47478160; 11
+47478160; 12
+4775213; 0
+4775213; 1; rooms|large
+4775213; 2
+4775213; 3; area|good; location|really safe and good; attractions|major
+4775213; 4; use|free
+4775213; 5; restaurant|indian; ajoining|indian; hotel|indian
+4775213; 6
+48192784; 0; san|proved
+48192784; 1; rooms|clean; two|large; queen|large; beds|large; bathrooms|modern
+48192784; 2
+48192784; 3; location|ideal
+48192784; 4
+48192784; 5
+48192784; 6; breakfast|continental
+48192784; 7
+49668904; 0
+49668904; 1; und|ubahnstationen; eine|ubahnstationen; quer|ubahnstationen; fahrende|ubahnstationen; buslinie|ubahnstationen; th|ubahnstationen; richtung|ubahnstationen; westen|ubahnstationen; wenige|einigen; blocks|einigen; sehenswrdigkeiten|einigen
+49668904; 2; und|lokale; eine|lokale; deli|lokale
+49668904; 3; alamo|national; autovermietung|national; ist|national; direkt|national; daneben|national
+49668904; 4; englisch|personal; und|personal; spanisch|personal; sprechend|personal
+49668904; 5
+49668904; 6
+49793440; 0
+49793440; 1; clean|quiet; room|quiet; bathroom|tiny; downside|only
+4988711; 0; manhattan|different; hotesl|different; years|past several; splurge|big
+4988711; 1
+4988711; 2; comfy|ample; seating|ample; tv|individual; screens|individual; workout|n't huge; room|n't huge; hotel|large; breakfast|attractive; room|attractive; speed|high; internet|high; service|high
+4988711; 3; rooms|generously proportioned; sills|marble
+4988711; 4; artwork|framed; lamps|table; lighting|overhead; desk|notable; lamp|notable
+4988711; 5; furnishings|tasteful
+4988711; 6; prices|less outrageous; manhattan|many; hotels|many; sink|small; cupboards|glassware; drawers|glassware; flatware|dishware
+4988711; 7; storage|enough; space|enough
+4988711; 8; counter|wide; touch|nice
+4988711; 9; everything|scrupulously clean,wellmaintained; guests|fellow; our|not disrupted; sleep|not disrupted
+4988711; 10; breakfast|free; breakfast|continental; pastries|skippable
+4988711; 11; hotels|most
+4988711; 12; intermittent|few; problems|few
+4988711; 13; carlos|san; falls|san
+4988711; 14; desk|quite young; clerks|quite young; doormen|quite young
+4988711; 15
+4988711; 16
+4988711; 17; its|given; location|given; value|exceptional
+4988711; 18
+5022252; 0
+5022252; 1; room|great,well appointed; bathroom|nice; amounts|short
+5022252; 2; location|great; access|easy; walk|nice; pk|central
+5022252; 3
+5022252; 4
+5022252; 5
+5022252; 6; breakfast|continental; pastries|continental
+50459388; 0; ratings|overall
+50459388; 1
+50459388; 2; hotel|very much
+50459388; 3; value|very good
+50459388; 4; rooms|very large; beds|good; quality|good; linens|good; staff|very friendly multilingual; location|good; stations|been
+50459388; 5
+50459388; 6; breakfasts|continental
+50459388; 7
+50459388; 8; daughter|oldest; place|noisiest
+50459388; 9; deal|great
+50459388; 10
+50459388; 11
+50459388; 12
+50459388; 13; san|had
+50459388; 14; ta|favorable
+50459388; 15; members|other; reviews|helpful
+50459388; 16; reviews|very accurate
+50459388; 17; rooms|separate
+51056663; 0
+51056663; 1
+51056663; 2
+51257933; 0; lcoation|great
+51257933; 1
+51257933; 2
+51257933; 3; rooms|larger; living|separate; areas|separate; bedrooms|separate
+51257933; 4; kitchenette|small; stays|longer; people|more
+51257933; 5; bathroom|pretty standard sized good; fit|tight; c|great
+51257933; 6
+51257933; 7
+51257933; 8; breakfast|complimentary; buffet|complimentary; comment|so cant
+51257933; 9; grab|great; go|great; restaurants|great; goodies|few; treats|few
+51257933; 10; hotel|great
+51257933; 11
+52090345; 0
+52090345; 1; room|large and clean
+52090345; 2; staff|attentive
+52090345; 3; my|addressed; needs|addressed
+52090345; 4; internet|free
+52090345; 5
+52090345; 6; york|new
+52090345; 7
+52090345; 8; midtown|exceptional; location|exceptional; block|exceptional
+52090345; 9
+52090345; 10; european|large; cities|large; food|here buffet; style|here buffet
+52090345; 11
+52090345; 12; plates|plastic; paper|plastic; cups|plastic
+52090345; 13; concerns|environmental
+52090345; 14; concerns|small
+52911018; 0
+5393934; 0; reviews|many; nyc|many; hotels|many
+5393934; 1; s|late; room|quiet; internet|highspeed; access|highspeed
+5393934; 2; fridge|small
+5393934; 3
+5393934; 4; san|first
+5393934; 5; reviews|noted; restaurants|numerous
+5393934; 6; areas|more residential
+5393934; 7; reviewers|previous
+5393934; 8; place|great
+5438828; 0
+5438828; 1; hotel|great; location|great; staff|great; rooms|great; room|great; rate|great; neighbourhood|very expensive
+5438828; 2; room|quiet
+5438828; 3; room|clean; front|good; desk|good
+5438828; 4
+5438828; 5; room|only; service|only; restaurant|indian; selection|great; food|cooked,fresh
+5438828; 6; breakfast|complimentary
+5438828; 7
+5438828; 8
+5462313; 0; hotel|wonderful; value|outstanding
+5462313; 1; decor|yet elegant; pillows|good; continental|delicious; breakfast|delicious; fruit|fresh; bagels|best
+5462313; 2; i|quiet; siren|first; horn|first; blow|first
+5462313; 3; online|great; offer|great; night|third
+5462313; 4
+5462313; 5; york|new; including|new; tax|new
+5462313; 6; lodging|perfected; experience|perfected; pride|great
+5462313; 7; gentleman|delightful; charm|relaxed; efficient|relaxed; service|relaxed
+5462313; 8; york|new
+5481021; 0
+5481021; 1; nd|wonderful; street|wonderful; restaurants|wonderful
+5481021; 2; excellent|provided; recommendations|provided
+5481021; 3; complaint|only; firm|extra; our|bothered; backs|bothered
+5481021; 4; york|new
+5508007; 0; experience|wonderful
+5508007; 1; rate|special
+5508007; 2; room|very nice
+5508007; 3; kitchenette|very nice; bathroom|very nice; countertops|beautiful marble
+5508007; 4; coffe|real; cups|real
+5508007; 5; hotel|very courteous and helpful; staff|very courteous and helpful
+5508007; 6; breakfast|nice; bar|nice
+5508007; 7; location|convenient
+5508007; 8
+5508007; 9
+55759288; 0; y|square; rockefeller|square; center|square
+55759288; 1; comunicado|bien
+55759288; 2; que|personal; habla|personal; espaol|personal
+55759288; 3
+55759288; 4
+55759288; 5; prensa|en; ingles|en
+55759288; 6; es|mejor; del|mejor; hotel|mejor
+55759288; 7
+55759288; 8; el|buen; hotel|buen; es|buen; cuatro|buen; estrellas|buen
+56178482; 0; stay|second
+56178482; 1
+56178482; 2; room|spacious; unlike|spacious; york|typical new; hotel|typical new
+56178482; 3
+56178482; 4; stays|more
+5636054; 0; place|nicest
+5636054; 1; service|trememdous
+5636054; 2
+57031583; 0; week|last; time|great
+57031583; 1
+57031583; 2; hotel|clean and new
+57031583; 3
+57031583; 4; chair|comfortable
+57031583; 5; location|nice; side|east
+57031583; 6; staff|alo great
+57031583; 7; price|very reasonable
+57031583; 8
+57114505; 0
+57114505; 1
+57114505; 2
+57114505; 3; muy|personal
+57114505; 4; todos|impecable; los|impecable
+57114505; 5
+57209903; 0; hotel|nice,greatly located
+57209903; 1; facilities|nice and comfortable; rooms|nice and comfortable
+57209903; 2; staff|kind and willing
+57209903; 3; busisness|useful; center|useful
+57209903; 4; hotel|great
+5762965; 0; estuve|en; seis|en; este|en; hotel|en
+5762965; 1; era|personal; encantador|personal; y|personal; algunos|personal; el|solicite; cambio|solicite
+5775798; 0; reviews|many; nyc|many; hotels|many; tripadvisor|previous; reviewers|previous; nights|wonderful
+5775798; 1
+5775798; 2
+5775798; 3
+5775798; 4
+5775798; 5; breakfast|continental
+5775798; 6; bite|quick
+5775798; 7
+5775798; 8; door|wonderful
+5775798; 9; job|fabulous
+5775798; 10
+5775798; 11; kids|really impressed
+5775798; 12
+5775798; 13
+5775798; 14
+5775798; 15; hotel|very quiet; neighborhood|great
+5775798; 16
+5775798; 17
+5775798; 18; apple|big; greeter|big; thing|great
+5775798; 19
+5775798; 20
+5775798; 21; york|new
+5775798; 22; friend|old
+5775798; 23
+5775798; 24; stop|next
+5775798; 25; view|better
+5775798; 26; play|interactive
+5775798; 27
+5775798; 28
+5775798; 29; york|new; yankee|new; game|new; bronx|new; zoo|new; coney|new; island|new; everyone|new; street|there once canal
+5775798; 30
+5775798; 31
+5775798; 32
+5775798; 33
+5775798; 34
+5775798; 35
+5775798; 36; hotels|best
+57821037; 0; stay|second
+57821037; 1; rooms|large
+57821037; 2
+57821037; 3; trip|unbearable
+57821037; 4; dumpsters|small
+57821037; 5
+57821037; 6
+59173245; 0; reviews|positive
+59173245; 1; suite|junior
+59173245; 2; room|adequate; panel|flat
+59173245; 3
+59173245; 4; hotel|polite; attendants|polite
+59173245; 5; night|moderately priced; hotel|moderately priced
+5928955; 0; san|provided; week|great; york|new
+5928955; 1; things|little
+5928955; 2; touch|nice
+5928955; 3; rooms|clean,relatively spacious; york|new
+5928955; 4; bathrooms|new; shower|great
+5928955; 5; business|complimentary; centre|complimentary; breakfast|continental
+5928955; 6
+5928955; 7
+5928955; 8
+5964418; 0; hotel|nice; staff|great; hotel|bombarded
+5964418; 1; street|had; paving|had
+5964418; 2; street|worst; noise|worst
+5964418; 3
+60191651; 0
+60191651; 1; san|booked
+60191651; 2
+60191651; 3; concierge|constant; restaurant|onsite; lobby|small,perfectly clean and nice
+60191651; 4; rooms|huge,very clean; linens|very decent; towels|soft; elevators|quickest
+60191651; 5
+60191651; 6
+60191651; 7
+60191651; 8; pillows|extra
+60191651; 9
+60191651; 10; street|expected; noise|expected
+60191651; 11; dresser|huge; hangers|ample
+60191651; 12; experience|very good; experience|very nice
+6046964; 0; our|really enjoyed; stay|really enjoyed
+6046964; 1
+6046964; 2; our|clean and spacious; room|clean and spacious
+6046964; 3; microwave|very useful; coffeemaker|very useful
+6046964; 4; breakfast|continental; touch|nice
+6046964; 5
+6046964; 6
+6078685; 0
+6078685; 1; our|flooded; room|flooded; bedford|transfered; staff|transfered
+6078685; 2
+6078685; 3; hotel|great little; nice|great little; entrance|great little; buffet|free; breakfast|free; internet|free
+6078685; 4
+6078685; 5; bedroom|good,sized; lounge|seperate; kitchenette|small; area|small; bathroom|well equipped,good
+6078685; 6
+6078685; 7
+6078685; 8; door|next
+6078685; 9; york|traditional new; bagel|traditional new; breakfasts|traditional new; york|new; attitude|new
+6082473; 0; hotel|fantastic; walking|easy; distance|easy; york|new; attractions|most famous; th|most famous; avenue|most famous
+6082473; 1
+6082473; 2
+6082473; 3; hotel|very clean; staff|huge; our|huge; room|huge; room|normal
+6082473; 4
+6082473; 5; cafes|so many; deli|so many
+6082473; 6
+6092572; 0; hotel|modern; location|central
+6092572; 1; price|great
+6092572; 2; bedroom|double; beds|double; sofa|double
+6092572; 3
+6092572; 4; wardrobes|large; plenty|large; space|drawer
+6092572; 5; decor|modern and clean; kitchen|small; area|small
+6092572; 6
+6092572; 7
+6092572; 8; street|fairly quiet
+6092572; 9; hotels|most central; nyc|noisy; city|major
+6092572; 10; our|booked; nights|booked; things|other; nikki|called; midtown|called
+6092572; 11
+6092572; 12
+61128231; 0; hotel|very nice; owner|friendly; flight|late
+61128231; 1
+6136854; 0; york|new; city|new; visit|new
+6136854; 1
+6136854; 2; hotel|quite less
+6136854; 3
+6136854; 4; hotels|similar; continental|free; breakfast|free
+6136854; 5; room|closed,spartan; breakfast|continental; make|continental
+6136854; 6; commentary|previous
+6136854; 7
+6136854; 8
+6136854; 9
+6136854; 10
+6136854; 11
+6136854; 12; th|well worn; floor|well worn; junior|well worn; suite|well worn; exec|well worn; king|well worn; painting|good; writers|previous; trip|referenced; advisor|referenced
+6136854; 13
+6136854; 14; amount|significant; york|new; hours|quite incredible
+6136854; 15
+6136854; 16; hotels|better; area|same; price|same
+6136854; 17
+6140907; 0; experience|extremely positive
+6140907; 1; hotel|centrally located; staff|helpful and friendly
+6140907; 2; refrigerator|small
+6140907; 3; cardio|few; machines|few; tvs|few
+6140907; 4; hotel|immaculate; room|immaculate
+6140907; 5
+6140907; 6; experience|outstanding
+6168924; 0; experiences|great; years|past
+6168924; 1; breakfast|not just orange; juice|not just orange; years|past
+6168924; 2
+6168924; 3; time|last; breakfast|continental
+6168924; 4
+6168924; 5; rooms|aged; building|old; decor|very modern
+6168924; 6; hotels|nearby
+6168924; 7; their|hair; toiletries|hair; products|hair; cleaner|ear
+6168924; 8
+6168924; 9; bathrooms|always clean; linens|always clean
+6168924; 10; rooms|pretty roomy; screen|flat; lcd|flat; tvs|flat; screen|flat; tv|flat
+6168924; 11; hotels|most decent
+6168924; 12; place|bad; their|sure; guests|sure
+6168924; 13
+6168924; 14; hotels|most
+6168924; 15; noise|traffic
+6168924; 16
+6168924; 17; service|bad; collegues|numerous
+6168924; 18
+6168924; 19
+6168924; 20; speed|free high; broadband|free high
+6168924; 21
+6168924; 22; visiting|anywhere worth
+6168924; 23; ex|fed; kinkos|fed; blocks|fed
+6168924; 24; subways|several; ny|short; blocks|short
+6168924; 25
+6168924; 26; price|heftier; deal|great; hotels|comparable
+6168924; 27
+6168924; 28; hotel|other; range|'ish
+6168924; 29; way|same
+62092301; 0; stay|great
+62092301; 1; bedroom|big; beds|double; kitechette|small
+62092301; 2; room|great; staff|servive and friendly
+62092301; 3; location|good
+62092301; 4; breakfast|complementary
+62463477; 0; rooms|large comfortable; beds|large comfortable
+62463477; 1; fridge|small; bathrooms|spacious
+62463477; 2
+62463477; 3; breakfast|included
+62463477; 4; staff|very helpful; our|later; flight|later
+62463477; 5
+62754368; 0; bueno|que; que|que; mas|que
+62754368; 1
+62754368; 2; persona|cualquier; que|cualquier
+62899980; 0; york|new; uk|due; volcano|icelandic
+62899980; 1; york|new; night|last
+62899980; 2; reviews|positive
+62899980; 3; midtown|good; york|new; hotels|new
+62899980; 4; room|great
+62899980; 5
+62899980; 6
+62899980; 7
+62899980; 8
+62899980; 9; buffet|included; breakfast|included; bonus|real; york|new
+62899980; 10; source|main
+62899980; 11
+62899980; 12
+62899980; 13; quality|good; orange|good; juice|good; tea|happy; coffee|happy; our|happy; kids|happy; stay|extended
+62899980; 14
+62899980; 15; airspace|closed
+62899980; 16; notice|short; let|short
+62899980; 17; airways|british
+62899980; 18; san|said; room|same; tv|extra; night|per; stay|extended
+62899980; 19; room|fantastic; york|new
+62899980; 20
+62899980; 21
+62899980; 22; pcs|fast; printers|fast
+62899980; 23; guests|other stranded european; looking|other stranded european
+62899980; 24; internet|great; access|great
+62899980; 25; eight|full; nights|full; length|total
+62899980; 26
+62899980; 27
+62899980; 28
+62899980; 29; food|fantastic; guests|indian; indicator|good
+62899980; 30
+62899980; 31
+62899980; 32; location|great; block|great
+62899980; 33; options|cheaper
+62899980; 34; direction|other
+62899980; 35; hotel|great; york|new
+62899980; 36
+62899980; 37; york|new; times|new
+62899980; 38; hotel|best
+6330928; 0; experience|better
+6330928; 1; bottle|complementary
+6330928; 2; issues|constantly faced,negative
+6330928; 3
+6330928; 4; time|next
+6330928; 5; san|helped; make|helped; our|helped; stay|helped; york|new; trips|best
+6334796; 0; our|terrific; thanksgiving|terrific; stay|terrific
+6334796; 1; rooms|clean and large; york|new; standards|new
+6334796; 2; staff|very helpful and courteous
+6334796; 3
+6334796; 4
+6334796; 5
+6334796; 6; park|central
+6334796; 7
+6334796; 8
+6334796; 9
+6334796; 10
+6335362; 0
+6335362; 1; room|handicapped
+6335362; 2
+6335362; 3
+6335362; 4
+6335362; 5
+6335362; 6; care|rudely taken
+6335362; 7
+6335362; 8
+63877544; 0; stay|wonderful
+63877544; 1; suite|very spacious
+63877544; 2
+63877544; 3; place|nice peaceful; day|long
+63877544; 4
+63877544; 5; perks|great; matt|great
+63877544; 6
+6433209; 0; york|new; city|new; san|wonderful; carlos|wonderful; hotel|wonderful
+6433209; 1; apple|big
+6433209; 2; san|based; travelers|other
+6433209; 3
+6433209; 4; rooms|quite large
+6433209; 5; checkin|consistent
+6433209; 6; continental|complimentary; breakfast|complimentary; start|nice
+6433209; 7; noise|external
+6433209; 8; business|small; centre|small
+6433209; 9; location|wonderful; centre|rockefellow; park|central
+6433209; 10; neighborhood|very safe
+6433209; 11; restaurants|many good; walking|easy; distance|easy
+6433209; 12
+6433209; 13
+64615514; 0
+64615514; 1
+64615514; 2
+64615514; 3; menos|al; llegar|al; que|al; lo|al; contratamos|al
+64615514; 4
+6491172; 0; york|made,new; city|made,new; event|annual; week|first; years|last
+6491172; 1; hotels|large; stays|other
+6491172; 2
+6491172; 3
+6491172; 4; rooms|quiet
+6491172; 5
+65338950; 0; everything|positive
+65338950; 1
+65338950; 2; feeling|good
+65338950; 3; bathroom|large; smaller|second; bathroom|second; kitchenette|small; area|small; fridge|small
+65338950; 4
+65338950; 5
+65338950; 6; tvs|flat big
+65338950; 7
+65338950; 8; wi|free; fi|free; breakfast|free
+65338950; 9; juice|good; yogurts|organic
+65338950; 10
+65338950; 11; location|very good
+65338950; 12; thing|best
+65338950; 13; sheets|changed; day|other; quality|very good
+65338950; 14; rate|very good; taking|very good; advantage|very good
+65338950; 15; york|new
+65338950; 16
+65338950; 17; s|bed; suite|separate
+65338950; 18
+65338950; 19
+6567193; 0; trip|fifth; hotels|large
+6567193; 1; experience|very good
+6567193; 2; staff|entire
+6567193; 3; four|reserved; rooms|reserved; wedding|small; party|small
+6567193; 4; attractions|major
+6567193; 5; boutique|last; hotel|last; ones|very slow
+6567193; 6
+6567193; 7
+6567193; 8; breakfast|free; bonus|real; style|continental
+6567193; 9
+6615849; 0; stay|great; week|last
+6615849; 1; service|perfect; rooms|unusually large
+6615849; 2; children|small; nature|very friendly and helpful; kids|small
+6635044; 0; hotel|great
+6635044; 1; decor|updated; furnishings|updated
+6635044; 2
+6635044; 3
+6635044; 4
+6635044; 5
+6635044; 6
+6635044; 7
+6635044; 8
+6635044; 9; bath|full
+6635044; 10; breakfast|continental; perk|nice
+6635044; 11; location|good
+6635044; 12; subway|close; station|close; park|central; th|central; avenue|central; shopping|central; times|central
+6635044; 13
+6635044; 14; hotel|smaller
+6635044; 15; service|great
+6635044; 16; linens|very comfortable
+6635044; 17; intersection|nearby
+6635044; 18
+6635044; 19; visit|last; suites|doubletree
+6635044; 20
+6635044; 21
+6635044; 22; our|so high; hotel|so high; room|so high
+6635044; 23
+6635044; 24
+66615166; 0
+66615166; 1; value|great; location|great
+66615166; 2
+66615166; 3
+66615166; 4
+66639644; 0
+66639644; 1; york|new
+66872465; 0
+66872465; 1
+66872465; 2
+66872465; 3
+66872465; 4; hotel|conveniently located; park|central
+66872465; 5; way|best; york|new
+67000573; 0
+67000573; 1; queen|perfect; configuration|perfect
+67000573; 2; room|very large and clean
+67000573; 3; lobby|smallish
+67000573; 4; checkin|fastest; process|fastest
+67000573; 5; breakfast|basic; pastries|basic
+67000573; 6
+67000573; 7
+67584051; 0
+67584051; 1; beds|queen
+67584051; 2; option|cheapest; location|great
+67584051; 3; everything|well arranged; chair|easy; beds|good,sized
+67584051; 4; bathroom|small
+67584051; 5; beds|comfortable
+67584051; 6; breakfast|pretty basic
+67584051; 7; features|best
+67584051; 8; wifi|free
+67584051; 9; chinese|great; restaurant|great; night|late; checkin|late; restaurants|many other good
+67584051; 10
+6778307; 0
+6778307; 1
+6778307; 2
+6778307; 3
+6778307; 4
+67790784; 0; nyc|great little; secret|great little
+67790784; 1; hotel|pleasant
+67790784; 2
+67790784; 3; staff|professional and courteous
+67790784; 4; crib|already set
+67790784; 5
+67790784; 6; children|older; comforter|down
+67790784; 7
+67790784; 8
+67790784; 9; breakfast|fantastic great; selection|fantastic great; yogurts|organic; choc|hot; teas|good; larger|great; toaster|commerical
+67790784; 10
+67790784; 11; location|great; sites|many
+67790784; 12
+67790784; 13; check|easy and accurate
+67790784; 14; wifi|free
+67790784; 15
+6802785; 0; location|great great
+6802785; 1; staff|whole; breakfast|very good
+6802785; 2
+6802785; 3; choice|first
+6814012; 0
+6814012; 1; snow|major; storm|major
+6814012; 2
+6814012; 3; beds|very comfy; internet|complimentary; tv|cable; fridge|small; room|very clean and quiet
+6814012; 4; touch|nice
+6814012; 5; continental|great; breakfast|great
+6814012; 6; style|continental
+6814012; 7; bite|quick
+6814012; 8
+6814012; 9
+6814012; 10; cuisine|indian
+6814012; 11; location|ideal; restaurants|great
+6814012; 12; service|great
+6814012; 13; past|many; visits|many; hotels|many different; carlos|san; choice|future
+6819467; 0
+6819467; 1; place|wonderful
+6819467; 2; room|great
+6819467; 3; staff|quick; something|sent
+6819467; 4
+6819467; 5
+6819467; 6; room|spacious; hotel|very quiet
+6819467; 7
+6819467; 8
+6819467; 9; hotel|best
+69098376; 0; hotel|un; fantstico|un
+69098376; 1; cuenta|en; que|en; en|en; nueva|en; york|en
+69098376; 2; pero|suficiente; creo|suficiente; que|suficiente; es|suficiente; para|suficiente; empezar|suficiente; un|suficiente; buen|suficiente; da|suficiente; en|suficiente; nueva|suficiente; york|suficiente
+69098376; 3
+69098376; 4
+69098376; 5; ordenadores|internet; gratuitos|internet; viene|un,pendrive; muy|un,pendrive; bien|un,pendrive; para|un,pendrive; descargar|un,pendrive; las|un,pendrive; fotos|un,pendrive; sobre|un,pendrive; la|un,pendrive; marcha|un,pendrive
+69098376; 6
+69098376; 7; y|inmejorable; las|inmejorable
+69098376; 8
+69923683; 0
+69923683; 1; reviews|several; option|best
+69923683; 2; thing|nice; refrigerator|small; breakfast|big; beverages|other; park|central; rooms|really big and confortable
+69923683; 3; bathroom|nice
+69923683; 4; hotel|attentious; staff|attentious
+69923683; 5
+69923683; 6; thing|good
+69923683; 7
+69923683; 8; city|huge
+69923683; 9; food|really expensive,not so good
+69923683; 10; food|really good; price|reasonable
+69923683; 11
+70101191; 0
+70101191; 1; rooms|nice and big; seperate|nice and big; lounge|nice and big; bedroom|nice and big; kitchenette|small; seat|small; dining|small; tv|large; wireless|free; internet|free
+70101191; 2; bedroom|queen; beds|queen
+70101191; 3; hotel|close; restraunts|many; attractions|most tourist; walk|easy; station|central
+70101191; 4; desk|great; staff|great
+70101191; 5; rate|discounted
+70232472; 0
+7196181; 0; staff|helpful
+7196181; 1
+7196181; 2
+7196181; 3; door|terrific; indian|terrific; cuisine|terrific
+7196181; 4; room|nicely appointed,very clean; window|located,high
+7196181; 5
+7196181; 6; location|good
+7214509; 0; hotel|fantastic
+7214509; 1; staff|very helpful and pleasant
+7214509; 2; breakfast|basic; pastries|basic
+7214509; 3
+7214509; 4
+7214509; 5
+7253446; 0
+7253446; 1; beds|double
+7253446; 2
+7253446; 3
+7253446; 4; french|delicious; restaurant|delicious; blocks|few
+7253446; 5; location|great; nice|great; room|great
+7276763; 0; location|great; negatives|few
+7276763; 1; room|nicely appointed; bathroom|spotlessly clean; countertops|granite; aveeda|granite; products|granite
+7276763; 2
+7276763; 3; location|great easy; walking|great easy
+7276763; 4; subway|other; lines|other
+7276763; 5
+7276763; 6; breakfast|continental
+7276763; 7; bread|dry,quite stale; pastries|dry,quite stale; morning|third; am|left; nothing|left
+7276763; 8
+7276763; 9
+7276763; 10; bar|very noisy
+7276763; 11; nuisance|biggest; room|guest; door|guest; slamming|guest
+7276763; 12; room|guest; doors|guest; spring|guest
+7276763; 13; sleeper|light
+7293337; 0
+7293337; 1; neighborhood|nice
+7293337; 2; lobby|watchful; staff|watchful; speedy|watchful; elevators|watchful; leading|watchful; rooms|quiet comfortable
+7293337; 3; floor|lower; heard|lower
+7293337; 4; york|new; deli|new; service|great
+7293337; 5
+7293337; 6; bargain|great
+72996770; 0; women|other
+72996770; 1; one|only,reasonably priced; bedroom|only,reasonably priced; suites|only,reasonably priced
+72996770; 2
+72996770; 3
+72996770; 4; layout|suite; time|same
+72996770; 5; suites|generous; wifi|free; temperature|separate; controls|separate
+72996770; 6; breakfast|continental; breakfast|european; room|european
+72996770; 7
+73941457; 0
+73941457; 1; reception|polite,very helpful; staff|other
+73941457; 2
+73941457; 3
+73941457; 4; rooms|spacious and clean
+73941457; 5; location|ideal; york|new; time|first
+73941457; 6
+7431727; 0; visit|first; location|better; hotel|better
+7431727; 1; rooms|larger
+7431727; 2; location|perfect; park|central
+7431727; 3
+7431727; 4; comments|other; house|full
+7431727; 5
+7431727; 6
+7431727; 7
+74364709; 0; five|just spent; nights|just spent; hotel|fantastic
+74364709; 1; suite|most beautiful
+74364709; 2; living|separate; area|separate
+74364709; 3; bathroom|spacious
+74364709; 4; price|breakfast; which|breakfast
+74364709; 5; rave|only got; reviews|only got
+7476184; 0; stay|great
+7476184; 1; our|spotlessly clean; room|spotlessly clean
+7476184; 2
+7476184; 3; breakfast|very good; indeed|very good; plenty|very good; breakfast|rather fierce; room|rather fierce
+7476184; 4; nothing|so helpful; trouble|much
+7476184; 5
+7482831; 0
+7482831; 1
+7482831; 2
+7482831; 3; rooms|large
+7482831; 4; bathroom|large; counter|large
+7482831; 5; street|minimal; noise|minimal
+7482831; 6
+7482831; 7; staff|extremely nice and helpful
+7482831; 8; umbrellas|available
+7482831; 9; breakfast|great
+7482831; 10
+7482831; 11
+7482831; 12
+7482831; 13; got|old
+7482831; 14; price|cheaper
+7482831; 15; location|great
+7482831; 16
+7482831; 17; parts|other
+7482831; 18
+7482831; 19
+7482831; 20
+7482831; 21; posters|other
+7482831; 22; complaint|second; walls|rather thin
+7482831; 23
+7482831; 24
+7482831; 25
+7482831; 26
+7482831; 27
+7482831; 28
+7482831; 29; deal|big; room|big
+7482831; 30
+7482831; 31
+7485085; 0; time|first; ny|first; visitor|first; having|first; hotel|key
+7485085; 1; location|great
+7485085; 2; rooms|nicely sized; personnel|helpful and friendly
+7485085; 3
+74981641; 0; location|great; sites|many popular
+74981641; 1; staff|friendly very helpful
+74981641; 2; rooms|very clean spacious
+74981641; 3
+74981641; 4; room|modern; closet|very big; space|drawer
+74981641; 5
+74981641; 6; sheet|top
+75476241; 0
+75476241; 1
+75476241; 2
+75476241; 3; walking|easy
+75476241; 4; door|right next
+75476241; 5; vehicle|oversized
+75476241; 6
+75476241; 7; day|last
+75476241; 8; staff|fantastic; suggestions|great
+75476241; 9; children|grown
+75476241; 10; sitting|large; area|large; out|pull
+75476241; 11; chairs|other
+75476241; 12; twin|inflatable; mattress|inflatable
+75476241; 13; screen|flat
+75476241; 14
+75476241; 15; bar|breakfast; two|breakfast; chairs|breakfast
+75476241; 16; risers|early
+75476241; 17; refrigerator|small
+75476241; 18; bathroom|adequate; closets|goodsized
+75476241; 19; space|very roomy
+75476241; 20
+75476241; 21
+75476241; 22
+75476241; 23; birthday|happy
+75476241; 24; club|not rowdy; patrons|not rowdy
+75476241; 25; cars|nice
+75476241; 26; continent|daily; breakfast|daily; restaurant|attached
+75476241; 27
+7633430; 0; york|new
+7633430; 1
+7633430; 2; splurge|great
+7633430; 3; lobby|beautiful; peoplefrom|absolutely terrific; desk|front; crew|front; housekeepers|front
+7633430; 4
+7633430; 5; weekend|better; rate|better
+7633430; 6; room|free; internet|free; kitchen|nice little; nook|nice little; location|great
+7633430; 7; stops|convenient
+7634524; 0
+7634524; 1; comments|negative
+7634524; 2; cities|most large
+7634524; 3; staff|unbelievable
+7634524; 4
+7634524; 5; hotel|quite expensive; irish|reasonable; bar|reasonable; round|reasonable
+7634524; 6
+7634524; 7; example|great
+7634524; 8; everybody|already stated
+7634524; 9
+7634524; 10; park|central; mins|central
+7634524; 11; site|complained
+7634524; 12
+7634524; 13
+7634524; 14
+7634524; 15; breakfast|more
+7634524; 16; internet|free; pcs|free
+7634524; 17; leg|extra; room|extra; exit|extra; seats|extra
+7634524; 18
+7634524; 19
+7667429; 0
+7667429; 1
+7667429; 2; living|full,sized; room|full,sized; bedroom|full; beds|comfortable double; bath|nice sized; aveda|very nice; products|very nice
+7667429; 3; tvs|flat screened
+7667429; 4
+7667429; 5; location|great; walking|great; distance|great; madison|fabulous; avenue|fabulous; shopping|fabulous
+7667429; 6; staff|helpful
+7667429; 7
+7667429; 8
+76786632; 0; situado|bien
+76786632; 1
+76786632; 2
+76786632; 3
+76894344; 0
+76894344; 1; suite|large
+76894344; 2; service|excellent
+76894344; 3; complaint|only; breakfast|poor
+7694144; 0; week|past
+7694144; 1
+7694144; 2; location|great
+7694144; 3; park|central
+7694144; 4
+7694144; 5
+7694144; 6; shift|late; cranky|late; guy|late
+7694144; 7; breakfast|free; morning|simple
+7694144; 8
+7694144; 9
+7694144; 10; bedroom|main; area|main
+7694144; 11; issue|only main
+7694144; 12; carpet|very stained; comforter|very stained
+7694144; 13
+7694144; 14
+7694144; 15; sheet|fitted
+7694144; 16
+7694144; 17; bites|mysterious
+7694144; 18; hotel|joined
+7694144; 19
+77669473; 0
+77669473; 1; habitaciones|elegir; cuando|elegir; quieras|elegir; laven|te; las|te
+77669473; 2
+77669473; 3; incluido|que; es|que; satisfactorio|que; cafe|que; de|pan; tostadas|pan
+77669473; 4; nos|un; tercero|un; con|un; los|un; aires|un; nos|un; poco|un; por|posible; satisfaceros|posible
+77669473; 5; muy|general
+7796619; 0
+7796619; 1; location|central; days|few
+7796619; 2; staff|top; notch|top
+7796619; 3; service|outstanding; experience|overall
+7796619; 4
+7796619; 5; time|last
+7796619; 6; bouncy|little
+7796619; 7; hotels|few
+7819663; 0
+7819663; 1; staff|incredible
+7819663; 2
+7819663; 3; taste|personal
+7819663; 4
+7829422; 0; via|+tax; quikbook|+tax
+7829422; 1
+7829422; 2; hotel|safe; location|good
+7829422; 3
+7829422; 4; our|probably modest; needs|probably modest
+7829422; 5
+7829422; 6; feature|best; pcs|free
+7829422; 7
+7829422; 8
+7829422; 9; deal|better
+7829422; 10
+7845007; 0; june|early
+7845007; 1; york|new; city|new; hotel|small; rooms|small
+7845007; 2; san|surpassed; our|surpassed; expectations|surpassed
+7845007; 3; beds|double; room|good,sized; amenities|other
+7845007; 4
+7845007; 5; breakfast|very average
+7845007; 6
+7845007; 7; internet|free
+7845007; 8; find|great; food|delicious
+7845007; 9; hotel|great
+7848293; 0; thing|first; location|great; park|central; times|central; city|major; attractions|major
+7848293; 1
+7848293; 2; bathroom|adequate; use|social
+7848293; 3; room|always good; servicing|always good; touch|nice
+7848293; 4; time|so little
+7848293; 5
+7849201; 0; york|new; time|first; photos|many; san|had,very few low; reviews|had,very few low; i|sure; hotel|great; people|many; york|new; one|ever hear
+7849201; 1; york|new; station|central; area|very poor; amount|good; hotel|low; hotel|nicest
+7849201; 2; front|very nice and helpful; desk|very nice and helpful; room|very clean; york|new; hotel|new
+7849201; 3; breakfast|great
+7849201; 4; hotel|located; perfect|located; corner|same
+7849201; 5; york|new
+7849201; 6
+7853490; 0; san|earlier
+7853490; 1; location|great
+7853490; 2; park|central
+7853490; 3
+7853490; 4; hotel|clean; refrigerator|small
+7853490; 5; rooms|comfortable,fairly new
+7853490; 6
+7853490; 7
+7853490; 8; night|first; night|second
+7853490; 9; our|not effective; complaints|not effective
+7853490; 10; sleep|little
+7853490; 11; neighbors|considerate; stay|more pleasant
+78535567; 0; hotels|priced
+78535567; 1; suite|queen
+78535567; 2
+78535567; 3; rate|special; hotels|most other; area|booked
+78535567; 4
+78535567; 5; problem|pleasant; staff|pleasant
+78535567; 6
+78535567; 7; room|very nice; screen|flat; tv|flat
+78535567; 8
+78535567; 9
+78535567; 10; repair|great
+78535567; 11; walls|cement
+78535567; 12
+78535567; 13
+78535567; 14; bathroom|modern
+78535567; 15; hotel|super quiet
+78535567; 16; riser|early
+78535567; 17; hotel|typical; breakfast|typical
+78535567; 18; restaurant|small
+78535567; 19; walk|easy
+78535567; 20; restaurant|indian
+78535567; 21
+78535567; 22; street|quiet; gem|little
+7858628; 0; rating|good
+7858628; 1
+7858628; 2
+7858628; 3; pk|central
+7858628; 4
+7858628; 5
+7858628; 6; staff|extremely helpful and friendly
+7858628; 7
+7858628; 8; room|spacious
+7858628; 9; decor|new; bath|elegant
+7858628; 10; refrigerator|small
+7858628; 11; breakfast|included; type|continental
+7858628; 12
+7858628; 13; cuisine|indian
+7858628; 14; food|good
+7858628; 15
+78866123; 0; ha|l'albergo; una|l'albergo; posizione|l'albergo; strategica|l'albergo; park|central
+78866123; 1; stanze|due; sono|due; spaziose|due
+78866123; 2
+78866123; 3
+78866123; 4
+78866123; 5; da|l'hotel; considerarsi|l'hotel; un|l'hotel; buy|best
+79029935; 0
+79029935; 1
+79029935; 2
+79029935; 3; cambio|pulite; giornaliero|pulite; delle|pulite; lenzuola|pulite; e|pulite; degli|pulite; asciugamani|pulite
+79029935; 4
+79029935; 5; park|central
+79029935; 6
+79029935; 7
+79029935; 8; al|piano disponibilit; di|piano disponibilit; computer|piano disponibilit
+79029935; 9; reparto|sufficiente; fitness|sufficiente
+79029935; 10
+79029935; 11
+79029935; 12
+79029935; 13
+79406030; 0; week|first
+79406030; 1; stay|fantastic
+79406030; 2; clean|wonderful; rooms|comfortable
+79406030; 3; staff|incredible
+79406030; 4; location|great; restaurants|great; ashtons|great; walk|easy
+79406030; 5; staff|so considerate; one|breakfast; day|breakfast
+79406030; 6
+79406030; 7
+79406030; 8; my|found; home|found
+7969240; 0; trip|first; york|new
+7969240; 1
+7969240; 2
+7969240; 3; computers|public; floor|second
+7969240; 4; i|learned; everything|learned
+7969240; 5; breakfast|actually perfect; tastes|individual; chocolate|hot; pastries|hot
+7969240; 6; configurations|very different; night|first
+7969240; 7; street|horrendous; noise|horrendous
+7969240; 8; noise|traffic
+7969240; 9; night|first
+7969240; 10
+7969240; 11
+7969240; 12; night|single
+7969240; 13
+7969240; 14; pullout|horrible; sagging|horrible; middle|horrible
+7969240; 15
+7969240; 16; location|excellent; park|central
+7969240; 17
+7969240; 18; others|mentioned
+7973084; 0; reviews|many
+7973084; 1; rooms|very large
+7973084; 2; bath|heaven; products|heaven; touch|nice
+7973084; 3; access|easy
+7973084; 4
+7973084; 5
+7973084; 6; york|new; hotels|situated,near,more expensive
+7973084; 7; location|fantastic
+7973084; 8; direction|other; lots|other
+7973084; 9
+79999601; 0
+79999601; 1
+79999601; 2; hotel|mejor; nos|mejor; de|mejor; precio|mejor; que|mejor; muchos|mejor; otros|mejor; de|manhattan; habitaciones|manhattan; pequeas|manhattan; una|fue; verdadera|fue; sorpresa|fue
+79999601; 3
+79999601; 4; decorada|eran; con|eran; gusto|eran; y|eran; las|eran; muy|eran; cmodas|eran
+79999601; 5
+79999601; 6
+79999601; 7; varios|internet; puestos|internet; gratuito|internet; bien|vino muy; para|vino muy; planear|vino muy
+79999601; 8; seor|un
+79999601; 9
+79999601; 10; de|local; desayunos|local
+79999601; 11
+8040942; 0; base|very good
+8040942; 1; hotel|not too big; staff|friendly
+8040942; 2; breakfast|continental; internet|additional; facility|additional; bonuses|additional
+8040942; 3; restaurants|several good
+8040942; 4
+8053053; 0; san|seemed
+8053053; 1; time|next; york|new; city|new
+8053053; 2
+8053053; 3; room|suite; york|new; city|new; apartments|new
+8053053; 4; room|first; china|real
+8053053; 5; room|second
+8053053; 6; room|third; dresser|nice
+8053053; 7; length|full; mirror|full
+8053053; 8; air|great; conditioning|great; control|better
+8053053; 9
+8053053; 10; walk|easy
+8053053; 11; breakfast|complimentary continental; york|new; city|new
+8053053; 12; w|horrible; hotel|horrible
+8053053; 13; every|worth; penny|worth
+8084036; 0; el|confortable; hotel|confortable; es|confortable; y|confortable; comodo|confortable; con|confortable; habitaciones|confortable
+8084036; 1; nuestra|en; habitacin|en; se|en; oa|en; durante|en; toda|en; la|en; noche|en; un|en; ruido|en; incesante|en; que|en; entre|en; esto|en; y|en; el|en; jet|en; lag|en; todas|hizo dormir; las|hizo dormir; noches|hizo dormir
+8084036; 2; encontrarnos|agradable; con|agradable; que|agradable; en|agradable; el|agradable; hotel|agradable; daban|agradable; desayuno|agradable; todos|agradable; los|agradable
+8084036; 3; pero|pienso que; en|pienso que; proximas|pienso que; sera|pienso que; mejor|pienso que; un|pienso que; hotel|pienso que; por|pienso que; la|pienso que; calle|pienso que; o|pienso que; fh|pienso que; avenue|pienso que
+8084036; 4; correcto|al personal; y|al personal; hablan|al personal; espaol|al personal
+80951118; 0; location|great
+80951118; 1
+80951118; 2; radio|avenue; city|avenue; music|avenue; hall|avenue; sachs|avenue
+80951118; 3; stay|memorable
+80951118; 4; york|upstate new
+80951118; 5
+8138320; 0
+8138320; 1
+8138320; 2
+8138320; 3
+8138320; 4
+8138320; 5
+8138320; 6; bathroom|big
+8138320; 7
+8138320; 8; conditioners|air; day|last
+8138320; 9
+8138320; 10; noise|so street
+8138320; 11
+8138320; 12; breakfast|plentiful and fresh; fare|pretty standard
+8138320; 13
+8138320; 14; staff|always very professional
+8138320; 15; floor|second; bonus|added
+8138320; 16
+81573006; 0
+81573006; 1
+81573006; 2
+81573006; 3
+81573006; 4; es|gran; buffet|gran; tosatadas|gran; ny|en
+81573006; 5
+8237145; 0
+8237145; 1
+8237145; 2
+8237145; 3
+8237145; 4; bathroom|much smaller; room|bed; room|nice; sice|nice
+8237145; 5
+8237145; 6; room|very clean; bathroom|quite new,very modern
+8237145; 7
+8237145; 8; written|previous; comments|previous
+8237145; 9
+8237145; 10; dollars|few; breakfast|upgraded
+8237145; 11; carlos|san; york|new
+82518146; 0; hotels|least different; york|new; years|past
+82518146; 1; attractions|popular
+82518146; 2; bedroom|queen; sq|massive,compared; ft|massive,compared; hotels|most manhattan
+82518146; 3
+82518146; 4; breakfast|adequate; time|first
+82518146; 5; room|substantially lower; ny|popular; hotels|popular
+82518146; 6
+8266131; 0
+8266131; 1
+8266131; 2
+8266131; 3; care|immediately taken
+8266131; 4; towels|left,extra
+8266131; 5; breakfast|continental; pastries|very nice
+8266131; 6
+8266131; 7; floor|second
+8266131; 8
+8266131; 9; location|perfect
+8266131; 10
+8266131; 11
+8266131; 12
+8266131; 13
+8266131; 14; walking|safe
+8266131; 15; beds|alittle firm; preference|personal
+8266131; 16
+8266131; 17
+83480872; 0
+83480872; 1; bugs|bed
+83480872; 2; room|very clean; fridge|small; walking|too busy; wifi|free
+83480872; 3; access|easy; allowing|traffic
+83480872; 4; breakfast|free continental
+83480872; 5
+83480872; 6; park|central
+83480872; 7
+8375923; 0
+8375923; 1; rooms|average; size|average; photos|website; location|fabulous
+8375923; 2
+8375923; 3; park|central
+8375923; 4; trick|magic
+8375923; 5
+8375923; 6; breakfasts|average,not too crowded
+8375923; 7
+8375923; 8
+8375923; 9; door|right next
+8375923; 10
+8375923; 11
+8375923; 12; walking|safe
+8375923; 13; apple|big
+8466331; 0
+8466331; 1
+8466331; 2; hour|beautiful; corner|beautiful; store|beautiful
+8466331; 3
+8466331; 4; our|great; value|great
+8466331; 5; suite|awsome; price|worth full
+8466331; 6; door|heavy
+8466331; 7; internet|included; wireless|included
+8466331; 8
+8466331; 9
+8466331; 10
+8466331; 11
+8484110; 0; stay|great
+8484110; 1
+8484110; 2
+8484110; 3; reviewer|previous; deal|suite
+8484110; 4
+8484110; 5; level|whole new; seating|comfortable; visiting|entertaining; friends|entertaining; family|entertaining
+8484110; 6
+8484110; 7; breakfast|perfectly adequate; fan|massive; quality|decent; coffee|decent
+8484110; 8
+8484110; 9
+8484110; 10; hotel|small; night|free
+8484110; 11; points|very minor
+8484110; 12; time|next
+84879116; 0; checkin|very fast; beds|comfortable; parking|convenient; garage|convenient
+84879116; 1
+84879116; 2; value|very good
+84923639; 0; minute|last; trip|last; york|new
+84923639; 1; hotel|available
+84923639; 2; ranking|high
+84923639; 3; block|same; route|straight
+84923639; 4
+84923639; 5; rate|good; san|website; had|website; rate|even better nonrefundable
+84923639; 6
+84923639; 7; breakfast|complimentary
+84923639; 8; our|great; room|great
+84923639; 9
+84923639; 10; room|very large
+84923639; 11; room|very large and quiet
+84923639; 12
+84923639; 13
+84923639; 14
+84923639; 15; hotel|pretty casual
+84923639; 16
+84923639; 17
+84923639; 18
+84923639; 19; restaurants|favorite; door|next
+84923639; 20; indian|fabulous; restaurant|fabulous; ambience|great
+84923639; 21; items|other
+84923639; 22
+84923639; 23
+84923639; 24
+84923639; 25
+84923639; 26; choices|enough good; kitchen|own
+84923639; 27
+8496356; 0
+8496356; 1; quality|good
+8496356; 2
+8496356; 3
+8496356; 4; start|quick
+8496356; 5; fruit|very little; apples|very little
+8496356; 6
+8496356; 7; refrigerator|small
+8496356; 8; beds|double; online|available
+8496356; 9
+8496356; 10; online|not seen; half|additional; bath|additional
+8496356; 11; room|great; half|extra; bath|extra; difference|big
+8496356; 12; staff|very responsive
+8496356; 13
+8496356; 14
+8496356; 15
+8496356; 16
+8496356; 17; location|great
+8496356; 18; side|east; walking|easy; distance|easy; park|central; south|central
+8496356; 19; york|new; city|new
+85080786; 0; week|hot; hotel|ideally located
+85080786; 1; junior|very comfortable; suite|very comfortable
+85080786; 2
+85080786; 3
+85080786; 4; breakfast|appreciated
+85751141; 0; daughter|old
+85751141; 1; time|wonderful; experience|great
+85751141; 2; reviews|read,many
+85751141; 3; rooms|big; everything|clean; shower|excellent; orange|excellent; juice|excellent; pastries|aso good; hotel|great; problem|minor
+85751141; 4; nice|so super
+85751141; 5; location|great
+85751141; 6; york|new
+85754716; 0; hotel|great; location|fantastic
+85754716; 1
+85754716; 2
+8655302; 0; stay|wonderful
+8655302; 1; adults|other
+8655302; 2
+8655302; 3; service|terrific
+8655302; 4
+8655302; 5; fitness|small; center|small; equipment|nice
+8655302; 6; floor|same
+8655302; 7
+8655302; 8; breakfast|not great
+8655302; 9; hotels|most
+8655302; 10; morning|first
+8655302; 11
+8655302; 12; hotel|great
+8655302; 13
+8655302; 14
+86712851; 0; avons|nous
+86712851; 1
+86712851; 2; pas|chaud; hormis|chaud
+86712851; 3
+86712851; 4
+87351621; 0
+87351621; 1
+87351621; 2
+87351621; 3
+8841730; 0
+8841730; 1; hotel|entire; staff|entire; our|more; room|more
+8841730; 2; breakfast|continental; blown|full; breakfast|full; start|great
+8841730; 3; beds|feather; exciting|long; day|long
+8841730; 4
+8841730; 5; hotel|well located
+8841730; 6
+8866058; 0; location|safe
+8866058; 1; suite|executive; bedroom|executive; loungeroom|separate
+8866058; 2; size|good
+8866058; 3
+8866058; 4
+8866058; 5
+8866058; 6; breakfast|continental
+8866058; 7
+8866058; 8; matthew|especially conceirge
+8866058; 9; room|comfortable; mini|own; fridge|own
+8866058; 10
+8866058; 11
+89500746; 0; hotel|great; location|great; choice|very good
+89500746; 1; rooms|large
+90491817; 0; york|new; airlines|continental; space|taken; bins|tiny overhead
+90491817; 1
+90491817; 2
+90491817; 3
+90491817; 4
+90491817; 5
+90491817; 6; trip|next; staying|'re
+91792325; 0; htel|bien; situ|bien
+91792325; 1
+91792325; 2; trs|gnral
+91792325; 3
+91792325; 4
+94598488; 0
+94598488; 1; trip|first; york|new; time|last
+94598488; 2; pleasure|absolute; staff|too much; nothing|too much; trouble|too much
+94598488; 3; rooms|spacious and quiet; beds|very comfortable
+94598488; 4; york|new
+94598488; 5
+94624345; 0
+94624345; 1; una|genial; neverita|genial; nos|genial; para|genial; cuando|genial; llegabamos|genial; reventados|genial; excelente|personal
+94624345; 2
+95392057; 0; york|new; hotels|researched; sites|many
+95392057; 1
+95392057; 2; doormen|matthew
+95392057; 3
+95392057; 4; star|real
+95392057; 5; four|several other; star|several other; hotels|several other
+95392057; 6
+95392057; 7; room|delightful
+95392057; 8
+95392057; 9; time|favourite
+95392057; 10
+95392057; 11; time|available next
+97220286; 0; fuimos|en; una|en; habitacion|en; y|en; estuvimos|en
+97220286; 1; los|incluyen; pocos|incluyen; hoteles|incluyen; desayuno|incluyen; y|incluyen; adems|incluyen
+97220286; 2; est|genial; lado|al
+97220286; 3
+97220286; 4
+97220286; 5
+97577997; 0
+97577997; 1; rooms|clean
+97577997; 2; location|central
+97577997; 3; staff|outstanding friendly; prices|very reasonable
+97577997; 4; stay|next
+97936899; 0; hablado|habian
+97936899; 1
+97936899; 2; estupendo|personal; chocolatinas|ponian
+97936899; 3
+97936899; 4
+98682169; 0
+98682169; 1; hotel|un; san|un; carlos|un; dpto|un
+98682169; 2
+98682169; 3
+98682169; 4

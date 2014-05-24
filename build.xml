@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<project name="Crawler" basedir="." default="usage">	
+
+	<property name="project.name" value="Crawler"/>	
+	<property name="project.version" value="1-0-0-alpha"/>
+	<property name="project.build" value="20130523"/>	
+	<property environment="env"/>
+	
+	<property name="src.dir" value="src"/>	
+	<property name="bin.dir" value="classes"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="ejar.dir" value="bin"/>
+	<property name="doc.dir" value="doc"/>
+			
+	<path id="master-classpath">
+		<pathelement path="${classes.dir}"/>
+		<pathelement location="${lib.dir}/boilerpipe-1.2.0.jar"/>
+		<pathelement location="${lib.dir}/boilerpipe-sources-1.2.0.jar"/>
+		<pathelement location="${lib.dir}/cli-1.0.0.jar"/>
+		<pathelement location="${lib.dir}/gson-2.2.4.jar"/>
+		<pathelement location="${lib.dir}/htmlcleaner-2.8.jar"/>
+		<pathelement location="${lib.dir}/jsoup-1.7.3-sources.jar"/>
+		<pathelement location="${lib.dir}/jsoup-1.7.3.jar"/>
+		<pathelement location="${lib.dir}/lucene-analyzers-common-4.8.0.jar"/>
+		<pathelement location="${lib.dir}/lucene-core-4.8.0.jar"/>
+		<pathelement location="${lib.dir}/lucene-queryparser-4.8.0.jar"/>
+		<pathelement location="${lib.dir}/mysql-connector-java-5.1.6-bin.jar"/>
+		<pathelement location="${lib.dir}/nekohtml-1.9.13.jar"/>
+		<pathelement location="${lib.dir}/sml-toolkit-0.7.1.jar"/>
+		<pathelement location="${lib.dir}/sqljdbc4.jar"/>
+		<pathelement location="${lib.dir}/xerces-2.9.1.jar"/>
+		<pathelement location="${lib.dir}/boi.jar"/>	
+		<pathelement location="${lib.dir}/sqljdbc4.jar"/>	
+		<pathelement location="${lib.dir}/log4j-1.2.15.jar"/>
+	</path>
+	
+	<target name="usage">
+        <echo message="${project.name} build file"/>
+        <echo>(Type 'ant -projecthelp' for more info)</echo>
+	</target>
+	
+	<target name="prepare">
+		<mkdir dir="${classes.dir}"/>
+		<mkdir dir="${bin.dir}"/>
+		<mkdir dir="${doc.dir}"/>
+	</target>
+
+	<target name="build" description="Compile main source tree java files" depends="prepare">        
+        <javac destdir="${classes.dir}" target="1.7" source="1.7" debug="true"
+               deprecation="false" optimize="false" failonerror="true">
+            <src path="${src.dir}"/>
+            <classpath refid="master-classpath"/>            
+        </javac>
+    </target>
+    
+    <target name="rebuild" depends="clean,build" description="Clean up output and rebuild them">		
+	</target>
+
+	<target name="jar" depends="build" description="Package classes into JAR file">
+		<mkdir dir="${bin.dir}"/>
+		<jar destfile="${bin.dir}/${project.name}-${project.version}.jar"
+		     basedir="${classes.dir}"
+			 excludes="${classes.dir}/test/**">		    
+		</jar>
+	</target>
+	
+	<target name="doc" depends="build" description="Generate java documents">
+		<javadoc packagenames="com.chttl.ipms.*"
+		         sourcepath="src"
+				 excludepackagenames="test.*"
+				 destdir="${doc.dir}"
+				 author="true"
+				 version="true"
+				 use="true"
+				 access="private">
+			<tag name="author"/>
+			<tag name="created" scope="all" description="Created: "/>
+			<tag name="revision" scope="all" description="Revision: "/>
+			<tag name="update" scope="all" description="Update: "/>
+		</javadoc>		
+	</target>
+	
+	<target name="all" depends="build,jar" description="Build classes, jar"/>
+	
+	<target name="clean" description="Clean output directories">
+        <delete includeEmptyDirs="true">
+            <fileset dir="${classes.dir}">
+                <include name="**/*"/>
+            </fileset>
+        </delete>
+		<delete failonerror="false">
+		    <fileset dir="${bin.dir}">
+		        <include name="${project.name}-${project.version}.jar"/>
+		    </fileset>
+		</delete>
+		<delete includeEmptyDirs="true" failonerror="false">
+            <fileset dir="${doc.dir}">
+                <include name="**/*"/>
+            </fileset>
+        </delete>
+    </target>
+
+</project>

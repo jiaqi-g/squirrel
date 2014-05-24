@@ -4,10 +4,12 @@ public class testEntry {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		hotelReview hReview = new hotelReview();
+		hotelReviewCreate hReview = new hotelReviewCreate();
 		DB.OpenConn();
-		hReview.insertHotelReview();
+//		hReview.insertHotelReview();
+		
 		DB.CloseConn();
+		
+		
 	}
-
 }
