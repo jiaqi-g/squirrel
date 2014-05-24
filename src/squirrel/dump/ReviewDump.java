@@ -13,8 +13,8 @@ import common.Log;
 import squirrel.dump.DumpTextUtil;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
-import squirrel.nlp.similarity.NounSimilarityResult;
-import squirrel.nlp.similarity.WikiLSA;
+import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.NounSimilarity;
 import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
 

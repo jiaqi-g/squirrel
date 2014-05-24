@@ -7,11 +7,15 @@ package common;
  */
 public class Log {
 	
-	static boolean debug = true;
+	static boolean debug = false;
 	
 	public static void log(String moduleName, String s) {
 		if (debug) {
 			System.out.println(moduleName + " " + s);
 		}
 	}
+	
+	public static void warn(String moduleName, String s) {
+		System.out.println(moduleName + " " + s);
+	}	
 }
