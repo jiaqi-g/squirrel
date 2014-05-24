@@ -12,6 +12,11 @@ public class BasicSentence {
 		this.sentenceText = sentenceText;
 	}
 	
+	public BasicSentence(Long reviewId, int sentenceId) {
+		this.reviewId = reviewId;
+		this.sentenceId = sentenceId;
+	}
+	
 	public Long getReviewId() {
 		return reviewId;
 	}

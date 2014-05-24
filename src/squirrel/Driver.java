@@ -3,15 +3,11 @@ package squirrel;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.List;
 
 import squirrel.common.ReviewUtil;
 import squirrel.common.SynonymsUtil;
-import squirrel.dump.DumpTextUtil;
-import squirrel.nlp.Sentence;
 import squirrel.parse.Query;
 import squirrel.parse.Record;
-import squirrel.parse.TripAdvisorReview;
 
 /**
  * The Driver of the system.
@@ -20,6 +16,8 @@ import squirrel.parse.TripAdvisorReview;
  *
  */
 public class Driver {
+	
+	public static Integer hotelId = 93396;
 	
 	public Driver() {
 		try {
@@ -41,14 +39,16 @@ public class Driver {
 					System.out.print("Error Input! \n");
 					continue;
 				} else {
-					Query query = new Query(tmp[0].trim(), tmp[1].trim());
+					Query query = new Query(hotelId, tmp[0].trim(), tmp[1].trim());
 					//System.out.println("Results: ");
-					List<Record> res = query.process();
+					Record record = query.process();
+					System.out.println(record.getPrettyText());
+					/*
 					for (int i = 0; i < res.size(); i++) {
 						Record record = res.get(i);
 						System.out.println("--- Query" + (i+1) + ": " + record.getAspect() + "/" + record.getTrait() + " --- ");
 						System.out.println(record.getPrettyText());
-					}
+					}*/
 				}
 			}
 			catch(IOException e) {

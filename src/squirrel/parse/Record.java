@@ -2,6 +2,9 @@ package squirrel.parse;
 
 import java.util.List;
 
+import squirrel.nlp.ADJSet;
+import squirrel.nlp.Sentence;
+
 /**
  * We want to present to user, a list of Records by performing Query1, Query2, ...
  * which is the expansion of the original query.
@@ -14,11 +17,13 @@ import java.util.List;
 public class Record {
 	String aspect;
 	String trait;
-	List<SentenceScore> rankedSentences;
+	ADJSet traitSynonyms;
+	List<Sentence> rankedSentences;
 
-	public Record(String aspect, String trait, List<SentenceScore> rankedSentences) {
+	public Record(String aspect, String trait, ADJSet traitSynonyms, List<Sentence> rankedSentences) {
 		this.aspect = aspect;
 		this.trait = trait;
+		this.traitSynonyms = traitSynonyms;
 		this.rankedSentences = rankedSentences;
 	}
 	
@@ -35,18 +40,19 @@ public class Record {
 			//System.out.println("@@@" + rankedSentences.keySet().contains(sentence));
 		//}
 		
-		for (SentenceScore sentenceScore: rankedSentences) {
+		for (Sentence sentence: rankedSentences) {
 			sb.append("Rank " + rank++);
-			sb.append(" (" + sentenceScore.getSentenceFullId() + ") ");
-			sb.append(sentenceScore.getScore() + "");
+			sb.append(" (" + sentence.getSentenceFullId() + ") ");
+			sb.append(sentence.getScore() + "");
 			sb.append("\n");
 			//sb.append("Matched: ");
-			sb.append(sentenceScore.getBasicSentence().getSentenceText());
+			sb.append(sentence.getSentenceText());
 			sb.append("\n");
 		}
 		if (rank == 1) {
 			sb.append("No results!\n");
 		}
+		
 		return sb.toString();
 	}
 

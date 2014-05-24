@@ -1,6 +1,7 @@
 package squirrel.nlp.similarity;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,6 +20,32 @@ public class WordSimilarityResultSet {
 	
 	public synchronized void add(String word, Double score) {
 		scoreList.add(new WordSimilarityScore(word, score));
+	}
+	
+	public void sort() {
+		Collections.sort(scoreList);
+	}
+	
+	//TODO: make faster
+	public Double getScore(String word) {
+		for (WordSimilarityScore score: scoreList) {
+			if (score.getWord().equals(word)) {
+				return score.getSimilarity();
+			}
+		}
+		return 0.0;
+	}
+	
+	public List<String> getWordsAboveScore(Double threshold) {
+		List<String> res = new ArrayList<String>();
+		
+		for (WordSimilarityScore score: scoreList) {
+			if (score.getSimilarity() > threshold) {
+				res.add(score.getWord());
+			}
+		}
+		
+		return res;
 	}
 	
 	public WordSimilarityScore getTopScore() {

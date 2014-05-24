@@ -1,8 +1,6 @@
 package squirrel.common;
 
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,11 +8,8 @@ import common.FileSystem;
 import common.JsonToJavaUtil;
 import common.Log;
 
-import squirrel.dump.DumpTextUtil;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
-import squirrel.nlp.similarity.WordSimilarityResultSet;
-import squirrel.nlp.similarity.NounSimilarity;
 import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
 
@@ -91,24 +86,6 @@ public class ReviewUtil {
 			}
 
 		}
-	}
-
-	/**
-	 * This method will refer to the  similarity map in DB, Disk or WikiLSA website
-	 * 
-	 * @param noun
-	 * @param relatedWords
-	 * @return
-	 */
-	public static WordSimilarityResultSet getSimilarityBetweenNouns(String noun, List<String> relatedWords) {
-		WordSimilarityResultSet rs = new WordSimilarityResultSet(noun);
-		for (String word: relatedWords) {
-			// TODO: modify this to reflect actual score read from db.
-/*			WikiLSA lsa = new WikiLSA(rs);
-			lsa.setWords(noun, word);
-			lsa.retrieveScoreFromWeb();	*/
-		}
-		return rs;
 	}
 
 	public static ReviewList getReviews() {

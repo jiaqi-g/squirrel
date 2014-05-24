@@ -1,13 +1,7 @@
 package squirrel.nlp;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-
-import common.Database;
-
-import squirrel.common.ReviewUtil;
 import squirrel.nlp.similarity.WordSimilarityResultSet;
 import squirrel.parse.BasicSentence;
 import squirrel.parse.TripAdvisorReview;
@@ -17,15 +11,15 @@ import squirrel.parse.TripAdvisorReview;
  * @author victor
  *
  */
-public class Sentence extends BasicSentence {
+public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	TripAdvisorReview review;
 	Set<NP>	nps = new HashSet<NP>();
 	
+	//score would change given different queries
+	Double score;
+	
 	/**
 	 * construct from memory
-	 * @param reviewId
-	 * @param sentenceId
-	 * @param sentenceText
 	 */
 	public Sentence(TripAdvisorReview review, int sentenceId, String sentenceText) {
 		super(review.getId(), sentenceId, sentenceText);
@@ -34,13 +28,10 @@ public class Sentence extends BasicSentence {
 	
 	/**
 	 * construct from db
-	 * @param reviewId
-	 * @param sentenceId
-	 * @param sentenceText
 	 */
-	public Sentence(Long reviewId, int sentenceId, String sentenceText) {
-		super(reviewId, sentenceId, sentenceText);
-		this.review = Database.getReview(reviewId);
+	public Sentence(Long reviewId, int sentenceId) {
+		super(reviewId, sentenceId);
+		//this.review = Database.getReview(reviewId);
 	}
 	
 	public void addNP(NP np) {
@@ -55,18 +46,42 @@ public class Sentence extends BasicSentence {
 		return nps.toString();
 	}
 	
-	public WordSimilarityResultSet getNounSimilarityResult(String noun, String adj) {
-		//select out related nouns
-		List<String> relatedWords = new ArrayList<String>();
+	private boolean containsQueryAdjs(ADJSet queryAdjs) {
 		for (NP np: nps) {
-			// TODO: modify following exact match on adjs
-			if (np.containsAdj(adj)) {
-				relatedWords.add(np.noun);
-				//new Thread(new WikiLSA(noun, np.noun));
+			if (np.containsAdjSet(queryAdjs)) {
+				return true;
 			}
 		}
-		
-		return ReviewUtil.getSimilarityBetweenNouns(noun, relatedWords);
+		return false;
+	}
+	
+	private Double getHighestNounScore(WordSimilarityResultSet aspectSimilarityDb) {
+		Double res = 0.0;
+		for (NP np: nps) {
+			Double tmp = aspectSimilarityDb.getScore(np.noun);
+			if (tmp > res) {
+				res = tmp;
+			}
+		}
+		return res;
+	}
+	
+	/**
+	 * we treat sentence score as highest score of its noun
+	 */
+	public Double computeScore(ADJSet queryAdjs, WordSimilarityResultSet aspectSimilarityDb) {
+		if (containsQueryAdjs(queryAdjs)) {
+			return getHighestNounScore(aspectSimilarityDb);
+		}
+		return 0.0;
+	}
+	
+	public Double getScore() {
+		return score;
+	}
+	
+	public String getSentenceFullId() {
+		return getReviewId() + ":" + getSentenceId();
 	}
 	
 	/*
@@ -83,6 +98,16 @@ public class Sentence extends BasicSentence {
 		
 		Sentence sent = (Sentence) obj;
 		return sent.getReview().getId().equals(reviewId) && sent.getSentenceId().equals(sentenceId);
+	}
+	
+	@Override
+	public int compareTo(Sentence o) {
+		if (o.score > score) {
+			return 1;
+		}
+		else {
+			return -1;
+		}
 	}
 
 }

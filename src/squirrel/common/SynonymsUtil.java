@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import squirrel.nlp.ADJSet;
+import squirrel.nlp.similarity.AdjectiveSimilarity;
+import squirrel.nlp.similarity.WordSimilarityResultSet;
+
 import common.FileSystem;
 
 /**
@@ -46,7 +50,10 @@ public class SynonymsUtil {
 	 * @param trait
 	 * @return
 	 */
-	public static List<String> getSynonyms(String trait) {
+	public static ADJSet getSynonyms(String trait) {
+		WordSimilarityResultSet rs = (new AdjectiveSimilarity(trait)).getTopSimilaryWordsFromWeb();
+		return new ADJSet(rs.getWordsAboveScore(0.6));
+		/*
 		for (List<String> lst : synonymsGroups) {
 			if (lst.contains(trait)) {
 				return lst;
@@ -54,6 +61,6 @@ public class SynonymsUtil {
 		}
 		List<String> lst = new ArrayList<String>();
 		lst.add(trait);
-		return lst;
+		return lst;*/
 	}
 }

@@ -17,6 +17,11 @@ import java.util.Scanner;
 
 import squirrel.common.ReviewUtil;
 import squirrel.parse.BasicSentence;
+import squirrel.nlp.ADJSet;
+import squirrel.nlp.NP;
+import squirrel.nlp.Sentence;
+import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityScore;
 import squirrel.parse.ReviewList;
 import squirrel.parse.SentenceScore;
 import squirrel.parse.TripAdvisorReview;
@@ -35,8 +40,7 @@ import ucla.lucene.hotelReviewCreate;
  * 
  * Supplementary Tables
  * NounSimilarity(Noun1 String, Noun2 String, Score Double)
- * NounAdjs(ReviewId Long, SentenceId Integer, Noun String, Adjs String) // Adjs is a String of adjs seperated by ',' Eg. good,better,best
- * 
+ * NounAdjs(HotelId Integer, ReviewId Long, SentenceId Integer, Noun String, Adjs String) // Adjs is a String of adjs seperated by ',' Eg. good,better,best
  * 
  * Result Set:
  * 
@@ -109,11 +113,11 @@ public class Database {
 	 * @param adj
 	 * @return
 	 */
+
 	public static List<SentenceScore> getRankedSentenceScores(String noun, String adj, Integer hotelId, Integer topK, Double simTh) {
 		//TODO
 		ArrayList<SentenceScore> sentList = new ArrayList<SentenceScore>(); 
-		
-		
+				
 		StringBuffer buf = new StringBuffer();        
         ResultSet rs;     
       	buf.append(" SELECT hr.hotelId, hr.reviewId, sc.sent_id,sc.sent, ws.sim ");
@@ -144,7 +148,73 @@ public class Database {
 		
 		return sentList;
 	}
+	public static List<Sentence> getRankedSentenceScores(String noun, String adj) {
+		//TODO
+		
+		
+		return new ArrayList<Sentence>();
+	}
 	
+	public static WordSimilarityResultSet getSimilarityScoresOfWord(String word) {
+		//TODO
+		WordSimilarityResultSet sentList = new WordSimilarityResultSet(word); 
+		Double simTh=0.05;
+		StringBuffer buf = new StringBuffer();        
+        ResultSet rs;     
+      	List<WordSimilarityScore> scoreList = new ArrayList<WordSimilarityScore>();
+    	
+      	buf.append(" select word_y, sim from wordSim where word_x='"+word+"' and sim > "+simTh);
+      	
+       
+        try {
+            synchronized (DB.class) {
+            	 rs = stmt.executeQuery(buf.toString());    
+            	 while (rs.next()) {
+            		
+            		 sentList.add(rs.getString("word_y"), rs.getDouble("sim"));
+            	 }
+            }
+        }catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+		
+		return sentList;
+		
+	}
+	
+	public static List<Sentence> getAllReviewSentences(Integer hotelId) {
+		//TODO
+		
+/*		Sentence sent = new Sentence(reviewId, sentenceId);
+		NP np = new NP(noun, new ADJSet());
+		sent.addNP(np);*/
+		ArrayList<Sentence> sentList = new ArrayList<Sentence>(); 
+		
+		StringBuffer buf = new StringBuffer();        
+        ResultSet rs;     
+    	
+      	buf.append(" SELECT hr.hotelId, hr.reviewId, rs.sentId, rs.noun, rs.adj from");
+		buf.append(" hotelReview hr, review_sent rs where hr.reviewId = rs.reviewId and hotelId="+hotelId);
+      	
+       
+        try {
+            synchronized (DB.class) {
+            	 rs = stmt.executeQuery(buf.toString());    
+            	 while (rs.next()) {
+            		 Sentence sent =new Sentence(rs.getLong("reviewId"), rs.getInt("sentId"));
+            		 NP np = new NP(rs.getString("noun"),new ADJSet(rs.getString("adj")));
+            		 sent.addNP(np);
+            		 sentList.add(sent);
+            		 
+            	 }
+            }
+        }catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+		
+		return sentList;
+	}
+
 	protected static Connection conn;
 	protected static Statement stmt;
 	public static void OpenConn() {
@@ -217,8 +287,23 @@ public class Database {
 		Long rid = (long) 147058704;
 		TripAdvisorReview tr= Database.getReview(rid);
 		System.out.println(tr.toString());
+		
+		List<SentenceScore> ssrList= getRankedSentenceScores("travel", "good", 80112, 100, -1.0);
+		System.out.println("test getRankedSentenceScores");
+		for(SentenceScore ssScore: ssrList)System.out.println(ssScore.toString());
+		
+		System.out.println("test getSimilarityScoresOfWord");
+		
+		WordSimilarityResultSet wsr = getSimilarityScoresOfWord("travel");
+		wsr.toString();
+		
+		System.out.println("test getSimilarityScoresOfWord");
+		List<Sentence> ss = getAllReviewSentences(80112);
+		for(Sentence s:ss)System.out.println(s.toString());
+		
 		Database.CloseConn();
 		
 		
 	}
 }
+
