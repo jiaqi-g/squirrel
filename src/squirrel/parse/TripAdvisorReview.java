@@ -111,7 +111,7 @@ public class TripAdvisorReview {
 	}
 	// Getters and setters are not required for this example.
 	// GSON sets the fields directly using reflection.
-	@Override
+//	@Override
 	public String toString() {
 		return offering_id + " " + title + " " + text + " " + " " + date_stayed;
 	}

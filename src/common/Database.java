@@ -1,5 +1,10 @@
 package common;
 
+import java.io.IOException;
+import java.nio.Buffer;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -8,12 +13,15 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 import squirrel.common.ReviewUtil;
+import squirrel.parse.BasicSentence;
 import squirrel.parse.ReviewList;
 import squirrel.parse.SentenceScore;
 import squirrel.parse.TripAdvisorReview;
 import ucla.lucene.DB;
+import ucla.lucene.hotelReviewCreate;
 
 /**
  * Abstraction of Database, common utils for db access.
@@ -47,21 +55,9 @@ import ucla.lucene.DB;
  *
  */
 public class Database {
-	
-	public static void writeReviews() {
-		//TODO: write reviews into db
-		
-		ReviewList reviewList = ReviewUtil.getReviews();
-		try {
-			insertHotelReview(reviewList);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
 	public static Integer getHotelId(String hotelName) {
-		int hotelId = 0;
+		Integer hotelId=0;
 		
 		StringBuffer buf = new StringBuffer();        
         ResultSet rs;     
@@ -95,7 +91,7 @@ public class Database {
             	 rs = stmt.executeQuery(buf.toString());    
             	 while (rs.next()) {
             		 review.setId(reviewId);
-            		 review.setText(rs.getString("Reviw"));
+            		 review.setText(rs.getString("Review"));
             		 review.setTitle(rs.getString("Title"));
             		 review.setOffering_id(rs.getInt("reviewId"));
             		 
@@ -113,9 +109,40 @@ public class Database {
 	 * @param adj
 	 * @return
 	 */
-	public static List<SentenceScore> getRankedSentenceScores(String noun, String adj) {
+	public static List<SentenceScore> getRankedSentenceScores(String noun, String adj, Integer hotelId, Integer topK, Double simTh) {
 		//TODO
-		return new ArrayList<SentenceScore>();
+		ArrayList<SentenceScore> sentList = new ArrayList<SentenceScore>(); 
+		
+		
+		StringBuffer buf = new StringBuffer();        
+        ResultSet rs;     
+      	buf.append(" SELECT hr.hotelId, hr.reviewId, sc.sent_id,sc.sent, ws.sim ");
+      	buf.append(" from hotelReview hr, review_sent rs, sent_cnt sc, ");
+      	buf.append(" (select word_y, sim from wordSim where word_x='"+noun+"' and sim>"+simTh+") as ws");
+      	buf.append(" where ");
+      	buf.append(" hr.reviewId = rs.reviewId ");
+      	buf.append(" and hr.reviewId = sc.review_Id ");
+      	buf.append(" and rs.sentId = sc.sent_id ");
+      	buf.append(" and hotelId="+hotelId);
+      	buf.append(" and rs.adj='"+adj+"'");
+      	buf.append(" and rs.noun= ws.word_y ");
+      	buf.append(" order by ws.sim desc ");
+      	buf.append(" limit 0,"+topK+";");
+       
+        try {
+            synchronized (DB.class) {
+            	 rs = stmt.executeQuery(buf.toString());    
+            	 while (rs.next()) {
+            		 BasicSentence bs=new BasicSentence(rs.getLong("reviewId"), rs.getInt("sent_id"), rs.getString("sent"));
+            		 SentenceScore ss=new SentenceScore(bs, rs.getDouble("sim"));
+            		 sentList.add(ss);
+            	 }
+            }
+        }catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+		
+		return sentList;
 	}
 	
 	protected static Connection conn;
@@ -124,10 +151,27 @@ public class Database {
 			
 			String driver = "com.mysql.jdbc.Driver";
 
-			String url = "jdbc:mysql://127.0.0.1:3306/test";
+			String url=""; 
 			
-			String user = "root";         
-			String password = "1234"; 
+			String user="";        
+			String password="";
+			String strarr[];
+			
+		    Path path = Paths.get("content/config");
+		    try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())){
+		      while (scanner.hasNextLine()){
+		    	    TripAdvisorReview review= new TripAdvisorReview();
+		    	    strarr=scanner.nextLine().split("=");
+		    	    if(strarr[0].equals("url")) url = strarr[1].trim();
+		    	    else if(strarr[0].equals("user"))user = strarr[1].trim();
+		    	    else if(strarr[0].equals("password"))password =strarr[1].trim();
+		    	    else{}
+		    	    //System.out.println()
+		      }
+		    } catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			try {             
 				Class.forName(driver);
 				conn = DriverManager.getConnection(url,user, password);           
@@ -158,28 +202,23 @@ public class Database {
 		
 	}
 	
-
-	public static void insertHotelReview(ReviewList reviewList ) throws SQLException{
-			Statement s;
-			String sqlinsert;
-			String titleString;
-			String reviewString;
-			try{
-				synchronized (DB.class) {
-					s = conn.createStatement();
-					for(TripAdvisorReview reviewBean:reviewList){
-					titleString = reviewBean.getTitle().replace("'", "\\'");
-					reviewString= reviewBean.getText().replace("'", "\\'");
-					sqlinsert = " INSERT INTO hotelReview(hotelId, reviewId, Title, Review)" + 
-					   			" VALUES ('" + reviewBean.getOfferingId() + "', '" + reviewBean.getId() + "', '"+ titleString+"', '"+ reviewString+"')";
-					System.out.println(sqlinsert);
-					s.executeUpdate(sqlinsert);
-					}
-				}
-			}catch(SQLException ex){
-				throw ex;
-			}
+	
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		hotelReviewCreate hReview = new hotelReviewCreate();
+//		DB.OpenConn();
+		//hReview.insertHotelReview();
+		
+//		DB.CloseConn();
+		Integer hotelId;
+		Database.OpenConn();
+		hotelId = Database.getHotelId("hotel_90036");
+		System.out.println("hotel Id:"+hotelId);
+		Long rid = (long) 147058704;
+		TripAdvisorReview tr= Database.getReview(rid);
+		System.out.println(tr.toString());
+		Database.CloseConn();
+		
+		
 	}
-	
-	
 }
