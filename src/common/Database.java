@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import squirrel.common.ReviewUtil;
+import squirrel.nlp.Sentence;
+import squirrel.nlp.similarity.WordSimilarityResultSet;
 import squirrel.parse.ReviewList;
-import squirrel.parse.SentenceScore;
 import squirrel.parse.TripAdvisorReview;
 
 /**
@@ -20,8 +21,7 @@ import squirrel.parse.TripAdvisorReview;
  * 
  * Supplementary Tables
  * NounSimilarity(Noun1 String, Noun2 String, Score Double)
- * NounAdjs(ReviewId Long, SentenceId Integer, Noun String, Adjs String) // Adjs is a String of adjs seperated by ',' Eg. good,better,best
- * 
+ * NounAdjs(HotelId Integer, ReviewId Long, SentenceId Integer, Noun String, Adjs String) // Adjs is a String of adjs seperated by ',' Eg. good,better,best
  * 
  * Result Set:
  * 
@@ -62,9 +62,22 @@ public class Database {
 	 * @param adj
 	 * @return
 	 */
-	public static List<SentenceScore> getRankedSentenceScores(String noun, String adj) {
+	public static List<Sentence> getRankedSentenceScores(String noun, String adj) {
 		//TODO
-		return new ArrayList<SentenceScore>();
+		return new ArrayList<Sentence>();
 	}
 	
+	public static WordSimilarityResultSet getSimilarityScoresOfWord(String word) {
+		//TODO
+		return new WordSimilarityResultSet(word);
+	}
+	
+	public static List<Sentence> getAllReviewSentences(Integer hotelId) {
+		//TODO
+		
+/*		Sentence sent = new Sentence(reviewId, sentenceId);
+		NP np = new NP(noun, new ADJSet());
+		sent.addNP(np);*/
+		return new ArrayList<Sentence>();
+	}
 }

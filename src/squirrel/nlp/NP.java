@@ -28,6 +28,15 @@ public class NP {
 	public boolean containsAdj(String e) {
 		return adjSet.contains(e);
 	}
+	
+	public boolean containsAdjSet(ADJSet queryAdjs) {
+		for (String adj: adjSet) {
+			if (queryAdjs.subContains(adj)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 	public boolean containsNoun(String e) {
 		return noun.startsWith(e);

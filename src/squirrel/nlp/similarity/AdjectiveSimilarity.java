@@ -26,6 +26,9 @@ public class AdjectiveSimilarity {
 	public AdjectiveSimilarity(String adj) {
 		this.scoreMap = new WordSimilarityResultSet(adj);
 		this.adj = adj;
+		
+		//add itself
+		scoreMap.add(adj, 1.0);
 	}
 
 	private static void warn(String string) {
@@ -65,8 +68,6 @@ public class AdjectiveSimilarity {
 					}
 				}
 			}
-			
-			return scoreMap;
 		}
 		catch (NumberFormatException e) {
 			//null result
@@ -83,7 +84,7 @@ public class AdjectiveSimilarity {
 			//return 0.0;
 		}
 
-		return null;
+		return scoreMap;
 	}
 
 	public static void main(String[] args) throws Exception {
