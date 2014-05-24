@@ -9,22 +9,22 @@ import java.util.List;
  * @author victor
  *
  */
-public class NounSimilarityResult {
-	String noun;
-	List<Score> scoreList = new ArrayList<Score>();
+public class WordSimilarityResultSet {
+	String word;
+	List<WordSimilarityScore> scoreList = new ArrayList<WordSimilarityScore>();
 	
-	public NounSimilarityResult(String noun) {
-		this.noun = noun;
+	public WordSimilarityResultSet(String word) {
+		this.word = word;
 	}
 	
 	public synchronized void add(String word, Double score) {
-		scoreList.add(new Score(word, score));
+		scoreList.add(new WordSimilarityScore(word, score));
 	}
 	
-	public Score getTopScore() {
-		Score top = null;
+	public WordSimilarityScore getTopScore() {
+		WordSimilarityScore top = null;
 		Double highest = 0.0;
-		for (Score score: scoreList) {
+		for (WordSimilarityScore score: scoreList) {
 			if (score.getSimilarity() > highest) {
 				top = score;
 				highest = score.getSimilarity();
@@ -35,7 +35,7 @@ public class NounSimilarityResult {
 	
 	public String getPrettyString() {
 		StringBuilder sb = new StringBuilder();
-		for (Score score: scoreList) {
+		for (WordSimilarityScore score: scoreList) {
 			sb.append(score.toString());
 			sb.append("\n");
 		}
@@ -43,11 +43,11 @@ public class NounSimilarityResult {
 	}
 	
 	public String toString() {
-		return noun + " : " + scoreList;
+		return word + " : " + scoreList;
 	}
 	
 	public static void main(String[] args) {
-		NounSimilarityResult rs = new NounSimilarityResult("good");
+		WordSimilarityResultSet rs = new WordSimilarityResultSet("good");
 		rs.add("good", 1.0);
 		rs.add("nice", 0.5);
 		rs.add("excellent", 0.8);

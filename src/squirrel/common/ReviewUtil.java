@@ -13,8 +13,8 @@ import common.Log;
 import squirrel.dump.DumpTextUtil;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
-import squirrel.nlp.similarity.NounSimilarityResult;
-import squirrel.nlp.similarity.WikiLSA;
+import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.NounSimilarity;
 import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
 
@@ -100,8 +100,8 @@ public class ReviewUtil {
 	 * @param relatedWords
 	 * @return
 	 */
-	public static NounSimilarityResult getSimilarityBetweenNouns(String noun, List<String> relatedWords) {
-		NounSimilarityResult rs = new NounSimilarityResult(noun);
+	public static WordSimilarityResultSet getSimilarityBetweenNouns(String noun, List<String> relatedWords) {
+		WordSimilarityResultSet rs = new WordSimilarityResultSet(noun);
 		for (String word: relatedWords) {
 			// TODO: modify this to reflect actual score read from db.
 /*			WikiLSA lsa = new WikiLSA(rs);

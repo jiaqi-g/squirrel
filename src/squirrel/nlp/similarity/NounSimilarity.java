@@ -12,14 +12,19 @@ import org.jsoup.nodes.Element;
 
 import common.Log;
 
-public class WikiLSA {
+/**
+ * WikiLSA as noun similarity service
+ * @author victor
+ *
+ */
+public class NounSimilarity {
 
 	public static String url = "http://deeptutor2.memphis.edu/WikiLSA/getSimilarity";
-	private NounSimilarityResult scoreMap;
+	private WordSimilarityResultSet scoreMap;
 	private String noun;
 	
-	public WikiLSA(String noun) {
-		this.scoreMap = new NounSimilarityResult(noun);
+	public NounSimilarity(String noun) {
+		this.scoreMap = new WordSimilarityResultSet(noun);
 		this.noun = noun;
 	}
 	
@@ -27,12 +32,16 @@ public class WikiLSA {
 		Log.log("[WIKILSA]", string);
 	}
 	
+	private static void warn(String string) {
+		Log.warn("[WIKILSA]", string);
+	}
+	
 	/**
 	 * automatically ignore words that do not common to other words
 	 * @param allWords
 	 * @return
 	 */
-	public NounSimilarityResult getSimilarityResult(int id, List<String> allWords) {
+	public WordSimilarityResultSet getSimilarityResult(int id, List<String> allWords) {
 		//boolean ignore = false;
 		
 		int i = 0;
@@ -54,39 +63,39 @@ public class WikiLSA {
 		String s = "word " + id + " ";
 		if (processed == cnt/10*1) {
 			s += "10% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*2) {
 			s += "20% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*3) {
 			s += "30% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*4) {
 			s += "40% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*5) {
 			s += "50% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*6) {
 			s += "60% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*7) {
 			s += "70% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*8) {
 			s += "80% finished";
-			System.out.println(s);
+			warn(s);
 		}
 		else if (processed == cnt/10*9) {
 			s += "90% finished";
-			System.out.println(s);
+			warn(s);
 		}
 	}
 	
@@ -118,10 +127,10 @@ public class WikiLSA {
 				return 0.0;
 			}
 			catch (SocketTimeoutException e) {
-				System.out.println(noun + " " + compareNoun + " time out! Redo ...");
+				warn(noun + " " + compareNoun + " time out! Redo ...");
 			}
 			catch (ConnectException e) {
-				System.out.println(noun + " " + compareNoun + " refused! Redo ...");
+				warn(noun + " " + compareNoun + " refused! Redo ...");
 			}
 			catch (Exception e) {
 				e.printStackTrace();

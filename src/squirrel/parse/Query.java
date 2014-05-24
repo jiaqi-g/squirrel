@@ -10,8 +10,8 @@ import common.Database;
 import squirrel.common.ReviewUtil;
 import squirrel.common.SynonymsUtil;
 import squirrel.nlp.Sentence;
-import squirrel.nlp.similarity.NounSimilarityResult;
-import squirrel.nlp.similarity.Score;
+import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityScore;
 
 public class Query {
 	String aspect;
@@ -61,8 +61,8 @@ public class Query {
 			// For every sentence, we select out the top score matched entry to represent this sentence's score.
 			for (TripAdvisorReview review: ReviewUtil.getReviews()) {
 				for (Sentence sent: review.getSentences()) {
-					NounSimilarityResult similarityResult = sent.getNounSimilarityResult(aspect, traitSynonym);
-					Score topScore = similarityResult.getTopScore();
+					WordSimilarityResultSet similarityResult = sent.getNounSimilarityResult(aspect, traitSynonym);
+					WordSimilarityScore topScore = similarityResult.getTopScore();
 
 					if (topScore != null && topScore.getSimilarity() < similarityThreshold) {
 						topScore = null;

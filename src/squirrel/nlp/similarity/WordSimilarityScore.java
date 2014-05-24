@@ -1,29 +1,31 @@
 package squirrel.nlp.similarity;
 
-public class Score {
-	
-	private String noun;
+public class WordSimilarityScore {
+	private String word;
 	private Double similarity;
 		
-	public Score(String noun, Double similarity) {
-		this.noun = noun;
+	public WordSimilarityScore(String word, Double similarity) {
+		this.word = word;
 		this.similarity = similarity;
 	}
 	
 	public String getNoun() {
-		return noun;
+		return word;
 	}
+	
 	public void setNoun(String noun) {
-		this.noun = noun;
+		this.word = noun;
 	}
+	
 	public Double getSimilarity() {
 		return similarity;
 	}
+	
 	public void setSimilarity(Double similarity) {
 		this.similarity = similarity;
 	}
 	
 	public String toString() {
-		return noun + ", " + similarity;
+		return word + ": " + similarity;
 	}
 }

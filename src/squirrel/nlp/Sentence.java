@@ -8,7 +8,7 @@ import java.util.Set;
 import common.Database;
 
 import squirrel.common.ReviewUtil;
-import squirrel.nlp.similarity.NounSimilarityResult;
+import squirrel.nlp.similarity.WordSimilarityResultSet;
 import squirrel.parse.BasicSentence;
 import squirrel.parse.TripAdvisorReview;
 
@@ -55,7 +55,7 @@ public class Sentence extends BasicSentence {
 		return nps.toString();
 	}
 	
-	public NounSimilarityResult getNounSimilarityResult(String noun, String adj) {
+	public WordSimilarityResultSet getNounSimilarityResult(String noun, String adj) {
 		//select out related nouns
 		List<String> relatedWords = new ArrayList<String>();
 		for (NP np: nps) {

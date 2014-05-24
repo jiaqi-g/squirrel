@@ -27,8 +27,8 @@ public class Match implements Runnable {
 		try {
 			File f	= FileSystem.createNewFile(folderName + "/" + noun + ".txt");
 			
-			WikiLSA lsa = new WikiLSA(noun);
-			NounSimilarityResult resultSet = lsa.getSimilarityResult(id, allWords);
+			NounSimilarity lsa = new NounSimilarity(noun);
+			WordSimilarityResultSet resultSet = lsa.getSimilarityResult(id, allWords);
 			String res = resultSet.getPrettyString();
 			
 			FileSystem.writeFile(f, res);

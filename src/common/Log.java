@@ -14,4 +14,8 @@ public class Log {
 			System.out.println(moduleName + " " + s);
 		}
 	}
+	
+	public static void warn(String moduleName, String s) {
+		System.out.println(moduleName + " " + s);
+	}	
 }
