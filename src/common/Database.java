@@ -23,7 +23,6 @@ import squirrel.nlp.Sentence;
 import squirrel.nlp.similarity.WordSimilarityResultSet;
 import squirrel.nlp.similarity.WordSimilarityScore;
 import squirrel.parse.ReviewList;
-import squirrel.parse.SentenceScore;
 import squirrel.parse.TripAdvisorReview;
 import ucla.lucene.DB;
 import ucla.lucene.hotelReviewCreate;
@@ -81,9 +80,6 @@ public class Database {
 	}
 	
 	public static TripAdvisorReview getReview(Long reviewId) {
-		//TODO
-		
-		
 		TripAdvisorReview review = new TripAdvisorReview();
 		
 		StringBuffer buf = new StringBuffer();        
@@ -113,13 +109,13 @@ public class Database {
 	 * @param adj
 	 * @return
 	 */
-
-	public static List<SentenceScore> getRankedSentenceScores(String noun, String adj, Integer hotelId, Integer topK, Double simTh) {
+	public static List<Sentence> getRankedSentenceScores(String noun, String adj, Integer hotelId, Integer topK, Double simTh) {
 		//TODO
-		ArrayList<SentenceScore> sentList = new ArrayList<SentenceScore>(); 
+		/*
+		ArrayList<Sentence> sentList = new ArrayList<Sentence>(); 
 				
-		StringBuffer buf = new StringBuffer();        
-        ResultSet rs;     
+		StringBuffer buf = new StringBuffer();
+        ResultSet rs;
       	buf.append(" SELECT hr.hotelId, hr.reviewId, sc.sent_id,sc.sent, ws.sim ");
       	buf.append(" from hotelReview hr, review_sent rs, sent_cnt sc, ");
       	buf.append(" (select word_y, sim from wordSim where word_x='"+noun+"' and sim>"+simTh+") as ws");
@@ -146,13 +142,8 @@ public class Database {
             ex.printStackTrace();
         }
 		
-		return sentList;
-	}
-	public static List<Sentence> getRankedSentenceScores(String noun, String adj) {
-		//TODO
-		
-		
-		return new ArrayList<Sentence>();
+		return sentList;*/
+		return null;
 	}
 	
 	public static WordSimilarityResultSet getSimilarityScoresOfWord(String word) {
@@ -179,7 +170,6 @@ public class Database {
         }
 		
 		return sentList;
-		
 	}
 	
 	public static List<Sentence> getAllReviewSentences(Integer hotelId) {
@@ -217,12 +207,10 @@ public class Database {
 
 	protected static Connection conn;
 	protected static Statement stmt;
+	
 	public static void OpenConn() {
-			
 			String driver = "com.mysql.jdbc.Driver";
-
 			String url=""; 
-			
 			String user="";        
 			String password="";
 			String strarr[];
@@ -262,6 +250,7 @@ public class Database {
 				} 
 
 		}
+	
 	public static void CloseConn(){
 		try {
 			conn.close();
@@ -271,7 +260,6 @@ public class Database {
 		}
 		
 	}
-	
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -288,9 +276,9 @@ public class Database {
 		TripAdvisorReview tr= Database.getReview(rid);
 		System.out.println(tr.toString());
 		
-		List<SentenceScore> ssrList= getRankedSentenceScores("travel", "good", 80112, 100, -1.0);
+		//List<SentenceScore> ssrList= getRankedSentenceScores("travel", "good", 80112, 100, -1.0);
 		System.out.println("test getRankedSentenceScores");
-		for(SentenceScore ssScore: ssrList)System.out.println(ssScore.toString());
+		//for(SentenceScore ssScore: ssrList) System.out.println(ssScore.toString());
 		
 		System.out.println("test getSimilarityScoresOfWord");
 		
@@ -301,9 +289,7 @@ public class Database {
 		List<Sentence> ss = getAllReviewSentences(80112);
 		for(Sentence s:ss)System.out.println(s.toString());
 		
-		Database.CloseConn();
-		
-		
+		Database.CloseConn();		
 	}
 }
 
