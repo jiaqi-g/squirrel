@@ -1,8 +1,6 @@
 package squirrel.parse;
 
 import java.util.List;
-
-import squirrel.nlp.ADJSet;
 import squirrel.nlp.Sentence;
 
 /**
@@ -17,13 +15,11 @@ import squirrel.nlp.Sentence;
 public class Record {
 	String aspect;
 	String trait;
-	ADJSet traitSynonyms;
 	List<Sentence> rankedSentences;
 
-	public Record(String aspect, String trait, ADJSet traitSynonyms, List<Sentence> rankedSentences) {
+	public Record(String aspect, String trait, List<Sentence> rankedSentences) {
 		this.aspect = aspect;
 		this.trait = trait;
-		this.traitSynonyms = traitSynonyms;
 		this.rankedSentences = rankedSentences;
 	}
 	

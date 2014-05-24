@@ -5,51 +5,40 @@ import java.util.Collections;
 import java.util.List;
 
 import common.Database;
-import squirrel.common.SynonymsUtil;
-import squirrel.nlp.ADJSet;
+import squirrel.common.Conf;
+import squirrel.common.WordSynonymsUtil;
 import squirrel.nlp.Sentence;
 import squirrel.nlp.similarity.WordSimilarityResultSet;
 
 public class Query {
-	
-	public static final Double similarityThreshold = 0.5;
-	
-	String aspect;
-	String trait;
+	String noun;
+	String adj;
 	Integer hotelId;
 	
-	ADJSet traitSynonyms;
-	WordSimilarityResultSet aspectSimilarityDb;
+	WordSimilarityResultSet nounSynonyms;
+	WordSimilarityResultSet adjSynonyms;
 
-	public Query(Integer hotelId, String aspect, String trait) {
+	public Query(Integer hotelId, String noun, String adj) {
 		this.hotelId = hotelId;
-		this.aspect = aspect;
-		this.trait = trait;
+		this.noun = noun;
+		this.adj = adj;
 
-		traitSynonyms = SynonymsUtil.getSynonyms(trait);
-		aspectSimilarityDb = Database.getSimilarityScoresOfWord(aspect);
+		nounSynonyms = WordSynonymsUtil.getNounSynonyms(noun);
+		adjSynonyms = WordSynonymsUtil.getAdjSynonyms(adj);
 	}
 
 	public Record process() {
-		return new Record(aspect, trait, traitSynonyms, getRankedResults());
+		return new Record(noun, adj, getRankedResults());
 	}
-
-	/**
-	 * currently return similarity > 0.50 by wikiLSA model, ranked results
-	 * TODO
-	 * 
-	 * @param aspect
-	 * @param traitSynonym
-	 * @return
-	 */
+	
 	private List<Sentence> getRankedResults() {
 		List<Sentence> sents = Database.getAllReviewSentences(hotelId);
 		
 		List<Sentence> res = new ArrayList<Sentence>();
 		for (Sentence sent: sents) {
-			Double score = sent.computeScore(traitSynonyms, aspectSimilarityDb);
+			Double score = sent.computeScore(nounSynonyms, adjSynonyms);
 
-			if (score > similarityThreshold) {
+			if (score > Conf.sentenceSimilarityThreshold) {
 				res.add(sent);
 			}
 		}

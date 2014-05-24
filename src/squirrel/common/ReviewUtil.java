@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 import common.FileSystem;
 import common.JsonToJavaUtil;
-import common.Log;
 
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;

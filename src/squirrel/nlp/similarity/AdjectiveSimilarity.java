@@ -8,7 +8,8 @@ import java.util.Map;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import common.Log;
+import squirrel.common.Log;
+
 
 /**
  * UMBC Top-N Similarity Service as adjective similarity service

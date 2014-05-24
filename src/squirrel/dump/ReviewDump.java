@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 import common.FileSystem;
 import common.JsonToJavaUtil;
-import common.Log;
 
+import squirrel.common.Log;
 import squirrel.dump.DumpTextUtil;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;

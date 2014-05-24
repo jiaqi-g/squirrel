@@ -5,12 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import squirrel.common.ReviewUtil;
-import squirrel.common.SynonymsUtil;
 import squirrel.parse.Query;
 import squirrel.parse.Record;
 
 /**
- * The Driver of the system.
+ * The Entry Point of the system.
  * 
  * @author victor
  *
@@ -22,7 +21,6 @@ public class Driver {
 	public Driver() {
 		try {
 			Class.forName(ReviewUtil.class.getCanonicalName());
-			Class.forName(SynonymsUtil.class.getCanonicalName());
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -43,12 +41,6 @@ public class Driver {
 					//System.out.println("Results: ");
 					Record record = query.process();
 					System.out.println(record.getPrettyText());
-					/*
-					for (int i = 0; i < res.size(); i++) {
-						Record record = res.get(i);
-						System.out.println("--- Query" + (i+1) + ": " + record.getAspect() + "/" + record.getTrait() + " --- ");
-						System.out.println(record.getPrettyText());
-					}*/
 				}
 			}
 			catch(IOException e) {
@@ -60,13 +52,5 @@ public class Driver {
 	public static void main(String[] args) {
 		Driver driver = new Driver();
 		driver.start();
-		//DumpTextUtil.dumpReviewsToFile("reviews/first_1000_text.txt");
-		//DumpTextUtil.dumpReviewsToFolder("reviews");
-		/*
-		for (TripAdvisorReview review: ReviewUtil.getReviews()) {
-			for (Sentence sentence: review.getSentences()) {
-				System.out.println(sentence.getNPSetString());
-			}
-		}*/
 	}
 }

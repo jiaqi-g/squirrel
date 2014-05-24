@@ -10,7 +10,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import common.Log;
+import squirrel.common.Log;
+
 
 /**
  * WikiLSA as noun similarity service

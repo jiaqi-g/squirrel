@@ -5,6 +5,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityScore;
+
 /**
  * ADJSet is a set of adjectives
  * @author Victor
@@ -16,6 +19,12 @@ public class ADJSet implements Iterable<String> {
 	public ADJSet() {
 	}
 
+	public ADJSet(WordSimilarityResultSet adjSynonyms) {
+		for (WordSimilarityScore score: adjSynonyms) {
+			adjs.add(score.getWord());
+		}
+	}
+	
 	/**
 	 * a list of adjs seperated by ","
 	 * @param adjList

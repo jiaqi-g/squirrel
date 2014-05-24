@@ -1,4 +1,4 @@
-package common;
+package squirrel.common;
 
 /**
  * Class for log management
@@ -7,10 +7,8 @@ package common;
  */
 public class Log {
 	
-	static boolean debug = false;
-	
 	public static void log(String moduleName, String s) {
-		if (debug) {
+		if (Conf.debug) {
 			System.out.println(moduleName + " " + s);
 		}
 	}
