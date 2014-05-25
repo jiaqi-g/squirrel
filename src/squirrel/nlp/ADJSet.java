@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityResultList;
 import squirrel.nlp.similarity.WordSimilarityScore;
 
 /**
@@ -19,7 +19,7 @@ public class ADJSet implements Iterable<String> {
 	public ADJSet() {
 	}
 
-	public ADJSet(WordSimilarityResultSet adjSynonyms) {
+	public ADJSet(WordSimilarityResultList adjSynonyms) {
 		for (WordSimilarityScore score: adjSynonyms) {
 			adjs.add(score.getWord());
 		}
@@ -36,6 +36,10 @@ public class ADJSet implements Iterable<String> {
 	
 	public ADJSet(String[] adjs) {
 		addAll(adjs);
+	}
+	
+	public ADJSet(Set<String> adjs) {
+		this.adjs = adjs;
 	}
 	
 	public ADJSet(List<String> adjs) {
@@ -56,7 +60,7 @@ public class ADJSet implements Iterable<String> {
 		return adjs.contains(e);
 	}
 	
-	public boolean subContains(String e) {
+	private boolean subContains(String e) {
 		for (String adj: adjs) {
 			if (e.contains(adj)) {
 				return true;
@@ -64,7 +68,16 @@ public class ADJSet implements Iterable<String> {
 		}
 		return false;
 	}
-
+	
+	public boolean belongToAdjSet(ADJSet queryAdjs) {
+		for (String adj: adjs) {
+			if (queryAdjs.subContains(adj)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public String toString() {
 		return adjs.toString();
 	}

@@ -13,7 +13,7 @@ import squirrel.common.Log;
 import squirrel.dump.DumpTextUtil;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
-import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityResultList;
 import squirrel.nlp.similarity.NounSimilarity;
 import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
@@ -44,7 +44,7 @@ public class ReviewDump {
 			while (scanner.hasNextLine()){
 				TripAdvisorReview review = JsonToJavaUtil.getTripAdvisorReviewBean(scanner.nextLine().trim());
 				
-				if (hotelIds.contains(review.getOfferingId())) {
+				if (hotelIds.contains(review.getOffering_id())) {
 					review.replaceNonEnglishWords();
 					review.transformTextToSentences();
 					

@@ -47,7 +47,7 @@ public class DumpTextUtil {
 			FileSystem.createFolder(rootPath);
 			
 			for (TripAdvisorReview review: reviews) {
-				String hotelFolderPath = rootPath + "/hotel_" + review.getOfferingId();
+				String hotelFolderPath = rootPath + "/hotel_" + review.getOffering_id();
 				FileSystem.createFolder(hotelFolderPath);
 				
 				String filePath = hotelFolderPath + "/review_" + review.getId();

@@ -21,11 +21,11 @@ import squirrel.common.Log;
 public class NounSimilarity {
 
 	public static String url = "http://deeptutor2.memphis.edu/WikiLSA/getSimilarity";
-	private WordSimilarityResultSet scoreMap;
+	private WordSimilarityResultList scoreMap;
 	private String noun;
 	
 	public NounSimilarity(String noun) {
-		this.scoreMap = new WordSimilarityResultSet(noun);
+		this.scoreMap = new WordSimilarityResultList(noun);
 		this.noun = noun;
 	}
 	
@@ -42,7 +42,7 @@ public class NounSimilarity {
 	 * @param allWords
 	 * @return
 	 */
-	public WordSimilarityResultSet getSimilarityResult(int id, List<String> allWords) {
+	public WordSimilarityResultList getSimilarityResult(int id, List<String> allWords) {
 		//boolean ignore = false;
 		
 		int i = 0;

@@ -53,7 +53,7 @@ public class BuildIndex {
 	    	  	review = getTripAdvisorReview(scanner.nextLine());
 	    	  	
 				Document doc = new Document();
-				doc.add(new LongField("HotelID", review.getOfferingId(), Field.Store.YES));
+				doc.add(new LongField("HotelID", review.getOffering_id(), Field.Store.YES));
 				doc.add(new LongField("ReviewID",review.getId(),Field.Store.YES));
 				doc.add(new StringField("Title", review.getTitle(), Field.Store.YES));
 				doc.add(new TextField("Review",review.getText(),Field.Store.YES));

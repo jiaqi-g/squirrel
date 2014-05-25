@@ -12,7 +12,8 @@
 	<property name="lib.dir" value="lib"/>
 	<property name="ejar.dir" value="bin"/>
 	<property name="doc.dir" value="doc"/>
-			
+	
+	
 	<path id="master-classpath">
 		<pathelement path="${classes.dir}"/>
 		<pathelement location="${lib.dir}/boilerpipe-1.2.0.jar"/>

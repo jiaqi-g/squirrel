@@ -4,27 +4,16 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import squirrel.common.ReviewUtil;
 import squirrel.parse.Query;
 import squirrel.parse.Record;
 
 /**
- * The Entry Point of the system.
- * 
+ * The Entry Point of system.
  * @author victor
- *
  */
 public class Driver {
 	
-	public static Integer hotelId = 93396;
-	
-	public Driver() {
-		try {
-			Class.forName(ReviewUtil.class.getCanonicalName());
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
+	public static final Integer hotelId = 93396;
 	
 	public void start() {
 		while (true) {

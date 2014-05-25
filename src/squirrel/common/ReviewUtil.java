@@ -83,7 +83,6 @@ public class ReviewUtil {
 				String adjListString = nounAdjs[1].trim();
 				sent.addNP(new NP(noun, adjListString));
 			}
-
 		}
 	}
 

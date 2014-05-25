@@ -1,13 +1,15 @@
 package squirrel.common;
 
+import java.util.Set;
+
 import common.Database;
 
 import squirrel.nlp.similarity.AdjectiveSimilarity;
-import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityResultList;
 
 public class WordSynonymsUtil {
 
-	public static WordSimilarityResultSet getAdjSynonyms(String adj) {
+	public static WordSimilarityResultList getAdjSynonyms(String adj) {
 		switch (Conf.adjSource) {
 		case FILE:
 			/*
@@ -30,7 +32,7 @@ public class WordSynonymsUtil {
 		case DB:
 			break;
 		case WEB:
-			WordSimilarityResultSet rs = (new AdjectiveSimilarity(adj)).getTopSimilaryWordsFromWeb();
+			WordSimilarityResultList rs = (new AdjectiveSimilarity(adj)).getTopSimilaryWordsFromWeb();
 			rs.filterWordsBelowScore(Conf.adjSimilarityThreshold);
 			return rs;
 		}
@@ -38,17 +40,17 @@ public class WordSynonymsUtil {
 		return null;
 	}
 
-	public static WordSimilarityResultSet getNounSynonyms(String noun) {
+	public static WordSimilarityResultList getNounSynonyms(String noun) {
 		switch (Conf.nounSource) {
 		case FILE:
 			break;
 		case DB:
-			return Database.getSimilarityScoresOfWord(noun);
+			return Database.getSimilarityScoresOfNoun(noun, Conf.nounSimilarityThreshold);
 		case WEB:
 			break;
 		}
 		
-		return new WordSimilarityResultSet(noun);
+		return null;
 	}
 
 }

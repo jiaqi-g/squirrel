@@ -69,10 +69,6 @@ public class TripAdvisorReview {
 		return id;
 	}
 	
-	public Integer getOfferingId() {
-		return offering_id;
-	}
-	
 	public String getText() {
 		return text;
 	}
@@ -80,6 +76,7 @@ public class TripAdvisorReview {
 	public String getTitle() {
 		return title;
 	}
+	
 	public String getDate_stayed() {
 		return date_stayed;
 	}

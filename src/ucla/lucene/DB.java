@@ -88,7 +88,7 @@ public class DB {
 					titleString = reviewBean.getTitle().replace("'", "\\'");
 					reviewString= reviewBean.getText().replace("'", "\\'");
 					sqlinsert = " INSERT INTO hotelReview(hotelId, reviewId, Title, Review)" + 
-					   			" VALUES ('" + reviewBean.getOfferingId() + "', '" + reviewBean.getId() + "', '"+ titleString+"', '"+ reviewString+"')";
+					   			" VALUES ('" + reviewBean.getOffering_id() + "', '" + reviewBean.getId() + "', '"+ titleString+"', '"+ reviewString+"')";
 					System.out.println(sqlinsert);
 					s.executeUpdate(sqlinsert);
 					}

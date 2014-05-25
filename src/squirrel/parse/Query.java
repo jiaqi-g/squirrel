@@ -8,21 +8,21 @@ import common.Database;
 import squirrel.common.Conf;
 import squirrel.common.WordSynonymsUtil;
 import squirrel.nlp.Sentence;
-import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityResultList;
 
 public class Query {
 	String noun;
 	String adj;
 	Integer hotelId;
 	
-	WordSimilarityResultSet nounSynonyms;
-	WordSimilarityResultSet adjSynonyms;
+	WordSimilarityResultList nounSynonyms;
+	WordSimilarityResultList adjSynonyms;
 
 	public Query(Integer hotelId, String noun, String adj) {
 		this.hotelId = hotelId;
 		this.noun = noun;
 		this.adj = adj;
-
+		
 		nounSynonyms = WordSynonymsUtil.getNounSynonyms(noun);
 		adjSynonyms = WordSynonymsUtil.getAdjSynonyms(adj);
 	}
@@ -46,4 +46,5 @@ public class Query {
 		
 		return res;
 	}
+	
 }

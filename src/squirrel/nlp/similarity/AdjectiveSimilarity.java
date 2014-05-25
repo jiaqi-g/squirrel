@@ -21,11 +21,11 @@ public class AdjectiveSimilarity {
 	public static String url = "http://swoogle.umbc.edu/SimService/GetSimilarity";
 	public static Integer topN = 50;
 
-	private WordSimilarityResultSet scoreMap;
+	private WordSimilarityResultList scoreMap;
 	private String adj;
 
 	public AdjectiveSimilarity(String adj) {
-		this.scoreMap = new WordSimilarityResultSet(adj);
+		this.scoreMap = new WordSimilarityResultList(adj);
 		this.adj = adj;
 		
 		//add itself
@@ -42,7 +42,7 @@ public class AdjectiveSimilarity {
 	 * @param compareNoun
 	 * @return
 	 */
-	public WordSimilarityResultSet getTopSimilaryWordsFromWeb() {
+	public WordSimilarityResultList getTopSimilaryWordsFromWeb() {
 		Map<String, String> data = new HashMap<String, String>();
 		data.put("operation", "top_sim");
 		data.put("word", adj);

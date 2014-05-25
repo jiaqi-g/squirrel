@@ -2,7 +2,7 @@ package squirrel.nlp;
 
 import java.util.HashSet;
 import java.util.Set;
-import squirrel.nlp.similarity.WordSimilarityResultSet;
+import squirrel.nlp.similarity.WordSimilarityResultList;
 import squirrel.parse.BasicSentence;
 import squirrel.parse.TripAdvisorReview;
 
@@ -45,25 +45,24 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	public String getNPSetString() {
 		return nps.toString();
 	}
-
-	private Double getHighestNounScore(WordSimilarityResultSet nounSynonyms, ADJSet queryAdjs) {
+	
+	/**
+	 * score of sentence is maximal score of its nps
+	 */
+	public Double computeScore(WordSimilarityResultList nounSynonyms, WordSimilarityResultList adjSynonyms) {
+		ADJSet adjSet = new ADJSet(adjSynonyms);
+		
 		Double res = 0.0;
 		for (NP np: nps) {
-			if (np.belongToAdjSet(queryAdjs)) {
+			if (np.getADJSet().belongToAdjSet(adjSet)) {
 				Double tmp = nounSynonyms.getScore(np.noun);
 				if (tmp > res) {
 					res = tmp;
 				}
 			}
 		}
+		
 		return res;
-	}
-
-	/**
-	 * we treat sentence score as highest score of its noun
-	 */
-	public Double computeScore(WordSimilarityResultSet nounSynonyms, WordSimilarityResultSet adjSynonyms) {
-		return getHighestNounScore(nounSynonyms, new ADJSet(adjSynonyms));
 	}
 
 	public Double getScore() {
@@ -87,7 +86,7 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 		}
 
 		Sentence sent = (Sentence) obj;
-		return sent.getReview().getId().equals(reviewId) && sent.getSentenceId().equals(sentenceId);
+		return sent.reviewId.equals(reviewId) && sent.sentenceId.equals(sentenceId);
 	}
 
 	@Override

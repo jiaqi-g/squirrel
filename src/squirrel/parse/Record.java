@@ -1,6 +1,9 @@
 package squirrel.parse;
 
 import java.util.List;
+
+import common.Database;
+
 import squirrel.nlp.Sentence;
 
 /**
@@ -22,7 +25,7 @@ public class Record {
 		this.trait = trait;
 		this.rankedSentences = rankedSentences;
 	}
-	
+
 	/**
 	 * Record's output
 	 * @return
@@ -33,9 +36,9 @@ public class Record {
 		//System.out.println("@@@" + rankedSentences);
 		//System.out.println("@@@" + rankedSentences.values());
 		//for (Sentence sentence: rankedSentences.keySet()) {
-			//System.out.println("@@@" + rankedSentences.keySet().contains(sentence));
+		//System.out.println("@@@" + rankedSentences.keySet().contains(sentence));
 		//}
-		
+
 		for (Sentence sentence: rankedSentences) {
 			sb.append("Rank " + rank++);
 			sb.append(" (" + sentence.getSentenceFullId() + ") ");
@@ -48,18 +51,30 @@ public class Record {
 		if (rank == 1) {
 			sb.append("No results!\n");
 		}
-		
+
 		return sb.toString();
 	}
 
 	public String getAspect() {
 		return aspect;
 	}
-	
+
 	public String getTrait() {
 		return trait;
 	}
-	
+
+	public String getPrettyReviews(List<Sentence> sentences) {
+		List<TripAdvisorReview> reviews = Database.getReviewTexts(sentences);
+		StringBuilder sb = new StringBuilder();
+		for (TripAdvisorReview review: reviews) {
+			sb.append("************ ");
+			sb.append(review.getOffering_id());
+			sb.append("************\n");
+			sb.append(review.getText());
+		}
+		return sb.toString();
+	}
+
 	public String toString() {
 		return aspect + "/" + trait + " " + rankedSentences.toString();
 	}

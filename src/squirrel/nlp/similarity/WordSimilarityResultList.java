@@ -2,18 +2,20 @@ package squirrel.nlp.similarity;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
-public class WordSimilarityResultSet implements Iterable<WordSimilarityScore> {
+public class WordSimilarityResultList implements Iterable<WordSimilarityScore> {
 	String word;
 	List<WordSimilarityScore> scoreList = new ArrayList<WordSimilarityScore>();
 	
-	public WordSimilarityResultSet(String word) {
+	public WordSimilarityResultList(String word) {
 		this.word = word;
 	}
 	
-	public synchronized void add(String word, Double score) {
+	public void add(String word, Double score) {
 		scoreList.add(new WordSimilarityScore(word, score));
 	}
 	
@@ -21,7 +23,11 @@ public class WordSimilarityResultSet implements Iterable<WordSimilarityScore> {
 		Collections.sort(scoreList);
 	}
 	
-	//TODO: make faster
+	/**
+	 * Since the number of words in the scoreList is not too much, we just perform iterations
+	 * @param word
+	 * @return
+	 */
 	public Double getScore(String word) {
 		for (WordSimilarityScore score: scoreList) {
 			if (score.getWord().equals(word)) {
@@ -41,6 +47,14 @@ public class WordSimilarityResultSet implements Iterable<WordSimilarityScore> {
 			}
 		}
 		scoreList = scoreList.subList(0, index);
+	}
+	
+	public Set<String> getWordsSet() {
+		Set<String> res = new HashSet<String>();
+		for (WordSimilarityScore score: scoreList) {
+			res.add(score.getWord());
+		}
+		return res;
 	}
 	
 	public WordSimilarityScore getTopScore() {
@@ -69,7 +83,7 @@ public class WordSimilarityResultSet implements Iterable<WordSimilarityScore> {
 	}
 	
 	public static void main(String[] args) {
-		WordSimilarityResultSet rs = new WordSimilarityResultSet("good");
+		WordSimilarityResultList rs = new WordSimilarityResultList("good");
 		rs.add("good", 1.0);
 		rs.add("nice", 0.5);
 		rs.add("excellent", 0.8);

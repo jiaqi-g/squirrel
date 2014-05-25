@@ -29,13 +29,8 @@ public class NP {
 		return adjSet.contains(e);
 	}
 	
-	public boolean belongToAdjSet(ADJSet queryAdjs) {
-		for (String adj: adjSet) {
-			if (queryAdjs.subContains(adj)) {
-				return true;
-			}
-		}
-		return false;
+	public ADJSet getADJSet() {
+		return adjSet;
 	}
 
 	public boolean containsNoun(String e) {
