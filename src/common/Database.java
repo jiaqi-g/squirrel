@@ -1,7 +1,6 @@
 package common;
 
 import java.io.IOException;
-import java.nio.Buffer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,17 +11,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
-import squirrel.common.ReviewUtil;
-import squirrel.parse.BasicSentence;
 import squirrel.nlp.ADJSet;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
 import squirrel.nlp.similarity.WordSimilarityResultSet;
 import squirrel.nlp.similarity.WordSimilarityScore;
-import squirrel.parse.ReviewList;
 import squirrel.parse.TripAdvisorReview;
 import ucla.lucene.DB;
 import ucla.lucene.hotelReviewCreate;
@@ -58,7 +53,6 @@ import ucla.lucene.hotelReviewCreate;
  *
  */
 public class Database {
-
 	public static Integer getHotelId(String hotelName) {
 		Integer hotelId=0;
 		
@@ -102,7 +96,13 @@ public class Database {
         }
 		return review; 
 	}
-	
+
+	public static List<TripAdvisorReview> getAllReviews(Integer hotelId) {
+		//TODO
+		//you do not need to construct sentences
+		return null;
+	}
+
 	/**
 	 * core function
 	 * @param noun
@@ -147,7 +147,6 @@ public class Database {
 	}
 	
 	public static WordSimilarityResultSet getSimilarityScoresOfWord(String word) {
-		//TODO
 		WordSimilarityResultSet sentList = new WordSimilarityResultSet(word); 
 		Double simTh=0.05;
 		StringBuffer buf = new StringBuffer();        
@@ -173,11 +172,6 @@ public class Database {
 	}
 	
 	public static List<Sentence> getAllReviewSentences(Integer hotelId) {
-		//TODO
-		
-/*		Sentence sent = new Sentence(reviewId, sentenceId);
-		NP np = new NP(noun, new ADJSet());
-		sent.addNP(np);*/
 		ArrayList<Sentence> sentList = new ArrayList<Sentence>(); 
 		
 		StringBuffer buf = new StringBuffer();        
@@ -204,7 +198,7 @@ public class Database {
 		
 		return sentList;
 	}
-
+	
 	protected static Connection conn;
 	protected static Statement stmt;
 	

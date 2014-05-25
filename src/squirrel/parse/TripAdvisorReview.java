@@ -12,10 +12,8 @@ import squirrel.nlp.Sentence;
  *
  */
 public class TripAdvisorReview {
-	
 	private String title;
-
-
+	
 	private String text;
 	private String date_stayed;
 	private Integer offering_id;
