@@ -13,4 +13,11 @@ public class Conf {
 	
 	public static final Type adjSource = Type.WEB;
 	public static final Type nounSource = Type.DB;
+	
+	public static void printArgs() {
+		System.out.println("[Conf Args]");
+		System.out.println("nounSimilarityThreshold " + nounSimilarityThreshold);
+		System.out.println("adjSimilarityThreshold " + adjSimilarityThreshold);
+		System.out.println("sentenceSimilarityThreshold " + sentenceSimilarityThreshold);
+	}
 }

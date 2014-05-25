@@ -79,7 +79,11 @@ public class WordSimilarityResultList implements Iterable<WordSimilarityScore> {
 	}
 	
 	public String toString() {
-		return word + " : " + scoreList;
+		StringBuilder sb = new StringBuilder();
+		for (WordSimilarityScore score: scoreList) {
+			sb.append(score + "\n");
+		}
+		return sb.toString();
 	}
 	
 	public static void main(String[] args) {

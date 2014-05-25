@@ -16,7 +16,7 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	Set<NP>	nps = new HashSet<NP>();
 
 	//score would change given different queries
-	Double score;
+	Double score = 0.0;
 
 	/**
 	 * construct from memory
@@ -49,20 +49,17 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	/**
 	 * score of sentence is maximal score of its nps
 	 */
-	public Double computeScore(WordSimilarityResultList nounSynonyms, WordSimilarityResultList adjSynonyms) {
+	public void computeScore(WordSimilarityResultList nounSynonyms, WordSimilarityResultList adjSynonyms) {
 		ADJSet adjSet = new ADJSet(adjSynonyms);
 		
-		Double res = 0.0;
 		for (NP np: nps) {
 			if (np.getADJSet().belongToAdjSet(adjSet)) {
-				Double tmp = nounSynonyms.getScore(np.noun);
-				if (tmp > res) {
-					res = tmp;
+				Double score = nounSynonyms.getScore(np.noun);
+				if (score > this.score) {
+					this.score = score;
 				}
 			}
 		}
-		
-		return res;
 	}
 
 	public Double getScore() {

@@ -36,9 +36,9 @@ public class Query {
 		
 		List<Sentence> res = new ArrayList<Sentence>();
 		for (Sentence sent: sents) {
-			Double score = sent.computeScore(nounSynonyms, adjSynonyms);
-
-			if (score > Conf.sentenceSimilarityThreshold) {
+			sent.computeScore(nounSynonyms, adjSynonyms);
+					
+			if (sent.getScore() > Conf.sentenceSimilarityThreshold) {
 				res.add(sent);
 			}
 		}
