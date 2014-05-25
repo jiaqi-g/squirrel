@@ -1,8 +1,5 @@
 package common;
 
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,7 +7,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 import squirrel.common.Conf;
 import squirrel.nlp.ADJSet;
@@ -56,31 +52,9 @@ public class Database {
 	protected static Statement stmt;
 
 	public static void OpenConn() throws Exception {
-		String driver = "com.mysql.jdbc.Driver";
-		String url=""; 
-		String user="";        
-		String password="";
-		String strarr[];
-
-		Path path = Paths.get("config");
-		try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())) {
-			while (scanner.hasNextLine()){
-				strarr = scanner.nextLine().split("=");
-				if(strarr[0].trim().equals("url")) {
-					url = strarr[1].trim();
-				}
-				else if (strarr[0].trim().equals("user")) {
-					user = strarr[1].trim();
-				}
-				else if (strarr[0].trim().equals("password")) {
-					password =strarr[1].trim();
-				}
-			}
-		}
-
-		Class.forName(driver);
-		conn = DriverManager.getConnection(url, user, password);           
-
+		Class.forName(Conf.db_driver);
+		conn = DriverManager.getConnection(Conf.db_url, Conf.db_user, Conf.db_password);           
+		
 		if (conn != null && !conn.isClosed()) {                
 			System.out.println("DB connection successful");                 
 			stmt = conn.createStatement();     
@@ -99,7 +73,7 @@ public class Database {
 		Integer hotelId=0;
 
 		StringBuffer buf = new StringBuffer();        
-		ResultSet rs;     
+		ResultSet rs;
 		buf.append(" select hotelId from hotel where hotelName ='"+hotelName+"'");
 
 		try {
@@ -229,16 +203,19 @@ public class Database {
 
 		return res;
 	}
-
+	
 	public static List<Sentence> getAllReviewSentences(Integer hotelId) {
 		ArrayList<Sentence> sentList = new ArrayList<Sentence>();
 		StringBuffer buf = new StringBuffer();
 		ResultSet rs;
 
-		buf.append(" SELECT hr.hotelId, hr.reviewId, rs.sentId, rs.noun, rs.adj from");
-		buf.append(" hotelReview hr, review_sent rs where hr.reviewId = rs.reviewId and hotelId="+hotelId);
+		buf.append(" SELECT hr.hotelId, hr.reviewId, rs.sentId, rs.noun, rs.adj, st.sent from");
+		
+		buf.append(" hotelReview hr, review_sent rs, sent_cnt st where");
+		buf.append(" st.review_id = rs.reviewId and st.sent_id = rs.sentId and hr.reviewId = rs.reviewId and hotelId=" + hotelId);
 
 		//SELECT hr.hotelId, hr.reviewId, rs.sentId, rs.noun, rs.adj from hotelReview hr, review_sent rs where hr.reviewId = rs.reviewId and hotelId=93396 limit 20;
+		//SELECT hr.hotelId, hr.reviewId, rs.sentId, rs.noun, rs.adj, st.sent from hotelReview hr, review_sent rs, sent_cnt st where st.review_id = rs.reviewId and st.sent_id = rs.sentId and hr.reviewId = rs.reviewId and hotelId=93396 limit 20;
 
 		try {
 			synchronized (DB.class) {
@@ -254,7 +231,7 @@ public class Database {
 
 					if (reviewId != prevReviewId || sentId != prevSentId) {
 						//we only construct sentence when we process a new one
-						sent = new Sentence(reviewId, sentId);
+						sent = new Sentence(reviewId, sentId, rs.getString("sent"));
 						sentList.add(sent);
 					}
 

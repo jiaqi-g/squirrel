@@ -40,14 +40,15 @@ public class Record {
 		//}
 
 		for (Sentence sentence: rankedSentences) {
-			sb.append("Rank " + rank++);
+			sb.append(rank++);
 			sb.append(" (" + sentence.getSentenceFullId() + ") ");
 			sb.append(sentence.getScore() + "");
 			sb.append("\n");
 			//sb.append("Matched: ");
 			sb.append(sentence.getSentenceText());
-			sb.append("\n");
+			sb.append("\n\n");
 		}
+		
 		if (rank == 1) {
 			sb.append("No results!\n");
 		}

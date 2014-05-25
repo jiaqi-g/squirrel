@@ -16,8 +16,6 @@ import squirrel.parse.Record;
  */
 public class Driver {
 
-	public static final Integer hotelId = 93396;
-
 	public void start() {
 		while (true) {
 			System.out.print("Enter Query as \"Aspect/Trait\" : ");
@@ -29,7 +27,7 @@ public class Driver {
 					System.out.print("Error Input! \n");
 					continue;
 				} else {
-					Query query = new Query(hotelId, tmp[0].trim(), tmp[1].trim());
+					Query query = new Query(Conf.hotelId, tmp[0].trim(), tmp[1].trim());
 					//System.out.println("Results: ");
 					Record record = query.process();
 					System.out.println(record.getPrettyText());
@@ -42,11 +40,13 @@ public class Driver {
 	}
 
 	public static void main(String[] args) {
+		/*
 		if (args.length > 0 && args[0].trim().toLowerCase().equals("debug")) {
 			Conf.debug = true;
-		}
+		}*/
 		
 		try {
+			Conf.loadConf();
 			Database.OpenConn();
 		}
 		catch (Exception e) {

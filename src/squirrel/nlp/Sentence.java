@@ -29,8 +29,8 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	/**
 	 * construct from db
 	 */
-	public Sentence(Long reviewId, int sentenceId) {
-		super(reviewId, sentenceId);
+	public Sentence(Long reviewId, int sentenceId, String sentenceText) {
+		super(reviewId, sentenceId, sentenceText);
 		//this.review = Database.getReview(reviewId);
 	}
 
