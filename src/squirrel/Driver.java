@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import common.Database;
 
 import squirrel.common.Conf;
+import squirrel.common.ConfUtil;
 import squirrel.parse.Query;
 import squirrel.parse.Record;
 
@@ -46,16 +47,15 @@ public class Driver {
 		}*/
 		
 		try {
-			Conf.loadConf();
+			ConfUtil.loadConf();
 			Database.OpenConn();
+			if (Conf.debug) {
+				ConfUtil.printArgs();
+			}
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			System.exit(0);
-		}
-		
-		if (Conf.debug) {
-			Conf.printArgs();
 		}
 		
 		Driver driver = new Driver();

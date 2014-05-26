@@ -12,7 +12,7 @@ public class WordSynonymsUtil {
 	}
 	
 	public static WordSimilarityResultList getAdjSynonyms(String adj) {
-		switch (Conf.adjSource) {
+		switch (ConfUtil.adjSource) {
 		case FILE:
 			/*
 			String synonymsFileName = "python/synnoms.txt";
@@ -47,7 +47,7 @@ public class WordSynonymsUtil {
 	}
 
 	public static WordSimilarityResultList getNounSynonyms(String noun) {
-		switch (Conf.nounSource) {
+		switch (ConfUtil.nounSource) {
 		case FILE:
 			break;
 		case DB:
