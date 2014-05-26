@@ -39,6 +39,7 @@ public class Record {
 		//System.out.println("@@@" + rankedSentences.keySet().contains(sentence));
 		//}
 
+		sb.append("\n");
 		for (Sentence sentence: rankedSentences) {
 			sb.append(rank++);
 			sb.append(" (" + sentence.getSentenceFullId() + ") ");
@@ -50,7 +51,7 @@ public class Record {
 		}
 		
 		if (rank == 1) {
-			sb.append("No results!\n");
+			sb.append("No results!\n\n");
 		}
 
 		return sb.toString();

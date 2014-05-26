@@ -88,7 +88,7 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 
 	@Override
 	public int compareTo(Sentence o) {
-		if (o.score > score) {
+		if (o.score >= score) {
 			return 1;
 		}
 		else {
