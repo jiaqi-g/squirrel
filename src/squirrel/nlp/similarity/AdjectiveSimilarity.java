@@ -32,10 +32,6 @@ public class AdjectiveSimilarity {
 		scoreMap.add(adj, 1.0);
 	}
 
-	private static void warn(String string) {
-		Log.warn("[UMBC]", string);
-	}
-
 	/**
 	 *
 	 * @param noun
@@ -75,10 +71,10 @@ public class AdjectiveSimilarity {
 			//return 0.0;
 		}
 		catch (SocketTimeoutException e) {
-			warn(adj + " time out! Redo ...");
+			Log.warn(adj + " time out! Redo ...");
 		}
 		catch (ConnectException e) {
-			warn(adj + " refused! Redo ...");
+			Log.warn(adj + " refused! Redo ...");
 		}
 		catch (Exception e) {
 			e.printStackTrace();

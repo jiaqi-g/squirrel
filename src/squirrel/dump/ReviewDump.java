@@ -30,12 +30,8 @@ public class ReviewDump {
 	 */
 	private static int[] ids = new int[]{80112, 93338, 93396, 98952, 239853, 1966350, 1762573, 1776857, 1200103, 1158926};
 	
-	private static void log(String string) {
-		Log.log("[REVIEW]", string);
-	}
-	
 	public static ReviewList loadReviewFiles(String reviewFilePath, ArrayList<Integer> hotelIds) {
-		log("load review file...");
+		Log.log("load review file...");
 		ReviewList reviews = new ReviewList();
 		
 		try {
@@ -49,10 +45,10 @@ public class ReviewDump {
 					review.transformTextToSentences();
 					
 					reviews.add(review);
-					log("process " + cnt + " " + (review.isNonEnglish? "true" : ""));
+					Log.log("process " + cnt + " " + (review.isNonEnglish? "true" : ""));
 				}
 				else {
-					log("skip " + cnt);
+					Log.log("skip " + cnt);
 				}
 				
 				cnt += 1;

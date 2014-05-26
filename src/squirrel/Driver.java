@@ -28,7 +28,7 @@ public class Driver {
 				String s = bufferRead.readLine();
 				String[] tmp = s.split("/");
 				if (tmp.length != 2) {
-					warn("Error Input!\n");
+					Log.warn("Error Input!\n");
 					continue;
 				} else {
 					Query query = new Query(Conf.hotelId, tmp[0].trim(), tmp[1].trim());
@@ -40,10 +40,6 @@ public class Driver {
 				e.printStackTrace();
 			}
 		}
-	}
-
-	private void warn(String s) {
-		Log.warn("[Driver]", s);
 	}
 	
 	private void emitResult(Record record) throws IOException {
@@ -58,6 +54,12 @@ public class Driver {
 	}
 
 	public static void main(String[] args) {
+		/**
+		 * TODO:
+		 * 1. add time count support
+		 * 2. review/sentence mode change in config
+		 */
+		
 		/*
 		if (args.length > 0 && args[0].trim().toLowerCase().equals("debug")) {
 			Conf.debug = true;

@@ -29,14 +29,6 @@ public class NounSimilarity {
 		this.noun = noun;
 	}
 	
-	private static void log(String string) {
-		Log.log("[WIKILSA]", string);
-	}
-	
-	private static void warn(String string) {
-		Log.warn("[WIKILSA]", string);
-	}
-	
 	/**
 	 * automatically ignore words that do not common to other words
 	 * @param allWords
@@ -54,7 +46,7 @@ public class NounSimilarity {
 			
 			report(id, i, allWords.size());
 			i++;
-			log(noun + " " + compareNoun + " " + score);
+			Log.log(noun + " " + compareNoun + " " + score);
 		}
 		
 		return scoreMap;
@@ -64,39 +56,39 @@ public class NounSimilarity {
 		String s = "word " + id + " ";
 		if (processed == cnt/10*1) {
 			s += "10% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*2) {
 			s += "20% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*3) {
 			s += "30% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*4) {
 			s += "40% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*5) {
 			s += "50% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*6) {
 			s += "60% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*7) {
 			s += "70% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*8) {
 			s += "80% finished";
-			warn(s);
+			Log.warn(s);
 		}
 		else if (processed == cnt/10*9) {
 			s += "90% finished";
-			warn(s);
+			Log.warn(s);
 		}
 	}
 	
@@ -128,10 +120,10 @@ public class NounSimilarity {
 				return 0.0;
 			}
 			catch (SocketTimeoutException e) {
-				warn(noun + " " + compareNoun + " time out! Redo ...");
+				Log.warn(noun + " " + compareNoun + " time out! Redo ...");
 			}
 			catch (ConnectException e) {
-				warn(noun + " " + compareNoun + " refused! Redo ...");
+				Log.warn(noun + " " + compareNoun + " refused! Redo ...");
 			}
 			catch (Exception e) {
 				e.printStackTrace();

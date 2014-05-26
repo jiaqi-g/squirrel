@@ -6,14 +6,31 @@ package squirrel.common;
  *
  */
 public class Log {
-	
-	public static void log(String moduleName, String s) {
+
+	public static void log(String s) {
 		if (Conf.debug) {
-			System.out.println(moduleName + " " + s);
+			try {
+				throw new RuntimeException();
+			}
+			catch (Exception e) {
+				StackTraceElement[] traces = e.getStackTrace();
+				String[] callerClassName = traces[1].getClassName().split("\\.");
+				//String callerMethodName = traces[1].getMethodName();
+				System.out.println("[" + callerClassName[callerClassName.length-1] + "] " + s);
+			}
 		}
 	}
-	
-	public static void warn(String moduleName, String s) {
-		System.out.println(moduleName + " " + s);
-	}	
+
+	public static void warn(String s) {
+		try {
+			throw new RuntimeException();
+		}
+		catch (Exception e) {
+			StackTraceElement[] traces = e.getStackTrace();
+			String[] callerClassName = traces[1].getClassName().split("\\.");
+			//String callerMethodName = traces[1].getMethodName();
+			System.out.println("[" + callerClassName[callerClassName.length-1] + "] " + s);
+		}
+	}
+
 }

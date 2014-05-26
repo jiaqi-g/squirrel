@@ -1,15 +1,10 @@
 package squirrel.common;
 
 import common.Database;
-
 import squirrel.nlp.similarity.AdjectiveSimilarity;
 import squirrel.nlp.similarity.WordSimilarityResultList;
 
 public class WordSynonymsUtil {
-
-	public static void log(String s) {
-		Log.log("[WordSynonymsUtil]", s);
-	}
 	
 	public static WordSimilarityResultList getAdjSynonyms(String adj) {
 		switch (ConfUtil.adjSource) {
@@ -37,7 +32,7 @@ public class WordSynonymsUtil {
 			WordSimilarityResultList rs = (new AdjectiveSimilarity(adj)).getTopSimilaryWordsFromWeb();
 			rs.filterWordsBelowScore(Conf.adjSimilarityThreshold);
 			if (Conf.debug) {
-				log("\n");
+				Log.log("\n");
 				System.out.println(rs);
 			}
 			return rs;
@@ -53,7 +48,7 @@ public class WordSynonymsUtil {
 		case DB:
 			WordSimilarityResultList rs = Database.getSimilarityScoresOfNoun(noun, Conf.nounSimilarityThreshold);
 			if (Conf.debug) {
-				log("\n");
+				Log.log("\n");
 				System.out.println(rs);
 			}
 			return rs;

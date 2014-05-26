@@ -16,10 +16,6 @@ import squirrel.common.Log;
  */
 public class FileSystem {
 	
-	private static void log(String string) {
-		Log.log("[FILE]", string);
-	}
-	
 	public static File getFile(String filename) {
 		File file = new File(filename);
 		return file;
@@ -37,10 +33,10 @@ public class FileSystem {
 		File f = getFile(fileName);
 		if (f.exists()) {
 			f.delete();
-			log(fileName + " deleted");  
+			Log.log(fileName + " deleted");  
 		}
 		f.createNewFile();
-		log(fileName + " created");
+		Log.log(fileName + " created");
 		return f;
 	}
 	
@@ -52,7 +48,7 @@ public class FileSystem {
 	 * @throws IOException 
 	 */
 	public static List<String> readAllLines(String filename) throws IOException {
-		log("read: " + filename);
+		Log.log("read: " + filename);
 		
 		List<String> lst = new ArrayList<String>();
 		try {
@@ -86,11 +82,11 @@ public class FileSystem {
 		File theDir = new File(folderName);
 		// if the directory does not exist, create it
 		if (!theDir.exists()) {
-			log("creating directory: " + folderName);
+			Log.log("creating directory: " + folderName);
 			boolean result = theDir.mkdir();  
 
 			if(result) {    
-				log("DIR " + folderName + " created");  
+				Log.log("DIR " + folderName + " created");  
 			}
 		}
 	}
@@ -123,7 +119,7 @@ public class FileSystem {
 	 */
 	public static void writeFile(File aFile, String content) throws IOException  {
 		String fEncoding = "UTF-8";
-		log("Writing to file named " + aFile.getPath() + ". Encoding: " + fEncoding);
+		Log.log("Writing to file named " + aFile.getPath() + ". Encoding: " + fEncoding);
 
 		Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(aFile), fEncoding));
 		try {

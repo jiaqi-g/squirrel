@@ -32,10 +32,6 @@ public class Query {
 		return new Record(noun, adj, getRankedResults());
 	}
 	
-	public void log(String s) {
-		Log.log("[Query]", s);
-	}
-	
 	private List<Sentence> getRankedResults() {
 		List<Sentence> sents = Database.getAllReviewSentences(hotelId);
 		
@@ -52,7 +48,7 @@ public class Query {
 			sb.append(sent.getSentenceFullId());
 			sb.append(" ");
 		}
-		log(sb.toString());
+		Log.log(sb.toString());
 		Collections.sort(res);
 		
 		return res;
