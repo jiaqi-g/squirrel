@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import common.Database;
+import common.TimeUtil;
 import squirrel.common.Conf;
 import squirrel.common.Log;
 import squirrel.common.WordSynonymsUtil;
@@ -29,10 +30,13 @@ public class Query {
 	}
 
 	public Record process() {
-		return new Record(noun, adj, getRankedResults());
+		TimeUtil.start();
+		List<Sentence> sents = getRankedResults();
+		return new Record(noun, adj, sents, TimeUtil.getPassedSeconds());
 	}
 	
 	private List<Sentence> getRankedResults() {
+		//TODO: can be optimized maybe
 		List<Sentence> sents = Database.getAllReviewSentences(hotelId);
 		
 		List<Sentence> res = new ArrayList<Sentence>();

@@ -19,11 +19,14 @@ public class Record {
 	String aspect;
 	String trait;
 	List<Sentence> rankedSentences;
+	
+	Double time;
 
-	public Record(String aspect, String trait, List<Sentence> rankedSentences) {
+	public Record(String aspect, String trait, List<Sentence> rankedSentences, Double time) {
 		this.aspect = aspect;
 		this.trait = trait;
 		this.rankedSentences = rankedSentences;
+		this.time = time;
 	}
 
 	/**
@@ -48,10 +51,14 @@ public class Record {
 			//sb.append("Matched: ");
 			sb.append(sentence.getSentenceText());
 			sb.append("\n\n");
+			sb.append("Total Time: " + time);
+			sb.append("\n\n");
 		}
 		
 		if (rank == 1) {
 			sb.append("No results!\n\n");
+			sb.append("Total Time: " + time);
+			sb.append("\n\n");
 		}
 
 		return sb.toString();

@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 
 import common.Database;
 import common.FileSystem;
+import common.TimeUtil;
 
 import squirrel.common.Conf;
 import squirrel.common.ConfUtil;
@@ -59,9 +60,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		/**
-		 * TODO:
-		 * 1. add time count support
-		 * 2. review/sentence mode change in config
+		 * TODO: review/sentence mode change in config
 		 */
 		
 		/*
