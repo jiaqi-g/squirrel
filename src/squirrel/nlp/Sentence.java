@@ -53,6 +53,7 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	 */
 	public void computeScore(WordSimilarityResultList nounSynonyms, WordSimilarityResultList adjSynonyms) {
 		ADJSet adjSet = new ADJSet(adjSynonyms);
+		this.score = 0.0;
 		
 		for (NP np: nps) {
 			Double adjScore = 0.0;

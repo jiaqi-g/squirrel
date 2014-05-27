@@ -4,6 +4,7 @@ import java.util.List;
 
 import common.Database;
 
+import squirrel.common.Conf;
 import squirrel.nlp.Sentence;
 
 /**
@@ -51,16 +52,18 @@ public class Record {
 			//sb.append("Matched: ");
 			sb.append(sentence.getSentenceText());
 			sb.append("\n\n");
-			sb.append("Total Time: " + time);
-			sb.append("\n\n");
+			if (rank > Conf.limit) {
+				break;
+			}
 		}
 		
 		if (rank == 1) {
 			sb.append("No results!\n\n");
-			sb.append("Total Time: " + time);
-			sb.append("\n\n");
 		}
 
+		sb.append("Total Time: " + time);
+		sb.append("\n\n");
+		
 		return sb.toString();
 	}
 

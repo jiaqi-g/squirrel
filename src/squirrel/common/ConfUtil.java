@@ -16,7 +16,15 @@ public class ConfUtil {
 	
 	private static Field[] fields = Conf.class.getDeclaredFields();
 	
-	private static void setConf(String key, String val) throws Exception {
+	/**
+	 * return true is conf set successfully
+	 * @param key
+	 * @param val
+	 * @return
+	 * @throws Exception
+	 */
+	public static boolean setConf(String key, String val) throws Exception {
+		boolean success = false;
 		for (Field f: fields) {
 			f.setAccessible(true);
 			if (f.getName().equals(key)) {
@@ -30,8 +38,10 @@ public class ConfUtil {
 				} else if (fieldClass == String.class) {
 					f.set(null, val);
 				}
+				success = true;
 			}
 		}
+		return success;
 	}
 	
 	public static void loadConf() throws Exception {

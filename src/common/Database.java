@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import squirrel.common.Conf;
+import squirrel.common.Log;
 import squirrel.nlp.ADJSet;
 import squirrel.nlp.NP;
 import squirrel.nlp.Sentence;
@@ -56,7 +57,7 @@ public class Database {
 		conn = DriverManager.getConnection(Conf.db_url, Conf.db_user, Conf.db_password);           
 		
 		if (conn != null && !conn.isClosed()) {                
-			System.out.println("DB connection successful");                 
+			Log.log("DB connection successful");                 
 			stmt = conn.createStatement();     
 		}            
 	}

@@ -1,5 +1,7 @@
 package squirrel.common;
 
+import squirrel.cli.CliArgNumException;
+
 /**
  * Class for log management
  * @author victor
@@ -32,5 +34,9 @@ public class Log {
 			System.out.println("[" + callerClassName[callerClassName.length-1] + "] " + s);
 		}
 	}
-
+	
+	public static void cliArgError() {
+		throw new CliArgNumException();
+		//System.exit(0);
+	}
 }

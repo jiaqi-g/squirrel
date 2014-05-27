@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import common.Database;
 import common.TimeUtil;
 import squirrel.common.Conf;
 import squirrel.common.Log;
@@ -29,29 +28,27 @@ public class Query {
 		adjSynonyms = WordSynonymsUtil.getAdjSynonyms(adj);
 	}
 
-	public Record process() {
+	public Record process(List<Sentence> allReviewSents) {
 		TimeUtil.start();
-		List<Sentence> sents = getRankedResults();
+		List<Sentence> sents = getRankedResults(allReviewSents);
 		return new Record(noun, adj, sents, TimeUtil.getPassedSeconds());
 	}
 	
-	private List<Sentence> getRankedResults() {
-		//TODO: can be optimized maybe
-		List<Sentence> sents = Database.getAllReviewSentences(hotelId);
-		
-		List<Sentence> res = new ArrayList<Sentence>();
+	private List<Sentence> getRankedResults(List<Sentence> allReviewSents) {
 		StringBuilder sb = new StringBuilder();
 		sb.append("unsorted result ");
-		for (Sentence sent: sents) {
+		
+		List<Sentence> res = new ArrayList<Sentence>();
+		for (Sentence sent: allReviewSents) {
 			sent.computeScore(nounSynonyms, adjSynonyms);
 					
 			if (sent.getScore() > Conf.sentenceSimilarityThreshold) {
 				res.add(sent);
+				sb.append(sent.getSentenceFullId());
+				sb.append(" ");
 			}
-			
-			sb.append(sent.getSentenceFullId());
-			sb.append(" ");
 		}
+		
 		Log.log(sb.toString());
 		Collections.sort(res);
 		

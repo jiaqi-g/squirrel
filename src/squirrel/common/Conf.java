@@ -19,5 +19,6 @@ public class Conf {
 	public static Double adjSimilarityThreshold = 0.6;
 	public static Double sentenceSimilarityThreshold = nounSimilarityThreshold;
 
+	public static Integer limit = 100;
 	public static Integer hotelId = 93396;
 }
