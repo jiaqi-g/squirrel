@@ -2,6 +2,8 @@ package squirrel.nlp;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import squirrel.common.Conf;
 import squirrel.nlp.similarity.WordSimilarityResultList;
 import squirrel.parse.BasicSentence;
 import squirrel.parse.TripAdvisorReview;
@@ -53,11 +55,16 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 		ADJSet adjSet = new ADJSet(adjSynonyms);
 		
 		for (NP np: nps) {
+			Double adjScore = 0.0;
+			Double nounScore = 0.0;
 			if (np.getADJSet().belongToAdjSet(adjSet)) {
-				Double score = nounSynonyms.getScore(np.noun);
-				if (score > this.score) {
-					this.score = score;
-				}
+				// TODO: if matched, we should count weight of different adjs differently.
+				adjScore = 1.0;
+			}
+			nounScore = nounSynonyms.getScore(np.noun);
+			Double score = Conf.nounScoreRatio * nounScore + (1 - Conf.nounScoreRatio) * adjScore;
+			if (score > this.score) {
+				this.score = score;
 			}
 		}
 	}

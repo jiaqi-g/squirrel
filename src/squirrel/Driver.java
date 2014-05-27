@@ -25,7 +25,11 @@ public class Driver {
 			System.out.print("Enter Query as \"Aspect/Trait\" : ");
 			try {
 				BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
-				String s = bufferRead.readLine();
+				String s = bufferRead.readLine().trim().toLowerCase();
+				if (s.startsWith("exit") || s.startsWith("quit")) {
+					System.exit(0);
+				}
+				
 				String[] tmp = s.split("/");
 				if (tmp.length != 2) {
 					Log.warn("Error Input!\n");

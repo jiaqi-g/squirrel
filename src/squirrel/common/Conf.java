@@ -14,6 +14,7 @@ public class Conf {
 	public static String db_user="";        
 	public static String db_password="";
 
+	public static Double nounScoreRatio = 0.8;
 	public static Double nounSimilarityThreshold = 0.5;
 	public static Double adjSimilarityThreshold = 0.6;
 	public static Double sentenceSimilarityThreshold = nounSimilarityThreshold;
