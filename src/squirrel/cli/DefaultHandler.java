@@ -16,7 +16,7 @@ public class DefaultHandler implements Handler {
 	
 	protected void checkArgs(int num) {
 		if (args.length < num) {
-			Log.cliArgError();
+			Log.cliArgError("Too few arguments ");
 		}
 	}
 	

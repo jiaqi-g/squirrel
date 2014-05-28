@@ -7,7 +7,7 @@ import java.util.List;
 
 import common.Database;
 
-import squirrel.cli.CliArgNumException;
+import squirrel.cli.ArgsHandler;
 import squirrel.cli.ConfHandler;
 import squirrel.cli.DefaultHandler;
 import squirrel.cli.ExitHandler;
@@ -17,6 +17,8 @@ import squirrel.cli.QueryHandler;
 import squirrel.cli.ResultHandler;
 import squirrel.common.Conf;
 import squirrel.common.ConfUtil;
+import squirrel.err.CliArgNumException;
+import squirrel.err.HotelNotExistException;
 import squirrel.nlp.Sentence;
 import squirrel.parse.Record;
 
@@ -28,7 +30,7 @@ public class Driver {
 	public static final String welcomeString = "  Welcome to Squirrel Review Query System!  ";
 	
 	//Hack !!!
-	public static List<Sentence> allReviewSents;
+	//public static List<Sentence> allReviewSents;
 	public Record lastRecord;
 	
 	private void dispatchCommand(String s) {
@@ -43,6 +45,8 @@ public class Driver {
 				handler = new ResultHandler(s, lastRecord);
 			} else if (s.startsWith("help")) {
 				handler = new HelpHandler(s);
+			} else if (s.startsWith("conf") || s.startsWith("arg")) {
+				handler = new ArgsHandler(s);
 			} else if (s.startsWith("find") || s.startsWith("search") || s.startsWith("query")) {
 				handler = new QueryHandler(s);
 			}
@@ -59,7 +63,12 @@ public class Driver {
 			System.out.println();
 		}
 		catch (CliArgNumException e) {
-			System.out.println("Argument Number or Format mismatch!\n");
+			System.out.println(e.getMessage());
+			System.out.println();
+		}
+		catch (HotelNotExistException e) {
+			System.out.println(e.getMessage());
+			System.out.println();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -67,13 +76,13 @@ public class Driver {
 	}
 
 	public void start() {
-		allReviewSents = Database.getAllReviewSentences(Conf.hotelId);
+		//allReviewSents = Database.getAllReviewSentences(Conf.hotelId);
 		while (true) {
 			try {
-				System.out.print("> ");
+				System.out.print("squirrel> ");
 				BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
 				String s = bufferRead.readLine().trim().toLowerCase();
-				dispatchCommand(s);	
+				dispatchCommand(s);
 			}
 			catch (IOException e) {
 				e.printStackTrace();
@@ -121,17 +130,11 @@ public class Driver {
 	}
 	
 	public static void main(String[] args) {
-		/**
-		 * TODO: review/sentence mode change in config
-		 */
 		printWelcome();
 		
 		try {
 			ConfUtil.loadConf();
 			Database.OpenConn();
-			if (Conf.debug) {
-				ConfUtil.printArgs();
-			}
 		}
 		catch (Exception e) {
 			e.printStackTrace();

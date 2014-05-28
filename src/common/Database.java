@@ -57,7 +57,7 @@ public class Database {
 		conn = DriverManager.getConnection(Conf.db_url, Conf.db_user, Conf.db_password);           
 		
 		if (conn != null && !conn.isClosed()) {                
-			Log.log("DB connection successful");                 
+			Log.warn("DB connection successful \n");                 
 			stmt = conn.createStatement();     
 		}            
 	}
@@ -189,7 +189,7 @@ public class Database {
 		WordSimilarityResultList res = new WordSimilarityResultList(noun); 
 
 		StringBuffer buf = new StringBuffer();        
-		buf.append(" select word_y, sim from wordSim where word_x='" + noun + "' and sim > " + simTh);
+		buf.append(" select word_y, sim from wordSim where word_x='" + noun + "' and sim >= " + simTh);
 		try {
 			synchronized (DB.class) {
 				ResultSet rs = stmt.executeQuery(buf.toString());    

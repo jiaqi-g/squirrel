@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-import squirrel.cli.CliArgNumException;
+import squirrel.err.CliArgNumException;
 
 public class ConfUtil {
 	enum Type {
@@ -47,7 +47,7 @@ public class ConfUtil {
 			}
 		}
 		catch (NumberFormatException e) {
-			throw new CliArgNumException();
+			throw new CliArgNumException("Conf Argument mis-setting");
 		}
 		
 		return success;
@@ -67,7 +67,7 @@ public class ConfUtil {
 	}
 
 	public static void printArgs() throws Exception {
-		System.out.println("[Conf Args]");
+		//System.out.println("[Conf Args]");
 		for (Field f: fields) {
 			System.out.println(f.getName() + ": " + f.get(null));
 		}

@@ -23,7 +23,7 @@ public class ConfHandler extends DefaultHandler  {
 
 		String[] confArgs = confArg.split("=");
 		if (confArgs.length != 2) {
-			Log.cliArgError();
+			Log.cliArgError("Missing conf arguments");
 		}
 
 		confName = confArgs[0].trim();

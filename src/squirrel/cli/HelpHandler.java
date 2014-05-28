@@ -10,8 +10,9 @@ public class HelpHandler extends DefaultHandler {
 		System.out.println("Help:");
 		System.out.println("find aspect/trait");
 		System.out.println("set confName = confValue");
-		System.out.println("view resultNum");
+		System.out.println("show resultNum");
 		System.out.println("help");
+		System.out.println("args");
 		System.out.println();
 		System.out.println("Type exit/quit to exit the system.");
 	}

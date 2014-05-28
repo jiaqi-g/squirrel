@@ -1,6 +1,7 @@
 package squirrel.common;
 
-import squirrel.cli.CliArgNumException;
+import squirrel.err.CliArgNumException;
+import squirrel.err.HotelNotExistException;
 
 /**
  * Class for log management
@@ -35,8 +36,13 @@ public class Log {
 		}
 	}
 	
-	public static void cliArgError() {
-		throw new CliArgNumException();
+	public static void cliArgError(String msg) {
+		throw new CliArgNumException(msg);
+		//System.exit(0);
+	}
+	
+	public static void hotelNotExistError(String msg) {
+		throw new HotelNotExistException(msg);
 		//System.exit(0);
 	}
 }
