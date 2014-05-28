@@ -36,7 +36,7 @@ public class Query {
 	
 	private List<Sentence> getRankedResults(List<Sentence> allReviewSents) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("unsorted result ");
+		sb.append("unsorted results \n");
 		
 		List<Sentence> res = new ArrayList<Sentence>();
 		for (Sentence sent: allReviewSents) {
@@ -44,8 +44,10 @@ public class Query {
 					
 			if (sent.getScore() > Conf.sentenceSimilarityThreshold) {
 				res.add(sent);
-				sb.append(sent.getSentenceFullId());
-				sb.append(" ");
+				
+				sb.append(sent.getSentenceFullId() + " ");
+				sb.append(sent.getScore());
+				sb.append("\n");
 			}
 		}
 		

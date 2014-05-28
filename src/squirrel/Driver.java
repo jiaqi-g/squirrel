@@ -3,6 +3,9 @@ package squirrel;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
+
+import common.Database;
 
 import squirrel.cli.CliArgNumException;
 import squirrel.cli.ConfHandler;
@@ -12,6 +15,10 @@ import squirrel.cli.Handler;
 import squirrel.cli.HelpHandler;
 import squirrel.cli.QueryHandler;
 import squirrel.cli.ResultHandler;
+import squirrel.common.Conf;
+import squirrel.common.ConfUtil;
+import squirrel.nlp.Sentence;
+import squirrel.parse.Record;
 
 /**
  * The Entry Point of system.
@@ -19,7 +26,11 @@ import squirrel.cli.ResultHandler;
  */
 public class Driver {
 	public static final String welcomeString = "  Welcome to Squirrel Review Query System!  ";
-
+	
+	//Hack !!!
+	public static List<Sentence> allReviewSents;
+	public Record lastRecord;
+	
 	private void dispatchCommand(String s) {
 		try {
 			Handler handler;
@@ -28,11 +39,11 @@ public class Driver {
 				handler = new ExitHandler(s);
 			} else if (s.startsWith("set")) {
 				handler = new ConfHandler(s);
-			} else if (s.startsWith("view")) {
-				handler = new ResultHandler(s);
+			} else if (s.startsWith("view") || s.startsWith("show")) {
+				handler = new ResultHandler(s, lastRecord);
 			} else if (s.startsWith("help")) {
 				handler = new HelpHandler(s);
-			} else if (s.startsWith("s") || s.startsWith("q") || s.startsWith("find")) {
+			} else if (s.startsWith("find") || s.startsWith("search") || s.startsWith("query")) {
 				handler = new QueryHandler(s);
 			}
 			else {
@@ -41,6 +52,10 @@ public class Driver {
 
 			handler.handle();
 			handler.emitResult();
+			Record newRecord = handler.emitRecord();
+			if (newRecord != null) {
+				lastRecord = newRecord;
+			}
 			System.out.println();
 		}
 		catch (CliArgNumException e) {
@@ -52,7 +67,7 @@ public class Driver {
 	}
 
 	public void start() {
-		//List<Sentence> allReviewSents = Database.getAllReviewSentences(Conf.hotelId);
+		allReviewSents = Database.getAllReviewSentences(Conf.hotelId);
 		while (true) {
 			try {
 				System.out.print("> ");
@@ -111,12 +126,6 @@ public class Driver {
 		 */
 		printWelcome();
 		
-		/*
-		if (args.length > 0 && args[0].trim().toLowerCase().equals("debug")) {
-			Conf.debug = true;
-		}*/
-
-		/*
 		try {
 			ConfUtil.loadConf();
 			Database.OpenConn();
@@ -127,8 +136,8 @@ public class Driver {
 		catch (Exception e) {
 			e.printStackTrace();
 			System.exit(0);
-		}*/
-
+		}
+		
 		Driver driver = new Driver();
 		driver.start();
 	}

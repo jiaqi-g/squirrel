@@ -15,6 +15,9 @@ public class ConfHandler extends DefaultHandler  {
 
 		String confArg = "";
 		for (int i=1; i<args.length; i++) {
+			if (args.equals(";") || args.equals(".")) {
+				continue;
+			}
 			confArg += args[i];
 		}
 

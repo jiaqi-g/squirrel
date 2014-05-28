@@ -105,7 +105,6 @@ public class Database {
 					review.setText(rs.getString("Review"));
 					review.setTitle(rs.getString("Title"));
 					review.setOffering_id(rs.getInt("hotelId"));
-
 				}
 			}
 		}catch (SQLException ex) {

@@ -1,6 +1,7 @@
 package squirrel.cli;
 
 import squirrel.common.Log;
+import squirrel.parse.Record;
 
 public class DefaultHandler implements Handler {
 	protected String[] args;
@@ -21,5 +22,10 @@ public class DefaultHandler implements Handler {
 	
 	public void emitResult() {
 		//do nothing
+	}
+
+	@Override
+	public Record emitRecord() {
+		return null;
 	}
 }

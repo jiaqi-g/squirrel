@@ -74,6 +74,14 @@ public class Record {
 	public String getTrait() {
 		return trait;
 	}
+	
+	public Sentence getRankedSentence(int index) {
+		if (index < rankedSentences.size()) {
+			return rankedSentences.get(index);
+		}
+		
+		return null;
+	}
 
 	public String getPrettyReviews(List<Sentence> sentences) {
 		List<TripAdvisorReview> reviews = Database.getReviewTexts(sentences);

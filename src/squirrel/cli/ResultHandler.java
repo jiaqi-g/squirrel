@@ -1,15 +1,22 @@
 package squirrel.cli;
 
+import common.Database;
+
+import squirrel.nlp.Sentence;
+import squirrel.parse.Record;
 import squirrel.parse.TripAdvisorReview;
 
 public class ResultHandler extends DefaultHandler {
 	private Integer index;
 	private TripAdvisorReview review;
-	
-	public ResultHandler(String s) {
+	private Record record;
+
+	public ResultHandler(String s, Record record) {
 		super(s);
 		super.checkArgs(2);
-		
+
+		this.record = record;
+
 		try {
 			index = Integer.parseInt(args[1].trim());
 		}
@@ -19,10 +26,19 @@ public class ResultHandler extends DefaultHandler {
 	}
 
 	public void handle() {
-		// TODO: query db to get the result
+		if (record != null) {
+			Sentence sent = record.getRankedSentence(index-1);
+			if (sent != null) {
+				review = Database.getReview(sent.getReviewId());
+			}
+		}
 	}
-	
+
 	public void emitResult() {
-		// System.out.println(review.getText());
+		if (review != null) {
+			System.out.println();
+			System.out.println("Title: " + review.getTitle() + "\n");
+			System.out.println("Text: " + review.getText());
+		}
 	}
 }

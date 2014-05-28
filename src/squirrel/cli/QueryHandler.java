@@ -3,8 +3,10 @@ package squirrel.cli;
 import java.io.File;
 import java.io.IOException;
 
+import squirrel.Driver;
 import squirrel.common.Conf;
 import squirrel.common.Log;
+import squirrel.parse.Query;
 import squirrel.parse.Record;
 
 import common.FileSystem;
@@ -31,15 +33,12 @@ public class QueryHandler extends DefaultHandler {
 	}
 
 	public void handle() {
-		/*
 		Query query = new Query(hotelId, aspect, trait);
-		record = query.process(allReviewSents);
-		 */
+		record = query.process(Driver.allReviewSents);
 	}
 
 	public void emitResult() {
-		System.out.println("\n Sample out put! \n\n");
-		/*
+		//System.out.println("\n Sample out put! \n\n");
 		String out = record.getPrettyText();
 		System.out.println(out);
 
@@ -52,6 +51,11 @@ public class QueryHandler extends DefaultHandler {
 		}
 		catch (IOException e) {
 			e.printStackTrace();
-		}*/
+		}
 	}
+	
+	public Record emitRecord() {
+		return record;
+	}
+	
 }

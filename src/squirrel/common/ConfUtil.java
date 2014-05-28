@@ -6,16 +6,18 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
+import squirrel.cli.CliArgNumException;
+
 public class ConfUtil {
 	enum Type {
 		FILE, DB, WEB
 	}
-	
+
 	public static Type adjSource = Type.WEB;
 	public static Type nounSource = Type.DB;
-	
+
 	private static Field[] fields = Conf.class.getDeclaredFields();
-	
+
 	/**
 	 * return true is conf set successfully
 	 * @param key
@@ -25,25 +27,32 @@ public class ConfUtil {
 	 */
 	public static boolean setConf(String key, String val) throws Exception {
 		boolean success = false;
-		for (Field f: fields) {
-			f.setAccessible(true);
-			if (f.getName().equals(key)) {
-				Class<?> fieldClass = f.getType();
-				if (fieldClass == Boolean.class) {
-					f.set(null, Boolean.parseBoolean(val));
-				} else if (fieldClass == Integer.class) {
-					f.set(null, Integer.parseInt(val));
-				} else if (fieldClass == Double.class) {
-					f.set(null, Double.parseDouble(val));
-				} else if (fieldClass == String.class) {
-					f.set(null, val);
+		try {
+			for (Field f: fields) {
+				f.setAccessible(true);
+				if (f.getName().toLowerCase().equals(key.toLowerCase())) {
+					Class<?> fieldClass = f.getType();
+					if (fieldClass == Boolean.class) {
+						f.set(null, Boolean.parseBoolean(val));
+					} else if (fieldClass == Integer.class) {
+						f.set(null, Integer.parseInt(val));
+					} else if (fieldClass == Double.class) {
+						f.set(null, Double.parseDouble(val));
+					} else if (fieldClass == String.class) {
+						f.set(null, val);
+					}
+					success = true;
+					break;
 				}
-				success = true;
 			}
 		}
+		catch (NumberFormatException e) {
+			throw new CliArgNumException();
+		}
+		
 		return success;
 	}
-	
+
 	public static void loadConf() throws Exception {
 		Path path = Paths.get("config");
 		try (Scanner scanner =  new Scanner(path, StandardCharsets.UTF_8.name())) {
@@ -51,19 +60,19 @@ public class ConfUtil {
 				String[] strarr = scanner.nextLine().split("=");
 				String key = strarr[0].trim();
 				String val = strarr[1].trim();
-				
+
 				setConf(key, val);
 			}
 		}
 	}
-	
+
 	public static void printArgs() throws Exception {
 		System.out.println("[Conf Args]");
 		for (Field f: fields) {
 			System.out.println(f.getName() + ": " + f.get(null));
 		}
 	}
-	
+
 	public static void main(String[] args) throws Exception {
 		ConfUtil.loadConf();
 		ConfUtil.printArgs();

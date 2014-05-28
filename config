@@ -8,3 +8,4 @@ nounSimilarityThreshold = 0.5
 adjSimilarityThreshold = 0.6
 sentenceSimilarityThreshold = 0.5
 nounScoreRatio = 0.8
+limit = 100
