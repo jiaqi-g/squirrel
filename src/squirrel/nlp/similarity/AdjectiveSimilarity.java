@@ -71,13 +71,14 @@ public class AdjectiveSimilarity {
 			//return 0.0;
 		}
 		catch (SocketTimeoutException e) {
-			Log.warn(adj + " time out! Redo ...");
+			Log.warn(adj + " time out! Use itself as default ...");
 		}
 		catch (ConnectException e) {
-			Log.warn(adj + " refused! Redo ...");
+			Log.warn(adj + " refused! Use itself as default ...");
 		}
 		catch (Exception e) {
-			e.printStackTrace();
+			Log.warn(adj + " exception! Use itself as default ...");
+			//e.printStackTrace();
 			//return 0.0;
 		}
 
