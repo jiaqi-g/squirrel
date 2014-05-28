@@ -18,7 +18,7 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 	Set<NP>	nps = new HashSet<NP>();
 
 	//score would change given different queries
-	Double score = 0.0;
+	private volatile Double score = 0.0;
 
 	/**
 	 * construct from memory
@@ -96,12 +96,6 @@ public class Sentence extends BasicSentence implements Comparable<Sentence> {
 
 	@Override
 	public int compareTo(Sentence o) {
-		if (o.score >= score) {
-			return 1;
-		}
-		else {
-			return -1;
-		}
+		return o.score.compareTo(score);
 	}
-
 }
