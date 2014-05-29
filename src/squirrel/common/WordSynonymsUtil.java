@@ -7,6 +7,7 @@ import squirrel.nlp.similarity.WordSimilarityResultList;
 public class WordSynonymsUtil {
 	
 	public static WordSimilarityResultList getAdjSynonyms(String adj) {
+		WordSimilarityResultList rs = null;
 		switch (ConfUtil.adjSource) {
 		case FILE:
 			/*
@@ -27,9 +28,11 @@ public class WordSynonymsUtil {
 			 */
 			break;
 		case DB:
-			break;
+			rs = new WordSimilarityResultList(adj);
+			rs.add(adj, 1.0);
+			return rs;
 		case WEB:
-			WordSimilarityResultList rs = (new AdjectiveSimilarity(adj)).getTopSimilaryWordsFromWeb();
+			rs = (new AdjectiveSimilarity(adj)).getTopSimilaryWordsFromWeb();
 			rs.filterWordsBelowScore(Conf.adjSimilarityThreshold);
 			if (Conf.debug) {
 				Log.log("\n");
